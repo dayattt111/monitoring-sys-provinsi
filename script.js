@@ -92,18 +92,38 @@ let markers = [];
 
 // Initialize Leaflet Map
 function initMap() {
-    map = L.map('mapLeaflet').setView([-7.5, 112.5], 8);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-        maxZoom: 19
-    }).addTo(map);
+    try {
+        // Check if Leaflet is loaded
+        if (typeof L === 'undefined') {
+            console.error('Leaflet library not loaded');
+            return;
+        }
 
-    // Add markers for each kabupaten
-    updateMapMarkers();
+        // Initialize map
+        map = L.map('mapLeaflet').setView([-7.5, 112.5], 8);
+        
+        // Add tile layer with dark theme
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+
+        // Add markers for each kabupaten
+        updateMapMarkers();
+        
+        console.log('Map initialized successfully');
+    } catch (error) {
+        console.error('Error initializing map:', error);
+    }
 }
 
 function updateMapMarkers() {
+    if (!map) {
+        console.warn('Map not initialized yet');
+        return;
+    }
+    
     // Clear existing markers
     markers.forEach(marker => map.removeLayer(marker));
     markers = [];
@@ -142,7 +162,7 @@ function updateMapMarkers() {
         markers.push(marker);
     });
 
-    // Center on current kabupaten
+    // Center on current kabupaten with animation
     if (kabupatens[currentIndex]) {
         map.setView([kabupatens[currentIndex].lat, kabupatens[currentIndex].lng], 9, {
             animate: true,
@@ -340,10 +360,17 @@ function rotateData() {
     updateDashboard();
 }
 
-// Initialize
-initMap();
-updateDashboard();
-setInterval(rotateData, 5000);
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing...');
+    
+    // Small delay to ensure all libraries are loaded
+    setTimeout(() => {
+        initMap();
+        updateDashboard();
+        setInterval(rotateData, 5000);
+    }, 100);
+});
 
 // ===== IMPORT/EXPORT FUNCTIONS =====
 
