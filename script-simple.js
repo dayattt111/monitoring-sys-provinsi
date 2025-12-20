@@ -2,8 +2,7 @@
 const kabupatens = [
     {
         name: "BANYUWANGI",
-        lat: -8.2193,
-        lng: 114.3691,
+        x: 420, y: 280, // Posisi di canvas (timur)
         spdp: { total: 18170, jombang: 492, ponorogo: 179, gresik: 420 },
         berkas: { total: 12299, jombang: 351, ponorogo: 151, gresik: 307 },
         p33: { total: 8113, jombang: 611, ponorogo: 278, gresik: 606 },
@@ -30,8 +29,7 @@ const kabupatens = [
     },
     {
         name: "SURABAYA",
-        lat: -7.2575,
-        lng: 112.7521,
+        x: 200, y: 120, // Posisi di canvas (utara/tengah)
         spdp: { total: 22450, jombang: 580, ponorogo: 210, gresik: 515 },
         berkas: { total: 15680, jombang: 425, ponorogo: 185, gresik: 390 },
         p33: { total: 9840, jombang: 720, ponorogo: 310, gresik: 685 },
@@ -58,8 +56,7 @@ const kabupatens = [
     },
     {
         name: "MALANG",
-        lat: -7.9797,
-        lng: 112.6304,
+        x: 280, y: 300, // Posisi di canvas (selatan/tengah)
         spdp: { total: 19350, jombang: 510, ponorogo: 195, gresik: 445 },
         berkas: { total: 13580, jombang: 380, ponorogo: 165, gresik: 340 },
         p33: { total: 8650, jombang: 650, ponorogo: 290, gresik: 625 },
@@ -87,95 +84,6 @@ const kabupatens = [
 ];
 
 let currentIndex = 0;
-let map;
-let markers = [];
-
-// Initialize Leaflet Map
-function initMap() {
-    try {
-        // Check if Leaflet is loaded
-        if (typeof L === 'undefined') {
-            console.error('Leaflet library not loaded');
-            document.getElementById('mapLeaflet').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#ff4858;"><h3>⚠️ Map library failed to load</h3></div>';
-            return;
-        }
-
-        // Initialize map with options
-        map = L.map('mapLeaflet', {
-            center: [-7.5, 112.5],
-            zoom: 8,
-            zoomControl: true,
-            attributionControl: false // Disable attribution to remove clutter
-        });
-        
-        // Add OpenStreetMap tile layer (more reliable)
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: false
-        }).addTo(map);
-
-        // Add markers for each kabupaten
-        updateMapMarkers();
-        
-        console.log('Map initialized successfully');
-    } catch (error) {
-        console.error('Error initializing map:', error);
-        document.getElementById('mapLeaflet').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#ff4858;"><h3>⚠️ Error: ' + error.message + '</h3></div>';
-    }
-}
-
-function updateMapMarkers() {
-    if (!map) {
-        console.warn('Map not initialized yet');
-        return;
-    }
-    
-    // Clear existing markers
-    markers.forEach(marker => map.removeLayer(marker));
-    markers = [];
-
-    // Add markers for each kabupaten
-    kabupatens.forEach((kab, index) => {
-        const isActive = index === currentIndex;
-        
-        const marker = L.circleMarker([kab.lat, kab.lng], {
-            radius: isActive ? 15 : 10,
-            fillColor: isActive ? '#ff4858' : '#00d4ff',
-            color: '#fff',
-            weight: 2,
-            opacity: 1,
-            fillOpacity: isActive ? 0.9 : 0.6
-        }).addTo(map);
-
-        const popupContent = `
-            <div style="color: #fff;">
-                <h3 style="color: #00d4ff; margin-bottom: 10px;">${kab.name}</h3>
-                <p><strong>Total SPDP:</strong> ${kab.spdp.total.toLocaleString()}</p>
-                <p><strong>Total Berkas:</strong> ${kab.berkas.total.toLocaleString()}</p>
-                <p><strong>Total P33:</strong> ${kab.p33.total.toLocaleString()}</p>
-                <p><strong>Total P48:</strong> ${kab.p48.total.toLocaleString()}</p>
-            </div>
-        `;
-        
-        marker.bindPopup(popupContent);
-        
-        marker.on('click', () => {
-            currentIndex = index;
-            updateDashboard();
-            updateMapMarkers();
-        });
-
-        markers.push(marker);
-    });
-
-    // Center on current kabupaten with animation
-    if (kabupatens[currentIndex]) {
-        map.setView([kabupatens[currentIndex].lat, kabupatens[currentIndex].lng], 9, {
-            animate: true,
-            duration: 1
-        });
-    }
-}
 
 // Function to draw donut chart
 function drawDonutChart(canvasId, data, colors) {
@@ -292,6 +200,89 @@ function drawBarChart() {
     ctx.fillText('Putusan (PN)', startX + 140, startY + 47);
 }
 
+// Function to draw map with canvas
+function drawMap() {
+    const canvas = document.getElementById('canvasMap');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+
+    // Clear canvas
+    ctx.clearRect(0, 0, width, height);
+
+    // Draw background
+    ctx.fillStyle = '#1a2632';
+    ctx.fillRect(0, 0, width, height);
+
+    // Draw Jawa Timur shape (simplified)
+    ctx.fillStyle = '#2a3a4a';
+    ctx.strokeStyle = '#3a4a5a';
+    ctx.lineWidth = 2;
+    
+    ctx.beginPath();
+    ctx.moveTo(50, 200);
+    ctx.quadraticCurveTo(150, 150, 250, 160);
+    ctx.lineTo(400, 180);
+    ctx.lineTo(450, 250);
+    ctx.lineTo(400, 320);
+    ctx.lineTo(250, 340);
+    ctx.lineTo(150, 320);
+    ctx.lineTo(50, 280);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    // Draw markers for each kabupaten
+    kabupatens.forEach((kab, index) => {
+        const isActive = index === currentIndex;
+        const radius = isActive ? 20 : 15;
+        
+        // Draw circle marker
+        ctx.beginPath();
+        ctx.arc(kab.x, kab.y, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = isActive ? '#ff4858' : '#00d4ff';
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        // Draw label
+        ctx.fillStyle = '#fff';
+        ctx.font = isActive ? 'bold 14px Arial' : '12px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText(kab.name, kab.x, kab.y - radius - 10);
+
+        // Draw pulsing effect for active marker
+        if (isActive) {
+            ctx.beginPath();
+            ctx.arc(kab.x, kab.y, radius + 5, 0, 2 * Math.PI);
+            ctx.strokeStyle = 'rgba(255, 72, 88, 0.3)';
+            ctx.lineWidth = 5;
+            ctx.stroke();
+        }
+    });
+
+    // Add click event listener
+    canvas.onclick = function(event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        kabupatens.forEach((kab, index) => {
+            const distance = Math.sqrt(Math.pow(x - kab.x, 2) + Math.pow(y - kab.y, 2));
+            if (distance < 25) {
+                currentIndex = index;
+                updateDashboard();
+            }
+        });
+    };
+
+    // Add hover cursor
+    canvas.style.cursor = 'pointer';
+}
+
 // Function to update dashboard
 function updateDashboard() {
     const data = kabupatens[currentIndex];
@@ -354,10 +345,8 @@ function updateDashboard() {
         document.getElementById(`td${i + 10}`).textContent = val;
     });
 
-    // Update map markers
-    if (map) {
-        updateMapMarkers();
-    }
+    // Redraw map
+    drawMap();
 }
 
 // Auto rotate data every 5 seconds
@@ -369,13 +358,9 @@ function rotateData() {
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded, initializing...');
-    
-    // Small delay to ensure all libraries are loaded
-    setTimeout(() => {
-        initMap();
-        updateDashboard();
-        setInterval(rotateData, 5000);
-    }, 100);
+    drawMap();
+    updateDashboard();
+    setInterval(rotateData, 5000);
 });
 
 // ===== IMPORT/EXPORT FUNCTIONS =====
@@ -389,14 +374,12 @@ function handleFileImport(event) {
     const reader = new FileReader();
 
     if (fileName.endsWith('.csv')) {
-        // Handle CSV
         reader.onload = function(e) {
             const text = e.target.result;
             parseCSV(text);
         };
         reader.readAsText(file);
     } else if (fileName.endsWith('.xlsx') || fileName.endsWith('.xls')) {
-        // Handle Excel
         reader.onload = function(e) {
             const data = new Uint8Array(e.target.result);
             const workbook = XLSX.read(data, { type: 'array' });
@@ -407,7 +390,6 @@ function handleFileImport(event) {
         reader.readAsArrayBuffer(file);
     }
 
-    // Reset file input
     event.target.value = '';
 }
 
@@ -415,7 +397,6 @@ function handleFileImport(event) {
 function parseCSV(text) {
     const lines = text.split('\n');
     const data = lines.map(line => {
-        // Simple CSV parsing (handle quoted fields)
         const result = [];
         let current = '';
         let inQuotes = false;
@@ -441,25 +422,23 @@ function parseCSV(text) {
 // Parse imported data and update kabupatens
 function parseImportedData(data) {
     try {
-        // Expected format:
-        // Row 0: Headers
-        // Columns: Kabupaten, Lat, Lng, SPDP_Total, SPDP_Jombang, SPDP_Ponorogo, SPDP_Gresik, etc.
-        
         if (data.length < 2) {
             alert('File tidak memiliki data yang cukup');
             return;
         }
 
         const newKabupatens = [];
+        const positionsX = [420, 200, 280]; // Default X positions
+        const positionsY = [280, 120, 300]; // Default Y positions
         
         for (let i = 1; i < data.length; i++) {
             const row = data[i];
-            if (!row[0] || row[0] === '') continue; // Skip empty rows
+            if (!row[0] || row[0] === '') continue;
             
             const kabupaten = {
                 name: row[0] || '',
-                lat: parseFloat(row[1]) || -7.5,
-                lng: parseFloat(row[2]) || 112.5,
+                x: positionsX[newKabupatens.length % 3],
+                y: positionsY[newKabupatens.length % 3],
                 spdp: {
                     total: parseInt(row[3]) || 0,
                     jombang: parseInt(row[4]) || 0,
@@ -529,7 +508,7 @@ function parseImportedData(data) {
         }
         
         if (newKabupatens.length > 0) {
-            kabupatens.length = 0; // Clear array
+            kabupatens.length = 0;
             kabupatens.push(...newKabupatens);
             currentIndex = 0;
             updateDashboard();
@@ -565,7 +544,7 @@ function exportToExcel() {
 
     kabupatens.forEach(kab => {
         exportData.push([
-            kab.name, kab.lat, kab.lng,
+            kab.name, kab.x, kab.y,
             kab.spdp.total, kab.spdp.jombang, kab.spdp.ponorogo, kab.spdp.gresik,
             kab.berkas.total, kab.berkas.jombang, kab.berkas.ponorogo, kab.berkas.gresik,
             kab.p33.total, kab.p33.jombang, kab.p33.ponorogo, kab.p33.gresik,
@@ -587,59 +566,3 @@ function exportToExcel() {
     const fileName = `monitoring_perkara_${new Date().toISOString().split('T')[0]}.xlsx`;
     XLSX.writeFile(wb, fileName);
 }
-
-// Export to CSV
-function exportToCSV() {
-    const csvData = [];
-    csvData.push([
-        'Kabupaten', 'Lat', 'Lng',
-        'SPDP_Total', 'SPDP_Jombang', 'SPDP_Ponorogo', 'SPDP_Gresik',
-        'Berkas_Total', 'Berkas_Jombang', 'Berkas_Ponorogo', 'Berkas_Gresik',
-        'P33_Total', 'P33_Jombang', 'P33_Ponorogo', 'P33_Gresik',
-        'P48_Total', 'P48_Jombang', 'P48_Ponorogo', 'P48_Gresik',
-        'Tuntutan_Tertinggi', 'Putusan_Tertinggi', 'Tuntutan_Terendah', 'Putusan_Terendah',
-        'Region_Name', 'Narkotika', 'Kesehatan', 'Perjudian', 'Anak', 'Pencurian',
-        'Table_KN',
-        'Table_R1_C1', 'Table_R1_C2', 'Table_R1_C3', 'Table_R1_C4', 'Table_R1_C5',
-        'Table_R1_C6', 'Table_R1_C7', 'Table_R1_C8', 'Table_R1_C9',
-        'Table_R2_C1', 'Table_R2_C2', 'Table_R2_C3', 'Table_R2_C4', 'Table_R2_C5',
-        'Table_R2_C6', 'Table_R2_C7', 'Table_R2_C8', 'Table_R2_C9'
-    ]);
-
-    kabupatens.forEach(kab => {
-        csvData.push([
-            kab.name, kab.lat, kab.lng,
-            kab.spdp.total, kab.spdp.jombang, kab.spdp.ponorogo, kab.spdp.gresik,
-            kab.berkas.total, kab.berkas.jombang, kab.berkas.ponorogo, kab.berkas.gresik,
-            kab.p33.total, kab.p33.jombang, kab.p33.ponorogo, kab.p33.gresik,
-            kab.p48.total, kab.p48.jombang, kab.p48.ponorogo, kab.p48.gresik,
-            kab.disparitas.tuntutanTertinggi, kab.disparitas.putusanTertinggi,
-            kab.disparitas.tuntutanTerendah, kab.disparitas.putusanTerendah,
-            kab.regionStats.name, kab.regionStats.narkotika, kab.regionStats.kesehatan,
-            kab.regionStats.perjudian, kab.regionStats.anak, kab.regionStats.pencurian,
-            kab.tableStats.name,
-            ...kab.tableStats.row1,
-            ...kab.tableStats.row2
-        ]);
-    });
-
-    const csvContent = csvData.map(row => row.map(cell => `"${cell}"`).join(',')).join('\n');
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    const url = URL.createObjectURL(blob);
-    
-    link.setAttribute('href', url);
-    link.setAttribute('download', `monitoring_perkara_${new Date().toISOString().split('T')[0]}.csv`);
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-// Add hover effect to regions
-document.querySelectorAll('.region').forEach((region, index) => {
-    region.addEventListener('click', () => {
-        document.querySelectorAll('.region').forEach(r => r.classList.remove('active'));
-        region.classList.add('active');
-    });
-});

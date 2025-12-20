@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a2632;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            border: 2px solid #00d4ff;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #00d4ff;
+        }
+        .info {
+            background: rgba(26, 38, 50, 0.9);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>🗺️ Test Peta Leaflet - Jawa Timur</h1>
+    
+    <div class="info">
+        <p><strong>Status:</strong> <span id="status">Loading...</span></p>
+        <p><strong>Library Leaflet:</strong> <span id="leafletStatus">Checking...</span></p>
+    </div>
+    
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    
+    <script>
+        // Check if Leaflet is loaded
+        if (typeof L !== 'undefined') {
+            document.getElementById('leafletStatus').textContent = '✅ Loaded (v' + L.version + ')';
+            document.getElementById('leafletStatus').style.color = '#00ff88';
+        } else {
+            document.getElementById('leafletStatus').textContent = '❌ Not Loaded';
+            document.getElementById('leafletStatus').style.color = '#ff4858';
+        }
+
+        // Initialize map
+        try {
+            const map = L.map('map').setView([-7.5, 112.5], 8);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            // Add markers for kabupaten
+            const kabupatens = [
+                { name: 'BANYUWANGI', lat: -8.2193, lng: 114.3691, color: '#ff4858' },
+                { name: 'SURABAYA', lat: -7.2575, lng: 112.7521, color: '#00d4ff' },
+                { name: 'MALANG', lat: -7.9797, lng: 112.6304, color: '#00ff88' }
+            ];
+
+            kabupatens.forEach(kab => {
+                const marker = L.circleMarker([kab.lat, kab.lng], {
+                    radius: 12,
+                    fillColor: kab.color,
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map);
+
+                marker.bindPopup(`
+                    <div style="color: #333;">
+                        <h3 style="color: ${kab.color}; margin: 0 0 10px 0;">${kab.name}</h3>
+                        <p style="margin: 5px 0;"><strong>Lat:</strong> ${kab.lat}</p>
+                        <p style="margin: 5px 0;"><strong>Lng:</strong> ${kab.lng}</p>
+                    </div>
+                `);
+            });
+
+            document.getElementById('status').textContent = '✅ Map initialized successfully!';
+            document.getElementById('status').style.color = '#00ff88';
+            
+        } catch (error) {
+            document.getElementById('status').textContent = '❌ Error: ' + error.message;
+            document.getElementById('status').style.color = '#ff4858';
+            console.error('Map error:', error);
+        }
+    </script>
+</body>
+</html>
