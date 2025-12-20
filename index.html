@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Perkara Pidum Jawa Timur</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- SheetJS for Excel -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <button class="home-btn">🏠</button>
+            <h1>MONITORING PERKARA PIDUM JAWA TIMUR</h1>
+            <div class="header-actions">
+                <button class="import-btn" onclick="document.getElementById('fileInput').click()">📥 Import</button>
+                <input type="file" id="fileInput" accept=".csv,.xlsx,.xls" style="display: none;" onchange="handleFileImport(event)">
+                <button class="export-btn" onclick="exportToExcel()">📤 Export</button>
+                <button class="menu-btn">☰</button>
+            </div>
+        </header>
+
+        <!-- Top Cards -->
+        <div class="stats-cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>TOTAL SPDP</h3>
+                        <div class="total-number" id="totalSPDP">0</div>
+                        <div class="breakdown" id="breakdownSPDP"></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chartSPDP"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>TOTAL Berkas</h3>
+                        <div class="total-number" id="totalBerkas">0</div>
+                        <div class="breakdown" id="breakdownBerkas"></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chartBerkas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>TOTAL P33</h3>
+                        <div class="total-number" id="totalP33">0</div>
+                        <div class="breakdown" id="breakdownP33"></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chartP33"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-info">
+                        <h3>TOTAL P48</h3>
+                        <div class="total-number" id="totalP48">0</div>
+                        <div class="breakdown" id="breakdownP48"></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chartP48"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="middle-section">
+            <!-- Bar Chart -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h3>DISPARITAS TUNTUTAN DAN PUTUSAN</h3>
+                    <button class="expand-btn">⛶</button>
+                </div>
+                <div class="bar-chart-section">
+                    <div class="current-kn" id="currentKN">KN BANYUWANGI</div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color tuntutan"></span>
+                            <span>Tuntutan Tertinggi</span>
+                            <span id="tuntutanTertinggi">Tuntutan: 3 tahun</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color putusan"></span>
+                            <span>Putusan Tertinggi</span>
+                            <span id="putusanTertinggi">Putusan: 3 tahun</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color tuntutan-rendah"></span>
+                            <span>Tuntutan Terendah</span>
+                            <span id="tuntutanTerendah">Tuntutan: 6 bulan</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color putusan-rendah"></span>
+                            <span>Putusan Terendah</span>
+                            <span id="putusanTerendah">Putusan: 5 bulan</span>
+                        </div>
+                    </div>
+                    <div class="bar-chart-container">
+                        <div class="chart-label">Darurat</div>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="card map-card">
+                <div class="card-header">
+                    <h3>TREN PERKARA PER DAERAH</h3>
+                    <button class="expand-btn">⛶</button>
+                </div>
+                <div class="map-section">
+                    <div class="map-container">
+                        <div id="mapLeaflet" style="height: 400px; width: 100%; border-radius: 8px;"></div>
+                    </div>
+                    <div class="region-stats">
+                        <h4 id="regionName">KN TRENGGALEK</h4>
+                        <div class="stat-row">
+                            <span>Narkotika</span>
+                            <span id="statNarkotika">48</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Kesehatan</span>
+                            <span id="statKesehatan">33</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Perjudian ITE</span>
+                            <span id="statPerjudian">14</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Perlindungan Anak</span>
+                            <span id="statAnak">14</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Pencurian Biasa</span>
+                            <span id="statPencurian">10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Table -->
+        <div class="card stats-table-card">
+            <div class="card-header">
+                <h3>STATISTIK PERKARA</h3>
+                <button class="expand-btn">⛶</button>
+            </div>
+            <div class="stats-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="kn-column" id="tableKN">KN<br>TULUNGAGUNG</th>
+                            <th colspan="3" class="section-header">SPDP</th>
+                            <th colspan="3" class="section-header">Berkas</th>
+                            <th colspan="3" class="section-header">Eksekusi</th>
+                        </tr>
+                        <tr>
+                            <th class="red-header">SPDP Perlu P17</th>
+                            <th class="red-header">SPDP Perlu Form2</th>
+                            <th class="red-header">SPDP Perlu Form3</th>
+                            <th class="gray-header">SPDP</th>
+                            <th class="gray-header">Berkas Tahap I</th>
+                            <th class="gray-header">Tahap II</th>
+                            <th class="gray-header">Tuntutan</th>
+                            <th class="gray-header">Putusan</th>
+                            <th class="gray-header">Eksekusi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td class="label-cell">Berkas Perlu P20</td>
+                            <td id="td1" class="number-cell red-text">1</td>
+                            <td id="td2" class="number-cell red-text">63</td>
+                            <td id="td3" class="number-cell red-text">8</td>
+                            <td id="td4" class="number-cell">370</td>
+                            <td id="td5" class="number-cell">265</td>
+                            <td id="td6" class="number-cell">224</td>
+                            <td id="td7" class="number-cell">164</td>
+                            <td id="td8" class="number-cell">149</td>
+                            <td id="td9" class="number-cell">129</td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">P20 Perlu Form3</td>
+                            <td id="td10" class="number-cell red-text">1</td>
+                            <td id="td11" class="number-cell red-text">7</td>
+                            <td id="td12" class="number-cell red-text">2</td>
+                            <td id="td13" class="number-cell">164</td>
+                            <td id="td14" class="number-cell">149</td>
+                            <td id="td15" class="number-cell">129</td>
+                            <td id="td16" class="number-cell">-</td>
+                            <td id="td17" class="number-cell">-</td>
+                            <td id="td18" class="number-cell">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
