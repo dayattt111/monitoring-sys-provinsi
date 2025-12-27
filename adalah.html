@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Kinerja Satuan Kerja</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        :root {
+            --primary-yellow: #ffc800;
+            --primary-cyan: #00c0ff;
+            --primary-red: #ff4b5c;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            background: radial-gradient(circle at top,
+                #111827 0%,
+                #020617 55%,
+                #000000 100%
+            );
+            margin: 0;
+            padding: 0;
+            color: #F9FAFB;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* watermark logo */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url("kejag.png");
+            background-repeat: no-repeat;
+            background-position: center 40%;
+            background-size: 70vh auto;
+            opacity: 0.07;
+            filter: blur(0.5px);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .bg-overlay {
+            background: radial-gradient(circle at top,
+                rgba(255,255,255,0.10) 0,
+                rgba(0,0,0,0.78) 55%,
+                rgba(0,0,0,0.92) 100%);
+            min-height: 100vh;
+            padding: 1.5rem 0 3rem;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.40);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            box-shadow:
+                0 22px 55px rgba(0, 0, 0, 0.75),
+                0 0 0 1px rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .summary-card {
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.3));
+        }
+
+        .summary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+            border-color: rgba(255,255,255,0.35);
+        }
+
+        .text-dark-contrast { color: #F9FAFB; }
+        .text-muted-contrast { color: #E5E7EB; }
+
+        .btn-yellow {
+            background: var(--primary-yellow);
+            color: #000;
+            font-weight: 700;
+            border-radius: 999px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+        }
+        .btn-yellow:hover { filter: brightness(1.05); }
+
+        .btn-outline-dark {
+            background: transparent;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.6);
+            color: #F9FAFB;
+            font-weight: 600;
+        }
+        .btn-outline-dark:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .btn-cyan {
+            background: var(--primary-cyan);
+            color: #000;
+            font-weight: 700;
+            border-radius: 999px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+        }
+        .btn-cyan:hover { filter: brightness(1.05); }
+
+        .input-dark,
+        .select-dark {
+            background: rgba(0,0,0,0.75);
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #F9FAFB;
+        }
+        .input-dark:focus,
+        .select-dark:focus {
+            outline: none;
+            border-color: var(--primary-cyan);
+            box-shadow: 0 0 0 1px var(--primary-cyan);
+        }
+
+        .badge-emerald {
+            background: rgba(16, 185, 129, 0.15);
+            color: #6EE7B7;
+        }
+        .badge-amber {
+            background: rgba(251, 191, 36, 0.18);
+            color: #FBBF24;
+        }
+
+        .title-shadow {
+            text-shadow:
+                0 0 10px rgba(0,0,0,0.9),
+                0 0 25px rgba(0,0,0,0.9);
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body {
+                background: white !important;
+                margin: 0;
+                padding: 0;
+                color: #000;
+            }
+            .bg-overlay { background: white !important; }
+            .glass-card {
+                border: none;
+                box-shadow: none;
+                backdrop-filter: none;
+                background: white;
+            }
+            header {
+                border-bottom: 2px solid #E2E8F0;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+            .print-full-width { width: 100%; display: block; }
+            canvas { max-height: 250px !important; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="bg-overlay">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+        <!-- HEADER -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-dark-contrast mb-2 title-shadow flex items-center justify-center gap-3">
+                <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-black/70 border border-white/20 shadow-xl overflow-hidden">
+                    <img src="kejag.png" class="w-8 h-8 md:w-10 md:h-10 object-contain" alt="Logo">
+                </span>
+                <span>Dashbord Monitoring Jaga Desa Jawa Timur</span>
+            </h1>
+
+            <p class="text-muted-contrast text-base md:text-lg title-shadow">
+                <span class="font-semibold text-sky-200">
+                    Periode: 1 - <span id="current-date"></span>
+                </span>
+            </p>
+        </header>
+
+        <!-- FILTER -->
+        <div class="glass-card p-6 md:p-7 rounded-3xl mb-8 no-print border border-white/15">
+            <div class="flex items-center gap-2 mb-4">
+                <i data-lucide="search" class="w-5 h-5 text-sky-300"></i>
+                <h5 class="text-dark-contrast text-xl font-bold">Filter Laporan</h5>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+                <div class="col-span-1">
+                    <p class="text-xs font-semibold text-gray-200 mb-1 uppercase tracking-wide">Tanggal Laporan</p>
+                    <input type="date" id="filter-date"
+                           class="input-dark w-full px-3 py-2.5 text-sm shadow-md">
+                </div>
+
+                <div class="col-span-1">
+                    <p class="text-xs font-semibold text-gray-200 mb-1 uppercase tracking-wide">Satuan Kerja</p>
+                    <select id="filter-unit"
+                            class="select-dark w-full px-3 py-2.5 text-sm shadow-md">
+                        <option value="">Semua Unit</option>
+                    </select>
+                </div>
+
+                <div class="col-span-1 flex gap-2">
+                    <button id="apply-filter-btn"
+                            class="btn-yellow flex-1 px-4 py-2.5 text-sm inline-flex items-center justify-center gap-2">
+                        <i data-lucide="filter" class="w-4 h-4"></i>
+                        <span>Terapkan Filter</span>
+                    </button>
+                </div>
+
+                <div class="col-span-1 flex gap-2">
+                    <button id="reset-filter-btn"
+                            class="btn-outline-dark flex-1 px-4 py-2.5 text-sm inline-flex items-center justify-center gap-2">
+                        <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                        <span>Reset Filter</span>
+                    </button>
+                    <button id="print-btn"
+                            class="btn-cyan flex-1 px-4 py-2.5 text-sm inline-flex items-center justify-center gap-2">
+                        <i data-lucide="printer" class="w-4 h-4"></i>
+                        <span>Cetak Laporan</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUMMARY CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+            <div id="total-units-card"
+                 class="summary-card p-5 text-center cursor-pointer">
+                <i data-lucide="layers" class="w-9 h-9 text-yellow-300 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-100">Total Satuan Kerja</h5>
+                <h3 id="card-total-units" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                    Unit terdaftar · klik untuk lihat daftar & grafik
+                </p>
+            </div>
+
+            <div id="compliant-card" data-status="compliant"
+                 class="summary-card p-5 text-center cursor-pointer">
+                <i data-lucide="check-circle" class="w-9 h-9 text-emerald-300 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-100">Unit Selesai Input</h5>
+                <h3 id="card-units-compliant" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                    Klik untuk lihat daftar & detail kegiatan
+                </p>
+            </div>
+
+            <div id="pending-card" data-status="pending"
+                 class="summary-card p-5 text-center cursor-pointer">
+                <i data-lucide="loader" class="w-9 h-9 text-amber-300 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-100">Unit Belum Selesai Input</h5>
+                <h3 id="card-units-pending" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                    Klik untuk lihat daftar pending
+                </p>
+            </div>
+
+            <div class="summary-card p-5 text-center">
+                <i data-lucide="trending-up" class="w-9 h-9 text-red-300 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-100">Rata-rata Kepatuhan</h5>
+                <h3 id="card-compliance-rate" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0%</h3>
+                <p class="text-xs md:text-sm text-gray-300 mt-1">Per menu aktif</p>
+            </div>
+        </div>
+
+        <!-- MENU UTAMA -->
+        <div class="glass-card p-5 rounded-3xl border border-white/15 mb-8">
+            <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                <i data-lucide="list" class="w-5 h-5 text-sky-300"></i>
+                <span>Menu Utama</span>
+            </h5>
+            <p class="text-xs text-gray-300 mt-1">
+                Pilih menu untuk melihat grafik & status input semua Satker pada menu tersebut.
+            </p>
+
+            <div id="main-menu-container"
+                 class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- tombol menu diisi lewat JS -->
+            </div>
+        </div>
+
+        <!-- CHART + BULANAN -->
+        <div class="space-y-6 mb-8">
+            <!-- Chart Batang Full -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <div class="flex flex-col gap-1 mb-3">
+                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                        <i data-lucide="layout-grid" class="w-5 h-5 text-sky-300"></i>
+                        <span>Grafik Kepatuhan per Satker</span>
+                    </h5>
+                    <p class="text-xs text-gray-300">
+                        Menu aktif:
+                        <span id="active-menu-label" class="font-semibold text-sky-200">
+                            Jaksa Garda Desa / Kelurahan
+                        </span>
+                    </p>
+                </div>
+
+                <h6 class="text-sm font-semibold text-gray-200 mb-2 border-b border-white/10 pb-1">
+                    Target vs Aktual per Satker
+                </h6>
+                <div class="relative w-full overflow-x-auto bg-black/35 rounded-2xl p-2 border border-white/10">
+					<canvas id="performanceBarChart" class="min-w-full"></canvas>
+				</div>
+
+            </div>
+
+            <!-- Bulanan (dummy, tetap) -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <h5 class="text-dark-contrast text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar-check" class="w-5 h-5 text-sky-300"></i>
+                    <span>Status Input Bulanan (Tren)</span>
+                </h5>
+                <div id="monthly-status-list" class="space-y-3">
+                    <div class="p-3 rounded-2xl border border-emerald-400/30 bg-gradient-to-r from-emerald-500/15 to-emerald-400/5">
+                        <p class="text-sm text-gray-100 font-semibold">Bulan Ini (Des 2025)</p>
+                        <div class="flex justify-between items-center mt-1 gap-2">
+                            <span class="text-xs text-emerald-200 font-medium">95% Kepatuhan</span>
+                            <div class="w-1/2 bg-black/40 rounded-full h-2.5">
+                                <div class="bg-emerald-400 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 rounded-2xl border border-amber-400/30 bg-gradient-to-r from-amber-500/12 to-amber-400/5">
+                        <p class="text-sm text-gray-100 font-semibold">Bulan Lalu (Nov 2025)</p>
+                        <div class="flex justify-between items-center mt-1 gap-2">
+                            <span class="text-xs text-amber-200 font-medium">78% Kepatuhan</span>
+                            <div class="w-1/2 bg-black/40 rounded-full h-2.5">
+                                <div class="bg-amber-400 h-2.5 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs md:text-sm text-gray-300 mt-4">
+                    Kepatuhan dihitung dari rata-rata total input per unit dibandingkan target per bulan.
+                </p>
+            </div>
+        </div>
+
+        <!-- TABEL DETAIL -->
+        <div class="glass-card p-5 rounded-3xl border border-white/15">
+            <div class="flex flex-col gap-1 mb-4">
+                <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                    <i data-lucide="list-checks" class="w-5 h-5 text-sky-300"></i>
+                    <span>Detail Status Input Harian</span>
+                </h5>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-white/10 text-sm">
+                    <thead class="bg-black/60">
+                    <tr>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-100 uppercase tracking-wider rounded-tl-lg">
+                            Satuan Kerja (SKPD)
+                        </th>
+                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Target</th>
+                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Aktual</th>
+                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Status</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-100 uppercase tracking-wider rounded-tr-lg">
+                            Waktu Terakhir Input
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="unit-status-body" class="divide-y divide-white/5 bg-black/35">
+                    </tbody>
+                </table>
+                <div id="no-data-message" class="text-center py-8 text-gray-300 hidden">
+                    <i data-lucide="info" class="inline-block w-6 h-6 mr-2"></i>
+                    Tidak ada data Satuan Kerja yang sesuai dengan filter.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =============== MODALS =============== -->
+
+<!-- MODAL: DAFTAR SEMUA SATUAN KERJA -->
+<div id="unit-list-modal"
+     class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
+    <div class="w-full max-w-3xl max-height-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+            <div class="flex items-center gap-3">
+                <i data-lucide="check-square" class="w-6 h-6 text-sky-300"></i>
+                <h3 class="text-xl md:text-2xl font-bold text-white">
+                    Daftar Semua Satuan Kerja
+                </h3>
+            </div>
+            <button id="close-modal-btn"
+                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <p class="text-sm text-gray-300 mb-3">
+            Klik nama Satuan Kerja untuk melihat grafik kinerja 20 hari terakhir.
+        </p>
+
+        <div id="unit-list-content"
+             class="space-y-2 overflow-y-auto pr-2 max-h-[60vh]">
+            <!-- Daftar satker diisi dari JS -->
+        </div>
+    </div>
+</div>
+
+<!-- MODAL: SATKER SELESAI / BELUM SELESAI -->
+<div id="satker-modal"
+     class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
+    <div class="w-full max-w-3xl max-h-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+            <h3 id="satker-modal-title"
+                class="text-xl md:text-2xl font-bold text-white">
+                Daftar Satuan Kerja
+            </h3>
+            <button id="close-satker-modal-btn"
+                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <div id="satker-list-container"
+             class="space-y-3 overflow-y-auto max-h-[60vh] pr-2">
+            <!-- Diisi dari JS -->
+        </div>
+    </div>
+</div>
+
+<!-- MODAL: DETAIL KEGIATAN SATKER -->
+<div id="detail-kegiatan-modal"
+     class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
+    <div class="w-full max-w-2xl max-h-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+            <h3 id="detail-kegiatan-title"
+                class="text-xl md:text-2xl font-bold text-white">
+                Detail Kegiatan
+            </h3>
+            <button onclick="hideDetailKegiatan()"
+                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <div id="detail-kegiatan-content"
+             class="space-y-4 overflow-y-auto max-h-[60vh] pr-2">
+            <!-- Kegiatan diisi dari JS -->
+        </div>
+    </div>
+</div>
+
+<!-- MODAL: GRAFIK HISTORI 20 HARI SATKER -->
+<div id="satker-chart-modal"
+     class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
+    <div class="w-full max-w-4xl max-h-[85vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+            <h3 id="satker-chart-title"
+                class="text-xl md:text-2xl font-bold text-white">
+                Grafik Kinerja Satker
+            </h3>
+            <button id="close-satker-chart-modal-btn"
+                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
+                <div class="relative w-full h-[260px]">
+                    <canvas id="satkerHistoryChart"></canvas>
+                </div>
+            </div>
+
+            <p id="satker-missing-days"
+               class="text-sm text-gray-200">
+                <!-- Info hari tanpa input diisi dari JS -->
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const hasLucide = typeof lucide !== "undefined";
+    if (hasLucide) lucide.createIcons();
+
+    /* ===================== DATA DASAR SATKER ===================== */
+
+    const CSV_CONTENT = `SATUAN KERJA
+KEJAKSAAN NEGERI PAMEKASAN
+KEJAKSAAN NEGERI PONOROGO
+KEJAKSAAN NEGERI MAGETAN
+KEJAKSAAN NEGERI SITUBONDO
+KEJAKSAAN NEGERI BOJONEGORO
+KEJAKSAAN NEGERI JOMBANG
+KEJAKSAAN NEGERI JEMBER
+KEJAKSAAN NEGERI KABUPATEN MALANG
+KEJAKSAAN NEGERI NGAWI
+KEJAKSAAN NEGERI PACITAN
+KEJAKSAAN NEGERI KABUPATEN MOJOKERTO
+KEJAKSAAN NEGERI GRESIK
+KEJAKSAAN NEGERI BANYUWANGI
+KEJAKSAAN NEGERI KABUPATEN MADIUN
+KEJAKSAAN NEGERI BANGKALAN
+KEJAKSAAN NEGERI BONDOWOSO
+KEJAKSAAN NEGERI LUMAJANG
+KEJAKSAAN NEGERI TANJUNG PERAK
+KEJAKSAAN NEGERI SURABAYA
+KEJAKSAAN NEGERI TUBAN
+KEJAKSAAN NEGERI TULUNG AGUNG
+KEJAKSAAN NEGERI KOTA KEDIRI
+KEJAKSAAN NEGERI BATU
+KEJAKSAAN NEGERI KABUPATEN PASURUAN
+KEJAKSAAN NEGERI BLITAR
+KEJAKSAAN NEGERI SAMPANG
+KEJAKSAAN NEGERI SIDOARJO
+KEJAKSAAN NEGERI SUMENEP
+KEJAKSAAN NEGERI NGANJUK
+KEJAKSAAN NEGERI KABUPATEN PROBOLINGGO
+KEJAKSAAN NEGERI KOTA MALANG
+KEJAKSAAN NEGERI TRENGGALEK`;
+
+    function parseSatuanKerja(csv) {
+        const lines = csv.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+        if (lines.length > 0 && lines[0].toUpperCase() === 'SATUAN KERJA') {
+            return lines.slice(1);
+        }
+        return lines;
+    }
+
+    const SATUAN_KERJA_NAMES = parseSatuanKerja(CSV_CONTENT);
+
+    /* ===================== MOCK DATA KEGIATAN UNTUK MODAL DETAIL ===================== */
+
+   const MOCK_KEGIATAN = {
+    "KEJAKSAAN NEGERI SITUBONDO": [
+        {
+            nama: "Sosialisasi Layanan Hukum",
+            deskripsi: "Kegiatan sosialisasi layanan hukum kepada masyarakat desa binaan.",
+            waktu_mulai: "13:00",
+            waktu_selesai: "15:00",
+            dokumentasi: "https://picsum.photos/900/500?random=4"
+        }
+    ],
+    "KEJAKSAAN NEGERI JEMBER": [
+        {
+            nama: "Monitoring Pelayanan Publik",
+            deskripsi: "Monitoring kualitas pelayanan publik dan penyerapan aspirasi masyarakat.",
+            waktu_mulai: "09:00",
+            waktu_selesai: "10:30",
+            dokumentasi: "https://picsum.photos/900/500?random=2"
+        }
+    ],
+    "KEJAKSAAN NEGERI PACITAN": [
+        {
+            nama: "Rapat Koordinasi Internal",
+            deskripsi: "Rapat koordinasi antara jaksa garda desa, pimpinan, dan perangkat desa.",
+            waktu_mulai: "11:00",
+            waktu_selesai: "12:00",
+            dokumentasi: "https://picsum.photos/900/500?random=3"
+        }
+    ],
+    // ➜ CONTOH: KEJAKSAAN NEGERI JOMBANG
+    "KEJAKSAAN NEGERI JOMBANG": [
+        {
+            nama: "Penyuluhan Hukum di Desa Jombang",
+            deskripsi: "Penyuluhan mengenai pencegahan tindak pidana korupsi dana desa kepada aparat dan masyarakat.",
+            waktu_mulai: "08:30",
+            waktu_selesai: "11:00",
+            dokumentasi: "https://picsum.photos/900/500?random=10"
+        }
+    ]
+    // Satker lain tinggal ditambahkan dengan format yang sama
+};
+
+
+    /* ===================== MENU UTAMA ===================== */
+
+    const MAIN_MENUS = [
+        { id: 'jaksa_garda',           title: 'Jaksa Garda',           subtitle: 'Desa / Kelurahan', icon: 'clipboard-list' },
+        { id: 'jaga_budaya',           title: 'Jaga Budaya',           subtitle: '',                  icon: 'book-open' },
+        { id: 'pengawasan_ormas',      title: 'Pengawasan Ormas / LSM',subtitle: '/ Paguyuban',       icon: 'users' },
+        { id: 'pemantauan_lingkungan', title: 'Pemantauan Lingkungan', subtitle: '',                  icon: 'truck' },
+        { id: 'pemantauan_orang_asing',title: 'Pemantauan Orang Asing',subtitle: '',                  icon: 'map-pin' },
+        { id: 'aset_desa',             title: 'Aset Desa/Kelurahan',   subtitle: 'Selain Tanah dan Bangunan', icon: 'plus-square' },
+        { id: 'kasus_penyelewengan',   title: 'Kasus Penyelewengan',   subtitle: 'oleh Perangkat Desa/Kelurahan', icon: 'alert-triangle' }
+    ];
+
+    function getMenuLabel(menuId) {
+        const menu = MAIN_MENUS.find(m => m.id === menuId);
+        if (!menu) return '';
+        return menu.subtitle ? `${menu.title} ${menu.subtitle}` : menu.title;
+    }
+
+    /* ===================== MOCK DATA PER MENU ===================== */
+
+    function generateMockDataForMenu(names) {
+        const today = new Date();
+        const result = [];
+
+        names.forEach(name => {
+            const history = [];
+
+            for (let i = 19; i >= 0; i--) {
+                const d = new Date(today);
+                d.setDate(today.getDate() - i);
+
+                const target = Math.floor(Math.random() * 4) + 3;   // 3–6
+                const hasInput = Math.random() < 0.7;               // 70% hari punya input
+                const actual = hasInput ? Math.floor(Math.random() * (target + 1)) : 0;
+
+                history.push({
+                    date: d.toISOString().split('T')[0],
+                    target,
+                    actual
+                });
+            }
+
+            const todayRecord = history[history.length - 1];
+
+            // cari tanggal terakhir yang benar-benar ada input (>0)
+            let lastInputDate = null;
+            for (let i = history.length - 1; i >= 0; i--) {
+                if (history[i].actual > 0) {
+                    lastInputDate = history[i].date;
+                    break;
+                }
+            }
+
+            const hour = 8 + Math.floor(Math.random() * 9);
+            const minute = Math.floor(Math.random() * 60);
+            const lastInputTime = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:00`;
+
+            result.push({
+                name,
+                target: todayRecord.target,
+                actual: todayRecord.actual,
+                lastInputDate,
+                lastInputTime,
+                history
+            });
+        });
+
+        return result;
+    }
+
+    // Data per menu: { menuId: [ {name, target, actual, ...}, ... ] }
+    const MENU_DATA = {};
+    MAIN_MENUS.forEach(menu => {
+        MENU_DATA[menu.id] = generateMockDataForMenu(SATUAN_KERJA_NAMES);
+    });
+
+    /* ===================== STATE GLOBAL ===================== */
+
+    let currentMenuId = MAIN_MENUS[0].id;
+    let currentData = [...MENU_DATA[currentMenuId]];
+    let currentStatusFilter = 'all'; // 'all' | 'compliant' | 'pending'
+    let performanceBarChartInstance = null;
+    let satkerHistoryChartInstance = null;
+
+    /* ===================== UTIL ===================== */
+
+    function formatDateLong(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('id-ID', options);
+    }
+
+    function getLastInputDateDisplay(unit) {
+        if (!unit.lastInputDate) return '-';
+        const [y, m, d] = unit.lastInputDate.split('-');
+        return `${d}-${m}-${y}`;
+    }
+
+    /* ===================== RENDER SUMMARY ===================== */
+
+    function renderSummary() {
+        const baseData = MENU_DATA[currentMenuId];
+        const totalUnits = baseData.length;
+        const unitsCompliant = baseData.filter(u => u.actual >= u.target).length;
+        const unitsPending = baseData.filter(u => u.actual < u.target).length;
+
+        const totalTarget = baseData.reduce((sum, u) => sum + u.target, 0);
+        const totalActual = baseData.reduce((sum, u) => sum + u.actual, 0);
+
+        let complianceRate = 0;
+        if (totalTarget > 0) {
+            complianceRate = Math.min((totalActual / totalTarget) * 100, 100);
+        }
+
+        document.getElementById('card-total-units').textContent = totalUnits;
+        document.getElementById('card-units-compliant').textContent = unitsCompliant;
+        document.getElementById('card-units-pending').textContent = unitsPending;
+        document.getElementById('card-compliance-rate').textContent = `${complianceRate.toFixed(0)}%`;
+
+        document.querySelectorAll('.summary-card[data-status]').forEach(card => {
+            const status = card.getAttribute('data-status');
+            card.classList.remove('ring-4', 'ring-emerald-400/50', 'ring-amber-400/50');
+            if (status === currentStatusFilter) {
+                card.classList.add('ring-4', status === 'compliant'
+                    ? 'ring-emerald-400/50'
+                    : 'ring-amber-400/50');
+            }
+        });
+    }
+
+    /* ===================== RENDER TABEL ===================== */
+
+    function renderTable(data) {
+        const tbody = document.getElementById('unit-status-body');
+        const noDataMsg = document.getElementById('no-data-message');
+        tbody.innerHTML = '';
+
+        if (!data.length) {
+            noDataMsg.classList.remove('hidden');
+            return;
+        }
+        noDataMsg.classList.add('hidden');
+
+        data.sort((a, b) => {
+            const aDone = a.actual >= a.target;
+            const bDone = b.actual >= b.target;
+            if (aDone && !bDone) return -1;
+            if (!aDone && bDone) return 1;
+            return a.name.localeCompare(b.name);
+        });
+
+        data.forEach(unit => {
+            const isCompliant = unit.actual >= unit.target;
+            const statusBadge = isCompliant
+                ? `<span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium badge-emerald">
+                        <i data-lucide="check" class="w-4 h-4 mr-1"></i> Selesai
+                   </span>`
+                : `<span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium badge-amber">
+                        <i data-lucide="alert-triangle" class="w-4 h-4 mr-1"></i> Pending
+                   </span>`;
+
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-white/5 transition';
+            row.innerHTML = `
+                <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-100">
+                    ${unit.name}
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-center text-gray-200">
+                    ${unit.target}
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-center font-bold ${isCompliant ? 'text-emerald-300' : 'text-amber-300'}">
+                    ${unit.actual}
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-center">
+                    ${statusBadge}
+                </td>
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-300">
+                    ${getLastInputDateDisplay(unit)} • ${unit.lastInputTime}
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        if (hasLucide) lucide.createIcons();
+    }
+
+    /* ===================== CHART BAR UTAMA ===================== */
+
+    function initPerformanceBarChart(data) {
+    if (performanceBarChartInstance) {
+        performanceBarChartInstance.destroy();
+    }
+
+    const canvas = document.getElementById('performanceBarChart');
+    const ctx = canvas.getContext('2d');
+
+    // ➜ TIDAK ADA LAGI perhitungan tinggi berdasarkan jumlah satker
+    // Tinggi sudah dikunci lewat style="height:380px" di HTML
+
+    const labels = data.map(unit => {
+        const parts = unit.name.split(' ');
+        if (parts.length > 2 && parts[0] === 'KEJAKSAAN' && parts[1] === 'NEGERI') {
+            return `KN ${parts.slice(2).join(' ')}`;
+        }
+        return unit.name.substring(0, 14);
+    });
+
+    const actual = data.map(unit => unit.actual);
+    const target = data.map(unit => unit.target);
+
+    performanceBarChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels,
+            datasets: [
+                {
+                    label: 'Input Aktual',
+                    data: actual,
+                    backgroundColor: '#22C55E',
+                    borderRadius: 4,
+                },
+                {
+                    label: 'Target',
+                    data: target,
+                    backgroundColor: '#4F46E5',
+                    borderRadius: 4,
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false, // biar pakai tinggi dari CSS/inline style
+            animation: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: { color: '#E5E7EB' }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: ctx => data[ctx[0].dataIndex].name
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    stacked: false,
+                    ticks: {
+                        maxRotation: 60,
+                        minRotation: 45,
+                        autoSkip: false,
+                        color: '#E5E7EB'
+                    },
+                    grid: { color: 'rgba(148,163,184,0.25)' }
+                },
+                y: {
+                    stacked: false,
+                    beginAtZero: true,
+                    ticks: { color: '#E5E7EB' },
+                    grid: { color: 'rgba(148,163,184,0.25)' }
+                }
+            }
+        }
+    });
+}
+
+
+    /* ===================== FILTER & MENU ===================== */
+
+    function populateUnitFilter(names) {
+        const select = document.getElementById('filter-unit');
+        const sorted = [...names].sort();
+        sorted.forEach(name => {
+            const opt = document.createElement('option');
+            opt.value = name;
+            opt.textContent = name;
+            select.appendChild(opt);
+        });
+    }
+
+    function getFilteredData() {
+        const unitValue = document.getElementById('filter-unit').value;
+        let base = MENU_DATA[currentMenuId];
+
+        if (unitValue) {
+            base = base.filter(u => u.name === unitValue);
+        } else if (currentStatusFilter === 'compliant') {
+            base = base.filter(u => u.actual >= u.target);
+        } else if (currentStatusFilter === 'pending') {
+            base = base.filter(u => u.actual < u.target);
+        }
+
+        return base;
+    }
+
+    function applyFilter() {
+        const filterDate = document.getElementById('filter-date').value;
+        const displayDate = filterDate ? new Date(filterDate) : new Date();
+        document.getElementById('current-date').textContent = formatDateLong(displayDate);
+
+        currentData = getFilteredData();
+
+        renderSummary();
+        renderTable(currentData);
+        initPerformanceBarChart(currentData);
+    }
+
+    function resetFilter() {
+        const today = new Date();
+        const todayISO = today.toISOString().split('T')[0];
+
+        const dateInput = document.getElementById('filter-date');
+        if (dateInput) dateInput.value = todayISO;
+
+        const unitSelect = document.getElementById('filter-unit');
+        if (unitSelect) unitSelect.value = '';
+
+        currentStatusFilter = 'all';
+        currentData = [...MENU_DATA[currentMenuId]];
+        document.getElementById('current-date').textContent = formatDateLong(today);
+
+        renderSummary();
+        renderTable(currentData);
+        initPerformanceBarChart(currentData);
+    }
+
+    function renderMainMenu() {
+        const container = document.getElementById('main-menu-container');
+        if (!container) return;
+        container.innerHTML = '';
+
+        MAIN_MENUS.forEach(menu => {
+            const isActive = menu.id === currentMenuId;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = [
+                'w-full text-left px-3 py-3 rounded-2xl flex items-start gap-3 transition border',
+                isActive
+                    ? 'bg-sky-500/18 border-sky-400/70 shadow-lg'
+                    : 'bg-black/40 border-white/10 hover:bg-white/10'
+            ].join(' ');
+
+            btn.innerHTML = `
+                <span class="mt-1">
+                    <i data-lucide="${menu.icon}" class="w-5 h-5 text-sky-300"></i>
+                </span>
+                <span class="flex-1">
+                    <span class="block text-sm font-semibold text-gray-100">${menu.title}</span>
+                    ${menu.subtitle
+                        ? `<span class="block text-xs text-gray-300">${menu.subtitle}</span>`
+                        : ''}
+                </span>
+            `;
+
+            btn.addEventListener('click', () => {
+                currentMenuId = menu.id;
+                currentStatusFilter = 'all';
+                document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
+                resetFilter();
+                renderMainMenu();
+            });
+
+            container.appendChild(btn);
+        });
+
+        if (hasLucide) lucide.createIcons();
+    }
+
+    /* ===================== MODAL: DAFTAR SEMUA SATKER + GRAFIK ===================== */
+
+    function showUnitListModal() {
+        const modal = document.getElementById('unit-list-modal');
+        const content = document.getElementById('unit-list-content');
+        content.innerHTML = '';
+
+        const units = [...MENU_DATA[currentMenuId]].sort((a, b) => a.name.localeCompare(b.name));
+
+        units.forEach(unit => {
+            const item = document.createElement('button');
+            item.type = 'button';
+            item.className =
+                'w-full text-left text-sm text-gray-100 p-2 bg-white/5 rounded-xl hover:bg-sky-500/30 hover:text-white transition border border-white/10 flex justify-between items-center';
+            item.innerHTML = `
+                <span>${unit.name}</span>
+                <span class="text-xs text-sky-200 flex items-center gap-1">
+                    Lihat Grafik
+                    <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                </span>
+            `;
+            item.addEventListener('click', () => {
+                showSatkerChart(unit.name);
+            });
+            content.appendChild(item);
+        });
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        if (hasLucide) lucide.createIcons();
+    }
+
+    function hideUnitListModal() {
+        const modal = document.getElementById('unit-list-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    function showSatkerChart(unitName) {
+        const modal = document.getElementById('satker-chart-modal');
+        const titleEl = document.getElementById('satker-chart-title');
+        const missingEl = document.getElementById('satker-missing-days');
+        const canvas = document.getElementById('satkerHistoryChart');
+        const ctx = canvas.getContext('2d');
+
+        const unit = MENU_DATA[currentMenuId].find(u => u.name === unitName);
+        if (!unit || !unit.history) {
+            missingEl.textContent = 'Data tidak tersedia untuk satker ini.';
+            return;
+        }
+
+        const historySorted = [...unit.history].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        const labels = [];
+        const actualData = [];
+        const targetData = [];
+        const missingDays = [];
+
+        historySorted.forEach(h => {
+            const dateObj = new Date(h.date);
+            const labelFull = dateObj.toLocaleDateString('id-ID', { weekday: 'short', day: '2-digit', month: '2-digit' });
+
+            if (h.actual && h.actual > 0) {
+                labels.push(labelFull);
+                actualData.push(h.actual);
+                targetData.push(h.target);
+            } else {
+                missingDays.push(labelFull);
+            }
+        });
+
+        canvas.height = 260;
+
+        if (satkerHistoryChartInstance) {
+            satkerHistoryChartInstance.destroy();
+        }
+
+        satkerHistoryChartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels,
+                datasets: [
+                    {
+                        label: 'Input Aktual',
+                        data: actualData,
+                        backgroundColor: '#0EA5E9',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Target Harian',
+                        data: targetData,
+                        backgroundColor: '#4F46E5',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: {
+                    legend: { position: 'top', labels: { color: '#E5E7EB' } },
+                },
+                scales: {
+                    x: { ticks: { maxRotation: 60, minRotation: 40, color: '#E5E7EB' }, grid: { color: 'rgba(148,163,184,0.25)' } },
+                    y: { beginAtZero: true, ticks: { color: '#E5E7EB' }, grid: { color: 'rgba(148,163,184,0.25)' } }
+                }
+            }
+        });
+
+        if (missingDays.length > 0) {
+            missingEl.innerHTML = `
+                <span class="font-semibold">Hari tanpa input (0 laporan) dalam 20 hari terakhir:</span>
+                <br>${missingDays.join(', ')}
+            `;
+        } else {
+            missingEl.innerHTML = `
+                <span class="font-semibold text-emerald-300">Satker ini menyelesaikan input pada semua 20 hari terakhir.</span>
+            `;
+        }
+
+        titleEl.textContent = `Kinerja 20 Hari Terakhir - ${unitName}`;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function hideSatkerChartModal() {
+        const modal = document.getElementById('satker-chart-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    /* ===================== MODAL: SATKER SELESAI / PENDING ===================== */
+
+    function showSatkerStatusModal(type) {
+        const modal = document.getElementById('satker-modal');
+        const titleEl = document.getElementById('satker-modal-title');
+        const listContainer = document.getElementById('satker-list-container');
+
+        let filteredData = [];
+        let titleText = '';
+        let statusBadgeClass = '';
+
+        if (type === 'compliant') {
+            filteredData = MENU_DATA[currentMenuId].filter(u => u.actual >= u.target);
+            titleText = 'Daftar Satuan Kerja Selesai Input Hari Ini';
+            statusBadgeClass = 'badge-emerald';
+        } else {
+            filteredData = MENU_DATA[currentMenuId].filter(u => u.actual < u.target);
+            titleText = 'Daftar Satuan Kerja Belum Selesai Input';
+            statusBadgeClass = 'badge-amber';
+        }
+
+        titleEl.textContent = titleText;
+        listContainer.innerHTML = '';
+
+        if (filteredData.length === 0) {
+            listContainer.innerHTML = '<p class="text-center text-gray-300 py-4">Tidak ada Satker dalam kategori ini.</p>';
+        } else {
+            filteredData.forEach(unit => {
+                const selesai = unit.actual >= unit.target;
+                const statusText = selesai ? 'Selesai' : 'Belum Selesai';
+                const jam = unit.lastInputTime || 'Belum Input';
+
+                const wrapper = document.createElement('button');
+                wrapper.type = 'button';
+                wrapper.className =
+                    'w-full flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10 cursor-pointer hover:bg-white/10';
+
+                wrapper.innerHTML = `
+                    <div class="flex flex-col text-left">
+                        <span class="font-semibold text-gray-100 underline">${unit.name}</span>
+                        <span class="text-xs text-gray-300">Waktu Input: ${jam}</span>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-xs font-medium ${statusBadgeClass}">
+                        ${statusText}
+                    </span>
+                `;
+                wrapper.addEventListener('click', () => {
+                    showDetailKegiatan(unit.name);
+                });
+                listContainer.appendChild(wrapper);
+            });
+        }
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        if (hasLucide) lucide.createIcons();
+    }
+
+    function hideSatkerStatusModal() {
+        const modal = document.getElementById('satker-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    /* ===================== MODAL: DETAIL KEGIATAN ===================== */
+
+	function showDetailKegiatan(unitName) {
+		const modal = document.getElementById("detail-kegiatan-modal");
+		const title = document.getElementById("detail-kegiatan-title");
+		const content = document.getElementById("detail-kegiatan-content");
+
+		title.textContent = `Detail Kegiatan - ${unitName}`;
+		content.innerHTML = "";
+
+		const kegiatanList = MOCK_KEGIATAN[unitName] || [];
+
+		if (kegiatanList.length === 0) {
+			content.innerHTML =
+				`<p class="text-center text-gray-300 py-4">Belum ada data kegiatan untuk unit ini.</p>`;
+		} else {
+			kegiatanList.forEach(k => {
+				content.innerHTML += `
+					<div class="border border-white/10 rounded-2xl p-4 shadow-sm bg-white/5">
+						<h4 class="text-lg font-semibold text-gray-100">${k.nama}</h4>
+						<p class="text-sm text-gray-200 mt-1">
+							<b>Mulai:</b> ${k.waktu_mulai} WIB<br>
+							<b>Selesai:</b> ${k.waktu_selesai} WIB
+						</p>
+						${k.deskripsi ? `
+							<p class="text-sm text-gray-300 mt-2">
+								${k.deskripsi}
+							</p>
+						` : ""}
+						${k.dokumentasi ? `
+							<img src="${k.dokumentasi}" class="w-full rounded-xl mt-3 shadow" alt="Dokumentasi kegiatan">
+						` : ""}
+					</div>
+				`;
+			});
+		}
+
+		modal.classList.remove("hidden");
+		modal.classList.add("flex");
+	}
+
+
+    function hideDetailKegiatan() {
+        const modal = document.getElementById("detail-kegiatan-modal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
+
+    /* ===================== INIT ===================== */
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const today = new Date();
+        const todayISO = today.toISOString().split('T')[0];
+
+        const dateInput = document.getElementById('filter-date');
+        if (dateInput) dateInput.value = todayISO;
+
+        document.getElementById('current-date').textContent = formatDateLong(today);
+        document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
+
+        populateUnitFilter(SATUAN_KERJA_NAMES);
+
+        currentData = [...MENU_DATA[currentMenuId]];
+        renderMainMenu();
+        renderSummary();
+        renderTable(currentData);
+        initPerformanceBarChart(currentData);
+
+        // tombol filter
+        document.getElementById('apply-filter-btn').addEventListener('click', applyFilter);
+        document.getElementById('reset-filter-btn').addEventListener('click', resetFilter);
+        document.getElementById('print-btn').addEventListener('click', () => window.print());
+
+        // summary cards
+        document.getElementById('total-units-card').addEventListener('click', () => {
+            currentStatusFilter = 'all';
+            applyFilter();
+            showUnitListModal();
+        });
+
+        document.getElementById('compliant-card').addEventListener('click', () => {
+            currentStatusFilter = 'compliant';
+            applyFilter();
+            showSatkerStatusModal('compliant');
+        });
+
+        document.getElementById('pending-card').addEventListener('click', () => {
+            currentStatusFilter = 'pending';
+            applyFilter();
+            showSatkerStatusModal('pending');
+        });
+
+        // close modals (klik tombol X)
+        document.getElementById('close-modal-btn').addEventListener('click', hideUnitListModal);
+        document.getElementById('close-satker-modal-btn').addEventListener('click', hideSatkerStatusModal);
+        document.getElementById('close-satker-chart-modal-btn').addEventListener('click', hideSatkerChartModal);
+
+        // close modals (klik area gelap)
+        document.getElementById('unit-list-modal').addEventListener('click', e => {
+            if (e.target.id === 'unit-list-modal') hideUnitListModal();
+        });
+        document.getElementById('satker-modal').addEventListener('click', e => {
+            if (e.target.id === 'satker-modal') hideSatkerStatusModal();
+        });
+        document.getElementById('detail-kegiatan-modal').addEventListener('click', e => {
+            if (e.target.id === 'detail-kegiatan-modal') hideDetailKegiatan();
+        });
+        document.getElementById('satker-chart-modal').addEventListener('click', e => {
+            if (e.target.id === 'satker-chart-modal') hideSatkerChartModal();
+        });
+    });
+</script>
+</body>
+</html>
