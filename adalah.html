@@ -879,7 +879,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
     /* ===================== STATE GLOBAL ===================== */
 
-    let currentMenuId = MAIN_MENUS[0].id;
+    // Set default menu to jaga_budaya (menu kedua) karena jaksa_garda tidak punya CSV
+    let currentMenuId = 'jaga_budaya';  // MAIN_MENUS[1].id
     let currentData = [...MENU_DATA[currentMenuId]];
     let currentStatusFilter = 'all'; // 'all' | 'compliant' | 'pending'
     let performanceBarChartInstance = null;
@@ -1419,6 +1420,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
     // Simpan data CSV untuk setiap menu
     const CSV_DATA = {
+        'jaksa_garda': [],  // Added for consistency
         'jaga_budaya': [],
         'pengawasan_ormas': [],
         'pemantauan_lingkungan': [],
@@ -1427,39 +1429,65 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         'kasus_penyelewengan': []
     };
 
-    // Fungsi untuk parsing CSV
+    // Fungsi untuk parsing CSV - improved version
     function parseCSV(csvText) {
         const lines = csvText.trim().split('\n');
-        const headers = lines[0].split(',');
+        if (lines.length === 0) return [];
+        
+        const headers = lines[0].split(',').map(h => h.trim());
         const data = [];
         
+        console.log('  📋 CSV Headers:', headers);
+        
         for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',');
-            if (values.length === headers.length) {
+            const line = lines[i].trim();
+            if (!line) continue; // Skip empty lines
+            
+            const values = line.split(',');
+            if (values.length >= headers.length) {
                 const obj = {};
                 headers.forEach((header, index) => {
-                    obj[header.trim()] = values[index].trim();
+                    obj[header] = values[index] ? values[index].trim() : '';
                 });
                 data.push(obj);
             }
         }
+        
+        console.log(`  ✓ Parsed ${data.length} rows`);
+        if (data.length > 0) {
+            console.log('  Sample:', data[0]);
+        }
+        
         return data;
     }
 
     // Fungsi untuk load CSV file
     async function loadCSVData(menuId, fileName) {
         try {
+            console.log(`\n📂 Loading ${fileName} for menu ${menuId}...`);
             const response = await fetch(fileName);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const csvText = await response.text();
+            console.log(`  ✓ Fetched ${csvText.length} characters`);
+            
             CSV_DATA[menuId] = parseCSV(csvText);
+            console.log(`✅ ${menuId}: ${CSV_DATA[menuId].length} rows loaded\n`);
+            
             return CSV_DATA[menuId].length;
         } catch (error) {
-            console.error(`Error loading ${fileName}:`, error);
+            console.error(`❌ Error loading ${fileName}:`, error);
+            CSV_DATA[menuId] = [];
             return 0;
         }
     }
 
     async function renderTopStatsCards() {
+        console.log('\n🎨 === RENDERING TOP STATS CARDS ===\n');
+        
         const menuConfig = [
             { id: 'jaga_budaya', label: 'Jaga Budaya', chartId: 'chartJagaBudaya', totalId: 'totalJagaBudaya', breakdownId: 'breakdownJagaBudaya', color: 'rgba(103, 232, 249, 1)', csvFile: 'jaga_budaya.csv' },
             { id: 'pengawasan_ormas', label: 'Pengawasan Ormas', chartId: 'chartPengawasanOrmas', totalId: 'totalPengawasanOrmas', breakdownId: 'breakdownPengawasanOrmas', color: 'rgba(192, 132, 252, 1)', csvFile: 'pengawasan_ormas.csv' },
@@ -1517,10 +1545,15 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         }
 
         // Update disparitas dan map setelah semua CSV selesai load
+        console.log('\n📊 All CSV files loaded!');
+        console.log('CSV_DATA summary:', Object.keys(CSV_DATA).map(key => `  ${key}: ${CSV_DATA[key].length} rows`).join('\n'));
+        console.log('\n⏰ Scheduling chart and map updates in 500ms...\n');
+        
         setTimeout(() => {
+            console.log('🔄 NOW triggering chart and map updates...\n');
             updateDisparitasChart();
             updateMap();
-        }, 200);
+        }, 500);
     }
 
     /* ===================== INIT ===================== */
@@ -1597,11 +1630,19 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let disparitasChartInstance = null;
 
     async function initDisparitasChart() {
+        console.log('\n📈 === INIT DISPARITAS CHART ===');
+        
         // Tunggu sampai CSV_DATA siap - delay lebih lama
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('=== INIT CHART ===');
-        console.log('Current menu ID:', currentMenuId);
-        console.log('CSV_DATA keys:', Object.keys(CSV_DATA));
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        console.log('  Current menu ID:', currentMenuId);
+        console.log('  CSV_DATA keys:', Object.keys(CSV_DATA));
+        console.log('  Data for current menu:', CSV_DATA[currentMenuId] ? CSV_DATA[currentMenuId].length + ' rows' : 'NOT LOADED');
+        
+        if (!CSV_DATA[currentMenuId] || CSV_DATA[currentMenuId].length === 0) {
+            console.error('  ⚠️ WARNING: CSV_DATA not ready for', currentMenuId);
+        }
+        
         updateDisparitasChart();
     }
 
@@ -1778,7 +1819,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let markersLayer = null;
 
     async function initMap() {
-        console.log('=== INIT MAP ===');
+        console.log('\n🗺️  === INIT MAP ===');
         
         // Inisialisasi Leaflet Map - fokus ke Jawa Timur
         mapInstance = L.map('mapLeaflet').setView([-7.5, 112.5], 8);
@@ -1791,8 +1832,16 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         markersLayer = L.layerGroup().addTo(mapInstance);
 
         // Tunggu data CSV siap
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('Map siap, update markers...');
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        console.log('  Current menu ID for map:', currentMenuId);
+        console.log('  Data for map:', CSV_DATA[currentMenuId] ? CSV_DATA[currentMenuId].length + ' rows' : 'NOT LOADED');
+        
+        if (!CSV_DATA[currentMenuId] || CSV_DATA[currentMenuId].length === 0) {
+            console.error('  ⚠️ WARNING: CSV_DATA not ready for map', currentMenuId);
+        }
+        
+        console.log('  Updating map markers...');
         updateMap();
     }
 
