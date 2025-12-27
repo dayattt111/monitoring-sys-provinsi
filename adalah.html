@@ -519,8 +519,10 @@
                     Target vs Aktual per Satker
                 </h6>
                 <div class="relative w-full overflow-x-auto bg-black/35 rounded-2xl p-2 border border-white/10">
-					<canvas id="performanceBarChart" class="min-w-full"></canvas>
-				</div>
+                    <div id="performanceBarChartContainer" style="min-height: 400px;">
+                        <canvas id="performanceBarChart"></canvas>
+                    </div>
+                </div>
 
             </div>
 
@@ -1206,82 +1208,172 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     /* ===================== CHART BAR UTAMA ===================== */
 
     function initPerformanceBarChart(data) {
-    if (performanceBarChartInstance) {
-        performanceBarChartInstance.destroy();
-    }
-
-    const canvas = document.getElementById('performanceBarChart');
-    const ctx = canvas.getContext('2d');
-
-    // ➜ TIDAK ADA LAGI perhitungan tinggi berdasarkan jumlah satker
-    // Tinggi sudah dikunci lewat style="height:380px" di HTML
-
-    const labels = data.map(unit => {
-        const parts = unit.name.split(' ');
-        if (parts.length > 2 && parts[0] === 'KEJAKSAAN' && parts[1] === 'NEGERI') {
-            return `KN ${parts.slice(2).join(' ')}`;
+        if (performanceBarChartInstance) {
+            performanceBarChartInstance.destroy();
         }
-        return unit.name.substring(0, 14);
-    });
 
-    const actual = data.map(unit => unit.actual);
-    const target = data.map(unit => unit.target);
+        const canvas = document.getElementById('performanceBarChart');
+        const container = document.getElementById('performanceBarChartContainer');
+        const ctx = canvas.getContext('2d');
 
-    performanceBarChartInstance = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels,
-            datasets: [
-                {
-                    label: 'Input Aktual',
-                    data: actual,
-                    backgroundColor: '#22C55E',
-                    borderRadius: 4,
-                },
-                {
-                    label: 'Target',
-                    data: target,
-                    backgroundColor: '#4F46E5',
-                    borderRadius: 4,
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false, // biar pakai tinggi dari CSS/inline style
-            animation: false,
-            plugins: {
-                legend: {
-                    position: 'top',
-                    labels: { color: '#E5E7EB' }
-                },
-                tooltip: {
-                    callbacks: {
-                        title: ctx => data[ctx[0].dataIndex].name
+        // Ambil data CSV untuk menu aktif
+        const csvData = CSV_DATA[currentMenuId] || [];
+        
+        if (csvData.length === 0) {
+            console.warn('Tidak ada CSV data untuk chart');
+            container.innerHTML = '<div class="text-center py-8 text-gray-400">Memuat data...</div>';
+            return;
+        }
+
+        // Hitung data per kabupaten dari CSV
+        const kabupatenList = [
+            'Surabaya', 'Malang', 'Banyuwangi', 'Jember', 'Sidoarjo', 'Gresik', 
+            'Mojokerto', 'Kediri', 'Blitar', 'Probolinggo', 'Pasuruan', 'Tulungagung',
+            'Madiun', 'Ponorogo', 'Ngawi', 'Bojonegoro', 'Tuban', 'Lamongan',
+            'Pacitan', 'Trenggalek', 'Nganjuk', 'Jombang', 'Bondowoso', 'Situbondo',
+            'Lumajang', 'Pamekasan', 'Sampang', 'Sumenep', 'Bangkalan', 'Batu', 'Magetan'
+        ];
+
+        const kabupatenCounts = {};
+        
+        csvData.forEach(row => {
+            let kabupaten = row['Kabupaten/Kota'] || row.Kabupaten || '';
+            
+            if (!kabupaten) {
+                const satker = row['Nama Satker'] || '';
+                for (const kab of kabupatenList) {
+                    if (satker.toUpperCase().includes(kab.toUpperCase())) {
+                        kabupaten = kab;
+                        break;
                     }
                 }
+            }
+            
+            if (kabupaten && kabupaten !== 'UNKNOWN') {
+                kabupaten = kabupaten.trim();
+                kabupatenCounts[kabupaten] = (kabupatenCounts[kabupaten] || 0) + 1;
+            }
+        });
+
+        // Sort dan ambil top 15
+        const sortedKabupaten = Object.entries(kabupatenCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 15);
+
+        if (sortedKabupaten.length === 0) {
+            container.innerHTML = '<div class="text-center py-8 text-gray-400">Tidak ada data untuk ditampilkan</div>';
+            return;
+        }
+
+        const labels = sortedKabupaten.map(([kab]) => kab);
+        const dataValues = sortedKabupaten.map(([, count]) => count);
+
+        // Set tinggi container dinamis
+        const minHeight = 400;
+        const calculatedHeight = Math.max(minHeight, sortedKabupaten.length * 35);
+        container.style.height = calculatedHeight + 'px';
+
+        // Buat gradient untuk line
+        const gradient = ctx.createLinearGradient(0, 0, 0, calculatedHeight);
+        gradient.addColorStop(0, 'rgba(34, 211, 238, 0.4)');
+        gradient.addColorStop(1, 'rgba(34, 211, 238, 0.05)');
+
+        performanceBarChartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    label: 'Jumlah Data',
+                    data: dataValues,
+                    borderColor: '#22D3EE',
+                    backgroundColor: gradient,
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: '#22D3EE',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                    pointHoverBackgroundColor: '#06B6D4',
+                    pointHoverBorderColor: '#fff',
+                    pointHoverBorderWidth: 3
+                }]
             },
-            scales: {
-                x: {
-                    stacked: false,
-                    ticks: {
-                        maxRotation: 60,
-                        minRotation: 45,
-                        autoSkip: false,
-                        color: '#E5E7EB'
-                    },
-                    grid: { color: 'rgba(148,163,184,0.25)' }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 800,
+                    easing: 'easeInOutQuart'
                 },
-                y: {
-                    stacked: false,
-                    beginAtZero: true,
-                    ticks: { color: '#E5E7EB' },
-                    grid: { color: 'rgba(148,163,184,0.25)' }
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: { 
+                            color: '#E5E7EB',
+                            padding: 15,
+                            font: {
+                                size: 13,
+                                weight: 'bold'
+                            },
+                            usePointStyle: true
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                        titleColor: '#22D3EE',
+                        bodyColor: '#fff',
+                        borderColor: '#22D3EE',
+                        borderWidth: 1,
+                        padding: 12,
+                        displayColors: false,
+                        callbacks: {
+                            title: function(context) {
+                                return context[0].label;
+                            },
+                            label: function(context) {
+                                return 'Total: ' + context.parsed.y.toLocaleString('id-ID') + ' data';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { 
+                            color: '#E5E7EB',
+                            font: { size: 11 },
+                            maxRotation: 45,
+                            minRotation: 45
+                        },
+                        grid: { 
+                            color: 'rgba(148,163,184,0.1)',
+                            display: true
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { 
+                            color: '#E5E7EB',
+                            font: { size: 11 },
+                            callback: function(value) {
+                                return value.toLocaleString('id-ID');
+                            }
+                        },
+                        grid: { 
+                            color: 'rgba(148,163,184,0.15)',
+                            display: true
+                        }
+                    }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'index'
                 }
             }
-        }
-    });
-}
+        });
+    }
 
 
     /* ===================== FILTER & MENU ===================== */
@@ -1380,6 +1472,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 // Update disparitas dan map
                 updateDisparitasChart();
                 updateMap();
+                // Update line chart
+                initPerformanceBarChart();
             });
 
             container.appendChild(btn);
@@ -1791,7 +1885,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         renderMainMenu();
         renderSummary();
         renderTable(currentData);
-        initPerformanceBarChart(currentData);
+        initPerformanceBarChart();
         renderTopStatsCards();
 
         // tombol filter
@@ -1898,6 +1992,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             updateDisparitasChart();
             console.log(`  🗺️  Updating map for ${currentMenuId}...`);
             updateMap();
+            console.log(`  📈 Updating line chart for ${currentMenuId}...`);
+            initPerformanceBarChart();
             
             // Reset countdown
             countdown = 5;
