@@ -1212,18 +1212,33 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             performanceBarChartInstance.destroy();
         }
 
-        const canvas = document.getElementById('performanceBarChart');
         const container = document.getElementById('performanceBarChartContainer');
+        let canvas = document.getElementById('performanceBarChart');
+        
+        // Pastikan canvas ada di container
+        if (!canvas) {
+            container.innerHTML = '<canvas id="performanceBarChart"></canvas>';
+            canvas = document.getElementById('performanceBarChart');
+        }
+        
         const ctx = canvas.getContext('2d');
 
         // Ambil data CSV untuk menu aktif
         const csvData = CSV_DATA[currentMenuId] || [];
         
         if (csvData.length === 0) {
-            console.warn('Tidak ada CSV data untuk chart');
-            container.innerHTML = '<div class="text-center py-8 text-gray-400">Memuat data...</div>';
+            console.warn(`⚠️ Tidak ada CSV data untuk chart menu: ${currentMenuId}`);
+            container.innerHTML = `
+                <canvas id="performanceBarChart" style="display:none;"></canvas>
+                <div class="text-center py-12">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto mb-4"></div>
+                    <p class="text-gray-400 text-sm">Memuat data chart...</p>
+                </div>
+            `;
             return;
         }
+        
+        console.log(`✅ Chart rendering with ${csvData.length} rows for menu: ${currentMenuId}`);
 
         // Hitung data per kabupaten dari CSV
         const kabupatenList = [
@@ -1261,7 +1276,10 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             .slice(0, 15);
 
         if (sortedKabupaten.length === 0) {
-            container.innerHTML = '<div class="text-center py-8 text-gray-400">Tidak ada data untuk ditampilkan</div>';
+            container.innerHTML = `
+                <canvas id="performanceBarChart" style="display:none;"></canvas>
+                <div class="text-center py-8 text-gray-400">Tidak ada data kabupaten untuk ditampilkan</div>
+            `;
             return;
         }
 
@@ -1863,6 +1881,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             console.log('🔄 NOW triggering chart and map updates...\n');
             updateDisparitasChart();
             updateMap();
+            initPerformanceBarChart();  // Init line chart setelah CSV loaded
             renderStatistikPerkara();  // Render statistik perkara
         }, 500);
     }
@@ -1885,7 +1904,6 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         renderMainMenu();
         renderSummary();
         renderTable(currentData);
-        initPerformanceBarChart();
         renderTopStatsCards();
 
         // tombol filter
