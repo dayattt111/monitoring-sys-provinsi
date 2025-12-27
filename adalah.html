@@ -1512,9 +1512,15 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                             tooltip: { enabled: false }
                         }
                     }
-                });
+                });  
             }
         }
+
+        // Update disparitas dan map setelah semua CSV selesai load
+        setTimeout(() => {
+            updateDisparitasChart();
+            updateMap();
+        }, 200);
     }
 
     /* ===================== INIT ===================== */
@@ -1591,30 +1597,96 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let disparitasChartInstance = null;
 
     async function initDisparitasChart() {
-        // Tunggu sampai CSV_DATA siap
-        await new Promise(resolve => setTimeout(resolve, 100));
+        // Tunggu sampai CSV_DATA siap - delay lebih lama
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        console.log('=== INIT CHART ===');
+        console.log('Current menu ID:', currentMenuId);
+        console.log('CSV_DATA keys:', Object.keys(CSV_DATA));
         updateDisparitasChart();
     }
 
     function updateDisparitasChart() {
+        console.log('=== UPDATE CHART ===');
+        console.log('Menu aktif:', currentMenuId);
+        
         // Hitung jumlah data per kabupaten untuk menu yang aktif
         const kabupatenCounts = {};
         
         // Ambil data dari menu yang sedang aktif
         const menuData = CSV_DATA[currentMenuId] || [];
         
+        console.log('Jumlah data untuk menu ' + currentMenuId + ':', menuData.length);
+        
+        if (menuData.length === 0) {
+            console.warn('⚠️ Tidak ada data untuk menu:', currentMenuId);
+            return;
+        }
+        
+        // Log sample data untuk debug
+        if (menuData[0]) {
+            console.log('Sample row:', menuData[0]);
+            console.log('Available columns:', Object.keys(menuData[0]));
+        }
+        
+        // Daftar kabupaten Jawa Timur untuk matching
+        const kabupatenList = [
+            'Surabaya', 'Malang', 'Banyuwangi', 'Jember', 'Sidoarjo', 'Gresik', 
+            'Mojokerto', 'Kediri', 'Blitar', 'Probolinggo', 'Pasuruan', 'Tulungagung',
+            'Madiun', 'Ponorogo', 'Ngawi', 'Bojonegoro', 'Tuban', 'Lamongan',
+            'Pacitan', 'Trenggalek', 'Nganjuk', 'Jombang', 'Bondowoso', 'Situbondo',
+            'Lumajang', 'Pamekasan', 'Sampang', 'Sumenep', 'Bangkalan', 'Batu', 'Magetan'
+        ];
+        
         menuData.forEach(row => {
-            const kabupaten = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || 'UNKNOWN';
-            if (!kabupatenCounts[kabupaten]) {
-                kabupatenCounts[kabupaten] = 0;
+            // Try to get kabupaten from different possible columns
+            let kabupaten = row['Kabupaten/Kota'] || row.Kabupaten || '';
+            
+            // Jika tidak ada kolom kabupaten, coba extract dari Nama Satker atau Desa
+            if (!kabupaten) {
+                const satker = row['Nama Satker'] || '';
+                const desa = row['Desa / Kelurahan'] || row['Desa/Kelurahan'] || '';
+                
+                // Try to match kabupaten from satker name (e.g., "KEJAKSAAN NEGERI MALANG")
+                for (const kab of kabupatenList) {
+                    if (satker.toUpperCase().includes(kab.toUpperCase())) {
+                        kabupaten = kab;
+                        break;
+                    }
+                }
+                
+                // If still not found, try from desa name
+                if (!kabupaten) {
+                    for (const kab of kabupatenList) {
+                        if (desa.toUpperCase().includes(kab.toUpperCase())) {
+                            kabupaten = kab;
+                            break;
+                        }
+                    }
+                }
             }
-            kabupatenCounts[kabupaten]++;
+            
+            if (kabupaten && kabupaten !== 'UNKNOWN') {
+                kabupaten = kabupaten.trim();
+                if (!kabupatenCounts[kabupaten]) {
+                    kabupatenCounts[kabupaten] = 0;
+                }
+                kabupatenCounts[kabupaten]++;
+            }
         });
+
+        console.log('Kabupaten yang ditemukan:', Object.keys(kabupatenCounts).length);
 
         // Sort by count
         const sortedKabupaten = Object.entries(kabupatenCounts)
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10); // Top 10
+
+        if (sortedKabupaten.length === 0) {
+            console.error('❌ Tidak ada data kabupaten');
+            return;
+        }
+
+        console.log('Top 10 kabupaten:', sortedKabupaten);
 
         const labels = sortedKabupaten.map(([kab]) => {
             // Singkat nama kabupaten
@@ -1624,65 +1696,80 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         const counts = sortedKabupaten.map(([, count]) => count);
 
         // Update info
-        if (sortedKabupaten.length > 0) {
-            const [topKab, topCount] = sortedKabupaten[0];
-            const [lowKab, lowCount] = sortedKabupaten[sortedKabupaten.length - 1];
-            
-            document.getElementById('currentSatker').textContent = topKab;
-            document.getElementById('kasusTertinggi').textContent = `${topCount.toLocaleString('id-ID')} Data`;
-            document.getElementById('kasusTerendah').textContent = `${lowCount.toLocaleString('id-ID')} Data`;
-        }
+        const [topKab, topCount] = sortedKabupaten[0];
+        const [lowKab, lowCount] = sortedKabupaten[sortedKabupaten.length - 1];
+        
+        const currentSatkerEl = document.getElementById('currentSatker');
+        const kasusTertinggiEl = document.getElementById('kasusTertinggi');
+        const kasusTerendahEl = document.getElementById('kasusTerendah');
+        
+        if (currentSatkerEl) currentSatkerEl.textContent = topKab;
+        if (kasusTertinggiEl) kasusTertinggiEl.textContent = `${topCount.toLocaleString('id-ID')} Data`;
+        if (kasusTerendahEl) kasusTerendahEl.textContent = `${lowCount.toLocaleString('id-ID')} Data`;
 
         // Create chart
         const canvas = document.getElementById('disparitasChart');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            
-            if (disparitasChartInstance) {
-                disparitasChartInstance.destroy();
-            }
+        if (!canvas) {
+            console.error('❌ Canvas element tidak ditemukan!');
+            return;
+        }
+        
+        console.log('✓ Canvas ditemukan, membuat chart...');
+        const ctx = canvas.getContext('2d');
+        
+        if (disparitasChartInstance) {
+            console.log('Menghapus chart lama...');
+            disparitasChartInstance.destroy();
+        }
 
-            disparitasChartInstance = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Jumlah Kasus',
-                        data: counts,
-                        backgroundColor: 'rgba(34, 211, 238, 0.8)',
-                        borderColor: 'rgba(34, 211, 238, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
-                            titleColor: '#fff',
-                            bodyColor: '#fff',
-                            borderColor: 'rgba(255, 255, 255, 0.3)',
-                            borderWidth: 1
-                        }
-                    },
-                    scales: {
-                        x: {
-                            ticks: { 
-                                color: '#E5E7EB',
-                                font: { size: 10 }
-                            },
-                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
-                        },
-                        y: {
-                            ticks: { color: '#E5E7EB' },
-                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+        disparitasChartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Jumlah Data',
+                    data: counts,
+                    backgroundColor: 'rgba(34, 211, 238, 0.8)',
+                    borderColor: 'rgba(34, 211, 238, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                        titleColor: '#fff',
+                        bodyColor: '#fff',
+                        borderColor: 'rgba(255, 255, 255, 0.3)',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                return 'Jumlah: ' + context.parsed.y + ' data';
+                            }
                         }
                     }
+                },
+                scales: {
+                    x: {
+                        ticks: { 
+                            color: '#E5E7EB',
+                            font: { size: 10 }
+                        },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#E5E7EB' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    }
                 }
-            });
-        }
+            }
+        });
+        
+        console.log('✅ Chart berhasil dibuat!');
     }
 
     /* ===================== MAP LEAFLET ===================== */
@@ -1691,6 +1778,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let markersLayer = null;
 
     async function initMap() {
+        console.log('=== INIT MAP ===');
+        
         // Inisialisasi Leaflet Map - fokus ke Jawa Timur
         mapInstance = L.map('mapLeaflet').setView([-7.5, 112.5], 8);
 
@@ -1702,12 +1791,19 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         markersLayer = L.layerGroup().addTo(mapInstance);
 
         // Tunggu data CSV siap
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        console.log('Map siap, update markers...');
         updateMap();
     }
 
     function updateMap() {
-        if (!markersLayer) return;
+        console.log('=== UPDATE MAP ===');
+        console.log('Menu aktif:', currentMenuId);
+        
+        if (!markersLayer || !mapInstance) {
+            console.error('❌ Map belum diinisialisasi!');
+            return;
+        }
         
         // Hapus markers lama
         markersLayer.clearLayers();
@@ -1751,13 +1847,69 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         const kabupatenStats = {};
         const menuData = CSV_DATA[currentMenuId] || [];
         
+        console.log('Data untuk map:', menuData.length, 'rows');
+        
+        if (menuData.length === 0) {
+            console.warn('⚠️ Tidak ada data untuk map menu:', currentMenuId);
+            return;
+        }
+        
+        // Log sample untuk debug
+        if (menuData[0]) {
+            console.log('Sample row untuk map:', menuData[0]);
+        }
+        
+        // Daftar kabupaten Jawa Timur untuk matching
+        const kabupatenList = [
+            'Surabaya', 'Malang', 'Banyuwangi', 'Jember', 'Sidoarjo', 'Gresik', 
+            'Mojokerto', 'Kediri', 'Blitar', 'Probolinggo', 'Pasuruan', 'Tulungagung',
+            'Madiun', 'Ponorogo', 'Ngawi', 'Bojonegoro', 'Tuban', 'Lamongan',
+            'Pacitan', 'Trenggalek', 'Nganjuk', 'Jombang', 'Bondowoso', 'Situbondo',
+            'Lumajang', 'Pamekasan', 'Sampang', 'Sumenep', 'Bangkalan', 'Batu', 'Magetan'
+        ];
+        
         menuData.forEach(row => {
-            const kabupaten = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || 'UNKNOWN';
-            if (!kabupatenStats[kabupaten]) {
-                kabupatenStats[kabupaten] = 0;
+            // Try to get kabupaten from different possible columns
+            let kabupaten = row['Kabupaten/Kota'] || row.Kabupaten || '';
+            
+            // Jika tidak ada kolom kabupaten, coba extract dari Nama Satker atau Desa
+            if (!kabupaten) {
+                const satker = row['Nama Satker'] || '';
+                const desa = row['Desa / Kelurahan'] || row['Desa/Kelurahan'] || '';
+                
+                // Try to match kabupaten from satker name (e.g., "KEJAKSAAN NEGERI MALANG")
+                for (const kab of kabupatenList) {
+                    if (satker.toUpperCase().includes(kab.toUpperCase())) {
+                        kabupaten = kab;
+                        break;
+                    }
+                }
+                
+                // If still not found, try from desa name
+                if (!kabupaten) {
+                    for (const kab of kabupatenList) {
+                        if (desa.toUpperCase().includes(kab.toUpperCase())) {
+                            kabupaten = kab;
+                            break;
+                        }
+                    }
+                }
             }
-            kabupatenStats[kabupaten]++;
+            
+            if (kabupaten && kabupaten !== 'UNKNOWN') {
+                kabupaten = kabupaten.trim();
+                if (!kabupatenStats[kabupaten]) {
+                    kabupatenStats[kabupaten] = 0;
+                }
+                kabupatenStats[kabupaten]++;
+            }
         });
+
+        console.log('Kabupaten dengan data:', Object.keys(kabupatenStats).length);
+        console.log('Top kabupaten:', Object.entries(kabupatenStats).sort((a,b) => b[1]-a[1]).slice(0, 5));
+
+        const markerBounds = [];
+        let markerCount = 0;
 
         // Tambahkan markers untuk kabupaten yang ada datanya
         for (const [kabupaten, location] of Object.entries(kabupatenLocations)) {
@@ -1786,7 +1938,19 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 });
 
                 marker.addTo(markersLayer);
+                markerBounds.push([location.lat, location.lng]);
+                markerCount++;
             }
+        }
+
+        console.log('Markers ditambahkan:', markerCount);
+
+        // Zoom peta ke area dengan markers
+        if (markerBounds.length > 0) {
+            console.log('Zoom map ke', markerBounds.length, 'markers');
+            mapInstance.fitBounds(markerBounds, { padding: [50, 50] });
+        } else {
+            console.warn('⚠️ Tidak ada markers untuk ditampilkan');
         }
 
         // Set default region (kabupaten dengan data terbanyak)
@@ -1797,6 +1961,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             const [topKab, topCount] = sortedKab[0];
             updateRegionStatsSimple(topKab, topCount);
         }
+        
+        console.log('✅ Map berhasil diupdate!');
     }
 
     function updateRegionStats(satkerName, stats) {
