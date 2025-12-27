@@ -29,14 +29,14 @@
         body {
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
-            background: radial-gradient(circle at top,
-                #111827 0%,
-                #020617 55%,
-                #000000 100%
+            background: linear-gradient(135deg,
+                #f0f4f8 0%,
+                #e2e8f0 50%,
+                #cbd5e1 100%
             );
             margin: 0;
             padding: 0;
-            color: #F9FAFB;
+            color: #1e293b;
             position: relative;
             overflow-x: hidden;
         }
@@ -50,27 +50,24 @@
             background-repeat: no-repeat;
             background-position: center 40%;
             background-size: 70vh auto;
-            opacity: 0.07;
+            opacity: 0.03;
             filter: blur(0.5px);
             pointer-events: none;
             z-index: -1;
         }
 
         .bg-overlay {
-            background: radial-gradient(circle at top,
-                rgba(255,255,255,0.10) 0,
-                rgba(0,0,0,0.78) 55%,
-                rgba(0,0,0,0.92) 100%);
+            background: transparent;
             min-height: 100vh;
             padding: 1.5rem 0 3rem;
         }
 
         .glass-card {
-            background: rgba(0, 0, 0, 0.40);
-            border: 1px solid rgba(255, 255, 255, 0.16);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(148, 163, 184, 0.2);
             box-shadow:
-                0 22px 55px rgba(0, 0, 0, 0.75),
-                0 0 0 1px rgba(255, 255, 255, 0.04);
+                0 4px 6px rgba(0, 0, 0, 0.07),
+                0 10px 20px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
         }
@@ -78,18 +75,18 @@
         .summary-card {
             transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
             border-radius: 24px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.3));
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,0.9));
         }
 
         .summary-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
-            border-color: rgba(255,255,255,0.35);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: rgba(59, 130, 246, 0.4);
         }
 
-        .text-dark-contrast { color: #F9FAFB; }
-        .text-muted-contrast { color: #E5E7EB; }
+        .text-dark-contrast { color: #1e293b; }
+        .text-muted-contrast { color: #475569; }
 
         .btn-yellow {
             background: var(--primary-yellow);
@@ -122,31 +119,32 @@
 
         .input-dark,
         .select-dark {
-            background: rgba(0,0,0,0.75);
+            background: rgba(255,255,255,0.95);
             border-radius: 0.75rem;
-            border: 1px solid rgba(255,255,255,0.15);
-            color: #F9FAFB;
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            color: #1e293b;
         }
         .input-dark:focus,
         .select-dark:focus {
             outline: none;
-            border-color: var(--primary-cyan);
-            box-shadow: 0 0 0 1px var(--primary-cyan);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
         .badge-emerald {
             background: rgba(16, 185, 129, 0.15);
-            color: #6EE7B7;
+            color: #059669;
+            font-weight: 600;
         }
         .badge-amber {
-            background: rgba(251, 191, 36, 0.18);
-            color: #FBBF24;
+            background: rgba(251, 191, 36, 0.2);
+            color: #d97706;
+            font-weight: 600;
         }
 
         .title-shadow {
             text-shadow:
-                0 0 10px rgba(0,0,0,0.9),
-                0 0 25px rgba(0,0,0,0.9);
+                0 2px 4px rgba(0,0,0,0.1);
         }
 
         /* Animation for chart transitions */
@@ -192,7 +190,7 @@
         <!-- HEADER -->
         <header class="text-center mb-8">
             <h1 class="text-3xl md:text-5xl font-extrabold text-dark-contrast mb-2 title-shadow flex items-center justify-center gap-3">
-                <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-black/70 border border-white/20 shadow-xl overflow-hidden">
+                <span class="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white border border-gray-300 shadow-lg overflow-hidden">
                     <img src="kejag.png" class="w-8 h-8 md:w-10 md:h-10 object-contain" alt="Logo">
                 </span>
                 <span>Dashbord Monitoring Jaga Desa Jawa Timur</span>
@@ -214,8 +212,8 @@
                             <i data-lucide="book-open" class="w-5 h-5"></i>
                             Jaga Budaya
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalJagaBudaya">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownJagaBudaya">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalJagaBudaya">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownJagaBudaya">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartJagaBudaya"></canvas>
@@ -230,8 +228,8 @@
                             <i data-lucide="users" class="w-5 h-5"></i>
                             Pengawasan Ormas
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPengawasanOrmas">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownPengawasanOrmas">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalPengawasanOrmas">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownPengawasanOrmas">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartPengawasanOrmas"></canvas>
@@ -246,8 +244,8 @@
                             <i data-lucide="truck" class="w-5 h-5"></i>
                             Pemantauan Lingkungan
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPemantauanLingkungan">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownPemantauanLingkungan">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalPemantauanLingkungan">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownPemantauanLingkungan">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartPemantauanLingkungan"></canvas>
@@ -262,8 +260,8 @@
                             <i data-lucide="map-pin" class="w-5 h-5"></i>
                             Pemantauan Orang Asing
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPemantauanOrangAsing">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownPemantauanOrangAsing">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalPemantauanOrangAsing">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownPemantauanOrangAsing">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartPemantauanOrangAsing"></canvas>
@@ -278,8 +276,8 @@
                             <i data-lucide="plus-square" class="w-5 h-5"></i>
                             Aset Desa/Kelurahan
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalAsetDesa">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownAsetDesa">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalAsetDesa">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownAsetDesa">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartAsetDesa"></canvas>
@@ -294,8 +292,8 @@
                             <i data-lucide="alert-triangle" class="w-5 h-5"></i>
                             Kasus Penyelewengan
                         </h3>
-                        <div class="text-4xl font-extrabold text-white mb-2" id="totalKasusPenyelewengan">0</div>
-                        <div class="text-xs text-gray-300" id="breakdownKasusPenyelewengan">Loading...</div>
+                        <div class="text-4xl font-extrabold text-gray-900 mb-2" id="totalKasusPenyelewengan">0</div>
+                        <div class="text-xs text-gray-600" id="breakdownKasusPenyelewengan">Loading...</div>
                     </div>
                     <div class="w-20 h-20">
                         <canvas id="chartKasusPenyelewengan"></canvas>
@@ -313,35 +311,35 @@
                         <i data-lucide="bar-chart-3" class="w-5 h-5 text-amber-300"></i>
                         <span>Disparitas Kasus</span>
                     </h5>
-                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('disparitas-section')">
+                    <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('disparitas-section')">
                         <i data-lucide="maximize-2" class="w-5 h-5"></i>
                     </button>
                 </div>
                 
                 <div id="disparitas-section" class="space-y-3">
                     <div class="text-center mb-3">
-                        <div class="text-lg font-bold text-cyan-300" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
-                        <div class="text-xs text-gray-400">Kabupaten dengan Data Terbanyak</div>
+                        <div class="text-lg font-bold text-cyan-600" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
+                        <div class="text-xs text-gray-500">Kabupaten dengan Data Terbanyak</div>
                         <!-- Auto-rotation indicator -->
-                        <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-cyan-500/20 border border-cyan-400/30 rounded-full text-xs">
-                            <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                            <span class="text-cyan-300 font-semibold">Auto-Rotation Active</span>
-                            <span class="text-gray-400" id="rotationTimer">5s</span>
+                        <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-cyan-50 border border-cyan-300 rounded-full text-xs">
+                            <div class="w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+                            <span class="text-cyan-700 font-semibold">Auto-Rotation Active</span>
+                            <span class="text-gray-600" id="rotationTimer">5s</span>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-2 gap-3 text-xs mb-3">
-                        <div class="bg-black/40 border border-emerald-500/30 rounded-xl p-3">
-                            <div class="text-emerald-300 font-semibold mb-1">Kasus Tertinggi</div>
-                            <div class="text-white text-lg font-bold" id="kasusTertinggi">156 Kasus</div>
+                        <div class="bg-emerald-50 border border-emerald-300 rounded-xl p-3">
+                            <div class="text-emerald-700 font-semibold mb-1">Kasus Tertinggi</div>
+                            <div class="text-gray-900 text-lg font-bold" id="kasusTertinggi">156 Kasus</div>
                         </div>
-                        <div class="bg-black/40 border border-amber-500/30 rounded-xl p-3">
-                            <div class="text-amber-300 font-semibold mb-1">Kasus Terendah</div>
-                            <div class="text-white text-lg font-bold" id="kasusTerendah">23 Kasus</div>
+                        <div class="bg-amber-50 border border-amber-300 rounded-xl p-3">
+                            <div class="text-amber-700 font-semibold mb-1">Kasus Terendah</div>
+                            <div class="text-gray-900 text-lg font-bold" id="kasusTerendah">23 Kasus</div>
                         </div>
                     </div>
 
-                    <div class="bg-black/30 border border-white/10 rounded-2xl p-4" style="height: 280px;">
+                    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4" style="height: 280px;">
                         <canvas id="disparitasChart"></canvas>
                     </div>
                 </div>
@@ -354,42 +352,42 @@
                         <i data-lucide="map-pin" class="w-5 h-5 text-green-300"></i>
                         <span>Tren Per Daerah</span>
                     </h5>
-                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('map-section')">
+                    <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('map-section')">
                         <i data-lucide="maximize-2" class="w-5 h-5"></i>
                     </button>
                 </div>
 
                 <div id="map-section" class="space-y-3">
-                    <div class="bg-black/30 border border-white/10 rounded-2xl overflow-hidden" style="height: 280px;">
+                    <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden" style="height: 280px;">
                         <div id="mapLeaflet" style="height: 100%; width: 100%;"></div>
                     </div>
 
-                    <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
-                        <h6 class="font-bold text-cyan-300 mb-3" id="regionName">KEJAKSAAN NEGERI SURABAYA</h6>
+                    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4">
+                        <h6 class="font-bold text-cyan-700 mb-3" id="regionName">KEJAKSAAN NEGERI SURABAYA</h6>
                         <div class="grid grid-cols-2 gap-2 text-sm">
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Jaga Budaya:</span>
-                                <span class="font-bold text-white" id="statJagaBudaya">-</span>
+                                <span class="text-gray-600">Jaga Budaya:</span>
+                                <span class="font-bold text-gray-900" id="statJagaBudaya">-</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Pengawasan Ormas:</span>
-                                <span class="font-bold text-white" id="statPengawasanOrmas">-</span>
+                                <span class="text-gray-600">Pengawasan Ormas:</span>
+                                <span class="font-bold text-gray-900" id="statPengawasanOrmas">-</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Pemantauan Lingkungan:</span>
-                                <span class="font-bold text-white" id="statPemantauanLingkungan">-</span>
+                                <span class="text-gray-600">Pemantauan Lingkungan:</span>
+                                <span class="font-bold text-gray-900" id="statPemantauanLingkungan">-</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Orang Asing:</span>
-                                <span class="font-bold text-white" id="statOrangAsing">-</span>
+                                <span class="text-gray-600">Orang Asing:</span>
+                                <span class="font-bold text-gray-900" id="statOrangAsing">-</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Aset Desa:</span>
-                                <span class="font-bold text-white" id="statAsetDesa">-</span>
+                                <span class="text-gray-600">Aset Desa:</span>
+                                <span class="font-bold text-gray-900" id="statAsetDesa">-</span>
                             </div>
                             <div class="flex justify-between">
-                                <span class="text-gray-300">Penyelewengan:</span>
-                                <span class="font-bold text-white" id="statPenyelewengan">-</span>
+                                <span class="text-gray-600">Penyelewengan:</span>
+                                <span class="font-bold text-gray-900" id="statPenyelewengan">-</span>
                             </div>
                         </div>
                     </div>
@@ -406,13 +404,13 @@
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
                 <div class="col-span-1">
-                    <p class="text-xs font-semibold text-gray-200 mb-1 uppercase tracking-wide">Tanggal Laporan</p>
+                    <p class="text-xs font-semibold text-gray-700 mb-1 uppercase tracking-wide">Tanggal Laporan</p>
                     <input type="date" id="filter-date"
                            class="input-dark w-full px-3 py-2.5 text-sm shadow-md">
                 </div>
 
                 <div class="col-span-1">
-                    <p class="text-xs font-semibold text-gray-200 mb-1 uppercase tracking-wide">Satuan Kerja</p>
+                    <p class="text-xs font-semibold text-gray-700 mb-1 uppercase tracking-wide">Satuan Kerja</p>
                     <select id="filter-unit"
                             class="select-dark w-full px-3 py-2.5 text-sm shadow-md">
                         <option value="">Semua Unit</option>
@@ -446,49 +444,49 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
             <div id="total-units-card"
                  class="summary-card p-5 text-center cursor-pointer">
-                <i data-lucide="layers" class="w-9 h-9 text-yellow-300 mx-auto mb-3"></i>
-                <h5 class="text-sm md:text-base font-semibold text-gray-100">Total Satuan Kerja</h5>
-                <h3 id="card-total-units" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
-                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                <i data-lucide="layers" class="w-9 h-9 text-yellow-500 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-700">Total Satuan Kerja</h5>
+                <h3 id="card-total-units" class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-600 mt-1">
                     Unit terdaftar · klik untuk lihat daftar & grafik
                 </p>
             </div>
 
             <div id="compliant-card" data-status="compliant"
                  class="summary-card p-5 text-center cursor-pointer">
-                <i data-lucide="check-circle" class="w-9 h-9 text-emerald-300 mx-auto mb-3"></i>
-                <h5 class="text-sm md:text-base font-semibold text-gray-100">Unit Selesai Input</h5>
-                <h3 id="card-units-compliant" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
-                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                <i data-lucide="check-circle" class="w-9 h-9 text-emerald-500 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-700">Unit Selesai Input</h5>
+                <h3 id="card-units-compliant" class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-600 mt-1">
                     Klik untuk lihat daftar & detail kegiatan
                 </p>
             </div>
 
             <div id="pending-card" data-status="pending"
                  class="summary-card p-5 text-center cursor-pointer">
-                <i data-lucide="loader" class="w-9 h-9 text-amber-300 mx-auto mb-3"></i>
-                <h5 class="text-sm md:text-base font-semibold text-gray-100">Unit Belum Selesai Input</h5>
-                <h3 id="card-units-pending" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0</h3>
-                <p class="text-xs md:text-sm text-gray-300 mt-1">
+                <i data-lucide="loader" class="w-9 h-9 text-amber-500 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-700">Unit Belum Selesai Input</h5>
+                <h3 id="card-units-pending" class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">0</h3>
+                <p class="text-xs md:text-sm text-gray-600 mt-1">
                     Klik untuk lihat daftar pending
                 </p>
             </div>
 
             <div class="summary-card p-5 text-center">
-                <i data-lucide="trending-up" class="w-9 h-9 text-red-300 mx-auto mb-3"></i>
-                <h5 class="text-sm md:text-base font-semibold text-gray-100">Rata-rata Kepatuhan</h5>
-                <h3 id="card-compliance-rate" class="text-3xl md:text-4xl font-extrabold text-white mt-1">0%</h3>
-                <p class="text-xs md:text-sm text-gray-300 mt-1">Per menu aktif</p>
+                <i data-lucide="trending-up" class="w-9 h-9 text-red-500 mx-auto mb-3"></i>
+                <h5 class="text-sm md:text-base font-semibold text-gray-700">Rata-rata Kepatuhan</h5>
+                <h3 id="card-compliance-rate" class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">0%</h3>
+                <p class="text-xs md:text-sm text-gray-600 mt-1">Per menu aktif</p>
             </div>
         </div>
 
         <!-- MENU UTAMA -->
         <div class="glass-card p-5 rounded-3xl border border-white/15 mb-8">
             <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                <i data-lucide="list" class="w-5 h-5 text-sky-300"></i>
+                <i data-lucide="list" class="w-5 h-5 text-sky-500"></i>
                 <span>Menu Utama</span>
             </h5>
-            <p class="text-xs text-gray-300 mt-1">
+            <p class="text-xs text-gray-600 mt-1">
                 Pilih menu untuk melihat grafik & status input semua Satker pada menu tersebut.
             </p>
 
@@ -504,21 +502,21 @@
             <div class="glass-card p-5 rounded-3xl border border-white/15">
                 <div class="flex flex-col gap-1 mb-3">
                     <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                        <i data-lucide="layout-grid" class="w-5 h-5 text-sky-300"></i>
+                        <i data-lucide="layout-grid" class="w-5 h-5 text-sky-500"></i>
                         <span>Grafik Kepatuhan per Satker</span>
                     </h5>
-                    <p class="text-xs text-gray-300">
+                    <p class="text-xs text-gray-600">
                         Menu aktif:
-                        <span id="active-menu-label" class="font-semibold text-sky-200">
+                        <span id="active-menu-label" class="font-semibold text-sky-600">
                             Jaksa Garda Desa / Kelurahan
                         </span>
                     </p>
                 </div>
 
-                <h6 class="text-sm font-semibold text-gray-200 mb-2 border-b border-white/10 pb-1">
+                <h6 class="text-sm font-semibold text-gray-700 mb-2 border-b border-gray-200 pb-1">
                     Target vs Aktual per Satker
                 </h6>
-                <div class="relative w-full overflow-x-auto bg-black/35 rounded-2xl p-2 border border-white/10">
+                <div class="relative w-full overflow-x-auto bg-gray-50 rounded-2xl p-2 border border-gray-200">
                     <div id="performanceBarChartContainer" style="min-height: 400px;">
                         <canvas id="performanceBarChart"></canvas>
                     </div>
@@ -529,30 +527,30 @@
             <!-- Bulanan (dummy, tetap) -->
             <div class="glass-card p-5 rounded-3xl border border-white/15">
                 <h5 class="text-dark-contrast text-xl font-bold mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar-check" class="w-5 h-5 text-sky-300"></i>
+                    <i data-lucide="calendar-check" class="w-5 h-5 text-sky-500"></i>
                     <span>Status Input Bulanan (Tren)</span>
                 </h5>
                 <div id="monthly-status-list" class="space-y-3">
-                    <div class="p-3 rounded-2xl border border-emerald-400/30 bg-gradient-to-r from-emerald-500/15 to-emerald-400/5">
-                        <p class="text-sm text-gray-100 font-semibold">Bulan Ini (Des 2025)</p>
+                    <div class="p-3 rounded-2xl border border-emerald-300 bg-gradient-to-r from-emerald-50 to-emerald-100/50">
+                        <p class="text-sm text-gray-800 font-semibold">Bulan Ini (Des 2025)</p>
                         <div class="flex justify-between items-center mt-1 gap-2">
-                            <span class="text-xs text-emerald-200 font-medium">95% Kepatuhan</span>
-                            <div class="w-1/2 bg-black/40 rounded-full h-2.5">
-                                <div class="bg-emerald-400 h-2.5 rounded-full" style="width: 95%"></div>
+                            <span class="text-xs text-emerald-700 font-medium">95% Kepatuhan</span>
+                            <div class="w-1/2 bg-white rounded-full h-2.5 border border-emerald-200">
+                                <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="p-3 rounded-2xl border border-amber-400/30 bg-gradient-to-r from-amber-500/12 to-amber-400/5">
-                        <p class="text-sm text-gray-100 font-semibold">Bulan Lalu (Nov 2025)</p>
+                    <div class="p-3 rounded-2xl border border-amber-300 bg-gradient-to-r from-amber-50 to-amber-100/50">
+                        <p class="text-sm text-gray-800 font-semibold">Bulan Lalu (Nov 2025)</p>
                         <div class="flex justify-between items-center mt-1 gap-2">
-                            <span class="text-xs text-amber-200 font-medium">78% Kepatuhan</span>
-                            <div class="w-1/2 bg-black/40 rounded-full h-2.5">
-                                <div class="bg-amber-400 h-2.5 rounded-full" style="width: 78%"></div>
+                            <span class="text-xs text-amber-700 font-medium">78% Kepatuhan</span>
+                            <div class="w-1/2 bg-white rounded-full h-2.5 border border-amber-200">
+                                <div class="bg-amber-500 h-2.5 rounded-full" style="width: 78%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="text-xs md:text-sm text-gray-300 mt-4">
+                <p class="text-xs md:text-sm text-gray-600 mt-4">
                     Kepatuhan dihitung dari rata-rata total input per unit dibandingkan target per bulan.
                 </p>
             </div>
@@ -562,55 +560,55 @@
         <div class="glass-card p-5 rounded-3xl border border-white/15">
             <div class="flex flex-col gap-1 mb-4">
                 <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                    <i data-lucide="list-checks" class="w-5 h-5 text-sky-300"></i>
+                    <i data-lucide="list-checks" class="w-5 h-5 text-sky-500"></i>
                     <span>Detail Status Input Harian</span>
                 </h5>
             </div>
 
             <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-white/10 text-sm">
-                    <thead class="bg-black/60">
+                <table class="min-w-full divide-y divide-gray-200 text-sm">
+                    <thead class="bg-gray-100">
                     <tr>
-                        <th class="px-4 py-3 text-left font-semibold text-gray-100 uppercase tracking-wider rounded-tl-lg">
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700 uppercase tracking-wider rounded-tl-lg">
                             Satuan Kerja (SKPD)
                         </th>
-                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Target</th>
-                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Aktual</th>
-                        <th class="px-4 py-3 text-center font-semibold text-gray-100 uppercase tracking-wider">Status</th>
-                        <th class="px-4 py-3 text-left font-semibold text-gray-100 uppercase tracking-wider rounded-tr-lg">
+                        <th class="px-4 py-3 text-center font-semibold text-gray-700 uppercase tracking-wider">Target</th>
+                        <th class="px-4 py-3 text-center font-semibold text-gray-700 uppercase tracking-wider">Aktual</th>
+                        <th class="px-4 py-3 text-center font-semibold text-gray-700 uppercase tracking-wider">Status</th>
+                        <th class="px-4 py-3 text-left font-semibold text-gray-700 uppercase tracking-wider rounded-tr-lg">
                             Waktu Terakhir Input
                         </th>
                     </tr>
                     </thead>
-                    <tbody id="unit-status-body" class="divide-y divide-white/5 bg-black/35">
+                    <tbody id="unit-status-body" class="divide-y divide-gray-100 bg-white">
                     </tbody>
                 </table>
-                <div id="no-data-message" class="text-center py-8 text-gray-300 hidden">
+                <div id="no-data-message" class="text-center py-8 text-gray-600 hidden">
                     <i data-lucide="info" class="inline-block w-6 h-6 mr-2"></i>
                     Tidak ada data Satuan Kerja yang sesuai dengan filter.
                 </div>
             </div>
             
             <!-- Pagination -->
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-4 pt-4 border-t border-white/10">
-                <div class="text-sm text-gray-300">
-                    Menampilkan <span class="font-semibold text-cyan-300" id="pageInfo">1-10</span> dari <span class="font-semibold text-cyan-300" id="totalRecords">0</span> data
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-4 pt-4 border-t border-gray-200">
+                <div class="text-sm text-gray-700">
+                    Menampilkan <span class="font-semibold text-cyan-600" id="pageInfo">1-10</span> dari <span class="font-semibold text-cyan-600" id="totalRecords">0</span> data
                 </div>
                 <div class="flex items-center gap-2">
                     <button id="prevPage" onclick="changePage(-1)" 
-                            class="px-3 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 border border-cyan-400/30 rounded-lg text-white text-sm font-medium hover:from-cyan-500 hover:to-blue-500 transition disabled:opacity-30 disabled:cursor-not-allowed disabled:from-gray-600 disabled:to-gray-700 flex items-center gap-1">
+                            class="px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 border border-cyan-300 rounded-lg text-white text-sm font-medium hover:from-cyan-600 hover:to-blue-600 transition disabled:opacity-30 disabled:cursor-not-allowed disabled:from-gray-400 disabled:to-gray-500 flex items-center gap-1">
                         <i data-lucide="chevron-left" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Prev</span>
                     </button>
-                    <div class="px-4 py-2 bg-black/40 border border-cyan-400/30 rounded-lg">
-                        <span class="text-sm text-gray-300">
-                            <span class="font-bold text-cyan-300" id="currentPage">1</span>
+                    <div class="px-4 py-2 bg-white border border-cyan-300 rounded-lg">
+                        <span class="text-sm text-gray-700">
+                            <span class="font-bold text-cyan-600" id="currentPage">1</span>
                             <span class="text-gray-400">/</span>
-                            <span class="text-gray-300" id="totalPages">1</span>
+                            <span class="text-gray-700" id="totalPages">1</span>
                         </span>
                     </div>
                     <button id="nextPage" onclick="changePage(1)" 
-                            class="px-3 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 border border-cyan-400/30 rounded-lg text-white text-sm font-medium hover:from-cyan-500 hover:to-blue-500 transition disabled:opacity-30 disabled:cursor-not-allowed disabled:from-gray-600 disabled:to-gray-700 flex items-center gap-1">
+                            class="px-3 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 border border-cyan-300 rounded-lg text-white text-sm font-medium hover:from-cyan-600 hover:to-blue-600 transition disabled:opacity-30 disabled:cursor-not-allowed disabled:from-gray-400 disabled:to-gray-500 flex items-center gap-1">
                         <span class="hidden sm:inline">Next</span>
                         <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </button>
@@ -622,10 +620,10 @@
         <div class="glass-card p-5 rounded-3xl border border-white/15 mt-8">
             <div class="flex items-center justify-between mb-4">
                 <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                    <i data-lucide="bar-chart-4" class="w-5 h-5 text-purple-300"></i>
+                    <i data-lucide="bar-chart-4" class="w-5 h-5 text-purple-500"></i>
                     <span>Statistik Perkara</span>
                 </h5>
-                <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('statistik-perkara-section')">
+                <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('statistik-perkara-section')">
                     <i data-lucide="maximize-2" class="w-5 h-5"></i>
                 </button>
             </div>
@@ -634,32 +632,32 @@
                 <table class="min-w-full text-sm border-collapse">
                     <thead>
                         <tr>
-                            <th rowspan="2" class="px-4 py-3 text-left font-bold text-cyan-300 bg-black/60 border border-white/10" id="tableKabupaten">
+                            <th rowspan="2" class="px-4 py-3 text-left font-bold text-cyan-700 bg-gray-100 border border-gray-300" id="tableKabupaten">
                                 Kabupaten/Kota
                             </th>
-                            <th colspan="3" class="px-4 py-2 text-center font-bold text-purple-300 bg-purple-500/20 border border-white/10">
+                            <th colspan="3" class="px-4 py-2 text-center font-bold text-purple-700 bg-purple-100 border border-gray-300">
                                 Jaga Budaya
                             </th>
-                            <th colspan="3" class="px-4 py-2 text-center font-bold text-pink-300 bg-pink-500/20 border border-white/10">
+                            <th colspan="3" class="px-4 py-2 text-center font-bold text-pink-700 bg-pink-100 border border-gray-300">
                                 Pengawasan Ormas
                             </th>
-                            <th colspan="3" class="px-4 py-2 text-center font-bold text-green-300 bg-green-500/20 border border-white/10">
+                            <th colspan="3" class="px-4 py-2 text-center font-bold text-green-700 bg-green-100 border border-gray-300">
                                 Pemantauan Lingkungan
                             </th>
                         </tr>
                         <tr>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Total</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Selesai</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Proses</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Total</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Selesai</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Proses</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Total</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Selesai</th>
-                            <th class="px-3 py-2 text-center text-xs text-gray-300 bg-black/40 border border-white/10">Proses</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Total</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Selesai</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Proses</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Total</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Selesai</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Proses</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Total</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Selesai</th>
+                            <th class="px-3 py-2 text-center text-xs text-gray-700 bg-gray-50 border border-gray-300">Proses</th>
                         </tr>
                     </thead>
-                    <tbody id="statistikPerkaraBody" class="bg-black/30">
+                    <tbody id="statistikPerkaraBody" class="bg-white">
                         <!-- Data will be populated by JavaScript -->
                     </tbody>
                 </table>
@@ -673,21 +671,21 @@
 <!-- MODAL: DAFTAR SEMUA SATUAN KERJA -->
 <div id="unit-list-modal"
      class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
-    <div class="w-full max-w-3xl max-height-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
-        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+    <div class="w-full max-w-3xl max-height-[80vh] bg-white rounded-3xl shadow-2xl border border-gray-300 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-gray-200 pb-3">
             <div class="flex items-center gap-3">
-                <i data-lucide="check-square" class="w-6 h-6 text-sky-300"></i>
-                <h3 class="text-xl md:text-2xl font-bold text-white">
+                <i data-lucide="check-square" class="w-6 h-6 text-sky-600"></i>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900">
                     Daftar Semua Satuan Kerja
                 </h3>
             </div>
             <button id="close-modal-btn"
-                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                    class="p-2 rounded-full hover:bg-gray-100 text-gray-600">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
 
-        <p class="text-sm text-gray-300 mb-3">
+        <p class="text-sm text-gray-600 mb-3">
             Klik nama Satuan Kerja untuk melihat grafik kinerja 20 hari terakhir.
         </p>
 
@@ -701,14 +699,14 @@
 <!-- MODAL: SATKER SELESAI / BELUM SELESAI -->
 <div id="satker-modal"
      class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
-    <div class="w-full max-w-3xl max-h-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
-        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+    <div class="w-full max-w-3xl max-h-[80vh] bg-white rounded-3xl shadow-2xl border border-gray-300 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-gray-200 pb-3">
             <h3 id="satker-modal-title"
-                class="text-xl md:text-2xl font-bold text-white">
+                class="text-xl md:text-2xl font-bold text-gray-900">
                 Daftar Satuan Kerja
             </h3>
             <button id="close-satker-modal-btn"
-                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                    class="p-2 rounded-full hover:bg-gray-100 text-gray-600">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
@@ -723,14 +721,14 @@
 <!-- MODAL: DETAIL KEGIATAN SATKER -->
 <div id="detail-kegiatan-modal"
      class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
-    <div class="w-full max-w-2xl max-h-[80vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
-        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+    <div class="w-full max-w-2xl max-h-[80vh] bg-white rounded-3xl shadow-2xl border border-gray-300 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-gray-200 pb-3">
             <h3 id="detail-kegiatan-title"
-                class="text-xl md:text-2xl font-bold text-white">
+                class="text-xl md:text-2xl font-bold text-gray-900">
                 Detail Kegiatan
             </h3>
             <button onclick="hideDetailKegiatan()"
-                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                    class="p-2 rounded-full hover:bg-gray-100 text-gray-600">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
@@ -745,27 +743,27 @@
 <!-- MODAL: GRAFIK HISTORI 20 HARI SATKER -->
 <div id="satker-chart-modal"
      class="fixed inset-0 z-40 hidden items-center justify-center bg-black/70 backdrop-blur-sm">
-    <div class="w-full max-w-4xl max-h-[85vh] bg-gradient-to-b from-slate-900 to-black rounded-3xl shadow-2xl border border-white/10 p-6 overflow-hidden">
-        <div class="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+    <div class="w-full max-w-4xl max-h-[85vh] bg-white rounded-3xl shadow-2xl border border-gray-300 p-6 overflow-hidden">
+        <div class="flex items-center justify-between mb-4 border-b border-gray-200 pb-3">
             <h3 id="satker-chart-title"
-                class="text-xl md:text-2xl font-bold text-white">
+                class="text-xl md:text-2xl font-bold text-gray-900">
                 Grafik Kinerja Satker
             </h3>
             <button id="close-satker-chart-modal-btn"
-                    class="p-2 rounded-full hover:bg-white/10 text-gray-300">
+                    class="p-2 rounded-full hover:bg-gray-100 text-gray-600">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
 
         <div class="space-y-4">
-            <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
+            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4">
                 <div class="relative w-full h-[260px]">
                     <canvas id="satkerHistoryChart"></canvas>
                 </div>
             </div>
 
             <p id="satker-missing-days"
-               class="text-sm text-gray-200">
+               class="text-sm text-gray-700">
                 <!-- Info hari tanpa input diisi dari JS -->
             </p>
         </div>
@@ -1088,21 +1086,21 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                    </span>`;
 
             const row = document.createElement('tr');
-            row.className = 'hover:bg-white/5 transition';
+            row.className = 'hover:bg-gray-100 transition';
             row.innerHTML = `
-                <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-100">
+                <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">
                     ${unit.name}
                 </td>
-                <td class="px-4 py-3 whitespace-nowrap text-sm text-center text-gray-200">
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-center text-gray-700">
                     ${unit.target}
                 </td>
-                <td class="px-4 py-3 whitespace-nowrap text-sm text-center font-bold ${isCompliant ? 'text-emerald-300' : 'text-amber-300'}">
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-center font-bold ${isCompliant ? 'text-emerald-600' : 'text-amber-600'}">
                     ${unit.actual}
                 </td>
                 <td class="px-4 py-3 whitespace-nowrap text-sm text-center">
                     ${statusBadge}
                 </td>
-                <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-300">
+                <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">
                     ${getLastInputDateDisplay(unit)} • ${unit.lastInputTime}
                 </td>
             `;
@@ -1183,18 +1181,18 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             if (!hasData) return;
 
             const row = document.createElement('tr');
-            row.className = 'hover:bg-white/5 transition';
+            row.className = 'hover:bg-gray-50 transition';
             row.innerHTML = `
-                <td class="px-4 py-2 text-left font-semibold text-cyan-300 border border-white/10">${kabupaten}</td>
-                <td class="px-3 py-2 text-center text-white border border-white/10">${stats.jaga_budaya.total}</td>
-                <td class="px-3 py-2 text-center text-emerald-300 border border-white/10">${stats.jaga_budaya.selesai}</td>
-                <td class="px-3 py-2 text-center text-amber-300 border border-white/10">${stats.jaga_budaya.proses}</td>
-                <td class="px-3 py-2 text-center text-white border border-white/10">${stats.pengawasan_ormas.total}</td>
-                <td class="px-3 py-2 text-center text-emerald-300 border border-white/10">${stats.pengawasan_ormas.selesai}</td>
-                <td class="px-3 py-2 text-center text-amber-300 border border-white/10">${stats.pengawasan_ormas.proses}</td>
-                <td class="px-3 py-2 text-center text-white border border-white/10">${stats.pemantauan_lingkungan.total}</td>
-                <td class="px-3 py-2 text-center text-emerald-300 border border-white/10">${stats.pemantauan_lingkungan.selesai}</td>
-                <td class="px-3 py-2 text-center text-amber-300 border border-white/10">${stats.pemantauan_lingkungan.proses}</td>
+                <td class="px-4 py-2 text-left font-semibold text-cyan-700 border border-gray-300">${kabupaten}</td>
+                <td class="px-3 py-2 text-center text-gray-900 border border-gray-300">${stats.jaga_budaya.total}</td>
+                <td class="px-3 py-2 text-center text-emerald-600 border border-gray-300">${stats.jaga_budaya.selesai}</td>
+                <td class="px-3 py-2 text-center text-amber-600 border border-gray-300">${stats.jaga_budaya.proses}</td>
+                <td class="px-3 py-2 text-center text-gray-900 border border-gray-300">${stats.pengawasan_ormas.total}</td>
+                <td class="px-3 py-2 text-center text-emerald-600 border border-gray-300">${stats.pengawasan_ormas.selesai}</td>
+                <td class="px-3 py-2 text-center text-amber-600 border border-gray-300">${stats.pengawasan_ormas.proses}</td>
+                <td class="px-3 py-2 text-center text-gray-900 border border-gray-300">${stats.pemantauan_lingkungan.total}</td>
+                <td class="px-3 py-2 text-center text-emerald-600 border border-gray-300">${stats.pemantauan_lingkungan.selesai}</td>
+                <td class="px-3 py-2 text-center text-amber-600 border border-gray-300">${stats.pemantauan_lingkungan.proses}</td>
             `;
             tbody.appendChild(row);
         });
@@ -1465,18 +1463,18 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             btn.className = [
                 'w-full text-left px-3 py-3 rounded-2xl flex items-start gap-3 transition border',
                 isActive
-                    ? 'bg-sky-500/18 border-sky-400/70 shadow-lg'
-                    : 'bg-black/40 border-white/10 hover:bg-white/10'
+                    ? 'bg-sky-100 border-sky-400 shadow-lg'
+                    : 'bg-white/90 border-gray-200 hover:bg-gray-100'
             ].join(' ');
 
             btn.innerHTML = `
                 <span class="mt-1">
-                    <i data-lucide="${menu.icon}" class="w-5 h-5 text-sky-300"></i>
+                    <i data-lucide="${menu.icon}" class="w-5 h-5 text-sky-600"></i>
                 </span>
                 <span class="flex-1">
-                    <span class="block text-sm font-semibold text-gray-100">${menu.title}</span>
+                    <span class="block text-sm font-semibold text-gray-800">${menu.title}</span>
                     ${menu.subtitle
-                        ? `<span class="block text-xs text-gray-300">${menu.subtitle}</span>`
+                        ? `<span class="block text-xs text-gray-600">${menu.subtitle}</span>`
                         : ''}
                 </span>
             `;
@@ -1513,10 +1511,10 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             const item = document.createElement('button');
             item.type = 'button';
             item.className =
-                'w-full text-left text-sm text-gray-100 p-2 bg-white/5 rounded-xl hover:bg-sky-500/30 hover:text-white transition border border-white/10 flex justify-between items-center';
+                'w-full text-left text-sm text-gray-800 p-2 bg-gray-50 rounded-xl hover:bg-sky-100 hover:text-sky-800 transition border border-gray-200 flex justify-between items-center';
             item.innerHTML = `
                 <span>${unit.name}</span>
-                <span class="text-xs text-sky-200 flex items-center gap-1">
+                <span class="text-xs text-sky-600 flex items-center gap-1">
                     Lihat Grafik
                     <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
                 </span>
@@ -1667,12 +1665,12 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 const wrapper = document.createElement('button');
                 wrapper.type = 'button';
                 wrapper.className =
-                    'w-full flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10 cursor-pointer hover:bg-white/10';
+                    'w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl border border-gray-200 cursor-pointer hover:bg-gray-100';
 
                 wrapper.innerHTML = `
                     <div class="flex flex-col text-left">
-                        <span class="font-semibold text-gray-100 underline">${unit.name}</span>
-                        <span class="text-xs text-gray-300">Waktu Input: ${jam}</span>
+                        <span class="font-semibold text-gray-800 underline">${unit.name}</span>
+                        <span class="text-xs text-gray-600">Waktu Input: ${jam}</span>
                     </div>
                     <span class="px-3 py-1 rounded-full text-xs font-medium ${statusBadgeClass}">
                         ${statusText}
@@ -1710,18 +1708,18 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
 		if (kegiatanList.length === 0) {
 			content.innerHTML =
-				`<p class="text-center text-gray-300 py-4">Belum ada data kegiatan untuk unit ini.</p>`;
+				`<p class="text-center text-gray-600 py-4">Belum ada data kegiatan untuk unit ini.</p>`;
 		} else {
 			kegiatanList.forEach(k => {
 				content.innerHTML += `
-					<div class="border border-white/10 rounded-2xl p-4 shadow-sm bg-white/5">
-						<h4 class="text-lg font-semibold text-gray-100">${k.nama}</h4>
-						<p class="text-sm text-gray-200 mt-1">
+					<div class="border border-gray-200 rounded-2xl p-4 shadow-sm bg-gray-50">
+						<h4 class="text-lg font-semibold text-gray-900">${k.nama}</h4>
+						<p class="text-sm text-gray-700 mt-1">
 							<b>Mulai:</b> ${k.waktu_mulai} WIB<br>
 							<b>Selesai:</b> ${k.waktu_selesai} WIB
 						</p>
 						${k.deskripsi ? `
-							<p class="text-sm text-gray-300 mt-2">
+							<p class="text-sm text-gray-600 mt-2">
 								${k.deskripsi}
 							</p>
 						` : ""}
