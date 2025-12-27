@@ -14,6 +14,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
@@ -389,6 +392,93 @@
             <div id="main-menu-container"
                  class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <!-- tombol menu diisi lewat JS -->
+            </div>
+        </div>
+
+        <!-- DISPARITAS & MAP SECTION -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <!-- DISPARITAS TUNTUTAN DAN PUTUSAN -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                        <i data-lucide="bar-chart-3" class="w-5 h-5 text-amber-300"></i>
+                        <span>Disparitas Kasus</span>
+                    </h5>
+                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('disparitas-section')">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                
+                <div id="disparitas-section" class="space-y-3">
+                    <div class="text-center mb-3">
+                        <div class="text-lg font-bold text-cyan-300" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
+                        <div class="text-xs text-gray-400">Satuan Kerja dengan Kasus Terbanyak</div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 text-xs mb-3">
+                        <div class="bg-black/40 border border-emerald-500/30 rounded-xl p-3">
+                            <div class="text-emerald-300 font-semibold mb-1">Kasus Tertinggi</div>
+                            <div class="text-white text-lg font-bold" id="kasusTertinggi">156 Kasus</div>
+                        </div>
+                        <div class="bg-black/40 border border-amber-500/30 rounded-xl p-3">
+                            <div class="text-amber-300 font-semibold mb-1">Kasus Terendah</div>
+                            <div class="text-white text-lg font-bold" id="kasusTerendah">23 Kasus</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/30 border border-white/10 rounded-2xl p-4" style="height: 280px;">
+                        <canvas id="disparitasChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TREN PERKARA PER DAERAH (MAP) -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-green-300"></i>
+                        <span>Tren Per Daerah</span>
+                    </h5>
+                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('map-section')">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div id="map-section" class="space-y-3">
+                    <div class="bg-black/30 border border-white/10 rounded-2xl overflow-hidden" style="height: 280px;">
+                        <div id="mapLeaflet" style="height: 100%; width: 100%;"></div>
+                    </div>
+
+                    <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
+                        <h6 class="font-bold text-cyan-300 mb-3" id="regionName">KEJAKSAAN NEGERI SURABAYA</h6>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Jaga Budaya:</span>
+                                <span class="font-bold text-white" id="statJagaBudaya">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pengawasan Ormas:</span>
+                                <span class="font-bold text-white" id="statPengawasanOrmas">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pemantauan Lingkungan:</span>
+                                <span class="font-bold text-white" id="statPemantauanLingkungan">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Orang Asing:</span>
+                                <span class="font-bold text-white" id="statOrangAsing">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Aset Desa:</span>
+                                <span class="font-bold text-white" id="statAsetDesa">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Penyelewengan:</span>
+                                <span class="font-bold text-white" id="statPenyelewengan">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1487,7 +1577,225 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         document.getElementById('satker-chart-modal').addEventListener('click', e => {
             if (e.target.id === 'satker-chart-modal') hideSatkerChartModal();
         });
+
+        // Init Disparitas Chart dan Map
+        initDisparitasChart();
+        initMap();
     });
+
+    /* ===================== DISPARITAS CHART ===================== */
+    
+    let disparitasChartInstance = null;
+
+    async function initDisparitasChart() {
+        // Hitung jumlah kasus per satker dari semua menu
+        const satkerCounts = {};
+        
+        for (const menuId in CSV_DATA) {
+            const data = CSV_DATA[menuId];
+            data.forEach(row => {
+                const satker = row['Nama Satker'] || 'UNKNOWN';
+                if (!satkerCounts[satker]) {
+                    satkerCounts[satker] = 0;
+                }
+                satkerCounts[satker]++;
+            });
+        }
+
+        // Sort by count
+        const sortedSatkers = Object.entries(satkerCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10); // Top 10
+
+        const labels = sortedSatkers.map(([satker]) => {
+            // Singkat nama satker
+            const parts = satker.split(' ');
+            if (parts.length > 2 && parts[0] === 'KEJAKSAAN' && parts[1] === 'NEGERI') {
+                return `KN ${parts.slice(2).join(' ')}`;
+            }
+            return satker.substring(0, 20);
+        });
+
+        const counts = sortedSatkers.map(([, count]) => count);
+
+        // Update info
+        if (sortedSatkers.length > 0) {
+            const [topSatker, topCount] = sortedSatkers[0];
+            const [lowSatker, lowCount] = sortedSatkers[sortedSatkers.length - 1];
+            
+            document.getElementById('currentSatker').textContent = topSatker;
+            document.getElementById('kasusTertinggi').textContent = `${topCount} Kasus`;
+            document.getElementById('kasusTerendah').textContent = `${lowCount} Kasus`;
+        }
+
+        // Create chart
+        const canvas = document.getElementById('disparitasChart');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            
+            if (disparitasChartInstance) {
+                disparitasChartInstance.destroy();
+            }
+
+            disparitasChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Jumlah Kasus',
+                        data: counts,
+                        backgroundColor: 'rgba(34, 211, 238, 0.8)',
+                        borderColor: 'rgba(34, 211, 238, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                            titleColor: '#fff',
+                            bodyColor: '#fff',
+                            borderColor: 'rgba(255, 255, 255, 0.3)',
+                            borderWidth: 1
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { 
+                                color: '#E5E7EB',
+                                font: { size: 10 }
+                            },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        },
+                        y: {
+                            ticks: { color: '#E5E7EB' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    /* ===================== MAP LEAFLET ===================== */
+    
+    let mapInstance = null;
+    let markersLayer = null;
+
+    async function initMap() {
+        // Inisialisasi Leaflet Map
+        mapInstance = L.map('mapLeaflet').setView([-7.5, 112.7], 8);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 18
+        }).addTo(mapInstance);
+
+        markersLayer = L.layerGroup().addTo(mapInstance);
+
+        // Data koordinat Kejaksaan Negeri di Jawa Timur (contoh)
+        const satkerLocations = {
+            'KEJAKSAAN NEGERI SURABAYA': { lat: -7.2575, lng: 112.7521 },
+            'KEJAKSAAN NEGERI MALANG': { lat: -7.9666, lng: 112.6326 },
+            'KEJAKSAAN NEGERI BANYUWANGI': { lat: -8.2192, lng: 114.3691 },
+            'KEJAKSAAN NEGERI JEMBER': { lat: -8.1665, lng: 113.7009 },
+            'KEJAKSAAN NEGERI SIDOARJO': { lat: -7.4470, lng: 112.7183 },
+            'KEJAKSAAN NEGERI GRESIK': { lat: -7.1554, lng: 112.6560 },
+            'KEJAKSAAN NEGERI MOJOKERTO': { lat: -7.4664, lng: 112.4338 },
+            'KEJAKSAAN NEGERI KEDIRI': { lat: -7.8167, lng: 112.0167 },
+            'KEJAKSAAN NEGERI BLITAR': { lat: -8.0983, lng: 112.1681 },
+            'KEJAKSAAN NEGERI PROBOLINGGO': { lat: -7.7543, lng: 113.2159 }
+        };
+
+        // Hitung data per satker
+        const satkerStats = {};
+        
+        for (const menuId in CSV_DATA) {
+            const data = CSV_DATA[menuId];
+            data.forEach(row => {
+                const satker = row['Nama Satker'] || 'UNKNOWN';
+                if (!satkerStats[satker]) {
+                    satkerStats[satker] = {
+                        jaga_budaya: 0,
+                        pengawasan_ormas: 0,
+                        pemantauan_lingkungan: 0,
+                        pemantauan_orang_asing: 0,
+                        aset_desa: 0,
+                        kasus_penyelewengan: 0,
+                        total: 0
+                    };
+                }
+                satkerStats[satker][menuId]++;
+                satkerStats[satker].total++;
+            });
+        }
+
+        // Tambahkan markers
+        for (const [satker, location] of Object.entries(satkerLocations)) {
+            const stats = satkerStats[satker] || { total: 0 };
+            
+            const marker = L.circleMarker([location.lat, location.lng], {
+                radius: Math.min(stats.total / 20, 15) + 5,
+                fillColor: '#22d3ee',
+                color: '#fff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.6
+            });
+
+            marker.bindPopup(`
+                <div style="color: #000; min-width: 150px;">
+                    <b>${satker}</b><br>
+                    Total Kasus: ${stats.total}
+                </div>
+            `);
+
+            marker.on('click', () => {
+                updateRegionStats(satker, stats);
+            });
+
+            marker.addTo(markersLayer);
+        }
+
+        // Set default region
+        if (Object.keys(satkerStats).length > 0) {
+            const firstSatker = Object.keys(satkerStats)[0];
+            updateRegionStats(firstSatker, satkerStats[firstSatker]);
+        }
+    }
+
+    function updateRegionStats(satkerName, stats) {
+        document.getElementById('regionName').textContent = satkerName;
+        document.getElementById('statJagaBudaya').textContent = stats.jaga_budaya || 0;
+        document.getElementById('statPengawasanOrmas').textContent = stats.pengawasan_ormas || 0;
+        document.getElementById('statPemantauanLingkungan').textContent = stats.pemantauan_lingkungan || 0;
+        document.getElementById('statOrangAsing').textContent = stats.pemantauan_orang_asing || 0;
+        document.getElementById('statAsetDesa').textContent = stats.aset_desa || 0;
+        document.getElementById('statPenyelewengan').textContent = stats.kasus_penyelewengan || 0;
+    }
+
+    /* ===================== FULL SCREEN TOGGLE ===================== */
+    
+    function toggleFullScreen(elementId) {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+        
+        if (!document.fullscreenElement) {
+            element.requestFullscreen().catch(err => {
+                console.error(`Error attempting to enable fullscreen: ${err.message}`);
+            });
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
 </script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
 </body>
 </html>
