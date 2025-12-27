@@ -2067,8 +2067,29 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             const count = kabupatenStats[kabupaten] || 0;
             
             if (count > 0) {
+                // Hitung total dari SEMUA menu untuk kabupaten ini
+                let totalAllMenus = 0;
+                for (const menuId in CSV_DATA) {
+                    if (menuId === 'jaksa_garda') continue;
+                    const data = CSV_DATA[menuId] || [];
+                    const kabData = data.filter(row => {
+                        let kab = row['Kabupaten/Kota'] || row.Kabupaten || '';
+                        if (!kab) {
+                            const satker = row['Nama Satker'] || '';
+                            for (const k of kabupatenList) {
+                                if (satker.toUpperCase().includes(k.toUpperCase())) {
+                                    kab = k;
+                                    break;
+                                }
+                            }
+                        }
+                        return kab.trim() === kabupaten;
+                    });
+                    totalAllMenus += kabData.length;
+                }
+                
                 const marker = L.circleMarker([location.lat, location.lng], {
-                    radius: Math.min(count / 10, 20) + 5,
+                    radius: Math.min(totalAllMenus / 20, 25) + 5,
                     fillColor: '#22d3ee',
                     color: '#fff',
                     weight: 2,
@@ -2078,14 +2099,23 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
                 const menuLabel = getMenuLabel(currentMenuId);
                 marker.bindPopup(`
-                    <div style="color: #000; min-width: 150px;">
-                        <b>${kabupaten}</b><br>
-                        ${menuLabel}: <b>${count.toLocaleString('id-ID')}</b> data
+                    <div style="color: #000; min-width: 180px;">
+                        <b style="font-size: 14px;">${kabupaten}</b><br>
+                        <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;">
+                            <div style="font-size: 12px; color: #666;">Menu Aktif:</div>
+                            <b style="color: #0891b2;">${menuLabel}: ${count.toLocaleString('id-ID')}</b>
+                        </div>
+                        <div style="margin-top: 4px; font-size: 11px; color: #999;">
+                            Total Semua: <b style="color: #333;">${totalAllMenus.toLocaleString('id-ID')}</b> data
+                        </div>
+                        <div style="margin-top: 8px; font-size: 10px; color: #0891b2;">
+                            ▸ Klik untuk lihat detail
+                        </div>
                     </div>
                 `);
 
                 marker.on('click', () => {
-                    updateRegionStatsSimple(kabupaten, count);
+                    updateRegionStatsSimple(kabupaten, totalAllMenus);
                 });
 
                 marker.addTo(markersLayer);
@@ -2104,12 +2134,13 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             console.warn('⚠️ Tidak ada markers untuk ditampilkan');
         }
 
-        // Set default region (kabupaten dengan data terbanyak)
+        // Set default region (kabupaten dengan data terbanyak dari menu aktif)
         const sortedKab = Object.entries(kabupatenStats)
             .sort((a, b) => b[1] - a[1]);
         
         if (sortedKab.length > 0) {
             const [topKab, topCount] = sortedKab[0];
+            // Update dengan data dari semua menu
             updateRegionStatsSimple(topKab, topCount);
         }
         
@@ -2127,33 +2158,83 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     }
 
     function updateRegionStatsSimple(kabupatenName, count) {
+        console.log('\n📍 Updating region stats for:', kabupatenName);
+        
         document.getElementById('regionName').textContent = kabupatenName;
         
-        // Reset semua stats
-        const statsIds = ['statJagaBudaya', 'statPengawasanOrmas', 'statPemantauanLingkungan', 
-                          'statOrangAsing', 'statAsetDesa', 'statPenyelewengan'];
-        statsIds.forEach(id => {
-            document.getElementById(id).textContent = '-';
-        });
+        // Daftar kabupaten untuk matching
+        const kabupatenList = [
+            'Surabaya', 'Malang', 'Banyuwangi', 'Jember', 'Sidoarjo', 'Gresik', 
+            'Mojokerto', 'Kediri', 'Blitar', 'Probolinggo', 'Pasuruan', 'Tulungagung',
+            'Madiun', 'Ponorogo', 'Ngawi', 'Bojonegoro', 'Tuban', 'Lamongan',
+            'Pacitan', 'Trenggalek', 'Nganjuk', 'Jombang', 'Bondowoso', 'Situbondo',
+            'Lumajang', 'Pamekasan', 'Sampang', 'Sumenep', 'Bangkalan', 'Batu', 'Magetan'
+        ];
         
-        // Hitung data per menu untuk kabupaten ini
-        const menuStats = {};
+        // Hitung data per menu untuk kabupaten ini dari SEMUA menu
+        const menuStats = {
+            jaga_budaya: 0,
+            pengawasan_ormas: 0,
+            pemantauan_lingkungan: 0,
+            pemantauan_orang_asing: 0,
+            aset_desa: 0,
+            kasus_penyelewengan: 0
+        };
+        
         for (const menuId in CSV_DATA) {
+            if (menuId === 'jaksa_garda') continue; // Skip jaksa_garda
+            
             const data = CSV_DATA[menuId] || [];
+            
+            // Filter data untuk kabupaten ini
             const kabData = data.filter(row => {
-                const kab = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || '';
-                return kab === kabupatenName;
+                // Try direct kabupaten column first
+                let kabupaten = row['Kabupaten/Kota'] || row.Kabupaten || '';
+                
+                // If not found, extract from Nama Satker or Desa
+                if (!kabupaten) {
+                    const satker = row['Nama Satker'] || '';
+                    const desa = row['Desa / Kelurahan'] || row['Desa/Kelurahan'] || '';
+                    
+                    // Try to match from satker name
+                    for (const kab of kabupatenList) {
+                        if (satker.toUpperCase().includes(kab.toUpperCase())) {
+                            kabupaten = kab;
+                            break;
+                        }
+                    }
+                    
+                    // If still not found, try from desa name
+                    if (!kabupaten) {
+                        for (const kab of kabupatenList) {
+                            if (desa.toUpperCase().includes(kab.toUpperCase())) {
+                                kabupaten = kab;
+                                break;
+                            }
+                        }
+                    }
+                }
+                
+                // Check if this row belongs to the selected kabupaten
+                return kabupaten.trim() === kabupatenName;
             });
+            
             menuStats[menuId] = kabData.length;
         }
         
+        console.log('Stats for', kabupatenName, ':', menuStats);
+        
         // Update stats display
-        document.getElementById('statJagaBudaya').textContent = menuStats.jaga_budaya || 0;
-        document.getElementById('statPengawasanOrmas').textContent = menuStats.pengawasan_ormas || 0;
-        document.getElementById('statPemantauanLingkungan').textContent = menuStats.pemantauan_lingkungan || 0;
-        document.getElementById('statOrangAsing').textContent = menuStats.pemantauan_orang_asing || 0;
-        document.getElementById('statAsetDesa').textContent = menuStats.aset_desa || 0;
-        document.getElementById('statPenyelewengan').textContent = menuStats.kasus_penyelewengan || 0;
+        document.getElementById('statJagaBudaya').textContent = menuStats.jaga_budaya.toLocaleString('id-ID');
+        document.getElementById('statPengawasanOrmas').textContent = menuStats.pengawasan_ormas.toLocaleString('id-ID');
+        document.getElementById('statPemantauanLingkungan').textContent = menuStats.pemantauan_lingkungan.toLocaleString('id-ID');
+        document.getElementById('statOrangAsing').textContent = menuStats.pemantauan_orang_asing.toLocaleString('id-ID');
+        document.getElementById('statAsetDesa').textContent = menuStats.aset_desa.toLocaleString('id-ID');
+        document.getElementById('statPenyelewengan').textContent = menuStats.kasus_penyelewengan.toLocaleString('id-ID');
+        
+        // Calculate total
+        const total = Object.values(menuStats).reduce((sum, val) => sum + val, 0);
+        console.log('Total data untuk', kabupatenName, ':', total);
     }
 
     /* ===================== FULL SCREEN TOGGLE ===================== */
