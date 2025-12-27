@@ -1,11 +1,1421 @@
 No,Desa / Kelurahan,Jenis Temuan,Waktu & Tanggal,Deskripsi Hambatan,Nama Satker
-1,Kelurahan Gubeng,Pencemaran Air,2024-12-20 10:30,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
-2,Desa Glagah,Penambangan Ilegal,2024-12-22 14:00,Penambangan pasir tanpa izin,KEJAKSAAN NEGERI BANYUWANGI
-3,Kelurahan Mojolangu,Pembakaran Sampah,2024-12-23 08:15,Pembakaran sampah di area terbuka,KEJAKSAAN NEGERI KOTA MALANG
-4,Kelurahan Sumbersari,Penggundulan Hutan,2024-12-24 16:45,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
-5,Kelurahan Taman,Pembuangan Limbah,2024-12-25 11:20,Limbah industri dibuang sembarangan,KEJAKSAAN NEGERI SIDOARJO
-6,Kelurahan Kebomas,Pencemaran Udara,2024-12-26 09:00,Asap pabrik melebihi batas,KEJAKSAAN NEGERI GRESIK
-7,Kelurahan Prajurit Kulon,Kerusakan Terumbu Karang,2024-12-21 13:30,Pengeboman ikan merusak ekosistem,KEJAKSAAN NEGERI KABUPATEN MOJOKERTO
-8,Kelurahan Bugul Kidul,Penebangan Liar,2024-12-19 15:00,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KABUPATEN PASURUAN
-9,Kelurahan Kanigaran,Pencemaran Tanah,2024-12-18 12:00,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI KABUPATEN PROBOLINGGO
-10,Desa Tawangargo,Perburuan Liar,2024-12-17 07:30,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KOTA MALANG
+1,Desa Makmur,Penambangan Ilegal,2024-02-02 09:07,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+2,Kelurahan Sejahtera,Pembakaran Sampah,2024-03-03 10:14,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+3,Desa Sentosa,Penggundulan Hutan,2024-04-04 11:21,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+4,Kelurahan Bahagia,Pembuangan Limbah,2024-05-05 12:28,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+5,Desa Jaya,Pencemaran Udara,2024-06-06 13:35,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+6,Kelurahan Sari,Kerusakan Terumbu Karang,2024-07-07 14:42,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+7,Desa Mulya,Penebangan Liar,2024-08-08 15:49,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+8,Kelurahan Indah,Pencemaran Tanah,2024-09-09 16:56,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+9,Desa Asri,Perburuan Liar,2024-10-10 17:03,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+10,Kelurahan Permai,Illegal Fishing,2024-11-11 08:10,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+11,Desa Subur,Pembuangan Sampah Liar,2024-12-12 09:17,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+12,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-01-13 10:24,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+13,Desa Damai,Polusi Plastik,2024-02-14 11:31,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+14,Kelurahan Raya,Pencemaran Air,2024-03-15 12:38,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+15,Desa Agung,Penambangan Ilegal,2024-04-16 13:45,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+16,Kelurahan Bersih,Pembakaran Sampah,2024-05-17 14:52,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+17,Desa Harmoni,Penggundulan Hutan,2024-06-18 15:59,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+18,Kelurahan Mawar,Pembuangan Limbah,2024-07-19 16:06,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+19,Desa Melati,Pencemaran Udara,2024-08-20 17:13,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+20,Kelurahan Maju,Kerusakan Terumbu Karang,2024-09-21 08:20,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+21,Desa Makmur,Penebangan Liar,2024-10-22 09:27,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+22,Kelurahan Sejahtera,Pencemaran Tanah,2024-11-23 10:34,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+23,Desa Sentosa,Perburuan Liar,2024-12-24 11:41,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+24,Kelurahan Bahagia,Illegal Fishing,2024-01-25 12:48,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+25,Desa Jaya,Pembuangan Sampah Liar,2024-02-26 13:55,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+26,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-03-27 14:02,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+27,Desa Mulya,Polusi Plastik,2024-04-28 15:09,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+28,Kelurahan Indah,Pencemaran Air,2024-05-01 16:16,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+29,Desa Asri,Penambangan Ilegal,2024-06-02 17:23,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+30,Kelurahan Permai,Pembakaran Sampah,2024-07-03 08:30,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+31,Desa Subur,Penggundulan Hutan,2024-08-04 09:37,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+32,Kelurahan Tenteram,Pembuangan Limbah,2024-09-05 10:44,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+33,Desa Damai,Pencemaran Udara,2024-10-06 11:51,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+34,Kelurahan Raya,Kerusakan Terumbu Karang,2024-11-07 12:58,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+35,Desa Agung,Penebangan Liar,2024-12-08 13:05,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+36,Kelurahan Bersih,Pencemaran Tanah,2024-01-09 14:12,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+37,Desa Harmoni,Perburuan Liar,2024-02-10 15:19,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+38,Kelurahan Mawar,Illegal Fishing,2024-03-11 16:26,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+39,Desa Melati,Pembuangan Sampah Liar,2024-04-12 17:33,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+40,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-05-13 08:40,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+41,Desa Makmur,Polusi Plastik,2024-06-14 09:47,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+42,Kelurahan Sejahtera,Pencemaran Air,2024-07-15 10:54,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+43,Desa Sentosa,Penambangan Ilegal,2024-08-16 11:01,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+44,Kelurahan Bahagia,Pembakaran Sampah,2024-09-17 12:08,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+45,Desa Jaya,Penggundulan Hutan,2024-10-18 13:15,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+46,Kelurahan Sari,Pembuangan Limbah,2024-11-19 14:22,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+47,Desa Mulya,Pencemaran Udara,2024-12-20 15:29,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+48,Kelurahan Indah,Kerusakan Terumbu Karang,2024-01-21 16:36,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+49,Desa Asri,Penebangan Liar,2024-02-22 17:43,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+50,Kelurahan Permai,Pencemaran Tanah,2024-03-23 08:50,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+51,Desa Subur,Perburuan Liar,2024-04-24 09:57,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+52,Kelurahan Tenteram,Illegal Fishing,2024-05-25 10:04,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+53,Desa Damai,Pembuangan Sampah Liar,2024-06-26 11:11,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+54,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-07-27 12:18,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+55,Desa Agung,Polusi Plastik,2024-08-28 13:25,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+56,Kelurahan Bersih,Pencemaran Air,2024-09-01 14:32,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+57,Desa Harmoni,Penambangan Ilegal,2024-10-02 15:39,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+58,Kelurahan Mawar,Pembakaran Sampah,2024-11-03 16:46,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+59,Desa Melati,Penggundulan Hutan,2024-12-04 17:53,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+60,Kelurahan Maju,Pembuangan Limbah,2024-01-05 08:00,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+61,Desa Makmur,Pencemaran Udara,2024-02-06 09:07,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+62,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-03-07 10:14,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+63,Desa Sentosa,Penebangan Liar,2024-04-08 11:21,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+64,Kelurahan Bahagia,Pencemaran Tanah,2024-05-09 12:28,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+65,Desa Jaya,Perburuan Liar,2024-06-10 13:35,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+66,Kelurahan Sari,Illegal Fishing,2024-07-11 14:42,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+67,Desa Mulya,Pembuangan Sampah Liar,2024-08-12 15:49,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+68,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-09-13 16:56,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+69,Desa Asri,Polusi Plastik,2024-10-14 17:03,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+70,Kelurahan Permai,Pencemaran Air,2024-11-15 08:10,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+71,Desa Subur,Penambangan Ilegal,2024-12-16 09:17,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+72,Kelurahan Tenteram,Pembakaran Sampah,2024-01-17 10:24,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+73,Desa Damai,Penggundulan Hutan,2024-02-18 11:31,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+74,Kelurahan Raya,Pembuangan Limbah,2024-03-19 12:38,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+75,Desa Agung,Pencemaran Udara,2024-04-20 13:45,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+76,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-05-21 14:52,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+77,Desa Harmoni,Penebangan Liar,2024-06-22 15:59,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+78,Kelurahan Mawar,Pencemaran Tanah,2024-07-23 16:06,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+79,Desa Melati,Perburuan Liar,2024-08-24 17:13,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+80,Kelurahan Maju,Illegal Fishing,2024-09-25 08:20,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+81,Desa Makmur,Pembuangan Sampah Liar,2024-10-26 09:27,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+82,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-11-27 10:34,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+83,Desa Sentosa,Polusi Plastik,2024-12-28 11:41,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+84,Kelurahan Bahagia,Pencemaran Air,2024-01-01 12:48,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+85,Desa Jaya,Penambangan Ilegal,2024-02-02 13:55,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+86,Kelurahan Sari,Pembakaran Sampah,2024-03-03 14:02,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+87,Desa Mulya,Penggundulan Hutan,2024-04-04 15:09,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+88,Kelurahan Indah,Pembuangan Limbah,2024-05-05 16:16,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+89,Desa Asri,Pencemaran Udara,2024-06-06 17:23,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+90,Kelurahan Permai,Kerusakan Terumbu Karang,2024-07-07 08:30,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+91,Desa Subur,Penebangan Liar,2024-08-08 09:37,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+92,Kelurahan Tenteram,Pencemaran Tanah,2024-09-09 10:44,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+93,Desa Damai,Perburuan Liar,2024-10-10 11:51,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+94,Kelurahan Raya,Illegal Fishing,2024-11-11 12:58,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+95,Desa Agung,Pembuangan Sampah Liar,2024-12-12 13:05,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+96,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-01-13 14:12,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+97,Desa Harmoni,Polusi Plastik,2024-02-14 15:19,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+98,Kelurahan Mawar,Pencemaran Air,2024-03-15 16:26,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+99,Desa Melati,Penambangan Ilegal,2024-04-16 17:33,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+100,Kelurahan Maju,Pembakaran Sampah,2024-05-17 08:40,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+101,Desa Makmur,Penggundulan Hutan,2024-06-18 09:47,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+102,Kelurahan Sejahtera,Pembuangan Limbah,2024-07-19 10:54,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+103,Desa Sentosa,Pencemaran Udara,2024-08-20 11:01,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+104,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-09-21 12:08,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+105,Desa Jaya,Penebangan Liar,2024-10-22 13:15,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+106,Kelurahan Sari,Pencemaran Tanah,2024-11-23 14:22,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+107,Desa Mulya,Perburuan Liar,2024-12-24 15:29,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+108,Kelurahan Indah,Illegal Fishing,2024-01-25 16:36,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+109,Desa Asri,Pembuangan Sampah Liar,2024-02-26 17:43,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+110,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-03-27 08:50,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+111,Desa Subur,Polusi Plastik,2024-04-28 09:57,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+112,Kelurahan Tenteram,Pencemaran Air,2024-05-01 10:04,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+113,Desa Damai,Penambangan Ilegal,2024-06-02 11:11,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+114,Kelurahan Raya,Pembakaran Sampah,2024-07-03 12:18,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+115,Desa Agung,Penggundulan Hutan,2024-08-04 13:25,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+116,Kelurahan Bersih,Pembuangan Limbah,2024-09-05 14:32,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+117,Desa Harmoni,Pencemaran Udara,2024-10-06 15:39,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+118,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-11-07 16:46,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+119,Desa Melati,Penebangan Liar,2024-12-08 17:53,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+120,Kelurahan Maju,Pencemaran Tanah,2024-01-09 08:00,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+121,Desa Makmur,Perburuan Liar,2024-02-10 09:07,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+122,Kelurahan Sejahtera,Illegal Fishing,2024-03-11 10:14,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+123,Desa Sentosa,Pembuangan Sampah Liar,2024-04-12 11:21,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+124,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-05-13 12:28,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+125,Desa Jaya,Polusi Plastik,2024-06-14 13:35,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+126,Kelurahan Sari,Pencemaran Air,2024-07-15 14:42,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+127,Desa Mulya,Penambangan Ilegal,2024-08-16 15:49,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+128,Kelurahan Indah,Pembakaran Sampah,2024-09-17 16:56,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+129,Desa Asri,Penggundulan Hutan,2024-10-18 17:03,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+130,Kelurahan Permai,Pembuangan Limbah,2024-11-19 08:10,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+131,Desa Subur,Pencemaran Udara,2024-12-20 09:17,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+132,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-01-21 10:24,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+133,Desa Damai,Penebangan Liar,2024-02-22 11:31,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+134,Kelurahan Raya,Pencemaran Tanah,2024-03-23 12:38,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+135,Desa Agung,Perburuan Liar,2024-04-24 13:45,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+136,Kelurahan Bersih,Illegal Fishing,2024-05-25 14:52,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+137,Desa Harmoni,Pembuangan Sampah Liar,2024-06-26 15:59,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+138,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-07-27 16:06,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+139,Desa Melati,Polusi Plastik,2024-08-28 17:13,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+140,Kelurahan Maju,Pencemaran Air,2024-09-01 08:20,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+141,Desa Makmur,Penambangan Ilegal,2024-10-02 09:27,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+142,Kelurahan Sejahtera,Pembakaran Sampah,2024-11-03 10:34,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+143,Desa Sentosa,Penggundulan Hutan,2024-12-04 11:41,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+144,Kelurahan Bahagia,Pembuangan Limbah,2024-01-05 12:48,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+145,Desa Jaya,Pencemaran Udara,2024-02-06 13:55,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+146,Kelurahan Sari,Kerusakan Terumbu Karang,2024-03-07 14:02,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+147,Desa Mulya,Penebangan Liar,2024-04-08 15:09,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+148,Kelurahan Indah,Pencemaran Tanah,2024-05-09 16:16,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+149,Desa Asri,Perburuan Liar,2024-06-10 17:23,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+150,Kelurahan Permai,Illegal Fishing,2024-07-11 08:30,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+151,Desa Subur,Pembuangan Sampah Liar,2024-08-12 09:37,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+152,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-09-13 10:44,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+153,Desa Damai,Polusi Plastik,2024-10-14 11:51,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+154,Kelurahan Raya,Pencemaran Air,2024-11-15 12:58,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+155,Desa Agung,Penambangan Ilegal,2024-12-16 13:05,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+156,Kelurahan Bersih,Pembakaran Sampah,2024-01-17 14:12,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+157,Desa Harmoni,Penggundulan Hutan,2024-02-18 15:19,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+158,Kelurahan Mawar,Pembuangan Limbah,2024-03-19 16:26,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+159,Desa Melati,Pencemaran Udara,2024-04-20 17:33,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+160,Kelurahan Maju,Kerusakan Terumbu Karang,2024-05-21 08:40,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+161,Desa Makmur,Penebangan Liar,2024-06-22 09:47,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+162,Kelurahan Sejahtera,Pencemaran Tanah,2024-07-23 10:54,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+163,Desa Sentosa,Perburuan Liar,2024-08-24 11:01,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+164,Kelurahan Bahagia,Illegal Fishing,2024-09-25 12:08,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+165,Desa Jaya,Pembuangan Sampah Liar,2024-10-26 13:15,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+166,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-11-27 14:22,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+167,Desa Mulya,Polusi Plastik,2024-12-28 15:29,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+168,Kelurahan Indah,Pencemaran Air,2024-01-01 16:36,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+169,Desa Asri,Penambangan Ilegal,2024-02-02 17:43,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+170,Kelurahan Permai,Pembakaran Sampah,2024-03-03 08:50,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+171,Desa Subur,Penggundulan Hutan,2024-04-04 09:57,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+172,Kelurahan Tenteram,Pembuangan Limbah,2024-05-05 10:04,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+173,Desa Damai,Pencemaran Udara,2024-06-06 11:11,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+174,Kelurahan Raya,Kerusakan Terumbu Karang,2024-07-07 12:18,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+175,Desa Agung,Penebangan Liar,2024-08-08 13:25,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+176,Kelurahan Bersih,Pencemaran Tanah,2024-09-09 14:32,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+177,Desa Harmoni,Perburuan Liar,2024-10-10 15:39,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+178,Kelurahan Mawar,Illegal Fishing,2024-11-11 16:46,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+179,Desa Melati,Pembuangan Sampah Liar,2024-12-12 17:53,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+180,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-01-13 08:00,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+181,Desa Makmur,Polusi Plastik,2024-02-14 09:07,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+182,Kelurahan Sejahtera,Pencemaran Air,2024-03-15 10:14,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+183,Desa Sentosa,Penambangan Ilegal,2024-04-16 11:21,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+184,Kelurahan Bahagia,Pembakaran Sampah,2024-05-17 12:28,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+185,Desa Jaya,Penggundulan Hutan,2024-06-18 13:35,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+186,Kelurahan Sari,Pembuangan Limbah,2024-07-19 14:42,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+187,Desa Mulya,Pencemaran Udara,2024-08-20 15:49,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+188,Kelurahan Indah,Kerusakan Terumbu Karang,2024-09-21 16:56,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+189,Desa Asri,Penebangan Liar,2024-10-22 17:03,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+190,Kelurahan Permai,Pencemaran Tanah,2024-11-23 08:10,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+191,Desa Subur,Perburuan Liar,2024-12-24 09:17,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+192,Kelurahan Tenteram,Illegal Fishing,2024-01-25 10:24,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+193,Desa Damai,Pembuangan Sampah Liar,2024-02-26 11:31,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+194,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-03-27 12:38,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+195,Desa Agung,Polusi Plastik,2024-04-28 13:45,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+196,Kelurahan Bersih,Pencemaran Air,2024-05-01 14:52,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+197,Desa Harmoni,Penambangan Ilegal,2024-06-02 15:59,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+198,Kelurahan Mawar,Pembakaran Sampah,2024-07-03 16:06,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+199,Desa Melati,Penggundulan Hutan,2024-08-04 17:13,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+200,Kelurahan Maju,Pembuangan Limbah,2024-09-05 08:20,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+201,Desa Makmur,Pencemaran Udara,2024-10-06 09:27,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+202,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-11-07 10:34,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+203,Desa Sentosa,Penebangan Liar,2024-12-08 11:41,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+204,Kelurahan Bahagia,Pencemaran Tanah,2024-01-09 12:48,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+205,Desa Jaya,Perburuan Liar,2024-02-10 13:55,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+206,Kelurahan Sari,Illegal Fishing,2024-03-11 14:02,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+207,Desa Mulya,Pembuangan Sampah Liar,2024-04-12 15:09,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+208,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-05-13 16:16,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+209,Desa Asri,Polusi Plastik,2024-06-14 17:23,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+210,Kelurahan Permai,Pencemaran Air,2024-07-15 08:30,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+211,Desa Subur,Penambangan Ilegal,2024-08-16 09:37,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+212,Kelurahan Tenteram,Pembakaran Sampah,2024-09-17 10:44,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+213,Desa Damai,Penggundulan Hutan,2024-10-18 11:51,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+214,Kelurahan Raya,Pembuangan Limbah,2024-11-19 12:58,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+215,Desa Agung,Pencemaran Udara,2024-12-20 13:05,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+216,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-01-21 14:12,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+217,Desa Harmoni,Penebangan Liar,2024-02-22 15:19,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+218,Kelurahan Mawar,Pencemaran Tanah,2024-03-23 16:26,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+219,Desa Melati,Perburuan Liar,2024-04-24 17:33,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+220,Kelurahan Maju,Illegal Fishing,2024-05-25 08:40,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+221,Desa Makmur,Pembuangan Sampah Liar,2024-06-26 09:47,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+222,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-07-27 10:54,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+223,Desa Sentosa,Polusi Plastik,2024-08-28 11:01,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+224,Kelurahan Bahagia,Pencemaran Air,2024-09-01 12:08,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+225,Desa Jaya,Penambangan Ilegal,2024-10-02 13:15,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+226,Kelurahan Sari,Pembakaran Sampah,2024-11-03 14:22,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+227,Desa Mulya,Penggundulan Hutan,2024-12-04 15:29,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+228,Kelurahan Indah,Pembuangan Limbah,2024-01-05 16:36,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+229,Desa Asri,Pencemaran Udara,2024-02-06 17:43,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+230,Kelurahan Permai,Kerusakan Terumbu Karang,2024-03-07 08:50,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+231,Desa Subur,Penebangan Liar,2024-04-08 09:57,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+232,Kelurahan Tenteram,Pencemaran Tanah,2024-05-09 10:04,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+233,Desa Damai,Perburuan Liar,2024-06-10 11:11,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+234,Kelurahan Raya,Illegal Fishing,2024-07-11 12:18,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+235,Desa Agung,Pembuangan Sampah Liar,2024-08-12 13:25,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+236,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-09-13 14:32,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+237,Desa Harmoni,Polusi Plastik,2024-10-14 15:39,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+238,Kelurahan Mawar,Pencemaran Air,2024-11-15 16:46,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+239,Desa Melati,Penambangan Ilegal,2024-12-16 17:53,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+240,Kelurahan Maju,Pembakaran Sampah,2024-01-17 08:00,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+241,Desa Makmur,Penggundulan Hutan,2024-02-18 09:07,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+242,Kelurahan Sejahtera,Pembuangan Limbah,2024-03-19 10:14,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+243,Desa Sentosa,Pencemaran Udara,2024-04-20 11:21,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+244,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-05-21 12:28,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+245,Desa Jaya,Penebangan Liar,2024-06-22 13:35,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+246,Kelurahan Sari,Pencemaran Tanah,2024-07-23 14:42,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+247,Desa Mulya,Perburuan Liar,2024-08-24 15:49,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+248,Kelurahan Indah,Illegal Fishing,2024-09-25 16:56,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+249,Desa Asri,Pembuangan Sampah Liar,2024-10-26 17:03,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+250,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-11-27 08:10,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+251,Desa Subur,Polusi Plastik,2024-12-28 09:17,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+252,Kelurahan Tenteram,Pencemaran Air,2024-01-01 10:24,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+253,Desa Damai,Penambangan Ilegal,2024-02-02 11:31,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+254,Kelurahan Raya,Pembakaran Sampah,2024-03-03 12:38,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+255,Desa Agung,Penggundulan Hutan,2024-04-04 13:45,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+256,Kelurahan Bersih,Pembuangan Limbah,2024-05-05 14:52,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+257,Desa Harmoni,Pencemaran Udara,2024-06-06 15:59,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+258,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-07-07 16:06,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+259,Desa Melati,Penebangan Liar,2024-08-08 17:13,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+260,Kelurahan Maju,Pencemaran Tanah,2024-09-09 08:20,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+261,Desa Makmur,Perburuan Liar,2024-10-10 09:27,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+262,Kelurahan Sejahtera,Illegal Fishing,2024-11-11 10:34,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+263,Desa Sentosa,Pembuangan Sampah Liar,2024-12-12 11:41,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+264,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-01-13 12:48,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+265,Desa Jaya,Polusi Plastik,2024-02-14 13:55,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+266,Kelurahan Sari,Pencemaran Air,2024-03-15 14:02,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+267,Desa Mulya,Penambangan Ilegal,2024-04-16 15:09,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+268,Kelurahan Indah,Pembakaran Sampah,2024-05-17 16:16,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+269,Desa Asri,Penggundulan Hutan,2024-06-18 17:23,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+270,Kelurahan Permai,Pembuangan Limbah,2024-07-19 08:30,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+271,Desa Subur,Pencemaran Udara,2024-08-20 09:37,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+272,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-09-21 10:44,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+273,Desa Damai,Penebangan Liar,2024-10-22 11:51,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+274,Kelurahan Raya,Pencemaran Tanah,2024-11-23 12:58,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+275,Desa Agung,Perburuan Liar,2024-12-24 13:05,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+276,Kelurahan Bersih,Illegal Fishing,2024-01-25 14:12,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+277,Desa Harmoni,Pembuangan Sampah Liar,2024-02-26 15:19,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+278,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-03-27 16:26,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+279,Desa Melati,Polusi Plastik,2024-04-28 17:33,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+280,Kelurahan Maju,Pencemaran Air,2024-05-01 08:40,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+281,Desa Makmur,Penambangan Ilegal,2024-06-02 09:47,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+282,Kelurahan Sejahtera,Pembakaran Sampah,2024-07-03 10:54,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+283,Desa Sentosa,Penggundulan Hutan,2024-08-04 11:01,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+284,Kelurahan Bahagia,Pembuangan Limbah,2024-09-05 12:08,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+285,Desa Jaya,Pencemaran Udara,2024-10-06 13:15,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+286,Kelurahan Sari,Kerusakan Terumbu Karang,2024-11-07 14:22,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+287,Desa Mulya,Penebangan Liar,2024-12-08 15:29,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+288,Kelurahan Indah,Pencemaran Tanah,2024-01-09 16:36,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+289,Desa Asri,Perburuan Liar,2024-02-10 17:43,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+290,Kelurahan Permai,Illegal Fishing,2024-03-11 08:50,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+291,Desa Subur,Pembuangan Sampah Liar,2024-04-12 09:57,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+292,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-05-13 10:04,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+293,Desa Damai,Polusi Plastik,2024-06-14 11:11,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+294,Kelurahan Raya,Pencemaran Air,2024-07-15 12:18,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+295,Desa Agung,Penambangan Ilegal,2024-08-16 13:25,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+296,Kelurahan Bersih,Pembakaran Sampah,2024-09-17 14:32,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+297,Desa Harmoni,Penggundulan Hutan,2024-10-18 15:39,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+298,Kelurahan Mawar,Pembuangan Limbah,2024-11-19 16:46,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+299,Desa Melati,Pencemaran Udara,2024-12-20 17:53,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+300,Kelurahan Maju,Kerusakan Terumbu Karang,2024-01-21 08:00,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+301,Desa Makmur,Penebangan Liar,2024-02-22 09:07,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+302,Kelurahan Sejahtera,Pencemaran Tanah,2024-03-23 10:14,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+303,Desa Sentosa,Perburuan Liar,2024-04-24 11:21,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+304,Kelurahan Bahagia,Illegal Fishing,2024-05-25 12:28,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+305,Desa Jaya,Pembuangan Sampah Liar,2024-06-26 13:35,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+306,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-07-27 14:42,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+307,Desa Mulya,Polusi Plastik,2024-08-28 15:49,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+308,Kelurahan Indah,Pencemaran Air,2024-09-01 16:56,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+309,Desa Asri,Penambangan Ilegal,2024-10-02 17:03,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+310,Kelurahan Permai,Pembakaran Sampah,2024-11-03 08:10,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+311,Desa Subur,Penggundulan Hutan,2024-12-04 09:17,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+312,Kelurahan Tenteram,Pembuangan Limbah,2024-01-05 10:24,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+313,Desa Damai,Pencemaran Udara,2024-02-06 11:31,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+314,Kelurahan Raya,Kerusakan Terumbu Karang,2024-03-07 12:38,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+315,Desa Agung,Penebangan Liar,2024-04-08 13:45,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+316,Kelurahan Bersih,Pencemaran Tanah,2024-05-09 14:52,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+317,Desa Harmoni,Perburuan Liar,2024-06-10 15:59,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+318,Kelurahan Mawar,Illegal Fishing,2024-07-11 16:06,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+319,Desa Melati,Pembuangan Sampah Liar,2024-08-12 17:13,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+320,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-09-13 08:20,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+321,Desa Makmur,Polusi Plastik,2024-10-14 09:27,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+322,Kelurahan Sejahtera,Pencemaran Air,2024-11-15 10:34,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+323,Desa Sentosa,Penambangan Ilegal,2024-12-16 11:41,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+324,Kelurahan Bahagia,Pembakaran Sampah,2024-01-17 12:48,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+325,Desa Jaya,Penggundulan Hutan,2024-02-18 13:55,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+326,Kelurahan Sari,Pembuangan Limbah,2024-03-19 14:02,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+327,Desa Mulya,Pencemaran Udara,2024-04-20 15:09,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+328,Kelurahan Indah,Kerusakan Terumbu Karang,2024-05-21 16:16,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+329,Desa Asri,Penebangan Liar,2024-06-22 17:23,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+330,Kelurahan Permai,Pencemaran Tanah,2024-07-23 08:30,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+331,Desa Subur,Perburuan Liar,2024-08-24 09:37,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+332,Kelurahan Tenteram,Illegal Fishing,2024-09-25 10:44,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+333,Desa Damai,Pembuangan Sampah Liar,2024-10-26 11:51,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+334,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-11-27 12:58,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+335,Desa Agung,Polusi Plastik,2024-12-28 13:05,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+336,Kelurahan Bersih,Pencemaran Air,2024-01-01 14:12,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+337,Desa Harmoni,Penambangan Ilegal,2024-02-02 15:19,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+338,Kelurahan Mawar,Pembakaran Sampah,2024-03-03 16:26,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+339,Desa Melati,Penggundulan Hutan,2024-04-04 17:33,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+340,Kelurahan Maju,Pembuangan Limbah,2024-05-05 08:40,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+341,Desa Makmur,Pencemaran Udara,2024-06-06 09:47,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+342,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-07-07 10:54,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+343,Desa Sentosa,Penebangan Liar,2024-08-08 11:01,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+344,Kelurahan Bahagia,Pencemaran Tanah,2024-09-09 12:08,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+345,Desa Jaya,Perburuan Liar,2024-10-10 13:15,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+346,Kelurahan Sari,Illegal Fishing,2024-11-11 14:22,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+347,Desa Mulya,Pembuangan Sampah Liar,2024-12-12 15:29,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+348,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-01-13 16:36,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+349,Desa Asri,Polusi Plastik,2024-02-14 17:43,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+350,Kelurahan Permai,Pencemaran Air,2024-03-15 08:50,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+351,Desa Subur,Penambangan Ilegal,2024-04-16 09:57,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+352,Kelurahan Tenteram,Pembakaran Sampah,2024-05-17 10:04,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+353,Desa Damai,Penggundulan Hutan,2024-06-18 11:11,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+354,Kelurahan Raya,Pembuangan Limbah,2024-07-19 12:18,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+355,Desa Agung,Pencemaran Udara,2024-08-20 13:25,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+356,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-09-21 14:32,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+357,Desa Harmoni,Penebangan Liar,2024-10-22 15:39,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+358,Kelurahan Mawar,Pencemaran Tanah,2024-11-23 16:46,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+359,Desa Melati,Perburuan Liar,2024-12-24 17:53,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+360,Kelurahan Maju,Illegal Fishing,2024-01-25 08:00,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+361,Desa Makmur,Pembuangan Sampah Liar,2024-02-26 09:07,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+362,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-03-27 10:14,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+363,Desa Sentosa,Polusi Plastik,2024-04-28 11:21,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+364,Kelurahan Bahagia,Pencemaran Air,2024-05-01 12:28,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+365,Desa Jaya,Penambangan Ilegal,2024-06-02 13:35,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+366,Kelurahan Sari,Pembakaran Sampah,2024-07-03 14:42,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+367,Desa Mulya,Penggundulan Hutan,2024-08-04 15:49,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+368,Kelurahan Indah,Pembuangan Limbah,2024-09-05 16:56,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+369,Desa Asri,Pencemaran Udara,2024-10-06 17:03,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+370,Kelurahan Permai,Kerusakan Terumbu Karang,2024-11-07 08:10,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+371,Desa Subur,Penebangan Liar,2024-12-08 09:17,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+372,Kelurahan Tenteram,Pencemaran Tanah,2024-01-09 10:24,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+373,Desa Damai,Perburuan Liar,2024-02-10 11:31,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+374,Kelurahan Raya,Illegal Fishing,2024-03-11 12:38,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+375,Desa Agung,Pembuangan Sampah Liar,2024-04-12 13:45,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+376,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-05-13 14:52,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+377,Desa Harmoni,Polusi Plastik,2024-06-14 15:59,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+378,Kelurahan Mawar,Pencemaran Air,2024-07-15 16:06,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+379,Desa Melati,Penambangan Ilegal,2024-08-16 17:13,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+380,Kelurahan Maju,Pembakaran Sampah,2024-09-17 08:20,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+381,Desa Makmur,Penggundulan Hutan,2024-10-18 09:27,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+382,Kelurahan Sejahtera,Pembuangan Limbah,2024-11-19 10:34,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+383,Desa Sentosa,Pencemaran Udara,2024-12-20 11:41,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+384,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-01-21 12:48,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+385,Desa Jaya,Penebangan Liar,2024-02-22 13:55,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+386,Kelurahan Sari,Pencemaran Tanah,2024-03-23 14:02,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+387,Desa Mulya,Perburuan Liar,2024-04-24 15:09,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+388,Kelurahan Indah,Illegal Fishing,2024-05-25 16:16,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+389,Desa Asri,Pembuangan Sampah Liar,2024-06-26 17:23,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+390,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-07-27 08:30,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+391,Desa Subur,Polusi Plastik,2024-08-28 09:37,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+392,Kelurahan Tenteram,Pencemaran Air,2024-09-01 10:44,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+393,Desa Damai,Penambangan Ilegal,2024-10-02 11:51,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+394,Kelurahan Raya,Pembakaran Sampah,2024-11-03 12:58,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+395,Desa Agung,Penggundulan Hutan,2024-12-04 13:05,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+396,Kelurahan Bersih,Pembuangan Limbah,2024-01-05 14:12,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+397,Desa Harmoni,Pencemaran Udara,2024-02-06 15:19,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+398,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-03-07 16:26,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+399,Desa Melati,Penebangan Liar,2024-04-08 17:33,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+400,Kelurahan Maju,Pencemaran Tanah,2024-05-09 08:40,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+401,Desa Makmur,Perburuan Liar,2024-06-10 09:47,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+402,Kelurahan Sejahtera,Illegal Fishing,2024-07-11 10:54,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+403,Desa Sentosa,Pembuangan Sampah Liar,2024-08-12 11:01,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+404,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-09-13 12:08,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+405,Desa Jaya,Polusi Plastik,2024-10-14 13:15,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+406,Kelurahan Sari,Pencemaran Air,2024-11-15 14:22,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+407,Desa Mulya,Penambangan Ilegal,2024-12-16 15:29,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+408,Kelurahan Indah,Pembakaran Sampah,2024-01-17 16:36,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+409,Desa Asri,Penggundulan Hutan,2024-02-18 17:43,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+410,Kelurahan Permai,Pembuangan Limbah,2024-03-19 08:50,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+411,Desa Subur,Pencemaran Udara,2024-04-20 09:57,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+412,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-05-21 10:04,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+413,Desa Damai,Penebangan Liar,2024-06-22 11:11,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+414,Kelurahan Raya,Pencemaran Tanah,2024-07-23 12:18,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+415,Desa Agung,Perburuan Liar,2024-08-24 13:25,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+416,Kelurahan Bersih,Illegal Fishing,2024-09-25 14:32,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+417,Desa Harmoni,Pembuangan Sampah Liar,2024-10-26 15:39,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+418,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-11-27 16:46,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+419,Desa Melati,Polusi Plastik,2024-12-28 17:53,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+420,Kelurahan Maju,Pencemaran Air,2024-01-01 08:00,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+421,Desa Makmur,Penambangan Ilegal,2024-02-02 09:07,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+422,Kelurahan Sejahtera,Pembakaran Sampah,2024-03-03 10:14,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+423,Desa Sentosa,Penggundulan Hutan,2024-04-04 11:21,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+424,Kelurahan Bahagia,Pembuangan Limbah,2024-05-05 12:28,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+425,Desa Jaya,Pencemaran Udara,2024-06-06 13:35,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+426,Kelurahan Sari,Kerusakan Terumbu Karang,2024-07-07 14:42,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+427,Desa Mulya,Penebangan Liar,2024-08-08 15:49,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+428,Kelurahan Indah,Pencemaran Tanah,2024-09-09 16:56,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+429,Desa Asri,Perburuan Liar,2024-10-10 17:03,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+430,Kelurahan Permai,Illegal Fishing,2024-11-11 08:10,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+431,Desa Subur,Pembuangan Sampah Liar,2024-12-12 09:17,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+432,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-01-13 10:24,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+433,Desa Damai,Polusi Plastik,2024-02-14 11:31,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+434,Kelurahan Raya,Pencemaran Air,2024-03-15 12:38,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+435,Desa Agung,Penambangan Ilegal,2024-04-16 13:45,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+436,Kelurahan Bersih,Pembakaran Sampah,2024-05-17 14:52,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+437,Desa Harmoni,Penggundulan Hutan,2024-06-18 15:59,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+438,Kelurahan Mawar,Pembuangan Limbah,2024-07-19 16:06,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+439,Desa Melati,Pencemaran Udara,2024-08-20 17:13,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+440,Kelurahan Maju,Kerusakan Terumbu Karang,2024-09-21 08:20,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+441,Desa Makmur,Penebangan Liar,2024-10-22 09:27,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+442,Kelurahan Sejahtera,Pencemaran Tanah,2024-11-23 10:34,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+443,Desa Sentosa,Perburuan Liar,2024-12-24 11:41,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+444,Kelurahan Bahagia,Illegal Fishing,2024-01-25 12:48,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+445,Desa Jaya,Pembuangan Sampah Liar,2024-02-26 13:55,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+446,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-03-27 14:02,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+447,Desa Mulya,Polusi Plastik,2024-04-28 15:09,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+448,Kelurahan Indah,Pencemaran Air,2024-05-01 16:16,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+449,Desa Asri,Penambangan Ilegal,2024-06-02 17:23,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+450,Kelurahan Permai,Pembakaran Sampah,2024-07-03 08:30,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+451,Desa Subur,Penggundulan Hutan,2024-08-04 09:37,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+452,Kelurahan Tenteram,Pembuangan Limbah,2024-09-05 10:44,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+453,Desa Damai,Pencemaran Udara,2024-10-06 11:51,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+454,Kelurahan Raya,Kerusakan Terumbu Karang,2024-11-07 12:58,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+455,Desa Agung,Penebangan Liar,2024-12-08 13:05,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+456,Kelurahan Bersih,Pencemaran Tanah,2024-01-09 14:12,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+457,Desa Harmoni,Perburuan Liar,2024-02-10 15:19,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+458,Kelurahan Mawar,Illegal Fishing,2024-03-11 16:26,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+459,Desa Melati,Pembuangan Sampah Liar,2024-04-12 17:33,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+460,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-05-13 08:40,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+461,Desa Makmur,Polusi Plastik,2024-06-14 09:47,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+462,Kelurahan Sejahtera,Pencemaran Air,2024-07-15 10:54,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+463,Desa Sentosa,Penambangan Ilegal,2024-08-16 11:01,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+464,Kelurahan Bahagia,Pembakaran Sampah,2024-09-17 12:08,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+465,Desa Jaya,Penggundulan Hutan,2024-10-18 13:15,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+466,Kelurahan Sari,Pembuangan Limbah,2024-11-19 14:22,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+467,Desa Mulya,Pencemaran Udara,2024-12-20 15:29,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+468,Kelurahan Indah,Kerusakan Terumbu Karang,2024-01-21 16:36,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+469,Desa Asri,Penebangan Liar,2024-02-22 17:43,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+470,Kelurahan Permai,Pencemaran Tanah,2024-03-23 08:50,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+471,Desa Subur,Perburuan Liar,2024-04-24 09:57,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+472,Kelurahan Tenteram,Illegal Fishing,2024-05-25 10:04,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+473,Desa Damai,Pembuangan Sampah Liar,2024-06-26 11:11,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+474,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-07-27 12:18,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+475,Desa Agung,Polusi Plastik,2024-08-28 13:25,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+476,Kelurahan Bersih,Pencemaran Air,2024-09-01 14:32,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+477,Desa Harmoni,Penambangan Ilegal,2024-10-02 15:39,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+478,Kelurahan Mawar,Pembakaran Sampah,2024-11-03 16:46,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+479,Desa Melati,Penggundulan Hutan,2024-12-04 17:53,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+480,Kelurahan Maju,Pembuangan Limbah,2024-01-05 08:00,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+481,Desa Makmur,Pencemaran Udara,2024-02-06 09:07,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+482,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-03-07 10:14,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+483,Desa Sentosa,Penebangan Liar,2024-04-08 11:21,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+484,Kelurahan Bahagia,Pencemaran Tanah,2024-05-09 12:28,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+485,Desa Jaya,Perburuan Liar,2024-06-10 13:35,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+486,Kelurahan Sari,Illegal Fishing,2024-07-11 14:42,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+487,Desa Mulya,Pembuangan Sampah Liar,2024-08-12 15:49,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+488,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-09-13 16:56,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+489,Desa Asri,Polusi Plastik,2024-10-14 17:03,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+490,Kelurahan Permai,Pencemaran Air,2024-11-15 08:10,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+491,Desa Subur,Penambangan Ilegal,2024-12-16 09:17,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+492,Kelurahan Tenteram,Pembakaran Sampah,2024-01-17 10:24,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+493,Desa Damai,Penggundulan Hutan,2024-02-18 11:31,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+494,Kelurahan Raya,Pembuangan Limbah,2024-03-19 12:38,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+495,Desa Agung,Pencemaran Udara,2024-04-20 13:45,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+496,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-05-21 14:52,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+497,Desa Harmoni,Penebangan Liar,2024-06-22 15:59,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+498,Kelurahan Mawar,Pencemaran Tanah,2024-07-23 16:06,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+499,Desa Melati,Perburuan Liar,2024-08-24 17:13,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+500,Kelurahan Maju,Illegal Fishing,2024-09-25 08:20,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+501,Desa Makmur,Pembuangan Sampah Liar,2024-10-26 09:27,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+502,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-11-27 10:34,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+503,Desa Sentosa,Polusi Plastik,2024-12-28 11:41,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+504,Kelurahan Bahagia,Pencemaran Air,2024-01-01 12:48,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+505,Desa Jaya,Penambangan Ilegal,2024-02-02 13:55,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+506,Kelurahan Sari,Pembakaran Sampah,2024-03-03 14:02,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+507,Desa Mulya,Penggundulan Hutan,2024-04-04 15:09,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+508,Kelurahan Indah,Pembuangan Limbah,2024-05-05 16:16,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+509,Desa Asri,Pencemaran Udara,2024-06-06 17:23,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+510,Kelurahan Permai,Kerusakan Terumbu Karang,2024-07-07 08:30,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+511,Desa Subur,Penebangan Liar,2024-08-08 09:37,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+512,Kelurahan Tenteram,Pencemaran Tanah,2024-09-09 10:44,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+513,Desa Damai,Perburuan Liar,2024-10-10 11:51,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+514,Kelurahan Raya,Illegal Fishing,2024-11-11 12:58,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+515,Desa Agung,Pembuangan Sampah Liar,2024-12-12 13:05,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+516,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-01-13 14:12,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+517,Desa Harmoni,Polusi Plastik,2024-02-14 15:19,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+518,Kelurahan Mawar,Pencemaran Air,2024-03-15 16:26,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+519,Desa Melati,Penambangan Ilegal,2024-04-16 17:33,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+520,Kelurahan Maju,Pembakaran Sampah,2024-05-17 08:40,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+521,Desa Makmur,Penggundulan Hutan,2024-06-18 09:47,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+522,Kelurahan Sejahtera,Pembuangan Limbah,2024-07-19 10:54,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+523,Desa Sentosa,Pencemaran Udara,2024-08-20 11:01,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+524,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-09-21 12:08,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+525,Desa Jaya,Penebangan Liar,2024-10-22 13:15,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+526,Kelurahan Sari,Pencemaran Tanah,2024-11-23 14:22,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+527,Desa Mulya,Perburuan Liar,2024-12-24 15:29,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+528,Kelurahan Indah,Illegal Fishing,2024-01-25 16:36,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+529,Desa Asri,Pembuangan Sampah Liar,2024-02-26 17:43,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+530,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-03-27 08:50,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+531,Desa Subur,Polusi Plastik,2024-04-28 09:57,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+532,Kelurahan Tenteram,Pencemaran Air,2024-05-01 10:04,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+533,Desa Damai,Penambangan Ilegal,2024-06-02 11:11,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+534,Kelurahan Raya,Pembakaran Sampah,2024-07-03 12:18,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+535,Desa Agung,Penggundulan Hutan,2024-08-04 13:25,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+536,Kelurahan Bersih,Pembuangan Limbah,2024-09-05 14:32,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+537,Desa Harmoni,Pencemaran Udara,2024-10-06 15:39,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+538,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-11-07 16:46,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+539,Desa Melati,Penebangan Liar,2024-12-08 17:53,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+540,Kelurahan Maju,Pencemaran Tanah,2024-01-09 08:00,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+541,Desa Makmur,Perburuan Liar,2024-02-10 09:07,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+542,Kelurahan Sejahtera,Illegal Fishing,2024-03-11 10:14,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+543,Desa Sentosa,Pembuangan Sampah Liar,2024-04-12 11:21,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+544,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-05-13 12:28,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+545,Desa Jaya,Polusi Plastik,2024-06-14 13:35,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+546,Kelurahan Sari,Pencemaran Air,2024-07-15 14:42,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+547,Desa Mulya,Penambangan Ilegal,2024-08-16 15:49,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+548,Kelurahan Indah,Pembakaran Sampah,2024-09-17 16:56,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+549,Desa Asri,Penggundulan Hutan,2024-10-18 17:03,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+550,Kelurahan Permai,Pembuangan Limbah,2024-11-19 08:10,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+551,Desa Subur,Pencemaran Udara,2024-12-20 09:17,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+552,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-01-21 10:24,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+553,Desa Damai,Penebangan Liar,2024-02-22 11:31,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+554,Kelurahan Raya,Pencemaran Tanah,2024-03-23 12:38,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+555,Desa Agung,Perburuan Liar,2024-04-24 13:45,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+556,Kelurahan Bersih,Illegal Fishing,2024-05-25 14:52,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+557,Desa Harmoni,Pembuangan Sampah Liar,2024-06-26 15:59,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+558,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-07-27 16:06,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+559,Desa Melati,Polusi Plastik,2024-08-28 17:13,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+560,Kelurahan Maju,Pencemaran Air,2024-09-01 08:20,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+561,Desa Makmur,Penambangan Ilegal,2024-10-02 09:27,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+562,Kelurahan Sejahtera,Pembakaran Sampah,2024-11-03 10:34,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+563,Desa Sentosa,Penggundulan Hutan,2024-12-04 11:41,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+564,Kelurahan Bahagia,Pembuangan Limbah,2024-01-05 12:48,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+565,Desa Jaya,Pencemaran Udara,2024-02-06 13:55,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+566,Kelurahan Sari,Kerusakan Terumbu Karang,2024-03-07 14:02,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+567,Desa Mulya,Penebangan Liar,2024-04-08 15:09,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+568,Kelurahan Indah,Pencemaran Tanah,2024-05-09 16:16,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+569,Desa Asri,Perburuan Liar,2024-06-10 17:23,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+570,Kelurahan Permai,Illegal Fishing,2024-07-11 08:30,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+571,Desa Subur,Pembuangan Sampah Liar,2024-08-12 09:37,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+572,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-09-13 10:44,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+573,Desa Damai,Polusi Plastik,2024-10-14 11:51,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+574,Kelurahan Raya,Pencemaran Air,2024-11-15 12:58,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+575,Desa Agung,Penambangan Ilegal,2024-12-16 13:05,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+576,Kelurahan Bersih,Pembakaran Sampah,2024-01-17 14:12,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+577,Desa Harmoni,Penggundulan Hutan,2024-02-18 15:19,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+578,Kelurahan Mawar,Pembuangan Limbah,2024-03-19 16:26,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+579,Desa Melati,Pencemaran Udara,2024-04-20 17:33,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+580,Kelurahan Maju,Kerusakan Terumbu Karang,2024-05-21 08:40,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+581,Desa Makmur,Penebangan Liar,2024-06-22 09:47,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+582,Kelurahan Sejahtera,Pencemaran Tanah,2024-07-23 10:54,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+583,Desa Sentosa,Perburuan Liar,2024-08-24 11:01,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+584,Kelurahan Bahagia,Illegal Fishing,2024-09-25 12:08,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+585,Desa Jaya,Pembuangan Sampah Liar,2024-10-26 13:15,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+586,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-11-27 14:22,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+587,Desa Mulya,Polusi Plastik,2024-12-28 15:29,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+588,Kelurahan Indah,Pencemaran Air,2024-01-01 16:36,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+589,Desa Asri,Penambangan Ilegal,2024-02-02 17:43,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+590,Kelurahan Permai,Pembakaran Sampah,2024-03-03 08:50,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+591,Desa Subur,Penggundulan Hutan,2024-04-04 09:57,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+592,Kelurahan Tenteram,Pembuangan Limbah,2024-05-05 10:04,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+593,Desa Damai,Pencemaran Udara,2024-06-06 11:11,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+594,Kelurahan Raya,Kerusakan Terumbu Karang,2024-07-07 12:18,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+595,Desa Agung,Penebangan Liar,2024-08-08 13:25,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+596,Kelurahan Bersih,Pencemaran Tanah,2024-09-09 14:32,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+597,Desa Harmoni,Perburuan Liar,2024-10-10 15:39,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+598,Kelurahan Mawar,Illegal Fishing,2024-11-11 16:46,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+599,Desa Melati,Pembuangan Sampah Liar,2024-12-12 17:53,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+600,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-01-13 08:00,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+601,Desa Makmur,Polusi Plastik,2024-02-14 09:07,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+602,Kelurahan Sejahtera,Pencemaran Air,2024-03-15 10:14,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+603,Desa Sentosa,Penambangan Ilegal,2024-04-16 11:21,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+604,Kelurahan Bahagia,Pembakaran Sampah,2024-05-17 12:28,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+605,Desa Jaya,Penggundulan Hutan,2024-06-18 13:35,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+606,Kelurahan Sari,Pembuangan Limbah,2024-07-19 14:42,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+607,Desa Mulya,Pencemaran Udara,2024-08-20 15:49,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+608,Kelurahan Indah,Kerusakan Terumbu Karang,2024-09-21 16:56,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+609,Desa Asri,Penebangan Liar,2024-10-22 17:03,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+610,Kelurahan Permai,Pencemaran Tanah,2024-11-23 08:10,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+611,Desa Subur,Perburuan Liar,2024-12-24 09:17,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+612,Kelurahan Tenteram,Illegal Fishing,2024-01-25 10:24,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+613,Desa Damai,Pembuangan Sampah Liar,2024-02-26 11:31,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+614,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-03-27 12:38,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+615,Desa Agung,Polusi Plastik,2024-04-28 13:45,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+616,Kelurahan Bersih,Pencemaran Air,2024-05-01 14:52,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+617,Desa Harmoni,Penambangan Ilegal,2024-06-02 15:59,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+618,Kelurahan Mawar,Pembakaran Sampah,2024-07-03 16:06,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+619,Desa Melati,Penggundulan Hutan,2024-08-04 17:13,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+620,Kelurahan Maju,Pembuangan Limbah,2024-09-05 08:20,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+621,Desa Makmur,Pencemaran Udara,2024-10-06 09:27,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+622,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-11-07 10:34,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+623,Desa Sentosa,Penebangan Liar,2024-12-08 11:41,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+624,Kelurahan Bahagia,Pencemaran Tanah,2024-01-09 12:48,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+625,Desa Jaya,Perburuan Liar,2024-02-10 13:55,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+626,Kelurahan Sari,Illegal Fishing,2024-03-11 14:02,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+627,Desa Mulya,Pembuangan Sampah Liar,2024-04-12 15:09,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+628,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-05-13 16:16,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+629,Desa Asri,Polusi Plastik,2024-06-14 17:23,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+630,Kelurahan Permai,Pencemaran Air,2024-07-15 08:30,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+631,Desa Subur,Penambangan Ilegal,2024-08-16 09:37,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+632,Kelurahan Tenteram,Pembakaran Sampah,2024-09-17 10:44,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+633,Desa Damai,Penggundulan Hutan,2024-10-18 11:51,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+634,Kelurahan Raya,Pembuangan Limbah,2024-11-19 12:58,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+635,Desa Agung,Pencemaran Udara,2024-12-20 13:05,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+636,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-01-21 14:12,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+637,Desa Harmoni,Penebangan Liar,2024-02-22 15:19,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+638,Kelurahan Mawar,Pencemaran Tanah,2024-03-23 16:26,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+639,Desa Melati,Perburuan Liar,2024-04-24 17:33,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+640,Kelurahan Maju,Illegal Fishing,2024-05-25 08:40,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+641,Desa Makmur,Pembuangan Sampah Liar,2024-06-26 09:47,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+642,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-07-27 10:54,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+643,Desa Sentosa,Polusi Plastik,2024-08-28 11:01,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+644,Kelurahan Bahagia,Pencemaran Air,2024-09-01 12:08,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+645,Desa Jaya,Penambangan Ilegal,2024-10-02 13:15,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+646,Kelurahan Sari,Pembakaran Sampah,2024-11-03 14:22,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+647,Desa Mulya,Penggundulan Hutan,2024-12-04 15:29,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+648,Kelurahan Indah,Pembuangan Limbah,2024-01-05 16:36,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+649,Desa Asri,Pencemaran Udara,2024-02-06 17:43,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+650,Kelurahan Permai,Kerusakan Terumbu Karang,2024-03-07 08:50,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+651,Desa Subur,Penebangan Liar,2024-04-08 09:57,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+652,Kelurahan Tenteram,Pencemaran Tanah,2024-05-09 10:04,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+653,Desa Damai,Perburuan Liar,2024-06-10 11:11,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+654,Kelurahan Raya,Illegal Fishing,2024-07-11 12:18,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+655,Desa Agung,Pembuangan Sampah Liar,2024-08-12 13:25,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+656,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-09-13 14:32,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+657,Desa Harmoni,Polusi Plastik,2024-10-14 15:39,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+658,Kelurahan Mawar,Pencemaran Air,2024-11-15 16:46,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+659,Desa Melati,Penambangan Ilegal,2024-12-16 17:53,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+660,Kelurahan Maju,Pembakaran Sampah,2024-01-17 08:00,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+661,Desa Makmur,Penggundulan Hutan,2024-02-18 09:07,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+662,Kelurahan Sejahtera,Pembuangan Limbah,2024-03-19 10:14,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+663,Desa Sentosa,Pencemaran Udara,2024-04-20 11:21,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+664,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-05-21 12:28,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+665,Desa Jaya,Penebangan Liar,2024-06-22 13:35,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+666,Kelurahan Sari,Pencemaran Tanah,2024-07-23 14:42,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+667,Desa Mulya,Perburuan Liar,2024-08-24 15:49,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+668,Kelurahan Indah,Illegal Fishing,2024-09-25 16:56,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+669,Desa Asri,Pembuangan Sampah Liar,2024-10-26 17:03,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+670,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-11-27 08:10,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+671,Desa Subur,Polusi Plastik,2024-12-28 09:17,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+672,Kelurahan Tenteram,Pencemaran Air,2024-01-01 10:24,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+673,Desa Damai,Penambangan Ilegal,2024-02-02 11:31,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+674,Kelurahan Raya,Pembakaran Sampah,2024-03-03 12:38,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+675,Desa Agung,Penggundulan Hutan,2024-04-04 13:45,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+676,Kelurahan Bersih,Pembuangan Limbah,2024-05-05 14:52,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+677,Desa Harmoni,Pencemaran Udara,2024-06-06 15:59,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+678,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-07-07 16:06,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+679,Desa Melati,Penebangan Liar,2024-08-08 17:13,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+680,Kelurahan Maju,Pencemaran Tanah,2024-09-09 08:20,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+681,Desa Makmur,Perburuan Liar,2024-10-10 09:27,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+682,Kelurahan Sejahtera,Illegal Fishing,2024-11-11 10:34,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+683,Desa Sentosa,Pembuangan Sampah Liar,2024-12-12 11:41,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+684,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-01-13 12:48,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+685,Desa Jaya,Polusi Plastik,2024-02-14 13:55,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+686,Kelurahan Sari,Pencemaran Air,2024-03-15 14:02,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+687,Desa Mulya,Penambangan Ilegal,2024-04-16 15:09,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+688,Kelurahan Indah,Pembakaran Sampah,2024-05-17 16:16,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+689,Desa Asri,Penggundulan Hutan,2024-06-18 17:23,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+690,Kelurahan Permai,Pembuangan Limbah,2024-07-19 08:30,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+691,Desa Subur,Pencemaran Udara,2024-08-20 09:37,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+692,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-09-21 10:44,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+693,Desa Damai,Penebangan Liar,2024-10-22 11:51,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+694,Kelurahan Raya,Pencemaran Tanah,2024-11-23 12:58,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+695,Desa Agung,Perburuan Liar,2024-12-24 13:05,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+696,Kelurahan Bersih,Illegal Fishing,2024-01-25 14:12,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+697,Desa Harmoni,Pembuangan Sampah Liar,2024-02-26 15:19,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+698,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-03-27 16:26,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+699,Desa Melati,Polusi Plastik,2024-04-28 17:33,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+700,Kelurahan Maju,Pencemaran Air,2024-05-01 08:40,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+701,Desa Makmur,Penambangan Ilegal,2024-06-02 09:47,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+702,Kelurahan Sejahtera,Pembakaran Sampah,2024-07-03 10:54,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+703,Desa Sentosa,Penggundulan Hutan,2024-08-04 11:01,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+704,Kelurahan Bahagia,Pembuangan Limbah,2024-09-05 12:08,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+705,Desa Jaya,Pencemaran Udara,2024-10-06 13:15,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+706,Kelurahan Sari,Kerusakan Terumbu Karang,2024-11-07 14:22,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+707,Desa Mulya,Penebangan Liar,2024-12-08 15:29,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+708,Kelurahan Indah,Pencemaran Tanah,2024-01-09 16:36,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+709,Desa Asri,Perburuan Liar,2024-02-10 17:43,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+710,Kelurahan Permai,Illegal Fishing,2024-03-11 08:50,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+711,Desa Subur,Pembuangan Sampah Liar,2024-04-12 09:57,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+712,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-05-13 10:04,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+713,Desa Damai,Polusi Plastik,2024-06-14 11:11,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+714,Kelurahan Raya,Pencemaran Air,2024-07-15 12:18,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+715,Desa Agung,Penambangan Ilegal,2024-08-16 13:25,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+716,Kelurahan Bersih,Pembakaran Sampah,2024-09-17 14:32,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+717,Desa Harmoni,Penggundulan Hutan,2024-10-18 15:39,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+718,Kelurahan Mawar,Pembuangan Limbah,2024-11-19 16:46,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+719,Desa Melati,Pencemaran Udara,2024-12-20 17:53,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+720,Kelurahan Maju,Kerusakan Terumbu Karang,2024-01-21 08:00,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+721,Desa Makmur,Penebangan Liar,2024-02-22 09:07,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+722,Kelurahan Sejahtera,Pencemaran Tanah,2024-03-23 10:14,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+723,Desa Sentosa,Perburuan Liar,2024-04-24 11:21,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+724,Kelurahan Bahagia,Illegal Fishing,2024-05-25 12:28,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+725,Desa Jaya,Pembuangan Sampah Liar,2024-06-26 13:35,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+726,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-07-27 14:42,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+727,Desa Mulya,Polusi Plastik,2024-08-28 15:49,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+728,Kelurahan Indah,Pencemaran Air,2024-09-01 16:56,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+729,Desa Asri,Penambangan Ilegal,2024-10-02 17:03,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+730,Kelurahan Permai,Pembakaran Sampah,2024-11-03 08:10,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+731,Desa Subur,Penggundulan Hutan,2024-12-04 09:17,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+732,Kelurahan Tenteram,Pembuangan Limbah,2024-01-05 10:24,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+733,Desa Damai,Pencemaran Udara,2024-02-06 11:31,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+734,Kelurahan Raya,Kerusakan Terumbu Karang,2024-03-07 12:38,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+735,Desa Agung,Penebangan Liar,2024-04-08 13:45,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+736,Kelurahan Bersih,Pencemaran Tanah,2024-05-09 14:52,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+737,Desa Harmoni,Perburuan Liar,2024-06-10 15:59,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+738,Kelurahan Mawar,Illegal Fishing,2024-07-11 16:06,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+739,Desa Melati,Pembuangan Sampah Liar,2024-08-12 17:13,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+740,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-09-13 08:20,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+741,Desa Makmur,Polusi Plastik,2024-10-14 09:27,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+742,Kelurahan Sejahtera,Pencemaran Air,2024-11-15 10:34,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+743,Desa Sentosa,Penambangan Ilegal,2024-12-16 11:41,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+744,Kelurahan Bahagia,Pembakaran Sampah,2024-01-17 12:48,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+745,Desa Jaya,Penggundulan Hutan,2024-02-18 13:55,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+746,Kelurahan Sari,Pembuangan Limbah,2024-03-19 14:02,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+747,Desa Mulya,Pencemaran Udara,2024-04-20 15:09,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+748,Kelurahan Indah,Kerusakan Terumbu Karang,2024-05-21 16:16,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+749,Desa Asri,Penebangan Liar,2024-06-22 17:23,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+750,Kelurahan Permai,Pencemaran Tanah,2024-07-23 08:30,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+751,Desa Subur,Perburuan Liar,2024-08-24 09:37,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+752,Kelurahan Tenteram,Illegal Fishing,2024-09-25 10:44,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+753,Desa Damai,Pembuangan Sampah Liar,2024-10-26 11:51,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+754,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-11-27 12:58,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+755,Desa Agung,Polusi Plastik,2024-12-28 13:05,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+756,Kelurahan Bersih,Pencemaran Air,2024-01-01 14:12,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+757,Desa Harmoni,Penambangan Ilegal,2024-02-02 15:19,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+758,Kelurahan Mawar,Pembakaran Sampah,2024-03-03 16:26,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+759,Desa Melati,Penggundulan Hutan,2024-04-04 17:33,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+760,Kelurahan Maju,Pembuangan Limbah,2024-05-05 08:40,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+761,Desa Makmur,Pencemaran Udara,2024-06-06 09:47,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+762,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-07-07 10:54,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+763,Desa Sentosa,Penebangan Liar,2024-08-08 11:01,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+764,Kelurahan Bahagia,Pencemaran Tanah,2024-09-09 12:08,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+765,Desa Jaya,Perburuan Liar,2024-10-10 13:15,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+766,Kelurahan Sari,Illegal Fishing,2024-11-11 14:22,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+767,Desa Mulya,Pembuangan Sampah Liar,2024-12-12 15:29,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+768,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-01-13 16:36,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+769,Desa Asri,Polusi Plastik,2024-02-14 17:43,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+770,Kelurahan Permai,Pencemaran Air,2024-03-15 08:50,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+771,Desa Subur,Penambangan Ilegal,2024-04-16 09:57,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+772,Kelurahan Tenteram,Pembakaran Sampah,2024-05-17 10:04,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+773,Desa Damai,Penggundulan Hutan,2024-06-18 11:11,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+774,Kelurahan Raya,Pembuangan Limbah,2024-07-19 12:18,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+775,Desa Agung,Pencemaran Udara,2024-08-20 13:25,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+776,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-09-21 14:32,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+777,Desa Harmoni,Penebangan Liar,2024-10-22 15:39,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+778,Kelurahan Mawar,Pencemaran Tanah,2024-11-23 16:46,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+779,Desa Melati,Perburuan Liar,2024-12-24 17:53,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+780,Kelurahan Maju,Illegal Fishing,2024-01-25 08:00,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+781,Desa Makmur,Pembuangan Sampah Liar,2024-02-26 09:07,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+782,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-03-27 10:14,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+783,Desa Sentosa,Polusi Plastik,2024-04-28 11:21,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+784,Kelurahan Bahagia,Pencemaran Air,2024-05-01 12:28,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+785,Desa Jaya,Penambangan Ilegal,2024-06-02 13:35,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+786,Kelurahan Sari,Pembakaran Sampah,2024-07-03 14:42,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+787,Desa Mulya,Penggundulan Hutan,2024-08-04 15:49,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+788,Kelurahan Indah,Pembuangan Limbah,2024-09-05 16:56,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+789,Desa Asri,Pencemaran Udara,2024-10-06 17:03,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+790,Kelurahan Permai,Kerusakan Terumbu Karang,2024-11-07 08:10,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+791,Desa Subur,Penebangan Liar,2024-12-08 09:17,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+792,Kelurahan Tenteram,Pencemaran Tanah,2024-01-09 10:24,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+793,Desa Damai,Perburuan Liar,2024-02-10 11:31,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+794,Kelurahan Raya,Illegal Fishing,2024-03-11 12:38,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+795,Desa Agung,Pembuangan Sampah Liar,2024-04-12 13:45,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+796,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-05-13 14:52,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+797,Desa Harmoni,Polusi Plastik,2024-06-14 15:59,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+798,Kelurahan Mawar,Pencemaran Air,2024-07-15 16:06,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+799,Desa Melati,Penambangan Ilegal,2024-08-16 17:13,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+800,Kelurahan Maju,Pembakaran Sampah,2024-09-17 08:20,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+801,Desa Makmur,Penggundulan Hutan,2024-10-18 09:27,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+802,Kelurahan Sejahtera,Pembuangan Limbah,2024-11-19 10:34,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+803,Desa Sentosa,Pencemaran Udara,2024-12-20 11:41,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+804,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-01-21 12:48,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+805,Desa Jaya,Penebangan Liar,2024-02-22 13:55,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+806,Kelurahan Sari,Pencemaran Tanah,2024-03-23 14:02,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+807,Desa Mulya,Perburuan Liar,2024-04-24 15:09,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+808,Kelurahan Indah,Illegal Fishing,2024-05-25 16:16,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+809,Desa Asri,Pembuangan Sampah Liar,2024-06-26 17:23,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+810,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-07-27 08:30,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+811,Desa Subur,Polusi Plastik,2024-08-28 09:37,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+812,Kelurahan Tenteram,Pencemaran Air,2024-09-01 10:44,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+813,Desa Damai,Penambangan Ilegal,2024-10-02 11:51,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+814,Kelurahan Raya,Pembakaran Sampah,2024-11-03 12:58,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+815,Desa Agung,Penggundulan Hutan,2024-12-04 13:05,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+816,Kelurahan Bersih,Pembuangan Limbah,2024-01-05 14:12,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+817,Desa Harmoni,Pencemaran Udara,2024-02-06 15:19,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+818,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-03-07 16:26,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+819,Desa Melati,Penebangan Liar,2024-04-08 17:33,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+820,Kelurahan Maju,Pencemaran Tanah,2024-05-09 08:40,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+821,Desa Makmur,Perburuan Liar,2024-06-10 09:47,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+822,Kelurahan Sejahtera,Illegal Fishing,2024-07-11 10:54,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+823,Desa Sentosa,Pembuangan Sampah Liar,2024-08-12 11:01,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+824,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-09-13 12:08,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+825,Desa Jaya,Polusi Plastik,2024-10-14 13:15,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+826,Kelurahan Sari,Pencemaran Air,2024-11-15 14:22,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+827,Desa Mulya,Penambangan Ilegal,2024-12-16 15:29,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+828,Kelurahan Indah,Pembakaran Sampah,2024-01-17 16:36,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+829,Desa Asri,Penggundulan Hutan,2024-02-18 17:43,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+830,Kelurahan Permai,Pembuangan Limbah,2024-03-19 08:50,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+831,Desa Subur,Pencemaran Udara,2024-04-20 09:57,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+832,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-05-21 10:04,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+833,Desa Damai,Penebangan Liar,2024-06-22 11:11,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+834,Kelurahan Raya,Pencemaran Tanah,2024-07-23 12:18,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+835,Desa Agung,Perburuan Liar,2024-08-24 13:25,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+836,Kelurahan Bersih,Illegal Fishing,2024-09-25 14:32,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+837,Desa Harmoni,Pembuangan Sampah Liar,2024-10-26 15:39,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+838,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-11-27 16:46,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+839,Desa Melati,Polusi Plastik,2024-12-28 17:53,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+840,Kelurahan Maju,Pencemaran Air,2024-01-01 08:00,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+841,Desa Makmur,Penambangan Ilegal,2024-02-02 09:07,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+842,Kelurahan Sejahtera,Pembakaran Sampah,2024-03-03 10:14,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+843,Desa Sentosa,Penggundulan Hutan,2024-04-04 11:21,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+844,Kelurahan Bahagia,Pembuangan Limbah,2024-05-05 12:28,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+845,Desa Jaya,Pencemaran Udara,2024-06-06 13:35,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+846,Kelurahan Sari,Kerusakan Terumbu Karang,2024-07-07 14:42,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+847,Desa Mulya,Penebangan Liar,2024-08-08 15:49,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+848,Kelurahan Indah,Pencemaran Tanah,2024-09-09 16:56,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+849,Desa Asri,Perburuan Liar,2024-10-10 17:03,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+850,Kelurahan Permai,Illegal Fishing,2024-11-11 08:10,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+851,Desa Subur,Pembuangan Sampah Liar,2024-12-12 09:17,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+852,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-01-13 10:24,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+853,Desa Damai,Polusi Plastik,2024-02-14 11:31,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+854,Kelurahan Raya,Pencemaran Air,2024-03-15 12:38,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+855,Desa Agung,Penambangan Ilegal,2024-04-16 13:45,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+856,Kelurahan Bersih,Pembakaran Sampah,2024-05-17 14:52,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+857,Desa Harmoni,Penggundulan Hutan,2024-06-18 15:59,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+858,Kelurahan Mawar,Pembuangan Limbah,2024-07-19 16:06,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+859,Desa Melati,Pencemaran Udara,2024-08-20 17:13,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+860,Kelurahan Maju,Kerusakan Terumbu Karang,2024-09-21 08:20,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+861,Desa Makmur,Penebangan Liar,2024-10-22 09:27,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+862,Kelurahan Sejahtera,Pencemaran Tanah,2024-11-23 10:34,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+863,Desa Sentosa,Perburuan Liar,2024-12-24 11:41,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+864,Kelurahan Bahagia,Illegal Fishing,2024-01-25 12:48,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+865,Desa Jaya,Pembuangan Sampah Liar,2024-02-26 13:55,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+866,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-03-27 14:02,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+867,Desa Mulya,Polusi Plastik,2024-04-28 15:09,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+868,Kelurahan Indah,Pencemaran Air,2024-05-01 16:16,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+869,Desa Asri,Penambangan Ilegal,2024-06-02 17:23,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+870,Kelurahan Permai,Pembakaran Sampah,2024-07-03 08:30,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+871,Desa Subur,Penggundulan Hutan,2024-08-04 09:37,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+872,Kelurahan Tenteram,Pembuangan Limbah,2024-09-05 10:44,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+873,Desa Damai,Pencemaran Udara,2024-10-06 11:51,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+874,Kelurahan Raya,Kerusakan Terumbu Karang,2024-11-07 12:58,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+875,Desa Agung,Penebangan Liar,2024-12-08 13:05,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+876,Kelurahan Bersih,Pencemaran Tanah,2024-01-09 14:12,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+877,Desa Harmoni,Perburuan Liar,2024-02-10 15:19,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+878,Kelurahan Mawar,Illegal Fishing,2024-03-11 16:26,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+879,Desa Melati,Pembuangan Sampah Liar,2024-04-12 17:33,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+880,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-05-13 08:40,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+881,Desa Makmur,Polusi Plastik,2024-06-14 09:47,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+882,Kelurahan Sejahtera,Pencemaran Air,2024-07-15 10:54,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+883,Desa Sentosa,Penambangan Ilegal,2024-08-16 11:01,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+884,Kelurahan Bahagia,Pembakaran Sampah,2024-09-17 12:08,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+885,Desa Jaya,Penggundulan Hutan,2024-10-18 13:15,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+886,Kelurahan Sari,Pembuangan Limbah,2024-11-19 14:22,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+887,Desa Mulya,Pencemaran Udara,2024-12-20 15:29,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+888,Kelurahan Indah,Kerusakan Terumbu Karang,2024-01-21 16:36,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+889,Desa Asri,Penebangan Liar,2024-02-22 17:43,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+890,Kelurahan Permai,Pencemaran Tanah,2024-03-23 08:50,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+891,Desa Subur,Perburuan Liar,2024-04-24 09:57,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+892,Kelurahan Tenteram,Illegal Fishing,2024-05-25 10:04,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+893,Desa Damai,Pembuangan Sampah Liar,2024-06-26 11:11,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+894,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-07-27 12:18,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+895,Desa Agung,Polusi Plastik,2024-08-28 13:25,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+896,Kelurahan Bersih,Pencemaran Air,2024-09-01 14:32,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+897,Desa Harmoni,Penambangan Ilegal,2024-10-02 15:39,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+898,Kelurahan Mawar,Pembakaran Sampah,2024-11-03 16:46,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+899,Desa Melati,Penggundulan Hutan,2024-12-04 17:53,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+900,Kelurahan Maju,Pembuangan Limbah,2024-01-05 08:00,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+901,Desa Makmur,Pencemaran Udara,2024-02-06 09:07,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+902,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-03-07 10:14,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+903,Desa Sentosa,Penebangan Liar,2024-04-08 11:21,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+904,Kelurahan Bahagia,Pencemaran Tanah,2024-05-09 12:28,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+905,Desa Jaya,Perburuan Liar,2024-06-10 13:35,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+906,Kelurahan Sari,Illegal Fishing,2024-07-11 14:42,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+907,Desa Mulya,Pembuangan Sampah Liar,2024-08-12 15:49,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+908,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-09-13 16:56,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+909,Desa Asri,Polusi Plastik,2024-10-14 17:03,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+910,Kelurahan Permai,Pencemaran Air,2024-11-15 08:10,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+911,Desa Subur,Penambangan Ilegal,2024-12-16 09:17,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+912,Kelurahan Tenteram,Pembakaran Sampah,2024-01-17 10:24,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+913,Desa Damai,Penggundulan Hutan,2024-02-18 11:31,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+914,Kelurahan Raya,Pembuangan Limbah,2024-03-19 12:38,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+915,Desa Agung,Pencemaran Udara,2024-04-20 13:45,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+916,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-05-21 14:52,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+917,Desa Harmoni,Penebangan Liar,2024-06-22 15:59,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+918,Kelurahan Mawar,Pencemaran Tanah,2024-07-23 16:06,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+919,Desa Melati,Perburuan Liar,2024-08-24 17:13,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+920,Kelurahan Maju,Illegal Fishing,2024-09-25 08:20,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+921,Desa Makmur,Pembuangan Sampah Liar,2024-10-26 09:27,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+922,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-11-27 10:34,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+923,Desa Sentosa,Polusi Plastik,2024-12-28 11:41,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+924,Kelurahan Bahagia,Pencemaran Air,2024-01-01 12:48,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+925,Desa Jaya,Penambangan Ilegal,2024-02-02 13:55,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+926,Kelurahan Sari,Pembakaran Sampah,2024-03-03 14:02,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+927,Desa Mulya,Penggundulan Hutan,2024-04-04 15:09,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+928,Kelurahan Indah,Pembuangan Limbah,2024-05-05 16:16,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+929,Desa Asri,Pencemaran Udara,2024-06-06 17:23,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+930,Kelurahan Permai,Kerusakan Terumbu Karang,2024-07-07 08:30,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+931,Desa Subur,Penebangan Liar,2024-08-08 09:37,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+932,Kelurahan Tenteram,Pencemaran Tanah,2024-09-09 10:44,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+933,Desa Damai,Perburuan Liar,2024-10-10 11:51,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+934,Kelurahan Raya,Illegal Fishing,2024-11-11 12:58,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+935,Desa Agung,Pembuangan Sampah Liar,2024-12-12 13:05,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+936,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-01-13 14:12,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+937,Desa Harmoni,Polusi Plastik,2024-02-14 15:19,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+938,Kelurahan Mawar,Pencemaran Air,2024-03-15 16:26,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+939,Desa Melati,Penambangan Ilegal,2024-04-16 17:33,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+940,Kelurahan Maju,Pembakaran Sampah,2024-05-17 08:40,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+941,Desa Makmur,Penggundulan Hutan,2024-06-18 09:47,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+942,Kelurahan Sejahtera,Pembuangan Limbah,2024-07-19 10:54,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+943,Desa Sentosa,Pencemaran Udara,2024-08-20 11:01,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+944,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-09-21 12:08,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+945,Desa Jaya,Penebangan Liar,2024-10-22 13:15,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+946,Kelurahan Sari,Pencemaran Tanah,2024-11-23 14:22,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+947,Desa Mulya,Perburuan Liar,2024-12-24 15:29,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+948,Kelurahan Indah,Illegal Fishing,2024-01-25 16:36,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+949,Desa Asri,Pembuangan Sampah Liar,2024-02-26 17:43,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+950,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-03-27 08:50,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+951,Desa Subur,Polusi Plastik,2024-04-28 09:57,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+952,Kelurahan Tenteram,Pencemaran Air,2024-05-01 10:04,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+953,Desa Damai,Penambangan Ilegal,2024-06-02 11:11,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+954,Kelurahan Raya,Pembakaran Sampah,2024-07-03 12:18,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+955,Desa Agung,Penggundulan Hutan,2024-08-04 13:25,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+956,Kelurahan Bersih,Pembuangan Limbah,2024-09-05 14:32,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+957,Desa Harmoni,Pencemaran Udara,2024-10-06 15:39,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+958,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-11-07 16:46,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+959,Desa Melati,Penebangan Liar,2024-12-08 17:53,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+960,Kelurahan Maju,Pencemaran Tanah,2024-01-09 08:00,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+961,Desa Makmur,Perburuan Liar,2024-02-10 09:07,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+962,Kelurahan Sejahtera,Illegal Fishing,2024-03-11 10:14,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+963,Desa Sentosa,Pembuangan Sampah Liar,2024-04-12 11:21,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+964,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-05-13 12:28,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+965,Desa Jaya,Polusi Plastik,2024-06-14 13:35,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+966,Kelurahan Sari,Pencemaran Air,2024-07-15 14:42,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+967,Desa Mulya,Penambangan Ilegal,2024-08-16 15:49,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+968,Kelurahan Indah,Pembakaran Sampah,2024-09-17 16:56,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+969,Desa Asri,Penggundulan Hutan,2024-10-18 17:03,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+970,Kelurahan Permai,Pembuangan Limbah,2024-11-19 08:10,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+971,Desa Subur,Pencemaran Udara,2024-12-20 09:17,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+972,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-01-21 10:24,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+973,Desa Damai,Penebangan Liar,2024-02-22 11:31,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+974,Kelurahan Raya,Pencemaran Tanah,2024-03-23 12:38,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+975,Desa Agung,Perburuan Liar,2024-04-24 13:45,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+976,Kelurahan Bersih,Illegal Fishing,2024-05-25 14:52,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+977,Desa Harmoni,Pembuangan Sampah Liar,2024-06-26 15:59,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+978,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-07-27 16:06,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+979,Desa Melati,Polusi Plastik,2024-08-28 17:13,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+980,Kelurahan Maju,Pencemaran Air,2024-09-01 08:20,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+981,Desa Makmur,Penambangan Ilegal,2024-10-02 09:27,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+982,Kelurahan Sejahtera,Pembakaran Sampah,2024-11-03 10:34,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+983,Desa Sentosa,Penggundulan Hutan,2024-12-04 11:41,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+984,Kelurahan Bahagia,Pembuangan Limbah,2024-01-05 12:48,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+985,Desa Jaya,Pencemaran Udara,2024-02-06 13:55,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+986,Kelurahan Sari,Kerusakan Terumbu Karang,2024-03-07 14:02,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+987,Desa Mulya,Penebangan Liar,2024-04-08 15:09,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+988,Kelurahan Indah,Pencemaran Tanah,2024-05-09 16:16,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+989,Desa Asri,Perburuan Liar,2024-06-10 17:23,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+990,Kelurahan Permai,Illegal Fishing,2024-07-11 08:30,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+991,Desa Subur,Pembuangan Sampah Liar,2024-08-12 09:37,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+992,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-09-13 10:44,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+993,Desa Damai,Polusi Plastik,2024-10-14 11:51,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+994,Kelurahan Raya,Pencemaran Air,2024-11-15 12:58,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+995,Desa Agung,Penambangan Ilegal,2024-12-16 13:05,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+996,Kelurahan Bersih,Pembakaran Sampah,2024-01-17 14:12,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+997,Desa Harmoni,Penggundulan Hutan,2024-02-18 15:19,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+998,Kelurahan Mawar,Pembuangan Limbah,2024-03-19 16:26,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+999,Desa Melati,Pencemaran Udara,2024-04-20 17:33,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+1000,Kelurahan Maju,Kerusakan Terumbu Karang,2024-05-21 08:40,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+1001,Desa Makmur,Penebangan Liar,2024-06-22 09:47,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+1002,Kelurahan Sejahtera,Pencemaran Tanah,2024-07-23 10:54,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+1003,Desa Sentosa,Perburuan Liar,2024-08-24 11:01,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+1004,Kelurahan Bahagia,Illegal Fishing,2024-09-25 12:08,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+1005,Desa Jaya,Pembuangan Sampah Liar,2024-10-26 13:15,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+1006,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-11-27 14:22,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+1007,Desa Mulya,Polusi Plastik,2024-12-28 15:29,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+1008,Kelurahan Indah,Pencemaran Air,2024-01-01 16:36,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+1009,Desa Asri,Penambangan Ilegal,2024-02-02 17:43,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+1010,Kelurahan Permai,Pembakaran Sampah,2024-03-03 08:50,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+1011,Desa Subur,Penggundulan Hutan,2024-04-04 09:57,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+1012,Kelurahan Tenteram,Pembuangan Limbah,2024-05-05 10:04,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+1013,Desa Damai,Pencemaran Udara,2024-06-06 11:11,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+1014,Kelurahan Raya,Kerusakan Terumbu Karang,2024-07-07 12:18,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+1015,Desa Agung,Penebangan Liar,2024-08-08 13:25,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+1016,Kelurahan Bersih,Pencemaran Tanah,2024-09-09 14:32,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+1017,Desa Harmoni,Perburuan Liar,2024-10-10 15:39,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+1018,Kelurahan Mawar,Illegal Fishing,2024-11-11 16:46,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+1019,Desa Melati,Pembuangan Sampah Liar,2024-12-12 17:53,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+1020,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-01-13 08:00,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+1021,Desa Makmur,Polusi Plastik,2024-02-14 09:07,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+1022,Kelurahan Sejahtera,Pencemaran Air,2024-03-15 10:14,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+1023,Desa Sentosa,Penambangan Ilegal,2024-04-16 11:21,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+1024,Kelurahan Bahagia,Pembakaran Sampah,2024-05-17 12:28,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+1025,Desa Jaya,Penggundulan Hutan,2024-06-18 13:35,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+1026,Kelurahan Sari,Pembuangan Limbah,2024-07-19 14:42,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+1027,Desa Mulya,Pencemaran Udara,2024-08-20 15:49,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+1028,Kelurahan Indah,Kerusakan Terumbu Karang,2024-09-21 16:56,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+1029,Desa Asri,Penebangan Liar,2024-10-22 17:03,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+1030,Kelurahan Permai,Pencemaran Tanah,2024-11-23 08:10,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+1031,Desa Subur,Perburuan Liar,2024-12-24 09:17,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+1032,Kelurahan Tenteram,Illegal Fishing,2024-01-25 10:24,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+1033,Desa Damai,Pembuangan Sampah Liar,2024-02-26 11:31,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+1034,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-03-27 12:38,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+1035,Desa Agung,Polusi Plastik,2024-04-28 13:45,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+1036,Kelurahan Bersih,Pencemaran Air,2024-05-01 14:52,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+1037,Desa Harmoni,Penambangan Ilegal,2024-06-02 15:59,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+1038,Kelurahan Mawar,Pembakaran Sampah,2024-07-03 16:06,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+1039,Desa Melati,Penggundulan Hutan,2024-08-04 17:13,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+1040,Kelurahan Maju,Pembuangan Limbah,2024-09-05 08:20,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+1041,Desa Makmur,Pencemaran Udara,2024-10-06 09:27,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+1042,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-11-07 10:34,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+1043,Desa Sentosa,Penebangan Liar,2024-12-08 11:41,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+1044,Kelurahan Bahagia,Pencemaran Tanah,2024-01-09 12:48,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+1045,Desa Jaya,Perburuan Liar,2024-02-10 13:55,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+1046,Kelurahan Sari,Illegal Fishing,2024-03-11 14:02,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+1047,Desa Mulya,Pembuangan Sampah Liar,2024-04-12 15:09,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+1048,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-05-13 16:16,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+1049,Desa Asri,Polusi Plastik,2024-06-14 17:23,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+1050,Kelurahan Permai,Pencemaran Air,2024-07-15 08:30,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+1051,Desa Subur,Penambangan Ilegal,2024-08-16 09:37,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+1052,Kelurahan Tenteram,Pembakaran Sampah,2024-09-17 10:44,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+1053,Desa Damai,Penggundulan Hutan,2024-10-18 11:51,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+1054,Kelurahan Raya,Pembuangan Limbah,2024-11-19 12:58,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+1055,Desa Agung,Pencemaran Udara,2024-12-20 13:05,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+1056,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-01-21 14:12,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+1057,Desa Harmoni,Penebangan Liar,2024-02-22 15:19,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+1058,Kelurahan Mawar,Pencemaran Tanah,2024-03-23 16:26,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+1059,Desa Melati,Perburuan Liar,2024-04-24 17:33,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+1060,Kelurahan Maju,Illegal Fishing,2024-05-25 08:40,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+1061,Desa Makmur,Pembuangan Sampah Liar,2024-06-26 09:47,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+1062,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-07-27 10:54,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+1063,Desa Sentosa,Polusi Plastik,2024-08-28 11:01,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+1064,Kelurahan Bahagia,Pencemaran Air,2024-09-01 12:08,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+1065,Desa Jaya,Penambangan Ilegal,2024-10-02 13:15,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+1066,Kelurahan Sari,Pembakaran Sampah,2024-11-03 14:22,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+1067,Desa Mulya,Penggundulan Hutan,2024-12-04 15:29,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+1068,Kelurahan Indah,Pembuangan Limbah,2024-01-05 16:36,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+1069,Desa Asri,Pencemaran Udara,2024-02-06 17:43,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+1070,Kelurahan Permai,Kerusakan Terumbu Karang,2024-03-07 08:50,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+1071,Desa Subur,Penebangan Liar,2024-04-08 09:57,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+1072,Kelurahan Tenteram,Pencemaran Tanah,2024-05-09 10:04,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+1073,Desa Damai,Perburuan Liar,2024-06-10 11:11,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+1074,Kelurahan Raya,Illegal Fishing,2024-07-11 12:18,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+1075,Desa Agung,Pembuangan Sampah Liar,2024-08-12 13:25,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+1076,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-09-13 14:32,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+1077,Desa Harmoni,Polusi Plastik,2024-10-14 15:39,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+1078,Kelurahan Mawar,Pencemaran Air,2024-11-15 16:46,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+1079,Desa Melati,Penambangan Ilegal,2024-12-16 17:53,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+1080,Kelurahan Maju,Pembakaran Sampah,2024-01-17 08:00,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+1081,Desa Makmur,Penggundulan Hutan,2024-02-18 09:07,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+1082,Kelurahan Sejahtera,Pembuangan Limbah,2024-03-19 10:14,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+1083,Desa Sentosa,Pencemaran Udara,2024-04-20 11:21,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+1084,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-05-21 12:28,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+1085,Desa Jaya,Penebangan Liar,2024-06-22 13:35,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+1086,Kelurahan Sari,Pencemaran Tanah,2024-07-23 14:42,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+1087,Desa Mulya,Perburuan Liar,2024-08-24 15:49,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+1088,Kelurahan Indah,Illegal Fishing,2024-09-25 16:56,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+1089,Desa Asri,Pembuangan Sampah Liar,2024-10-26 17:03,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+1090,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-11-27 08:10,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+1091,Desa Subur,Polusi Plastik,2024-12-28 09:17,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+1092,Kelurahan Tenteram,Pencemaran Air,2024-01-01 10:24,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+1093,Desa Damai,Penambangan Ilegal,2024-02-02 11:31,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+1094,Kelurahan Raya,Pembakaran Sampah,2024-03-03 12:38,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+1095,Desa Agung,Penggundulan Hutan,2024-04-04 13:45,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+1096,Kelurahan Bersih,Pembuangan Limbah,2024-05-05 14:52,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+1097,Desa Harmoni,Pencemaran Udara,2024-06-06 15:59,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+1098,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-07-07 16:06,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+1099,Desa Melati,Penebangan Liar,2024-08-08 17:13,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+1100,Kelurahan Maju,Pencemaran Tanah,2024-09-09 08:20,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+1101,Desa Makmur,Perburuan Liar,2024-10-10 09:27,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+1102,Kelurahan Sejahtera,Illegal Fishing,2024-11-11 10:34,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+1103,Desa Sentosa,Pembuangan Sampah Liar,2024-12-12 11:41,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+1104,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-01-13 12:48,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+1105,Desa Jaya,Polusi Plastik,2024-02-14 13:55,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+1106,Kelurahan Sari,Pencemaran Air,2024-03-15 14:02,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+1107,Desa Mulya,Penambangan Ilegal,2024-04-16 15:09,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+1108,Kelurahan Indah,Pembakaran Sampah,2024-05-17 16:16,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+1109,Desa Asri,Penggundulan Hutan,2024-06-18 17:23,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+1110,Kelurahan Permai,Pembuangan Limbah,2024-07-19 08:30,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+1111,Desa Subur,Pencemaran Udara,2024-08-20 09:37,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+1112,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-09-21 10:44,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+1113,Desa Damai,Penebangan Liar,2024-10-22 11:51,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+1114,Kelurahan Raya,Pencemaran Tanah,2024-11-23 12:58,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+1115,Desa Agung,Perburuan Liar,2024-12-24 13:05,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+1116,Kelurahan Bersih,Illegal Fishing,2024-01-25 14:12,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+1117,Desa Harmoni,Pembuangan Sampah Liar,2024-02-26 15:19,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+1118,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-03-27 16:26,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+1119,Desa Melati,Polusi Plastik,2024-04-28 17:33,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+1120,Kelurahan Maju,Pencemaran Air,2024-05-01 08:40,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+1121,Desa Makmur,Penambangan Ilegal,2024-06-02 09:47,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+1122,Kelurahan Sejahtera,Pembakaran Sampah,2024-07-03 10:54,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+1123,Desa Sentosa,Penggundulan Hutan,2024-08-04 11:01,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+1124,Kelurahan Bahagia,Pembuangan Limbah,2024-09-05 12:08,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+1125,Desa Jaya,Pencemaran Udara,2024-10-06 13:15,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+1126,Kelurahan Sari,Kerusakan Terumbu Karang,2024-11-07 14:22,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+1127,Desa Mulya,Penebangan Liar,2024-12-08 15:29,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+1128,Kelurahan Indah,Pencemaran Tanah,2024-01-09 16:36,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+1129,Desa Asri,Perburuan Liar,2024-02-10 17:43,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+1130,Kelurahan Permai,Illegal Fishing,2024-03-11 08:50,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+1131,Desa Subur,Pembuangan Sampah Liar,2024-04-12 09:57,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+1132,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-05-13 10:04,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+1133,Desa Damai,Polusi Plastik,2024-06-14 11:11,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+1134,Kelurahan Raya,Pencemaran Air,2024-07-15 12:18,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+1135,Desa Agung,Penambangan Ilegal,2024-08-16 13:25,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+1136,Kelurahan Bersih,Pembakaran Sampah,2024-09-17 14:32,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+1137,Desa Harmoni,Penggundulan Hutan,2024-10-18 15:39,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+1138,Kelurahan Mawar,Pembuangan Limbah,2024-11-19 16:46,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+1139,Desa Melati,Pencemaran Udara,2024-12-20 17:53,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+1140,Kelurahan Maju,Kerusakan Terumbu Karang,2024-01-21 08:00,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+1141,Desa Makmur,Penebangan Liar,2024-02-22 09:07,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+1142,Kelurahan Sejahtera,Pencemaran Tanah,2024-03-23 10:14,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+1143,Desa Sentosa,Perburuan Liar,2024-04-24 11:21,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+1144,Kelurahan Bahagia,Illegal Fishing,2024-05-25 12:28,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+1145,Desa Jaya,Pembuangan Sampah Liar,2024-06-26 13:35,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+1146,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-07-27 14:42,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+1147,Desa Mulya,Polusi Plastik,2024-08-28 15:49,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+1148,Kelurahan Indah,Pencemaran Air,2024-09-01 16:56,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+1149,Desa Asri,Penambangan Ilegal,2024-10-02 17:03,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+1150,Kelurahan Permai,Pembakaran Sampah,2024-11-03 08:10,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+1151,Desa Subur,Penggundulan Hutan,2024-12-04 09:17,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+1152,Kelurahan Tenteram,Pembuangan Limbah,2024-01-05 10:24,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+1153,Desa Damai,Pencemaran Udara,2024-02-06 11:31,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+1154,Kelurahan Raya,Kerusakan Terumbu Karang,2024-03-07 12:38,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+1155,Desa Agung,Penebangan Liar,2024-04-08 13:45,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+1156,Kelurahan Bersih,Pencemaran Tanah,2024-05-09 14:52,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+1157,Desa Harmoni,Perburuan Liar,2024-06-10 15:59,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+1158,Kelurahan Mawar,Illegal Fishing,2024-07-11 16:06,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+1159,Desa Melati,Pembuangan Sampah Liar,2024-08-12 17:13,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+1160,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-09-13 08:20,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+1161,Desa Makmur,Polusi Plastik,2024-10-14 09:27,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+1162,Kelurahan Sejahtera,Pencemaran Air,2024-11-15 10:34,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+1163,Desa Sentosa,Penambangan Ilegal,2024-12-16 11:41,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+1164,Kelurahan Bahagia,Pembakaran Sampah,2024-01-17 12:48,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+1165,Desa Jaya,Penggundulan Hutan,2024-02-18 13:55,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+1166,Kelurahan Sari,Pembuangan Limbah,2024-03-19 14:02,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+1167,Desa Mulya,Pencemaran Udara,2024-04-20 15:09,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+1168,Kelurahan Indah,Kerusakan Terumbu Karang,2024-05-21 16:16,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+1169,Desa Asri,Penebangan Liar,2024-06-22 17:23,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+1170,Kelurahan Permai,Pencemaran Tanah,2024-07-23 08:30,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+1171,Desa Subur,Perburuan Liar,2024-08-24 09:37,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+1172,Kelurahan Tenteram,Illegal Fishing,2024-09-25 10:44,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+1173,Desa Damai,Pembuangan Sampah Liar,2024-10-26 11:51,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+1174,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-11-27 12:58,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+1175,Desa Agung,Polusi Plastik,2024-12-28 13:05,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+1176,Kelurahan Bersih,Pencemaran Air,2024-01-01 14:12,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+1177,Desa Harmoni,Penambangan Ilegal,2024-02-02 15:19,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+1178,Kelurahan Mawar,Pembakaran Sampah,2024-03-03 16:26,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+1179,Desa Melati,Penggundulan Hutan,2024-04-04 17:33,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+1180,Kelurahan Maju,Pembuangan Limbah,2024-05-05 08:40,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+1181,Desa Makmur,Pencemaran Udara,2024-06-06 09:47,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+1182,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-07-07 10:54,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+1183,Desa Sentosa,Penebangan Liar,2024-08-08 11:01,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+1184,Kelurahan Bahagia,Pencemaran Tanah,2024-09-09 12:08,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+1185,Desa Jaya,Perburuan Liar,2024-10-10 13:15,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+1186,Kelurahan Sari,Illegal Fishing,2024-11-11 14:22,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+1187,Desa Mulya,Pembuangan Sampah Liar,2024-12-12 15:29,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+1188,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-01-13 16:36,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+1189,Desa Asri,Polusi Plastik,2024-02-14 17:43,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+1190,Kelurahan Permai,Pencemaran Air,2024-03-15 08:50,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+1191,Desa Subur,Penambangan Ilegal,2024-04-16 09:57,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+1192,Kelurahan Tenteram,Pembakaran Sampah,2024-05-17 10:04,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+1193,Desa Damai,Penggundulan Hutan,2024-06-18 11:11,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+1194,Kelurahan Raya,Pembuangan Limbah,2024-07-19 12:18,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+1195,Desa Agung,Pencemaran Udara,2024-08-20 13:25,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+1196,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-09-21 14:32,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+1197,Desa Harmoni,Penebangan Liar,2024-10-22 15:39,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+1198,Kelurahan Mawar,Pencemaran Tanah,2024-11-23 16:46,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+1199,Desa Melati,Perburuan Liar,2024-12-24 17:53,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+1200,Kelurahan Maju,Illegal Fishing,2024-01-25 08:00,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+1201,Desa Makmur,Pembuangan Sampah Liar,2024-02-26 09:07,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+1202,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-03-27 10:14,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+1203,Desa Sentosa,Polusi Plastik,2024-04-28 11:21,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+1204,Kelurahan Bahagia,Pencemaran Air,2024-05-01 12:28,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+1205,Desa Jaya,Penambangan Ilegal,2024-06-02 13:35,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+1206,Kelurahan Sari,Pembakaran Sampah,2024-07-03 14:42,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+1207,Desa Mulya,Penggundulan Hutan,2024-08-04 15:49,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+1208,Kelurahan Indah,Pembuangan Limbah,2024-09-05 16:56,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+1209,Desa Asri,Pencemaran Udara,2024-10-06 17:03,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+1210,Kelurahan Permai,Kerusakan Terumbu Karang,2024-11-07 08:10,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+1211,Desa Subur,Penebangan Liar,2024-12-08 09:17,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+1212,Kelurahan Tenteram,Pencemaran Tanah,2024-01-09 10:24,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+1213,Desa Damai,Perburuan Liar,2024-02-10 11:31,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+1214,Kelurahan Raya,Illegal Fishing,2024-03-11 12:38,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+1215,Desa Agung,Pembuangan Sampah Liar,2024-04-12 13:45,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+1216,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-05-13 14:52,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+1217,Desa Harmoni,Polusi Plastik,2024-06-14 15:59,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+1218,Kelurahan Mawar,Pencemaran Air,2024-07-15 16:06,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+1219,Desa Melati,Penambangan Ilegal,2024-08-16 17:13,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+1220,Kelurahan Maju,Pembakaran Sampah,2024-09-17 08:20,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+1221,Desa Makmur,Penggundulan Hutan,2024-10-18 09:27,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+1222,Kelurahan Sejahtera,Pembuangan Limbah,2024-11-19 10:34,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+1223,Desa Sentosa,Pencemaran Udara,2024-12-20 11:41,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+1224,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-01-21 12:48,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+1225,Desa Jaya,Penebangan Liar,2024-02-22 13:55,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+1226,Kelurahan Sari,Pencemaran Tanah,2024-03-23 14:02,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+1227,Desa Mulya,Perburuan Liar,2024-04-24 15:09,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+1228,Kelurahan Indah,Illegal Fishing,2024-05-25 16:16,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+1229,Desa Asri,Pembuangan Sampah Liar,2024-06-26 17:23,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+1230,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-07-27 08:30,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+1231,Desa Subur,Polusi Plastik,2024-08-28 09:37,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+1232,Kelurahan Tenteram,Pencemaran Air,2024-09-01 10:44,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+1233,Desa Damai,Penambangan Ilegal,2024-10-02 11:51,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+1234,Kelurahan Raya,Pembakaran Sampah,2024-11-03 12:58,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+1235,Desa Agung,Penggundulan Hutan,2024-12-04 13:05,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+1236,Kelurahan Bersih,Pembuangan Limbah,2024-01-05 14:12,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+1237,Desa Harmoni,Pencemaran Udara,2024-02-06 15:19,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+1238,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-03-07 16:26,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+1239,Desa Melati,Penebangan Liar,2024-04-08 17:33,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+1240,Kelurahan Maju,Pencemaran Tanah,2024-05-09 08:40,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+1241,Desa Makmur,Perburuan Liar,2024-06-10 09:47,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+1242,Kelurahan Sejahtera,Illegal Fishing,2024-07-11 10:54,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+1243,Desa Sentosa,Pembuangan Sampah Liar,2024-08-12 11:01,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+1244,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-09-13 12:08,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+1245,Desa Jaya,Polusi Plastik,2024-10-14 13:15,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+1246,Kelurahan Sari,Pencemaran Air,2024-11-15 14:22,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+1247,Desa Mulya,Penambangan Ilegal,2024-12-16 15:29,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+1248,Kelurahan Indah,Pembakaran Sampah,2024-01-17 16:36,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+1249,Desa Asri,Penggundulan Hutan,2024-02-18 17:43,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+1250,Kelurahan Permai,Pembuangan Limbah,2024-03-19 08:50,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+1251,Desa Subur,Pencemaran Udara,2024-04-20 09:57,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+1252,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-05-21 10:04,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+1253,Desa Damai,Penebangan Liar,2024-06-22 11:11,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+1254,Kelurahan Raya,Pencemaran Tanah,2024-07-23 12:18,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+1255,Desa Agung,Perburuan Liar,2024-08-24 13:25,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+1256,Kelurahan Bersih,Illegal Fishing,2024-09-25 14:32,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+1257,Desa Harmoni,Pembuangan Sampah Liar,2024-10-26 15:39,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+1258,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-11-27 16:46,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+1259,Desa Melati,Polusi Plastik,2024-12-28 17:53,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+1260,Kelurahan Maju,Pencemaran Air,2024-01-01 08:00,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+1261,Desa Makmur,Penambangan Ilegal,2024-02-02 09:07,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+1262,Kelurahan Sejahtera,Pembakaran Sampah,2024-03-03 10:14,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+1263,Desa Sentosa,Penggundulan Hutan,2024-04-04 11:21,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+1264,Kelurahan Bahagia,Pembuangan Limbah,2024-05-05 12:28,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+1265,Desa Jaya,Pencemaran Udara,2024-06-06 13:35,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+1266,Kelurahan Sari,Kerusakan Terumbu Karang,2024-07-07 14:42,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+1267,Desa Mulya,Penebangan Liar,2024-08-08 15:49,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+1268,Kelurahan Indah,Pencemaran Tanah,2024-09-09 16:56,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+1269,Desa Asri,Perburuan Liar,2024-10-10 17:03,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+1270,Kelurahan Permai,Illegal Fishing,2024-11-11 08:10,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+1271,Desa Subur,Pembuangan Sampah Liar,2024-12-12 09:17,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+1272,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-01-13 10:24,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+1273,Desa Damai,Polusi Plastik,2024-02-14 11:31,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+1274,Kelurahan Raya,Pencemaran Air,2024-03-15 12:38,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+1275,Desa Agung,Penambangan Ilegal,2024-04-16 13:45,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+1276,Kelurahan Bersih,Pembakaran Sampah,2024-05-17 14:52,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+1277,Desa Harmoni,Penggundulan Hutan,2024-06-18 15:59,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+1278,Kelurahan Mawar,Pembuangan Limbah,2024-07-19 16:06,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+1279,Desa Melati,Pencemaran Udara,2024-08-20 17:13,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+1280,Kelurahan Maju,Kerusakan Terumbu Karang,2024-09-21 08:20,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+1281,Desa Makmur,Penebangan Liar,2024-10-22 09:27,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+1282,Kelurahan Sejahtera,Pencemaran Tanah,2024-11-23 10:34,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+1283,Desa Sentosa,Perburuan Liar,2024-12-24 11:41,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+1284,Kelurahan Bahagia,Illegal Fishing,2024-01-25 12:48,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+1285,Desa Jaya,Pembuangan Sampah Liar,2024-02-26 13:55,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+1286,Kelurahan Sari,Kerusakan Hutan Mangrove,2024-03-27 14:02,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+1287,Desa Mulya,Polusi Plastik,2024-04-28 15:09,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+1288,Kelurahan Indah,Pencemaran Air,2024-05-01 16:16,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+1289,Desa Asri,Penambangan Ilegal,2024-06-02 17:23,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+1290,Kelurahan Permai,Pembakaran Sampah,2024-07-03 08:30,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+1291,Desa Subur,Penggundulan Hutan,2024-08-04 09:37,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+1292,Kelurahan Tenteram,Pembuangan Limbah,2024-09-05 10:44,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+1293,Desa Damai,Pencemaran Udara,2024-10-06 11:51,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+1294,Kelurahan Raya,Kerusakan Terumbu Karang,2024-11-07 12:58,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+1295,Desa Agung,Penebangan Liar,2024-12-08 13:05,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+1296,Kelurahan Bersih,Pencemaran Tanah,2024-01-09 14:12,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+1297,Desa Harmoni,Perburuan Liar,2024-02-10 15:19,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+1298,Kelurahan Mawar,Illegal Fishing,2024-03-11 16:26,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+1299,Desa Melati,Pembuangan Sampah Liar,2024-04-12 17:33,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+1300,Kelurahan Maju,Kerusakan Hutan Mangrove,2024-05-13 08:40,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+1301,Desa Makmur,Polusi Plastik,2024-06-14 09:47,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+1302,Kelurahan Sejahtera,Pencemaran Air,2024-07-15 10:54,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+1303,Desa Sentosa,Penambangan Ilegal,2024-08-16 11:01,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+1304,Kelurahan Bahagia,Pembakaran Sampah,2024-09-17 12:08,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+1305,Desa Jaya,Penggundulan Hutan,2024-10-18 13:15,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+1306,Kelurahan Sari,Pembuangan Limbah,2024-11-19 14:22,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+1307,Desa Mulya,Pencemaran Udara,2024-12-20 15:29,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+1308,Kelurahan Indah,Kerusakan Terumbu Karang,2024-01-21 16:36,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
+1309,Desa Asri,Penebangan Liar,2024-02-22 17:43,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PONOROGO
+1310,Kelurahan Permai,Pencemaran Tanah,2024-03-23 08:50,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MADIUN
+1311,Desa Subur,Perburuan Liar,2024-04-24 09:57,Perburuan satwa dilindungi,KEJAKSAAN NEGERI NGAWI
+1312,Kelurahan Tenteram,Illegal Fishing,2024-05-25 10:04,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SURABAYA
+1313,Desa Damai,Pembuangan Sampah Liar,2024-06-26 11:11,Tumpukan sampah di area publik,KEJAKSAAN NEGERI MALANG
+1314,Kelurahan Raya,Kerusakan Hutan Mangrove,2024-07-27 12:18,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BANYUWANGI
+1315,Desa Agung,Polusi Plastik,2024-08-28 13:25,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI JEMBER
+1316,Kelurahan Bersih,Pencemaran Air,2024-09-01 14:32,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SIDOARJO
+1317,Desa Harmoni,Penambangan Ilegal,2024-10-02 15:39,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI GRESIK
+1318,Kelurahan Mawar,Pembakaran Sampah,2024-11-03 16:46,Pembakaran di area terbuka,KEJAKSAAN NEGERI MOJOKERTO
+1319,Desa Melati,Penggundulan Hutan,2024-12-04 17:53,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PASURUAN
+1320,Kelurahan Maju,Pembuangan Limbah,2024-01-05 08:00,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI PROBOLINGGO
+1321,Desa Makmur,Pencemaran Udara,2024-02-06 09:07,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI KEDIRI
+1322,Kelurahan Sejahtera,Kerusakan Terumbu Karang,2024-03-07 10:14,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BLITAR
+1323,Desa Sentosa,Penebangan Liar,2024-04-08 11:21,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI TULUNGAGUNG
+1324,Kelurahan Bahagia,Pencemaran Tanah,2024-05-09 12:28,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI TRENGGALEK
+1325,Desa Jaya,Perburuan Liar,2024-06-10 13:35,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PONOROGO
+1326,Kelurahan Sari,Illegal Fishing,2024-07-11 14:42,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MADIUN
+1327,Desa Mulya,Pembuangan Sampah Liar,2024-08-12 15:49,Tumpukan sampah di area publik,KEJAKSAAN NEGERI NGAWI
+1328,Kelurahan Indah,Kerusakan Hutan Mangrove,2024-09-13 16:56,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SURABAYA
+1329,Desa Asri,Polusi Plastik,2024-10-14 17:03,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI MALANG
+1330,Kelurahan Permai,Pencemaran Air,2024-11-15 08:10,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BANYUWANGI
+1331,Desa Subur,Penambangan Ilegal,2024-12-16 09:17,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI JEMBER
+1332,Kelurahan Tenteram,Pembakaran Sampah,2024-01-17 10:24,Pembakaran di area terbuka,KEJAKSAAN NEGERI SIDOARJO
+1333,Desa Damai,Penggundulan Hutan,2024-02-18 11:31,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI GRESIK
+1334,Kelurahan Raya,Pembuangan Limbah,2024-03-19 12:38,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MOJOKERTO
+1335,Desa Agung,Pencemaran Udara,2024-04-20 13:45,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PASURUAN
+1336,Kelurahan Bersih,Kerusakan Terumbu Karang,2024-05-21 14:52,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI PROBOLINGGO
+1337,Desa Harmoni,Penebangan Liar,2024-06-22 15:59,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI KEDIRI
+1338,Kelurahan Mawar,Pencemaran Tanah,2024-07-23 16:06,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BLITAR
+1339,Desa Melati,Perburuan Liar,2024-08-24 17:13,Perburuan satwa dilindungi,KEJAKSAAN NEGERI TULUNGAGUNG
+1340,Kelurahan Maju,Illegal Fishing,2024-09-25 08:20,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI TRENGGALEK
+1341,Desa Makmur,Pembuangan Sampah Liar,2024-10-26 09:27,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PONOROGO
+1342,Kelurahan Sejahtera,Kerusakan Hutan Mangrove,2024-11-27 10:34,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MADIUN
+1343,Desa Sentosa,Polusi Plastik,2024-12-28 11:41,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI NGAWI
+1344,Kelurahan Bahagia,Pencemaran Air,2024-01-01 12:48,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI SURABAYA
+1345,Desa Jaya,Penambangan Ilegal,2024-02-02 13:55,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI MALANG
+1346,Kelurahan Sari,Pembakaran Sampah,2024-03-03 14:02,Pembakaran di area terbuka,KEJAKSAAN NEGERI BANYUWANGI
+1347,Desa Mulya,Penggundulan Hutan,2024-04-04 15:09,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI JEMBER
+1348,Kelurahan Indah,Pembuangan Limbah,2024-05-05 16:16,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SIDOARJO
+1349,Desa Asri,Pencemaran Udara,2024-06-06 17:23,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI GRESIK
+1350,Kelurahan Permai,Kerusakan Terumbu Karang,2024-07-07 08:30,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MOJOKERTO
+1351,Desa Subur,Penebangan Liar,2024-08-08 09:37,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI PASURUAN
+1352,Kelurahan Tenteram,Pencemaran Tanah,2024-09-09 10:44,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI PROBOLINGGO
+1353,Desa Damai,Perburuan Liar,2024-10-10 11:51,Perburuan satwa dilindungi,KEJAKSAAN NEGERI KEDIRI
+1354,Kelurahan Raya,Illegal Fishing,2024-11-11 12:58,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BLITAR
+1355,Desa Agung,Pembuangan Sampah Liar,2024-12-12 13:05,Tumpukan sampah di area publik,KEJAKSAAN NEGERI TULUNGAGUNG
+1356,Kelurahan Bersih,Kerusakan Hutan Mangrove,2024-01-13 14:12,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI TRENGGALEK
+1357,Desa Harmoni,Polusi Plastik,2024-02-14 15:19,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PONOROGO
+1358,Kelurahan Mawar,Pencemaran Air,2024-03-15 16:26,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MADIUN
+1359,Desa Melati,Penambangan Ilegal,2024-04-16 17:33,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI NGAWI
+1360,Kelurahan Maju,Pembakaran Sampah,2024-05-17 08:40,Pembakaran di area terbuka,KEJAKSAAN NEGERI SURABAYA
+1361,Desa Makmur,Penggundulan Hutan,2024-06-18 09:47,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI MALANG
+1362,Kelurahan Sejahtera,Pembuangan Limbah,2024-07-19 10:54,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BANYUWANGI
+1363,Desa Sentosa,Pencemaran Udara,2024-08-20 11:01,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI JEMBER
+1364,Kelurahan Bahagia,Kerusakan Terumbu Karang,2024-09-21 12:08,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SIDOARJO
+1365,Desa Jaya,Penebangan Liar,2024-10-22 13:15,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI GRESIK
+1366,Kelurahan Sari,Pencemaran Tanah,2024-11-23 14:22,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI MOJOKERTO
+1367,Desa Mulya,Perburuan Liar,2024-12-24 15:29,Perburuan satwa dilindungi,KEJAKSAAN NEGERI PASURUAN
+1368,Kelurahan Indah,Illegal Fishing,2024-01-25 16:36,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI PROBOLINGGO
+1369,Desa Asri,Pembuangan Sampah Liar,2024-02-26 17:43,Tumpukan sampah di area publik,KEJAKSAAN NEGERI KEDIRI
+1370,Kelurahan Permai,Kerusakan Hutan Mangrove,2024-03-27 08:50,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI BLITAR
+1371,Desa Subur,Polusi Plastik,2024-04-28 09:57,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI TULUNGAGUNG
+1372,Kelurahan Tenteram,Pencemaran Air,2024-05-01 10:04,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI TRENGGALEK
+1373,Desa Damai,Penambangan Ilegal,2024-06-02 11:11,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PONOROGO
+1374,Kelurahan Raya,Pembakaran Sampah,2024-07-03 12:18,Pembakaran di area terbuka,KEJAKSAAN NEGERI MADIUN
+1375,Desa Agung,Penggundulan Hutan,2024-08-04 13:25,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI NGAWI
+1376,Kelurahan Bersih,Pembuangan Limbah,2024-09-05 14:32,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI SURABAYA
+1377,Desa Harmoni,Pencemaran Udara,2024-10-06 15:39,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI MALANG
+1378,Kelurahan Mawar,Kerusakan Terumbu Karang,2024-11-07 16:46,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI BANYUWANGI
+1379,Desa Melati,Penebangan Liar,2024-12-08 17:53,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI JEMBER
+1380,Kelurahan Maju,Pencemaran Tanah,2024-01-09 08:00,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SIDOARJO
+1381,Desa Makmur,Perburuan Liar,2024-02-10 09:07,Perburuan satwa dilindungi,KEJAKSAAN NEGERI GRESIK
+1382,Kelurahan Sejahtera,Illegal Fishing,2024-03-11 10:14,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI MOJOKERTO
+1383,Desa Sentosa,Pembuangan Sampah Liar,2024-04-12 11:21,Tumpukan sampah di area publik,KEJAKSAAN NEGERI PASURUAN
+1384,Kelurahan Bahagia,Kerusakan Hutan Mangrove,2024-05-13 12:28,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI PROBOLINGGO
+1385,Desa Jaya,Polusi Plastik,2024-06-14 13:35,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI KEDIRI
+1386,Kelurahan Sari,Pencemaran Air,2024-07-15 14:42,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI BLITAR
+1387,Desa Mulya,Penambangan Ilegal,2024-08-16 15:49,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI TULUNGAGUNG
+1388,Kelurahan Indah,Pembakaran Sampah,2024-09-17 16:56,Pembakaran di area terbuka,KEJAKSAAN NEGERI TRENGGALEK
+1389,Desa Asri,Penggundulan Hutan,2024-10-18 17:03,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI PONOROGO
+1390,Kelurahan Permai,Pembuangan Limbah,2024-11-19 08:10,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI MADIUN
+1391,Desa Subur,Pencemaran Udara,2024-12-20 09:17,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI NGAWI
+1392,Kelurahan Tenteram,Kerusakan Terumbu Karang,2024-01-21 10:24,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI SURABAYA
+1393,Desa Damai,Penebangan Liar,2024-02-22 11:31,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI MALANG
+1394,Kelurahan Raya,Pencemaran Tanah,2024-03-23 12:38,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI BANYUWANGI
+1395,Desa Agung,Perburuan Liar,2024-04-24 13:45,Perburuan satwa dilindungi,KEJAKSAAN NEGERI JEMBER
+1396,Kelurahan Bersih,Illegal Fishing,2024-05-25 14:52,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI SIDOARJO
+1397,Desa Harmoni,Pembuangan Sampah Liar,2024-06-26 15:59,Tumpukan sampah di area publik,KEJAKSAAN NEGERI GRESIK
+1398,Kelurahan Mawar,Kerusakan Hutan Mangrove,2024-07-27 16:06,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI MOJOKERTO
+1399,Desa Melati,Polusi Plastik,2024-08-28 17:13,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI PASURUAN
+1400,Kelurahan Maju,Pencemaran Air,2024-09-01 08:20,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI PROBOLINGGO
+1401,Desa Makmur,Penambangan Ilegal,2024-10-02 09:27,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI KEDIRI
+1402,Kelurahan Sejahtera,Pembakaran Sampah,2024-11-03 10:34,Pembakaran di area terbuka,KEJAKSAAN NEGERI BLITAR
+1403,Desa Sentosa,Penggundulan Hutan,2024-12-04 11:41,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI TULUNGAGUNG
+1404,Kelurahan Bahagia,Pembuangan Limbah,2024-01-05 12:48,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI TRENGGALEK
+1405,Desa Jaya,Pencemaran Udara,2024-02-06 13:55,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI PONOROGO
+1406,Kelurahan Sari,Kerusakan Terumbu Karang,2024-03-07 14:02,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI MADIUN
+1407,Desa Mulya,Penebangan Liar,2024-04-08 15:09,Penebangan pohon di kawasan lindung,KEJAKSAAN NEGERI NGAWI
+1408,Kelurahan Indah,Pencemaran Tanah,2024-05-09 16:16,Pembuangan limbah B3 di tanah,KEJAKSAAN NEGERI SURABAYA
+1409,Desa Asri,Perburuan Liar,2024-06-10 17:23,Perburuan satwa dilindungi,KEJAKSAAN NEGERI MALANG
+1410,Kelurahan Permai,Illegal Fishing,2024-07-11 08:30,Penangkapan ikan dengan bom,KEJAKSAAN NEGERI BANYUWANGI
+1411,Desa Subur,Pembuangan Sampah Liar,2024-08-12 09:37,Tumpukan sampah di area publik,KEJAKSAAN NEGERI JEMBER
+1412,Kelurahan Tenteram,Kerusakan Hutan Mangrove,2024-09-13 10:44,Kerusakan ekosistem pesisir,KEJAKSAAN NEGERI SIDOARJO
+1413,Desa Damai,Polusi Plastik,2024-10-14 11:51,Pencemaran sampah plastik di sungai,KEJAKSAAN NEGERI GRESIK
+1414,Kelurahan Raya,Pencemaran Air,2024-11-15 12:58,Limbah pabrik masuk ke sungai,KEJAKSAAN NEGERI MOJOKERTO
+1415,Desa Agung,Penambangan Ilegal,2024-12-16 13:05,Aktivitas tanpa izin merusak lingkungan,KEJAKSAAN NEGERI PASURUAN
+1416,Kelurahan Bersih,Pembakaran Sampah,2024-01-17 14:12,Pembakaran di area terbuka,KEJAKSAAN NEGERI PROBOLINGGO
+1417,Desa Harmoni,Penggundulan Hutan,2024-02-18 15:19,Pembukaan lahan untuk perkebunan,KEJAKSAAN NEGERI KEDIRI
+1418,Kelurahan Mawar,Pembuangan Limbah,2024-03-19 16:26,Pembuangan limbah industri sembarangan,KEJAKSAAN NEGERI BLITAR
+1419,Desa Melati,Pencemaran Udara,2024-04-20 17:33,Asap pabrik melebihi batas normal,KEJAKSAAN NEGERI TULUNGAGUNG
+1420,Kelurahan Maju,Kerusakan Terumbu Karang,2024-05-21 08:40,Pengeboman ikan merusak ekosistem laut,KEJAKSAAN NEGERI TRENGGALEK
