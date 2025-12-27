@@ -1324,32 +1324,76 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
     /* ===================== TOP STATS CARDS ===================== */
 
-    function renderTopStatsCards() {
+    // Simpan data CSV untuk setiap menu
+    const CSV_DATA = {
+        'jaga_budaya': [],
+        'pengawasan_ormas': [],
+        'pemantauan_lingkungan': [],
+        'pemantauan_orang_asing': [],
+        'aset_desa': [],
+        'kasus_penyelewengan': []
+    };
+
+    // Fungsi untuk parsing CSV
+    function parseCSV(csvText) {
+        const lines = csvText.trim().split('\n');
+        const headers = lines[0].split(',');
+        const data = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+            const values = lines[i].split(',');
+            if (values.length === headers.length) {
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header.trim()] = values[index].trim();
+                });
+                data.push(obj);
+            }
+        }
+        return data;
+    }
+
+    // Fungsi untuk load CSV file
+    async function loadCSVData(menuId, fileName) {
+        try {
+            const response = await fetch(fileName);
+            const csvText = await response.text();
+            CSV_DATA[menuId] = parseCSV(csvText);
+            return CSV_DATA[menuId].length;
+        } catch (error) {
+            console.error(`Error loading ${fileName}:`, error);
+            return 0;
+        }
+    }
+
+    async function renderTopStatsCards() {
         const menuConfig = [
-            { id: 'jaga_budaya', label: 'Jaga Budaya', chartId: 'chartJagaBudaya', totalId: 'totalJagaBudaya', breakdownId: 'breakdownJagaBudaya', color: 'rgba(103, 232, 249, 1)' },
-            { id: 'pengawasan_ormas', label: 'Pengawasan Ormas', chartId: 'chartPengawasanOrmas', totalId: 'totalPengawasanOrmas', breakdownId: 'breakdownPengawasanOrmas', color: 'rgba(192, 132, 252, 1)' },
-            { id: 'pemantauan_lingkungan', label: 'Pemantauan Lingkungan', chartId: 'chartPemantauanLingkungan', totalId: 'totalPemantauanLingkungan', breakdownId: 'breakdownPemantauanLingkungan', color: 'rgba(52, 211, 153, 1)' },
-            { id: 'pemantauan_orang_asing', label: 'Pemantauan Orang Asing', chartId: 'chartPemantauanOrangAsing', totalId: 'totalPemantauanOrangAsing', breakdownId: 'breakdownPemantauanOrangAsing', color: 'rgba(250, 204, 21, 1)' },
-            { id: 'aset_desa', label: 'Aset Desa/Kelurahan', chartId: 'chartAsetDesa', totalId: 'totalAsetDesa', breakdownId: 'breakdownAsetDesa', color: 'rgba(96, 165, 250, 1)' },
-            { id: 'kasus_penyelewengan', label: 'Kasus Penyelewengan', chartId: 'chartKasusPenyelewengan', totalId: 'totalKasusPenyelewengan', breakdownId: 'breakdownKasusPenyelewengan', color: 'rgba(248, 113, 113, 1)' }
+            { id: 'jaga_budaya', label: 'Jaga Budaya', chartId: 'chartJagaBudaya', totalId: 'totalJagaBudaya', breakdownId: 'breakdownJagaBudaya', color: 'rgba(103, 232, 249, 1)', csvFile: 'jaga_budaya.csv' },
+            { id: 'pengawasan_ormas', label: 'Pengawasan Ormas', chartId: 'chartPengawasanOrmas', totalId: 'totalPengawasanOrmas', breakdownId: 'breakdownPengawasanOrmas', color: 'rgba(192, 132, 252, 1)', csvFile: 'pengawasan_ormas.csv' },
+            { id: 'pemantauan_lingkungan', label: 'Pemantauan Lingkungan', chartId: 'chartPemantauanLingkungan', totalId: 'totalPemantauanLingkungan', breakdownId: 'breakdownPemantauanLingkungan', color: 'rgba(52, 211, 153, 1)', csvFile: 'pemantauan_lingkungan.csv' },
+            { id: 'pemantauan_orang_asing', label: 'Pemantauan Orang Asing', chartId: 'chartPemantauanOrangAsing', totalId: 'totalPemantauanOrangAsing', breakdownId: 'breakdownPemantauanOrangAsing', color: 'rgba(250, 204, 21, 1)', csvFile: 'pemantauan_orang_asing.csv' },
+            { id: 'aset_desa', label: 'Aset Desa/Kelurahan', chartId: 'chartAsetDesa', totalId: 'totalAsetDesa', breakdownId: 'breakdownAsetDesa', color: 'rgba(96, 165, 250, 1)', csvFile: 'aset_desa.csv' },
+            { id: 'kasus_penyelewengan', label: 'Kasus Penyelewengan', chartId: 'chartKasusPenyelewengan', totalId: 'totalKasusPenyelewengan', breakdownId: 'breakdownKasusPenyelewengan', color: 'rgba(248, 113, 113, 1)', csvFile: 'kasus_penyelewengan.csv' }
         ];
 
-        menuConfig.forEach(menu => {
-            const menuData = MENU_DATA[menu.id] || [];
-            const total = menuData.length;
-            const compliant = menuData.filter(u => u.actual >= u.target).length;
+        for (const menu of menuConfig) {
+            // Load CSV data
+            const total = await loadCSVData(menu.id, menu.csvFile);
+            
+            // Simulasi compliant dan pending (bisa disesuaikan dengan logika bisnis Anda)
+            const compliant = Math.floor(total * 0.7); // 70% selesai
             const pending = total - compliant;
 
             // Update total
             const totalEl = document.getElementById(menu.totalId);
-            if (totalEl) totalEl.textContent = total;
+            if (totalEl) totalEl.textContent = total.toLocaleString('id-ID');
 
             // Update breakdown
             const breakdownEl = document.getElementById(menu.breakdownId);
             if (breakdownEl) {
                 breakdownEl.innerHTML = `
-                    <span class="text-emerald-400">✓ ${compliant} Selesai</span> · 
-                    <span class="text-amber-400">⏳ ${pending} Pending</span>
+                    <span class="text-emerald-400">✓ ${compliant.toLocaleString('id-ID')} Selesai</span> · 
+                    <span class="text-amber-400">⏳ ${pending.toLocaleString('id-ID')} Pending</span>
                 `;
             }
 
@@ -1377,7 +1421,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                     }
                 });
             }
-        });
+        }
     }
 
     /* ===================== INIT ===================== */
