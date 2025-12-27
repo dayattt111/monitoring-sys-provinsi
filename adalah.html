@@ -1678,7 +1678,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             currentIndex = (currentIndex + 1) % menuWithData.length;
             const nextMenuId = menuWithData[currentIndex];
             
-            console.log(`\n⏩ Auto-rotating to: ${nextMenuId}`);
+            console.log(`\n⏩ Auto-rotating from ${currentMenuId} to: ${nextMenuId}`);
             
             // Update current menu
             currentMenuId = nextMenuId;
@@ -1694,7 +1694,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             renderMainMenu();
             
             // Update chart and map with smooth transition
+            console.log(`  📊 Updating chart for ${currentMenuId}...`);
             updateDisparitasChart();
+            console.log(`  🗺️  Updating map for ${currentMenuId}...`);
             updateMap();
             
             // Reset countdown
