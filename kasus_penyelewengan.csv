@@ -1,11 +1,1181 @@
 No,Desa / Kelurahan,Jenis Penyimpangan,Sumber Informasi,Tahap Penanganan,Nama Satker
-1,Kelurahan Gubeng,Penggelapan Dana BLT,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SURABAYA
-2,Desa Glagah,Korupsi Dana Desa,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
-3,Kelurahan Mojolangu,Penyalahgunaan Wewenang,Whistleblower,Penyidikan,KEJAKSAAN NEGERI KOTA MALANG
-4,Kelurahan Sumbersari,Pungli Pelayanan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
-5,Kelurahan Taman,Mark Up Proyek,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
-6,Kelurahan Kebomas,Pengadaan Fiktif,Inspektorat,Penuntutan,KEJAKSAAN NEGERI GRESIK
-7,Kelurahan Ampel,Korupsi ADD,BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
-8,Kelurahan Klojen,Penyimpangan Anggaran,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI KOTA MALANG
-9,Kelurahan Mojoroto,Gratifikasi,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI KOTA KEDIRI
-10,Kelurahan Bugul Kidul,Korupsi Bansos,Media Massa,Penyidikan,KEJAKSAAN NEGERI KABUPATEN PASURUAN
+1,Desa Makmur,Korupsi Dana Desa,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MALANG
+2,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Whistleblower,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+3,Desa Sentosa,Pungli Pelayanan,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI JEMBER
+4,Kelurahan Bahagia,Mark Up Proyek,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+5,Desa Jaya,Pengadaan Fiktif,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+6,Kelurahan Sari,Korupsi ADD,Media Massa,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+7,Desa Mulya,Penyimpangan Anggaran,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SURABAYA
+8,Kelurahan Indah,Gratifikasi,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MALANG
+9,Desa Asri,Korupsi Bansos,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+10,Kelurahan Permai,Penyalahgunaan Aset,Audit BPK,Penuntutan,KEJAKSAAN NEGERI JEMBER
+11,Desa Subur,Manipulasi Data,Whistleblower,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+12,Kelurahan Tenteram,Suap Perizinan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+13,Desa Damai,Penggelapan Dana BLT,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+14,Kelurahan Maju,Korupsi Dana Desa,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+15,Desa Makmur,Penyalahgunaan Wewenang,Media Massa,Inkracht,KEJAKSAAN NEGERI MALANG
+16,Kelurahan Sejahtera,Pungli Pelayanan,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+17,Desa Sentosa,Mark Up Proyek,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+18,Kelurahan Bahagia,Pengadaan Fiktif,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+19,Desa Jaya,Korupsi ADD,Audit BPK,Inkracht,KEJAKSAAN NEGERI GRESIK
+20,Kelurahan Sari,Penyimpangan Anggaran,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+21,Desa Mulya,Gratifikasi,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+22,Kelurahan Indah,Korupsi Bansos,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MALANG
+23,Desa Asri,Penyalahgunaan Aset,Inspektorat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+24,Kelurahan Permai,Manipulasi Data,Media Massa,Penyidikan,KEJAKSAAN NEGERI JEMBER
+25,Desa Subur,Suap Perizinan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+26,Kelurahan Tenteram,Penggelapan Dana BLT,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI GRESIK
+27,Desa Damai,Korupsi Dana Desa,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+28,Kelurahan Maju,Penyalahgunaan Wewenang,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+29,Desa Makmur,Pungli Pelayanan,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MALANG
+30,Kelurahan Sejahtera,Mark Up Proyek,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+31,Desa Sentosa,Pengadaan Fiktif,Audit Internal,Inkracht,KEJAKSAAN NEGERI JEMBER
+32,Kelurahan Bahagia,Korupsi ADD,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+33,Desa Jaya,Penyimpangan Anggaran,Media Massa,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+34,Kelurahan Sari,Gratifikasi,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+35,Desa Mulya,Korupsi Bansos,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SURABAYA
+36,Kelurahan Indah,Penyalahgunaan Aset,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MALANG
+37,Desa Asri,Manipulasi Data,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+38,Kelurahan Permai,Suap Perizinan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI JEMBER
+39,Desa Subur,Penggelapan Dana BLT,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+40,Kelurahan Tenteram,Korupsi Dana Desa,Audit Internal,Penyidikan,KEJAKSAAN NEGERI GRESIK
+41,Desa Damai,Penyalahgunaan Wewenang,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+42,Kelurahan Maju,Pungli Pelayanan,Media Massa,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+43,Desa Makmur,Mark Up Proyek,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MALANG
+44,Kelurahan Sejahtera,Pengadaan Fiktif,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+45,Desa Sentosa,Korupsi ADD,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+46,Kelurahan Bahagia,Penyimpangan Anggaran,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+47,Desa Jaya,Gratifikasi,Whistleblower,Inkracht,KEJAKSAAN NEGERI GRESIK
+48,Kelurahan Sari,Korupsi Bansos,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+49,Desa Mulya,Penyalahgunaan Aset,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+50,Kelurahan Indah,Manipulasi Data,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MALANG
+51,Desa Asri,Suap Perizinan,Media Massa,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+52,Kelurahan Permai,Penggelapan Dana BLT,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI JEMBER
+53,Desa Subur,Korupsi Dana Desa,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+54,Kelurahan Tenteram,Penyalahgunaan Wewenang,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI GRESIK
+55,Desa Damai,Pungli Pelayanan,Audit BPK,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+56,Kelurahan Maju,Mark Up Proyek,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+57,Desa Makmur,Pengadaan Fiktif,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+58,Kelurahan Sejahtera,Korupsi ADD,Audit Internal,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+59,Desa Sentosa,Penyimpangan Anggaran,Inspektorat,Inkracht,KEJAKSAAN NEGERI JEMBER
+60,Kelurahan Bahagia,Gratifikasi,Media Massa,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+61,Desa Jaya,Korupsi Bansos,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+62,Kelurahan Sari,Penyalahgunaan Aset,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+63,Desa Mulya,Manipulasi Data,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SURABAYA
+64,Kelurahan Indah,Suap Perizinan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MALANG
+65,Desa Asri,Penggelapan Dana BLT,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+66,Kelurahan Permai,Korupsi Dana Desa,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+67,Desa Subur,Penyalahgunaan Wewenang,Audit Internal,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+68,Kelurahan Tenteram,Pungli Pelayanan,Inspektorat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+69,Desa Damai,Mark Up Proyek,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+70,Kelurahan Maju,Pengadaan Fiktif,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+71,Desa Makmur,Korupsi ADD,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MALANG
+72,Kelurahan Sejahtera,Penyimpangan Anggaran,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+73,Desa Sentosa,Gratifikasi,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+74,Kelurahan Bahagia,Korupsi Bansos,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+75,Desa Jaya,Penyalahgunaan Aset,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI GRESIK
+76,Kelurahan Sari,Manipulasi Data,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+77,Desa Mulya,Suap Perizinan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+78,Kelurahan Indah,Penggelapan Dana BLT,Media Massa,Penuntutan,KEJAKSAAN NEGERI MALANG
+79,Desa Asri,Korupsi Dana Desa,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+80,Kelurahan Permai,Penyalahgunaan Wewenang,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI JEMBER
+81,Desa Subur,Pungli Pelayanan,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+82,Kelurahan Tenteram,Mark Up Proyek,Audit BPK,Penuntutan,KEJAKSAAN NEGERI GRESIK
+83,Desa Damai,Pengadaan Fiktif,Whistleblower,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+84,Kelurahan Maju,Korupsi ADD,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+85,Desa Makmur,Penyimpangan Anggaran,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MALANG
+86,Kelurahan Sejahtera,Gratifikasi,Inspektorat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+87,Desa Sentosa,Korupsi Bansos,Media Massa,Inkracht,KEJAKSAAN NEGERI JEMBER
+88,Kelurahan Bahagia,Penyalahgunaan Aset,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+89,Desa Jaya,Manipulasi Data,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+90,Kelurahan Sari,Suap Perizinan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+91,Desa Mulya,Penggelapan Dana BLT,Audit BPK,Inkracht,KEJAKSAAN NEGERI SURABAYA
+92,Kelurahan Indah,Korupsi Dana Desa,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MALANG
+93,Desa Asri,Penyalahgunaan Wewenang,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+94,Kelurahan Permai,Pungli Pelayanan,Audit Internal,Penuntutan,KEJAKSAAN NEGERI JEMBER
+95,Desa Subur,Mark Up Proyek,Inspektorat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+96,Kelurahan Tenteram,Pengadaan Fiktif,Media Massa,Penyidikan,KEJAKSAAN NEGERI GRESIK
+97,Desa Damai,Korupsi ADD,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+98,Kelurahan Maju,Penyimpangan Anggaran,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+99,Desa Makmur,Gratifikasi,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MALANG
+100,Kelurahan Sejahtera,Korupsi Bansos,Audit BPK,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+101,Desa Sentosa,Penyalahgunaan Aset,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+102,Kelurahan Bahagia,Manipulasi Data,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+103,Desa Jaya,Suap Perizinan,Audit Internal,Inkracht,KEJAKSAAN NEGERI GRESIK
+104,Kelurahan Sari,Penggelapan Dana BLT,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+105,Desa Mulya,Korupsi Dana Desa,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+106,Kelurahan Indah,Penyalahgunaan Wewenang,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MALANG
+107,Desa Asri,Pungli Pelayanan,Laporan LSM,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+108,Kelurahan Permai,Mark Up Proyek,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI JEMBER
+109,Desa Subur,Pengadaan Fiktif,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+110,Kelurahan Tenteram,Korupsi ADD,Whistleblower,Penuntutan,KEJAKSAAN NEGERI GRESIK
+111,Desa Damai,Penyimpangan Anggaran,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+112,Kelurahan Maju,Gratifikasi,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+113,Desa Makmur,Korupsi Bansos,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+114,Kelurahan Sejahtera,Penyalahgunaan Aset,Media Massa,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+115,Desa Sentosa,Manipulasi Data,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI JEMBER
+116,Kelurahan Bahagia,Suap Perizinan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+117,Desa Jaya,Penggelapan Dana BLT,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+118,Kelurahan Sari,Korupsi Dana Desa,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+119,Desa Mulya,Penyalahgunaan Wewenang,Whistleblower,Inkracht,KEJAKSAAN NEGERI SURABAYA
+120,Kelurahan Indah,Pungli Pelayanan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MALANG
+121,Desa Asri,Mark Up Proyek,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+122,Kelurahan Permai,Pengadaan Fiktif,Inspektorat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+123,Desa Subur,Korupsi ADD,Media Massa,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+124,Kelurahan Tenteram,Penyimpangan Anggaran,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI GRESIK
+125,Desa Damai,Gratifikasi,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+126,Kelurahan Maju,Korupsi Bansos,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+127,Desa Makmur,Penyalahgunaan Aset,Audit BPK,Inkracht,KEJAKSAAN NEGERI MALANG
+128,Kelurahan Sejahtera,Manipulasi Data,Whistleblower,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+129,Desa Sentosa,Suap Perizinan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+130,Kelurahan Bahagia,Penggelapan Dana BLT,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+131,Desa Jaya,Korupsi Dana Desa,Inspektorat,Inkracht,KEJAKSAAN NEGERI GRESIK
+132,Kelurahan Sari,Penyalahgunaan Wewenang,Media Massa,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+133,Desa Mulya,Pungli Pelayanan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+134,Kelurahan Indah,Mark Up Proyek,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MALANG
+135,Desa Asri,Pengadaan Fiktif,Laporan Warga,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+136,Kelurahan Permai,Korupsi ADD,Audit BPK,Penyidikan,KEJAKSAAN NEGERI JEMBER
+137,Desa Subur,Penyimpangan Anggaran,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+138,Kelurahan Tenteram,Gratifikasi,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+139,Desa Damai,Korupsi Bansos,Audit Internal,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+140,Kelurahan Maju,Penyalahgunaan Aset,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+141,Desa Makmur,Manipulasi Data,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MALANG
+142,Kelurahan Sejahtera,Suap Perizinan,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+143,Desa Sentosa,Penggelapan Dana BLT,Laporan LSM,Inkracht,KEJAKSAAN NEGERI JEMBER
+144,Kelurahan Bahagia,Korupsi Dana Desa,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+145,Desa Jaya,Penyalahgunaan Wewenang,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+146,Kelurahan Sari,Pungli Pelayanan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+147,Desa Mulya,Mark Up Proyek,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+148,Kelurahan Indah,Pengadaan Fiktif,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MALANG
+149,Desa Asri,Korupsi ADD,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+150,Kelurahan Permai,Penyimpangan Anggaran,Media Massa,Penuntutan,KEJAKSAAN NEGERI JEMBER
+151,Desa Subur,Gratifikasi,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+152,Kelurahan Tenteram,Korupsi Bansos,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI GRESIK
+153,Desa Damai,Penyalahgunaan Aset,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+154,Kelurahan Maju,Manipulasi Data,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+155,Desa Makmur,Suap Perizinan,Whistleblower,Inkracht,KEJAKSAAN NEGERI MALANG
+156,Kelurahan Sejahtera,Penggelapan Dana BLT,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+157,Desa Sentosa,Korupsi Dana Desa,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+158,Kelurahan Bahagia,Penyalahgunaan Wewenang,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+159,Desa Jaya,Pungli Pelayanan,Media Massa,Inkracht,KEJAKSAAN NEGERI GRESIK
+160,Kelurahan Sari,Mark Up Proyek,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+161,Desa Mulya,Pengadaan Fiktif,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+162,Kelurahan Indah,Korupsi ADD,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MALANG
+163,Desa Asri,Penyimpangan Anggaran,Audit BPK,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+164,Kelurahan Permai,Gratifikasi,Whistleblower,Penyidikan,KEJAKSAAN NEGERI JEMBER
+165,Desa Subur,Korupsi Bansos,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+166,Kelurahan Tenteram,Penyalahgunaan Aset,Audit Internal,Penuntutan,KEJAKSAAN NEGERI GRESIK
+167,Desa Damai,Manipulasi Data,Inspektorat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+168,Kelurahan Maju,Suap Perizinan,Media Massa,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+169,Desa Makmur,Penggelapan Dana BLT,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MALANG
+170,Kelurahan Sejahtera,Korupsi Dana Desa,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+171,Desa Sentosa,Penyalahgunaan Wewenang,Laporan Warga,Inkracht,KEJAKSAAN NEGERI JEMBER
+172,Kelurahan Bahagia,Pungli Pelayanan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+173,Desa Jaya,Mark Up Proyek,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+174,Kelurahan Sari,Pengadaan Fiktif,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+175,Desa Mulya,Korupsi ADD,Audit Internal,Inkracht,KEJAKSAAN NEGERI SURABAYA
+176,Kelurahan Indah,Penyimpangan Anggaran,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MALANG
+177,Desa Asri,Gratifikasi,Media Massa,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+178,Kelurahan Permai,Korupsi Bansos,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI JEMBER
+179,Desa Subur,Penyalahgunaan Aset,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+180,Kelurahan Tenteram,Manipulasi Data,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI GRESIK
+181,Desa Damai,Suap Perizinan,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+182,Kelurahan Maju,Penggelapan Dana BLT,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+183,Desa Makmur,Korupsi Dana Desa,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MALANG
+184,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Audit Internal,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+185,Desa Sentosa,Pungli Pelayanan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+186,Kelurahan Bahagia,Mark Up Proyek,Media Massa,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+187,Desa Jaya,Pengadaan Fiktif,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI GRESIK
+188,Kelurahan Sari,Korupsi ADD,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+189,Desa Mulya,Penyimpangan Anggaran,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+190,Kelurahan Indah,Gratifikasi,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MALANG
+191,Desa Asri,Korupsi Bansos,Whistleblower,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+192,Kelurahan Permai,Penyalahgunaan Aset,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+193,Desa Subur,Manipulasi Data,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+194,Kelurahan Tenteram,Suap Perizinan,Inspektorat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+195,Desa Damai,Penggelapan Dana BLT,Media Massa,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+196,Kelurahan Maju,Korupsi Dana Desa,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+197,Desa Makmur,Penyalahgunaan Wewenang,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MALANG
+198,Kelurahan Sejahtera,Pungli Pelayanan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+199,Desa Sentosa,Mark Up Proyek,Audit BPK,Inkracht,KEJAKSAAN NEGERI JEMBER
+200,Kelurahan Bahagia,Pengadaan Fiktif,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+201,Desa Jaya,Korupsi ADD,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+202,Kelurahan Sari,Penyimpangan Anggaran,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+203,Desa Mulya,Gratifikasi,Inspektorat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+204,Kelurahan Indah,Korupsi Bansos,Media Massa,Penyidikan,KEJAKSAAN NEGERI MALANG
+205,Desa Asri,Penyalahgunaan Aset,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+206,Kelurahan Permai,Manipulasi Data,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI JEMBER
+207,Desa Subur,Suap Perizinan,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+208,Kelurahan Tenteram,Penggelapan Dana BLT,Audit BPK,Penyidikan,KEJAKSAAN NEGERI GRESIK
+209,Desa Damai,Korupsi Dana Desa,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+210,Kelurahan Maju,Penyalahgunaan Wewenang,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+211,Desa Makmur,Pungli Pelayanan,Audit Internal,Inkracht,KEJAKSAAN NEGERI MALANG
+212,Kelurahan Sejahtera,Mark Up Proyek,Inspektorat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+213,Desa Sentosa,Pengadaan Fiktif,Media Massa,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+214,Kelurahan Bahagia,Korupsi ADD,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+215,Desa Jaya,Penyimpangan Anggaran,Laporan LSM,Inkracht,KEJAKSAAN NEGERI GRESIK
+216,Kelurahan Sari,Gratifikasi,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+217,Desa Mulya,Korupsi Bansos,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+218,Kelurahan Indah,Penyalahgunaan Aset,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MALANG
+219,Desa Asri,Manipulasi Data,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+220,Kelurahan Permai,Suap Perizinan,Audit Internal,Penyidikan,KEJAKSAAN NEGERI JEMBER
+221,Desa Subur,Penggelapan Dana BLT,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+222,Kelurahan Tenteram,Korupsi Dana Desa,Media Massa,Penuntutan,KEJAKSAAN NEGERI GRESIK
+223,Desa Damai,Penyalahgunaan Wewenang,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+224,Kelurahan Maju,Pungli Pelayanan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+225,Desa Makmur,Mark Up Proyek,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MALANG
+226,Kelurahan Sejahtera,Pengadaan Fiktif,Audit BPK,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+227,Desa Sentosa,Korupsi ADD,Whistleblower,Inkracht,KEJAKSAAN NEGERI JEMBER
+228,Kelurahan Bahagia,Penyimpangan Anggaran,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+229,Desa Jaya,Gratifikasi,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+230,Kelurahan Sari,Korupsi Bansos,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+231,Desa Mulya,Penyalahgunaan Aset,Media Massa,Inkracht,KEJAKSAAN NEGERI SURABAYA
+232,Kelurahan Indah,Manipulasi Data,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MALANG
+233,Desa Asri,Suap Perizinan,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+234,Kelurahan Permai,Penggelapan Dana BLT,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI JEMBER
+235,Desa Subur,Korupsi Dana Desa,Audit BPK,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+236,Kelurahan Tenteram,Penyalahgunaan Wewenang,Whistleblower,Penyidikan,KEJAKSAAN NEGERI GRESIK
+237,Desa Damai,Pungli Pelayanan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+238,Kelurahan Maju,Mark Up Proyek,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+239,Desa Makmur,Pengadaan Fiktif,Inspektorat,Inkracht,KEJAKSAAN NEGERI MALANG
+240,Kelurahan Sejahtera,Korupsi ADD,Media Massa,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+241,Desa Sentosa,Penyimpangan Anggaran,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+242,Kelurahan Bahagia,Gratifikasi,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+243,Desa Jaya,Korupsi Bansos,Laporan Warga,Inkracht,KEJAKSAAN NEGERI GRESIK
+244,Kelurahan Sari,Penyalahgunaan Aset,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+245,Desa Mulya,Manipulasi Data,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+246,Kelurahan Indah,Suap Perizinan,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MALANG
+247,Desa Asri,Penggelapan Dana BLT,Audit Internal,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+248,Kelurahan Permai,Korupsi Dana Desa,Inspektorat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+249,Desa Subur,Penyalahgunaan Wewenang,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+250,Kelurahan Tenteram,Pungli Pelayanan,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI GRESIK
+251,Desa Damai,Mark Up Proyek,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+252,Kelurahan Maju,Pengadaan Fiktif,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+253,Desa Makmur,Korupsi ADD,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MALANG
+254,Kelurahan Sejahtera,Penyimpangan Anggaran,Whistleblower,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+255,Desa Sentosa,Gratifikasi,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI JEMBER
+256,Kelurahan Bahagia,Korupsi Bansos,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+257,Desa Jaya,Penyalahgunaan Aset,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+258,Kelurahan Sari,Manipulasi Data,Media Massa,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+259,Desa Mulya,Suap Perizinan,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SURABAYA
+260,Kelurahan Indah,Penggelapan Dana BLT,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MALANG
+261,Desa Asri,Korupsi Dana Desa,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+262,Kelurahan Permai,Penyalahgunaan Wewenang,Audit BPK,Penuntutan,KEJAKSAAN NEGERI JEMBER
+263,Desa Subur,Pungli Pelayanan,Whistleblower,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+264,Kelurahan Tenteram,Mark Up Proyek,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+265,Desa Damai,Pengadaan Fiktif,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+266,Kelurahan Maju,Korupsi ADD,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+267,Desa Makmur,Penyimpangan Anggaran,Media Massa,Inkracht,KEJAKSAAN NEGERI MALANG
+268,Kelurahan Sejahtera,Gratifikasi,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+269,Desa Sentosa,Korupsi Bansos,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+270,Kelurahan Bahagia,Penyalahgunaan Aset,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+271,Desa Jaya,Manipulasi Data,Audit BPK,Inkracht,KEJAKSAAN NEGERI GRESIK
+272,Kelurahan Sari,Suap Perizinan,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+273,Desa Mulya,Penggelapan Dana BLT,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+274,Kelurahan Indah,Korupsi Dana Desa,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MALANG
+275,Desa Asri,Penyalahgunaan Wewenang,Inspektorat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+276,Kelurahan Permai,Pungli Pelayanan,Media Massa,Penyidikan,KEJAKSAAN NEGERI JEMBER
+277,Desa Subur,Mark Up Proyek,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+278,Kelurahan Tenteram,Pengadaan Fiktif,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI GRESIK
+279,Desa Damai,Korupsi ADD,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+280,Kelurahan Maju,Penyimpangan Anggaran,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+281,Desa Makmur,Gratifikasi,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MALANG
+282,Kelurahan Sejahtera,Korupsi Bansos,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+283,Desa Sentosa,Penyalahgunaan Aset,Audit Internal,Inkracht,KEJAKSAAN NEGERI JEMBER
+284,Kelurahan Bahagia,Manipulasi Data,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+285,Desa Jaya,Suap Perizinan,Media Massa,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+286,Kelurahan Sari,Penggelapan Dana BLT,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+287,Desa Mulya,Korupsi Dana Desa,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SURABAYA
+288,Kelurahan Indah,Penyalahgunaan Wewenang,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MALANG
+289,Desa Asri,Pungli Pelayanan,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+290,Kelurahan Permai,Mark Up Proyek,Whistleblower,Penuntutan,KEJAKSAAN NEGERI JEMBER
+291,Desa Subur,Pengadaan Fiktif,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+292,Kelurahan Tenteram,Korupsi ADD,Audit Internal,Penyidikan,KEJAKSAAN NEGERI GRESIK
+293,Desa Damai,Penyimpangan Anggaran,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+294,Kelurahan Maju,Gratifikasi,Media Massa,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+295,Desa Makmur,Korupsi Bansos,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MALANG
+296,Kelurahan Sejahtera,Penyalahgunaan Aset,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+297,Desa Sentosa,Manipulasi Data,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+298,Kelurahan Bahagia,Suap Perizinan,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+299,Desa Jaya,Penggelapan Dana BLT,Whistleblower,Inkracht,KEJAKSAAN NEGERI GRESIK
+300,Kelurahan Sari,Korupsi Dana Desa,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+301,Desa Mulya,Penyalahgunaan Wewenang,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+302,Kelurahan Indah,Pungli Pelayanan,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MALANG
+303,Desa Asri,Mark Up Proyek,Media Massa,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+304,Kelurahan Permai,Pengadaan Fiktif,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI JEMBER
+305,Desa Subur,Korupsi ADD,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+306,Kelurahan Tenteram,Penyimpangan Anggaran,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI GRESIK
+307,Desa Damai,Gratifikasi,Audit BPK,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+308,Kelurahan Maju,Korupsi Bansos,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+309,Desa Makmur,Penyalahgunaan Aset,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+310,Kelurahan Sejahtera,Manipulasi Data,Audit Internal,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+311,Desa Sentosa,Suap Perizinan,Inspektorat,Inkracht,KEJAKSAAN NEGERI JEMBER
+312,Kelurahan Bahagia,Penggelapan Dana BLT,Media Massa,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+313,Desa Jaya,Korupsi Dana Desa,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+314,Kelurahan Sari,Penyalahgunaan Wewenang,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+315,Desa Mulya,Pungli Pelayanan,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SURABAYA
+316,Kelurahan Indah,Mark Up Proyek,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MALANG
+317,Desa Asri,Pengadaan Fiktif,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+318,Kelurahan Permai,Korupsi ADD,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+319,Desa Subur,Penyimpangan Anggaran,Audit Internal,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+320,Kelurahan Tenteram,Gratifikasi,Inspektorat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+321,Desa Damai,Korupsi Bansos,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+322,Kelurahan Maju,Penyalahgunaan Aset,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+323,Desa Makmur,Manipulasi Data,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MALANG
+324,Kelurahan Sejahtera,Suap Perizinan,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+325,Desa Sentosa,Penggelapan Dana BLT,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+326,Kelurahan Bahagia,Korupsi Dana Desa,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+327,Desa Jaya,Penyalahgunaan Wewenang,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI GRESIK
+328,Kelurahan Sari,Pungli Pelayanan,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+329,Desa Mulya,Mark Up Proyek,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+330,Kelurahan Indah,Pengadaan Fiktif,Media Massa,Penuntutan,KEJAKSAAN NEGERI MALANG
+331,Desa Asri,Korupsi ADD,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+332,Kelurahan Permai,Penyimpangan Anggaran,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI JEMBER
+333,Desa Subur,Gratifikasi,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+334,Kelurahan Tenteram,Korupsi Bansos,Audit BPK,Penuntutan,KEJAKSAAN NEGERI GRESIK
+335,Desa Damai,Penyalahgunaan Aset,Whistleblower,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+336,Kelurahan Maju,Manipulasi Data,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+337,Desa Makmur,Suap Perizinan,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MALANG
+338,Kelurahan Sejahtera,Penggelapan Dana BLT,Inspektorat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+339,Desa Sentosa,Korupsi Dana Desa,Media Massa,Inkracht,KEJAKSAAN NEGERI JEMBER
+340,Kelurahan Bahagia,Penyalahgunaan Wewenang,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+341,Desa Jaya,Pungli Pelayanan,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+342,Kelurahan Sari,Mark Up Proyek,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+343,Desa Mulya,Pengadaan Fiktif,Audit BPK,Inkracht,KEJAKSAAN NEGERI SURABAYA
+344,Kelurahan Indah,Korupsi ADD,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MALANG
+345,Desa Asri,Penyimpangan Anggaran,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+346,Kelurahan Permai,Gratifikasi,Audit Internal,Penuntutan,KEJAKSAAN NEGERI JEMBER
+347,Desa Subur,Korupsi Bansos,Inspektorat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+348,Kelurahan Tenteram,Penyalahgunaan Aset,Media Massa,Penyidikan,KEJAKSAAN NEGERI GRESIK
+349,Desa Damai,Manipulasi Data,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+350,Kelurahan Maju,Suap Perizinan,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+351,Desa Makmur,Penggelapan Dana BLT,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MALANG
+352,Kelurahan Sejahtera,Korupsi Dana Desa,Audit BPK,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+353,Desa Sentosa,Penyalahgunaan Wewenang,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+354,Kelurahan Bahagia,Pungli Pelayanan,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+355,Desa Jaya,Mark Up Proyek,Audit Internal,Inkracht,KEJAKSAAN NEGERI GRESIK
+356,Kelurahan Sari,Pengadaan Fiktif,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+357,Desa Mulya,Korupsi ADD,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+358,Kelurahan Indah,Penyimpangan Anggaran,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MALANG
+359,Desa Asri,Gratifikasi,Laporan LSM,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+360,Kelurahan Permai,Korupsi Bansos,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI JEMBER
+361,Desa Subur,Penyalahgunaan Aset,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+362,Kelurahan Tenteram,Manipulasi Data,Whistleblower,Penuntutan,KEJAKSAAN NEGERI GRESIK
+363,Desa Damai,Suap Perizinan,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+364,Kelurahan Maju,Penggelapan Dana BLT,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+365,Desa Makmur,Korupsi Dana Desa,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+366,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Media Massa,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+367,Desa Sentosa,Pungli Pelayanan,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI JEMBER
+368,Kelurahan Bahagia,Mark Up Proyek,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+369,Desa Jaya,Pengadaan Fiktif,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+370,Kelurahan Sari,Korupsi ADD,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+371,Desa Mulya,Penyimpangan Anggaran,Whistleblower,Inkracht,KEJAKSAAN NEGERI SURABAYA
+372,Kelurahan Indah,Gratifikasi,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MALANG
+373,Desa Asri,Korupsi Bansos,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+374,Kelurahan Permai,Penyalahgunaan Aset,Inspektorat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+375,Desa Subur,Manipulasi Data,Media Massa,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+376,Kelurahan Tenteram,Suap Perizinan,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI GRESIK
+377,Desa Damai,Penggelapan Dana BLT,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+378,Kelurahan Maju,Korupsi Dana Desa,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+379,Desa Makmur,Penyalahgunaan Wewenang,Audit BPK,Inkracht,KEJAKSAAN NEGERI MALANG
+380,Kelurahan Sejahtera,Pungli Pelayanan,Whistleblower,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+381,Desa Sentosa,Mark Up Proyek,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+382,Kelurahan Bahagia,Pengadaan Fiktif,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+383,Desa Jaya,Korupsi ADD,Inspektorat,Inkracht,KEJAKSAAN NEGERI GRESIK
+384,Kelurahan Sari,Penyimpangan Anggaran,Media Massa,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+385,Desa Mulya,Gratifikasi,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+386,Kelurahan Indah,Korupsi Bansos,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MALANG
+387,Desa Asri,Penyalahgunaan Aset,Laporan Warga,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+388,Kelurahan Permai,Manipulasi Data,Audit BPK,Penyidikan,KEJAKSAAN NEGERI JEMBER
+389,Desa Subur,Suap Perizinan,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+390,Kelurahan Tenteram,Penggelapan Dana BLT,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+391,Desa Damai,Korupsi Dana Desa,Audit Internal,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+392,Kelurahan Maju,Penyalahgunaan Wewenang,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+393,Desa Makmur,Pungli Pelayanan,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MALANG
+394,Kelurahan Sejahtera,Mark Up Proyek,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+395,Desa Sentosa,Pengadaan Fiktif,Laporan LSM,Inkracht,KEJAKSAAN NEGERI JEMBER
+396,Kelurahan Bahagia,Korupsi ADD,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+397,Desa Jaya,Penyimpangan Anggaran,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+398,Kelurahan Sari,Gratifikasi,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+399,Desa Mulya,Korupsi Bansos,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+400,Kelurahan Indah,Penyalahgunaan Aset,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MALANG
+401,Desa Asri,Manipulasi Data,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+402,Kelurahan Permai,Suap Perizinan,Media Massa,Penuntutan,KEJAKSAAN NEGERI JEMBER
+403,Desa Subur,Penggelapan Dana BLT,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+404,Kelurahan Tenteram,Korupsi Dana Desa,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI GRESIK
+405,Desa Damai,Penyalahgunaan Wewenang,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+406,Kelurahan Maju,Pungli Pelayanan,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+407,Desa Makmur,Mark Up Proyek,Whistleblower,Inkracht,KEJAKSAAN NEGERI MALANG
+408,Kelurahan Sejahtera,Pengadaan Fiktif,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+409,Desa Sentosa,Korupsi ADD,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+410,Kelurahan Bahagia,Penyimpangan Anggaran,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+411,Desa Jaya,Gratifikasi,Media Massa,Inkracht,KEJAKSAAN NEGERI GRESIK
+412,Kelurahan Sari,Korupsi Bansos,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+413,Desa Mulya,Penyalahgunaan Aset,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+414,Kelurahan Indah,Manipulasi Data,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MALANG
+415,Desa Asri,Suap Perizinan,Audit BPK,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+416,Kelurahan Permai,Penggelapan Dana BLT,Whistleblower,Penyidikan,KEJAKSAAN NEGERI JEMBER
+417,Desa Subur,Korupsi Dana Desa,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+418,Kelurahan Tenteram,Penyalahgunaan Wewenang,Audit Internal,Penuntutan,KEJAKSAAN NEGERI GRESIK
+419,Desa Damai,Pungli Pelayanan,Inspektorat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+420,Kelurahan Maju,Mark Up Proyek,Media Massa,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+421,Desa Makmur,Pengadaan Fiktif,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MALANG
+422,Kelurahan Sejahtera,Korupsi ADD,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+423,Desa Sentosa,Penyimpangan Anggaran,Laporan Warga,Inkracht,KEJAKSAAN NEGERI JEMBER
+424,Kelurahan Bahagia,Gratifikasi,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+425,Desa Jaya,Korupsi Bansos,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+426,Kelurahan Sari,Penyalahgunaan Aset,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+427,Desa Mulya,Manipulasi Data,Audit Internal,Inkracht,KEJAKSAAN NEGERI SURABAYA
+428,Kelurahan Indah,Suap Perizinan,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MALANG
+429,Desa Asri,Penggelapan Dana BLT,Media Massa,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+430,Kelurahan Permai,Korupsi Dana Desa,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI JEMBER
+431,Desa Subur,Penyalahgunaan Wewenang,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+432,Kelurahan Tenteram,Pungli Pelayanan,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI GRESIK
+433,Desa Damai,Mark Up Proyek,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+434,Kelurahan Maju,Pengadaan Fiktif,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+435,Desa Makmur,Korupsi ADD,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MALANG
+436,Kelurahan Sejahtera,Penyimpangan Anggaran,Audit Internal,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+437,Desa Sentosa,Gratifikasi,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+438,Kelurahan Bahagia,Korupsi Bansos,Media Massa,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+439,Desa Jaya,Penyalahgunaan Aset,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI GRESIK
+440,Kelurahan Sari,Manipulasi Data,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+441,Desa Mulya,Suap Perizinan,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+442,Kelurahan Indah,Penggelapan Dana BLT,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MALANG
+443,Desa Asri,Korupsi Dana Desa,Whistleblower,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+444,Kelurahan Permai,Penyalahgunaan Wewenang,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+445,Desa Subur,Pungli Pelayanan,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+446,Kelurahan Tenteram,Mark Up Proyek,Inspektorat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+447,Desa Damai,Pengadaan Fiktif,Media Massa,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+448,Kelurahan Maju,Korupsi ADD,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+449,Desa Makmur,Penyimpangan Anggaran,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MALANG
+450,Kelurahan Sejahtera,Gratifikasi,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+451,Desa Sentosa,Korupsi Bansos,Audit BPK,Inkracht,KEJAKSAAN NEGERI JEMBER
+452,Kelurahan Bahagia,Penyalahgunaan Aset,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+453,Desa Jaya,Manipulasi Data,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+454,Kelurahan Sari,Suap Perizinan,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+455,Desa Mulya,Penggelapan Dana BLT,Inspektorat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+456,Kelurahan Indah,Korupsi Dana Desa,Media Massa,Penyidikan,KEJAKSAAN NEGERI MALANG
+457,Desa Asri,Penyalahgunaan Wewenang,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+458,Kelurahan Permai,Pungli Pelayanan,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI JEMBER
+459,Desa Subur,Mark Up Proyek,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+460,Kelurahan Tenteram,Pengadaan Fiktif,Audit BPK,Penyidikan,KEJAKSAAN NEGERI GRESIK
+461,Desa Damai,Korupsi ADD,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+462,Kelurahan Maju,Penyimpangan Anggaran,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+463,Desa Makmur,Gratifikasi,Audit Internal,Inkracht,KEJAKSAAN NEGERI MALANG
+464,Kelurahan Sejahtera,Korupsi Bansos,Inspektorat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+465,Desa Sentosa,Penyalahgunaan Aset,Media Massa,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+466,Kelurahan Bahagia,Manipulasi Data,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+467,Desa Jaya,Suap Perizinan,Laporan LSM,Inkracht,KEJAKSAAN NEGERI GRESIK
+468,Kelurahan Sari,Penggelapan Dana BLT,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+469,Desa Mulya,Korupsi Dana Desa,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+470,Kelurahan Indah,Penyalahgunaan Wewenang,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MALANG
+471,Desa Asri,Pungli Pelayanan,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+472,Kelurahan Permai,Mark Up Proyek,Audit Internal,Penyidikan,KEJAKSAAN NEGERI JEMBER
+473,Desa Subur,Pengadaan Fiktif,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+474,Kelurahan Tenteram,Korupsi ADD,Media Massa,Penuntutan,KEJAKSAAN NEGERI GRESIK
+475,Desa Damai,Penyimpangan Anggaran,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+476,Kelurahan Maju,Gratifikasi,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+477,Desa Makmur,Korupsi Bansos,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MALANG
+478,Kelurahan Sejahtera,Penyalahgunaan Aset,Audit BPK,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+479,Desa Sentosa,Manipulasi Data,Whistleblower,Inkracht,KEJAKSAAN NEGERI JEMBER
+480,Kelurahan Bahagia,Suap Perizinan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+481,Desa Jaya,Penggelapan Dana BLT,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+482,Kelurahan Sari,Korupsi Dana Desa,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+483,Desa Mulya,Penyalahgunaan Wewenang,Media Massa,Inkracht,KEJAKSAAN NEGERI SURABAYA
+484,Kelurahan Indah,Pungli Pelayanan,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MALANG
+485,Desa Asri,Mark Up Proyek,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+486,Kelurahan Permai,Pengadaan Fiktif,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI JEMBER
+487,Desa Subur,Korupsi ADD,Audit BPK,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+488,Kelurahan Tenteram,Penyimpangan Anggaran,Whistleblower,Penyidikan,KEJAKSAAN NEGERI GRESIK
+489,Desa Damai,Gratifikasi,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+490,Kelurahan Maju,Korupsi Bansos,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+491,Desa Makmur,Penyalahgunaan Aset,Inspektorat,Inkracht,KEJAKSAAN NEGERI MALANG
+492,Kelurahan Sejahtera,Manipulasi Data,Media Massa,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+493,Desa Sentosa,Suap Perizinan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+494,Kelurahan Bahagia,Penggelapan Dana BLT,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+495,Desa Jaya,Korupsi Dana Desa,Laporan Warga,Inkracht,KEJAKSAAN NEGERI GRESIK
+496,Kelurahan Sari,Penyalahgunaan Wewenang,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+497,Desa Mulya,Pungli Pelayanan,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+498,Kelurahan Indah,Mark Up Proyek,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MALANG
+499,Desa Asri,Pengadaan Fiktif,Audit Internal,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+500,Kelurahan Permai,Korupsi ADD,Inspektorat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+501,Desa Subur,Penyimpangan Anggaran,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+502,Kelurahan Tenteram,Gratifikasi,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI GRESIK
+503,Desa Damai,Korupsi Bansos,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+504,Kelurahan Maju,Penyalahgunaan Aset,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+505,Desa Makmur,Manipulasi Data,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MALANG
+506,Kelurahan Sejahtera,Suap Perizinan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+507,Desa Sentosa,Penggelapan Dana BLT,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI JEMBER
+508,Kelurahan Bahagia,Korupsi Dana Desa,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+509,Desa Jaya,Penyalahgunaan Wewenang,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+510,Kelurahan Sari,Pungli Pelayanan,Media Massa,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+511,Desa Mulya,Mark Up Proyek,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SURABAYA
+512,Kelurahan Indah,Pengadaan Fiktif,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MALANG
+513,Desa Asri,Korupsi ADD,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+514,Kelurahan Permai,Penyimpangan Anggaran,Audit BPK,Penuntutan,KEJAKSAAN NEGERI JEMBER
+515,Desa Subur,Gratifikasi,Whistleblower,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+516,Kelurahan Tenteram,Korupsi Bansos,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+517,Desa Damai,Penyalahgunaan Aset,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+518,Kelurahan Maju,Manipulasi Data,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+519,Desa Makmur,Suap Perizinan,Media Massa,Inkracht,KEJAKSAAN NEGERI MALANG
+520,Kelurahan Sejahtera,Penggelapan Dana BLT,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+521,Desa Sentosa,Korupsi Dana Desa,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+522,Kelurahan Bahagia,Penyalahgunaan Wewenang,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+523,Desa Jaya,Pungli Pelayanan,Audit BPK,Inkracht,KEJAKSAAN NEGERI GRESIK
+524,Kelurahan Sari,Mark Up Proyek,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+525,Desa Mulya,Pengadaan Fiktif,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+526,Kelurahan Indah,Korupsi ADD,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MALANG
+527,Desa Asri,Penyimpangan Anggaran,Inspektorat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+528,Kelurahan Permai,Gratifikasi,Media Massa,Penyidikan,KEJAKSAAN NEGERI JEMBER
+529,Desa Subur,Korupsi Bansos,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+530,Kelurahan Tenteram,Penyalahgunaan Aset,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI GRESIK
+531,Desa Damai,Manipulasi Data,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+532,Kelurahan Maju,Suap Perizinan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+533,Desa Makmur,Penggelapan Dana BLT,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MALANG
+534,Kelurahan Sejahtera,Korupsi Dana Desa,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+535,Desa Sentosa,Penyalahgunaan Wewenang,Audit Internal,Inkracht,KEJAKSAAN NEGERI JEMBER
+536,Kelurahan Bahagia,Pungli Pelayanan,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+537,Desa Jaya,Mark Up Proyek,Media Massa,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+538,Kelurahan Sari,Pengadaan Fiktif,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+539,Desa Mulya,Korupsi ADD,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SURABAYA
+540,Kelurahan Indah,Penyimpangan Anggaran,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MALANG
+541,Desa Asri,Gratifikasi,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+542,Kelurahan Permai,Korupsi Bansos,Whistleblower,Penuntutan,KEJAKSAAN NEGERI JEMBER
+543,Desa Subur,Penyalahgunaan Aset,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+544,Kelurahan Tenteram,Manipulasi Data,Audit Internal,Penyidikan,KEJAKSAAN NEGERI GRESIK
+545,Desa Damai,Suap Perizinan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+546,Kelurahan Maju,Penggelapan Dana BLT,Media Massa,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+547,Desa Makmur,Korupsi Dana Desa,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MALANG
+548,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+549,Desa Sentosa,Pungli Pelayanan,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+550,Kelurahan Bahagia,Mark Up Proyek,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+551,Desa Jaya,Pengadaan Fiktif,Whistleblower,Inkracht,KEJAKSAAN NEGERI GRESIK
+552,Kelurahan Sari,Korupsi ADD,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+553,Desa Mulya,Penyimpangan Anggaran,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+554,Kelurahan Indah,Gratifikasi,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MALANG
+555,Desa Asri,Korupsi Bansos,Media Massa,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+556,Kelurahan Permai,Penyalahgunaan Aset,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI JEMBER
+557,Desa Subur,Manipulasi Data,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+558,Kelurahan Tenteram,Suap Perizinan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI GRESIK
+559,Desa Damai,Penggelapan Dana BLT,Audit BPK,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+560,Kelurahan Maju,Korupsi Dana Desa,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+561,Desa Makmur,Penyalahgunaan Wewenang,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+562,Kelurahan Sejahtera,Pungli Pelayanan,Audit Internal,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+563,Desa Sentosa,Mark Up Proyek,Inspektorat,Inkracht,KEJAKSAAN NEGERI JEMBER
+564,Kelurahan Bahagia,Pengadaan Fiktif,Media Massa,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+565,Desa Jaya,Korupsi ADD,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+566,Kelurahan Sari,Penyimpangan Anggaran,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+567,Desa Mulya,Gratifikasi,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SURABAYA
+568,Kelurahan Indah,Korupsi Bansos,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MALANG
+569,Desa Asri,Penyalahgunaan Aset,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+570,Kelurahan Permai,Manipulasi Data,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+571,Desa Subur,Suap Perizinan,Audit Internal,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+572,Kelurahan Tenteram,Penggelapan Dana BLT,Inspektorat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+573,Desa Damai,Korupsi Dana Desa,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+574,Kelurahan Maju,Penyalahgunaan Wewenang,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+575,Desa Makmur,Pungli Pelayanan,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MALANG
+576,Kelurahan Sejahtera,Mark Up Proyek,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+577,Desa Sentosa,Pengadaan Fiktif,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+578,Kelurahan Bahagia,Korupsi ADD,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+579,Desa Jaya,Penyimpangan Anggaran,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI GRESIK
+580,Kelurahan Sari,Gratifikasi,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+581,Desa Mulya,Korupsi Bansos,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+582,Kelurahan Indah,Penyalahgunaan Aset,Media Massa,Penuntutan,KEJAKSAAN NEGERI MALANG
+583,Desa Asri,Manipulasi Data,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+584,Kelurahan Permai,Suap Perizinan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI JEMBER
+585,Desa Subur,Penggelapan Dana BLT,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+586,Kelurahan Tenteram,Korupsi Dana Desa,Audit BPK,Penuntutan,KEJAKSAAN NEGERI GRESIK
+587,Desa Damai,Penyalahgunaan Wewenang,Whistleblower,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+588,Kelurahan Maju,Pungli Pelayanan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+589,Desa Makmur,Mark Up Proyek,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MALANG
+590,Kelurahan Sejahtera,Pengadaan Fiktif,Inspektorat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+591,Desa Sentosa,Korupsi ADD,Media Massa,Inkracht,KEJAKSAAN NEGERI JEMBER
+592,Kelurahan Bahagia,Penyimpangan Anggaran,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+593,Desa Jaya,Gratifikasi,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+594,Kelurahan Sari,Korupsi Bansos,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+595,Desa Mulya,Penyalahgunaan Aset,Audit BPK,Inkracht,KEJAKSAAN NEGERI SURABAYA
+596,Kelurahan Indah,Manipulasi Data,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MALANG
+597,Desa Asri,Suap Perizinan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+598,Kelurahan Permai,Penggelapan Dana BLT,Audit Internal,Penuntutan,KEJAKSAAN NEGERI JEMBER
+599,Desa Subur,Korupsi Dana Desa,Inspektorat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+600,Kelurahan Tenteram,Penyalahgunaan Wewenang,Media Massa,Penyidikan,KEJAKSAAN NEGERI GRESIK
+601,Desa Damai,Pungli Pelayanan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+602,Kelurahan Maju,Mark Up Proyek,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+603,Desa Makmur,Pengadaan Fiktif,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MALANG
+604,Kelurahan Sejahtera,Korupsi ADD,Audit BPK,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+605,Desa Sentosa,Penyimpangan Anggaran,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+606,Kelurahan Bahagia,Gratifikasi,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+607,Desa Jaya,Korupsi Bansos,Audit Internal,Inkracht,KEJAKSAAN NEGERI GRESIK
+608,Kelurahan Sari,Penyalahgunaan Aset,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+609,Desa Mulya,Manipulasi Data,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+610,Kelurahan Indah,Suap Perizinan,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MALANG
+611,Desa Asri,Penggelapan Dana BLT,Laporan LSM,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+612,Kelurahan Permai,Korupsi Dana Desa,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI JEMBER
+613,Desa Subur,Penyalahgunaan Wewenang,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+614,Kelurahan Tenteram,Pungli Pelayanan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI GRESIK
+615,Desa Damai,Mark Up Proyek,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+616,Kelurahan Maju,Pengadaan Fiktif,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+617,Desa Makmur,Korupsi ADD,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+618,Kelurahan Sejahtera,Penyimpangan Anggaran,Media Massa,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+619,Desa Sentosa,Gratifikasi,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI JEMBER
+620,Kelurahan Bahagia,Korupsi Bansos,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+621,Desa Jaya,Penyalahgunaan Aset,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+622,Kelurahan Sari,Manipulasi Data,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+623,Desa Mulya,Suap Perizinan,Whistleblower,Inkracht,KEJAKSAAN NEGERI SURABAYA
+624,Kelurahan Indah,Penggelapan Dana BLT,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MALANG
+625,Desa Asri,Korupsi Dana Desa,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+626,Kelurahan Permai,Penyalahgunaan Wewenang,Inspektorat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+627,Desa Subur,Pungli Pelayanan,Media Massa,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+628,Kelurahan Tenteram,Mark Up Proyek,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI GRESIK
+629,Desa Damai,Pengadaan Fiktif,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+630,Kelurahan Maju,Korupsi ADD,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+631,Desa Makmur,Penyimpangan Anggaran,Audit BPK,Inkracht,KEJAKSAAN NEGERI MALANG
+632,Kelurahan Sejahtera,Gratifikasi,Whistleblower,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+633,Desa Sentosa,Korupsi Bansos,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+634,Kelurahan Bahagia,Penyalahgunaan Aset,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+635,Desa Jaya,Manipulasi Data,Inspektorat,Inkracht,KEJAKSAAN NEGERI GRESIK
+636,Kelurahan Sari,Suap Perizinan,Media Massa,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+637,Desa Mulya,Penggelapan Dana BLT,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+638,Kelurahan Indah,Korupsi Dana Desa,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MALANG
+639,Desa Asri,Penyalahgunaan Wewenang,Laporan Warga,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+640,Kelurahan Permai,Pungli Pelayanan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI JEMBER
+641,Desa Subur,Mark Up Proyek,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+642,Kelurahan Tenteram,Pengadaan Fiktif,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+643,Desa Damai,Korupsi ADD,Audit Internal,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+644,Kelurahan Maju,Penyimpangan Anggaran,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+645,Desa Makmur,Gratifikasi,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MALANG
+646,Kelurahan Sejahtera,Korupsi Bansos,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+647,Desa Sentosa,Penyalahgunaan Aset,Laporan LSM,Inkracht,KEJAKSAAN NEGERI JEMBER
+648,Kelurahan Bahagia,Manipulasi Data,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+649,Desa Jaya,Suap Perizinan,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+650,Kelurahan Sari,Penggelapan Dana BLT,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+651,Desa Mulya,Korupsi Dana Desa,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+652,Kelurahan Indah,Penyalahgunaan Wewenang,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MALANG
+653,Desa Asri,Pungli Pelayanan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+654,Kelurahan Permai,Mark Up Proyek,Media Massa,Penuntutan,KEJAKSAAN NEGERI JEMBER
+655,Desa Subur,Pengadaan Fiktif,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+656,Kelurahan Tenteram,Korupsi ADD,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI GRESIK
+657,Desa Damai,Penyimpangan Anggaran,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+658,Kelurahan Maju,Gratifikasi,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+659,Desa Makmur,Korupsi Bansos,Whistleblower,Inkracht,KEJAKSAAN NEGERI MALANG
+660,Kelurahan Sejahtera,Penyalahgunaan Aset,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+661,Desa Sentosa,Manipulasi Data,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+662,Kelurahan Bahagia,Suap Perizinan,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+663,Desa Jaya,Penggelapan Dana BLT,Media Massa,Inkracht,KEJAKSAAN NEGERI GRESIK
+664,Kelurahan Sari,Korupsi Dana Desa,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+665,Desa Mulya,Penyalahgunaan Wewenang,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+666,Kelurahan Indah,Pungli Pelayanan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MALANG
+667,Desa Asri,Mark Up Proyek,Audit BPK,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+668,Kelurahan Permai,Pengadaan Fiktif,Whistleblower,Penyidikan,KEJAKSAAN NEGERI JEMBER
+669,Desa Subur,Korupsi ADD,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+670,Kelurahan Tenteram,Penyimpangan Anggaran,Audit Internal,Penuntutan,KEJAKSAAN NEGERI GRESIK
+671,Desa Damai,Gratifikasi,Inspektorat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+672,Kelurahan Maju,Korupsi Bansos,Media Massa,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+673,Desa Makmur,Penyalahgunaan Aset,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MALANG
+674,Kelurahan Sejahtera,Manipulasi Data,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+675,Desa Sentosa,Suap Perizinan,Laporan Warga,Inkracht,KEJAKSAAN NEGERI JEMBER
+676,Kelurahan Bahagia,Penggelapan Dana BLT,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+677,Desa Jaya,Korupsi Dana Desa,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+678,Kelurahan Sari,Penyalahgunaan Wewenang,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+679,Desa Mulya,Pungli Pelayanan,Audit Internal,Inkracht,KEJAKSAAN NEGERI SURABAYA
+680,Kelurahan Indah,Mark Up Proyek,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MALANG
+681,Desa Asri,Pengadaan Fiktif,Media Massa,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+682,Kelurahan Permai,Korupsi ADD,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI JEMBER
+683,Desa Subur,Penyimpangan Anggaran,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+684,Kelurahan Tenteram,Gratifikasi,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI GRESIK
+685,Desa Damai,Korupsi Bansos,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+686,Kelurahan Maju,Penyalahgunaan Aset,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+687,Desa Makmur,Manipulasi Data,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MALANG
+688,Kelurahan Sejahtera,Suap Perizinan,Audit Internal,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+689,Desa Sentosa,Penggelapan Dana BLT,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+690,Kelurahan Bahagia,Korupsi Dana Desa,Media Massa,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+691,Desa Jaya,Penyalahgunaan Wewenang,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI GRESIK
+692,Kelurahan Sari,Pungli Pelayanan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+693,Desa Mulya,Mark Up Proyek,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+694,Kelurahan Indah,Pengadaan Fiktif,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MALANG
+695,Desa Asri,Korupsi ADD,Whistleblower,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+696,Kelurahan Permai,Penyimpangan Anggaran,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+697,Desa Subur,Gratifikasi,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+698,Kelurahan Tenteram,Korupsi Bansos,Inspektorat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+699,Desa Damai,Penyalahgunaan Aset,Media Massa,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+700,Kelurahan Maju,Manipulasi Data,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+701,Desa Makmur,Suap Perizinan,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MALANG
+702,Kelurahan Sejahtera,Penggelapan Dana BLT,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+703,Desa Sentosa,Korupsi Dana Desa,Audit BPK,Inkracht,KEJAKSAAN NEGERI JEMBER
+704,Kelurahan Bahagia,Penyalahgunaan Wewenang,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+705,Desa Jaya,Pungli Pelayanan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+706,Kelurahan Sari,Mark Up Proyek,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+707,Desa Mulya,Pengadaan Fiktif,Inspektorat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+708,Kelurahan Indah,Korupsi ADD,Media Massa,Penyidikan,KEJAKSAAN NEGERI MALANG
+709,Desa Asri,Penyimpangan Anggaran,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+710,Kelurahan Permai,Gratifikasi,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI JEMBER
+711,Desa Subur,Korupsi Bansos,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+712,Kelurahan Tenteram,Penyalahgunaan Aset,Audit BPK,Penyidikan,KEJAKSAAN NEGERI GRESIK
+713,Desa Damai,Manipulasi Data,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+714,Kelurahan Maju,Suap Perizinan,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+715,Desa Makmur,Penggelapan Dana BLT,Audit Internal,Inkracht,KEJAKSAAN NEGERI MALANG
+716,Kelurahan Sejahtera,Korupsi Dana Desa,Inspektorat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+717,Desa Sentosa,Penyalahgunaan Wewenang,Media Massa,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+718,Kelurahan Bahagia,Pungli Pelayanan,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+719,Desa Jaya,Mark Up Proyek,Laporan LSM,Inkracht,KEJAKSAAN NEGERI GRESIK
+720,Kelurahan Sari,Pengadaan Fiktif,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+721,Desa Mulya,Korupsi ADD,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+722,Kelurahan Indah,Penyimpangan Anggaran,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MALANG
+723,Desa Asri,Gratifikasi,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+724,Kelurahan Permai,Korupsi Bansos,Audit Internal,Penyidikan,KEJAKSAAN NEGERI JEMBER
+725,Desa Subur,Penyalahgunaan Aset,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+726,Kelurahan Tenteram,Manipulasi Data,Media Massa,Penuntutan,KEJAKSAAN NEGERI GRESIK
+727,Desa Damai,Suap Perizinan,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+728,Kelurahan Maju,Penggelapan Dana BLT,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+729,Desa Makmur,Korupsi Dana Desa,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MALANG
+730,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Audit BPK,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+731,Desa Sentosa,Pungli Pelayanan,Whistleblower,Inkracht,KEJAKSAAN NEGERI JEMBER
+732,Kelurahan Bahagia,Mark Up Proyek,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+733,Desa Jaya,Pengadaan Fiktif,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+734,Kelurahan Sari,Korupsi ADD,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+735,Desa Mulya,Penyimpangan Anggaran,Media Massa,Inkracht,KEJAKSAAN NEGERI SURABAYA
+736,Kelurahan Indah,Gratifikasi,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MALANG
+737,Desa Asri,Korupsi Bansos,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+738,Kelurahan Permai,Penyalahgunaan Aset,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI JEMBER
+739,Desa Subur,Manipulasi Data,Audit BPK,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+740,Kelurahan Tenteram,Suap Perizinan,Whistleblower,Penyidikan,KEJAKSAAN NEGERI GRESIK
+741,Desa Damai,Penggelapan Dana BLT,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+742,Kelurahan Maju,Korupsi Dana Desa,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+743,Desa Makmur,Penyalahgunaan Wewenang,Inspektorat,Inkracht,KEJAKSAAN NEGERI MALANG
+744,Kelurahan Sejahtera,Pungli Pelayanan,Media Massa,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+745,Desa Sentosa,Mark Up Proyek,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+746,Kelurahan Bahagia,Pengadaan Fiktif,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+747,Desa Jaya,Korupsi ADD,Laporan Warga,Inkracht,KEJAKSAAN NEGERI GRESIK
+748,Kelurahan Sari,Penyimpangan Anggaran,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+749,Desa Mulya,Gratifikasi,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+750,Kelurahan Indah,Korupsi Bansos,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MALANG
+751,Desa Asri,Penyalahgunaan Aset,Audit Internal,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+752,Kelurahan Permai,Manipulasi Data,Inspektorat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+753,Desa Subur,Suap Perizinan,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+754,Kelurahan Tenteram,Penggelapan Dana BLT,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI GRESIK
+755,Desa Damai,Korupsi Dana Desa,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+756,Kelurahan Maju,Penyalahgunaan Wewenang,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+757,Desa Makmur,Pungli Pelayanan,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MALANG
+758,Kelurahan Sejahtera,Mark Up Proyek,Whistleblower,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+759,Desa Sentosa,Pengadaan Fiktif,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI JEMBER
+760,Kelurahan Bahagia,Korupsi ADD,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+761,Desa Jaya,Penyimpangan Anggaran,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+762,Kelurahan Sari,Gratifikasi,Media Massa,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+763,Desa Mulya,Korupsi Bansos,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SURABAYA
+764,Kelurahan Indah,Penyalahgunaan Aset,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MALANG
+765,Desa Asri,Manipulasi Data,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+766,Kelurahan Permai,Suap Perizinan,Audit BPK,Penuntutan,KEJAKSAAN NEGERI JEMBER
+767,Desa Subur,Penggelapan Dana BLT,Whistleblower,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+768,Kelurahan Tenteram,Korupsi Dana Desa,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+769,Desa Damai,Penyalahgunaan Wewenang,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+770,Kelurahan Maju,Pungli Pelayanan,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+771,Desa Makmur,Mark Up Proyek,Media Massa,Inkracht,KEJAKSAAN NEGERI MALANG
+772,Kelurahan Sejahtera,Pengadaan Fiktif,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+773,Desa Sentosa,Korupsi ADD,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+774,Kelurahan Bahagia,Penyimpangan Anggaran,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+775,Desa Jaya,Gratifikasi,Audit BPK,Inkracht,KEJAKSAAN NEGERI GRESIK
+776,Kelurahan Sari,Korupsi Bansos,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+777,Desa Mulya,Penyalahgunaan Aset,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+778,Kelurahan Indah,Manipulasi Data,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MALANG
+779,Desa Asri,Suap Perizinan,Inspektorat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+780,Kelurahan Permai,Penggelapan Dana BLT,Media Massa,Penyidikan,KEJAKSAAN NEGERI JEMBER
+781,Desa Subur,Korupsi Dana Desa,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+782,Kelurahan Tenteram,Penyalahgunaan Wewenang,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI GRESIK
+783,Desa Damai,Pungli Pelayanan,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+784,Kelurahan Maju,Mark Up Proyek,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+785,Desa Makmur,Pengadaan Fiktif,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MALANG
+786,Kelurahan Sejahtera,Korupsi ADD,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+787,Desa Sentosa,Penyimpangan Anggaran,Audit Internal,Inkracht,KEJAKSAAN NEGERI JEMBER
+788,Kelurahan Bahagia,Gratifikasi,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+789,Desa Jaya,Korupsi Bansos,Media Massa,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+790,Kelurahan Sari,Penyalahgunaan Aset,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+791,Desa Mulya,Manipulasi Data,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SURABAYA
+792,Kelurahan Indah,Suap Perizinan,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MALANG
+793,Desa Asri,Penggelapan Dana BLT,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+794,Kelurahan Permai,Korupsi Dana Desa,Whistleblower,Penuntutan,KEJAKSAAN NEGERI JEMBER
+795,Desa Subur,Penyalahgunaan Wewenang,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+796,Kelurahan Tenteram,Pungli Pelayanan,Audit Internal,Penyidikan,KEJAKSAAN NEGERI GRESIK
+797,Desa Damai,Mark Up Proyek,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+798,Kelurahan Maju,Pengadaan Fiktif,Media Massa,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+799,Desa Makmur,Korupsi ADD,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MALANG
+800,Kelurahan Sejahtera,Penyimpangan Anggaran,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+801,Desa Sentosa,Gratifikasi,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+802,Kelurahan Bahagia,Korupsi Bansos,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+803,Desa Jaya,Penyalahgunaan Aset,Whistleblower,Inkracht,KEJAKSAAN NEGERI GRESIK
+804,Kelurahan Sari,Manipulasi Data,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+805,Desa Mulya,Suap Perizinan,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+806,Kelurahan Indah,Penggelapan Dana BLT,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MALANG
+807,Desa Asri,Korupsi Dana Desa,Media Massa,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+808,Kelurahan Permai,Penyalahgunaan Wewenang,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI JEMBER
+809,Desa Subur,Pungli Pelayanan,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+810,Kelurahan Tenteram,Mark Up Proyek,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI GRESIK
+811,Desa Damai,Pengadaan Fiktif,Audit BPK,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+812,Kelurahan Maju,Korupsi ADD,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+813,Desa Makmur,Penyimpangan Anggaran,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+814,Kelurahan Sejahtera,Gratifikasi,Audit Internal,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+815,Desa Sentosa,Korupsi Bansos,Inspektorat,Inkracht,KEJAKSAAN NEGERI JEMBER
+816,Kelurahan Bahagia,Penyalahgunaan Aset,Media Massa,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+817,Desa Jaya,Manipulasi Data,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+818,Kelurahan Sari,Suap Perizinan,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+819,Desa Mulya,Penggelapan Dana BLT,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SURABAYA
+820,Kelurahan Indah,Korupsi Dana Desa,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MALANG
+821,Desa Asri,Penyalahgunaan Wewenang,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+822,Kelurahan Permai,Pungli Pelayanan,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+823,Desa Subur,Mark Up Proyek,Audit Internal,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+824,Kelurahan Tenteram,Pengadaan Fiktif,Inspektorat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+825,Desa Damai,Korupsi ADD,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+826,Kelurahan Maju,Penyimpangan Anggaran,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+827,Desa Makmur,Gratifikasi,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MALANG
+828,Kelurahan Sejahtera,Korupsi Bansos,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+829,Desa Sentosa,Penyalahgunaan Aset,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+830,Kelurahan Bahagia,Manipulasi Data,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+831,Desa Jaya,Suap Perizinan,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI GRESIK
+832,Kelurahan Sari,Penggelapan Dana BLT,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+833,Desa Mulya,Korupsi Dana Desa,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+834,Kelurahan Indah,Penyalahgunaan Wewenang,Media Massa,Penuntutan,KEJAKSAAN NEGERI MALANG
+835,Desa Asri,Pungli Pelayanan,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+836,Kelurahan Permai,Mark Up Proyek,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI JEMBER
+837,Desa Subur,Pengadaan Fiktif,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+838,Kelurahan Tenteram,Korupsi ADD,Audit BPK,Penuntutan,KEJAKSAAN NEGERI GRESIK
+839,Desa Damai,Penyimpangan Anggaran,Whistleblower,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+840,Kelurahan Maju,Gratifikasi,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+841,Desa Makmur,Korupsi Bansos,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MALANG
+842,Kelurahan Sejahtera,Penyalahgunaan Aset,Inspektorat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+843,Desa Sentosa,Manipulasi Data,Media Massa,Inkracht,KEJAKSAAN NEGERI JEMBER
+844,Kelurahan Bahagia,Suap Perizinan,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+845,Desa Jaya,Penggelapan Dana BLT,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+846,Kelurahan Sari,Korupsi Dana Desa,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+847,Desa Mulya,Penyalahgunaan Wewenang,Audit BPK,Inkracht,KEJAKSAAN NEGERI SURABAYA
+848,Kelurahan Indah,Pungli Pelayanan,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MALANG
+849,Desa Asri,Mark Up Proyek,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+850,Kelurahan Permai,Pengadaan Fiktif,Audit Internal,Penuntutan,KEJAKSAAN NEGERI JEMBER
+851,Desa Subur,Korupsi ADD,Inspektorat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+852,Kelurahan Tenteram,Penyimpangan Anggaran,Media Massa,Penyidikan,KEJAKSAAN NEGERI GRESIK
+853,Desa Damai,Gratifikasi,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+854,Kelurahan Maju,Korupsi Bansos,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+855,Desa Makmur,Penyalahgunaan Aset,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MALANG
+856,Kelurahan Sejahtera,Manipulasi Data,Audit BPK,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+857,Desa Sentosa,Suap Perizinan,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+858,Kelurahan Bahagia,Penggelapan Dana BLT,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+859,Desa Jaya,Korupsi Dana Desa,Audit Internal,Inkracht,KEJAKSAAN NEGERI GRESIK
+860,Kelurahan Sari,Penyalahgunaan Wewenang,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+861,Desa Mulya,Pungli Pelayanan,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+862,Kelurahan Indah,Mark Up Proyek,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MALANG
+863,Desa Asri,Pengadaan Fiktif,Laporan LSM,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+864,Kelurahan Permai,Korupsi ADD,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI JEMBER
+865,Desa Subur,Penyimpangan Anggaran,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+866,Kelurahan Tenteram,Gratifikasi,Whistleblower,Penuntutan,KEJAKSAAN NEGERI GRESIK
+867,Desa Damai,Korupsi Bansos,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+868,Kelurahan Maju,Penyalahgunaan Aset,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+869,Desa Makmur,Manipulasi Data,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+870,Kelurahan Sejahtera,Suap Perizinan,Media Massa,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+871,Desa Sentosa,Penggelapan Dana BLT,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI JEMBER
+872,Kelurahan Bahagia,Korupsi Dana Desa,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+873,Desa Jaya,Penyalahgunaan Wewenang,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+874,Kelurahan Sari,Pungli Pelayanan,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+875,Desa Mulya,Mark Up Proyek,Whistleblower,Inkracht,KEJAKSAAN NEGERI SURABAYA
+876,Kelurahan Indah,Pengadaan Fiktif,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MALANG
+877,Desa Asri,Korupsi ADD,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+878,Kelurahan Permai,Penyimpangan Anggaran,Inspektorat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+879,Desa Subur,Gratifikasi,Media Massa,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+880,Kelurahan Tenteram,Korupsi Bansos,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI GRESIK
+881,Desa Damai,Penyalahgunaan Aset,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+882,Kelurahan Maju,Manipulasi Data,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+883,Desa Makmur,Suap Perizinan,Audit BPK,Inkracht,KEJAKSAAN NEGERI MALANG
+884,Kelurahan Sejahtera,Penggelapan Dana BLT,Whistleblower,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+885,Desa Sentosa,Korupsi Dana Desa,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+886,Kelurahan Bahagia,Penyalahgunaan Wewenang,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+887,Desa Jaya,Pungli Pelayanan,Inspektorat,Inkracht,KEJAKSAAN NEGERI GRESIK
+888,Kelurahan Sari,Mark Up Proyek,Media Massa,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+889,Desa Mulya,Pengadaan Fiktif,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+890,Kelurahan Indah,Korupsi ADD,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MALANG
+891,Desa Asri,Penyimpangan Anggaran,Laporan Warga,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+892,Kelurahan Permai,Gratifikasi,Audit BPK,Penyidikan,KEJAKSAAN NEGERI JEMBER
+893,Desa Subur,Korupsi Bansos,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+894,Kelurahan Tenteram,Penyalahgunaan Aset,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+895,Desa Damai,Manipulasi Data,Audit Internal,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+896,Kelurahan Maju,Suap Perizinan,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+897,Desa Makmur,Penggelapan Dana BLT,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MALANG
+898,Kelurahan Sejahtera,Korupsi Dana Desa,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+899,Desa Sentosa,Penyalahgunaan Wewenang,Laporan LSM,Inkracht,KEJAKSAAN NEGERI JEMBER
+900,Kelurahan Bahagia,Pungli Pelayanan,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+901,Desa Jaya,Mark Up Proyek,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+902,Kelurahan Sari,Pengadaan Fiktif,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+903,Desa Mulya,Korupsi ADD,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+904,Kelurahan Indah,Penyimpangan Anggaran,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MALANG
+905,Desa Asri,Gratifikasi,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+906,Kelurahan Permai,Korupsi Bansos,Media Massa,Penuntutan,KEJAKSAAN NEGERI JEMBER
+907,Desa Subur,Penyalahgunaan Aset,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+908,Kelurahan Tenteram,Manipulasi Data,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI GRESIK
+909,Desa Damai,Suap Perizinan,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+910,Kelurahan Maju,Penggelapan Dana BLT,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+911,Desa Makmur,Korupsi Dana Desa,Whistleblower,Inkracht,KEJAKSAAN NEGERI MALANG
+912,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+913,Desa Sentosa,Pungli Pelayanan,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+914,Kelurahan Bahagia,Mark Up Proyek,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+915,Desa Jaya,Pengadaan Fiktif,Media Massa,Inkracht,KEJAKSAAN NEGERI GRESIK
+916,Kelurahan Sari,Korupsi ADD,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+917,Desa Mulya,Penyimpangan Anggaran,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+918,Kelurahan Indah,Gratifikasi,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MALANG
+919,Desa Asri,Korupsi Bansos,Audit BPK,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+920,Kelurahan Permai,Penyalahgunaan Aset,Whistleblower,Penyidikan,KEJAKSAAN NEGERI JEMBER
+921,Desa Subur,Manipulasi Data,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+922,Kelurahan Tenteram,Suap Perizinan,Audit Internal,Penuntutan,KEJAKSAAN NEGERI GRESIK
+923,Desa Damai,Penggelapan Dana BLT,Inspektorat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+924,Kelurahan Maju,Korupsi Dana Desa,Media Massa,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+925,Desa Makmur,Penyalahgunaan Wewenang,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MALANG
+926,Kelurahan Sejahtera,Pungli Pelayanan,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+927,Desa Sentosa,Mark Up Proyek,Laporan Warga,Inkracht,KEJAKSAAN NEGERI JEMBER
+928,Kelurahan Bahagia,Pengadaan Fiktif,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+929,Desa Jaya,Korupsi ADD,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+930,Kelurahan Sari,Penyimpangan Anggaran,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+931,Desa Mulya,Gratifikasi,Audit Internal,Inkracht,KEJAKSAAN NEGERI SURABAYA
+932,Kelurahan Indah,Korupsi Bansos,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MALANG
+933,Desa Asri,Penyalahgunaan Aset,Media Massa,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+934,Kelurahan Permai,Manipulasi Data,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI JEMBER
+935,Desa Subur,Suap Perizinan,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+936,Kelurahan Tenteram,Penggelapan Dana BLT,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI GRESIK
+937,Desa Damai,Korupsi Dana Desa,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+938,Kelurahan Maju,Penyalahgunaan Wewenang,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+939,Desa Makmur,Pungli Pelayanan,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MALANG
+940,Kelurahan Sejahtera,Mark Up Proyek,Audit Internal,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+941,Desa Sentosa,Pengadaan Fiktif,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+942,Kelurahan Bahagia,Korupsi ADD,Media Massa,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+943,Desa Jaya,Penyimpangan Anggaran,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI GRESIK
+944,Kelurahan Sari,Gratifikasi,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+945,Desa Mulya,Korupsi Bansos,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+946,Kelurahan Indah,Penyalahgunaan Aset,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MALANG
+947,Desa Asri,Manipulasi Data,Whistleblower,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+948,Kelurahan Permai,Suap Perizinan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+949,Desa Subur,Penggelapan Dana BLT,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+950,Kelurahan Tenteram,Korupsi Dana Desa,Inspektorat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+951,Desa Damai,Penyalahgunaan Wewenang,Media Massa,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+952,Kelurahan Maju,Pungli Pelayanan,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+953,Desa Makmur,Mark Up Proyek,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MALANG
+954,Kelurahan Sejahtera,Pengadaan Fiktif,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+955,Desa Sentosa,Korupsi ADD,Audit BPK,Inkracht,KEJAKSAAN NEGERI JEMBER
+956,Kelurahan Bahagia,Penyimpangan Anggaran,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+957,Desa Jaya,Gratifikasi,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+958,Kelurahan Sari,Korupsi Bansos,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+959,Desa Mulya,Penyalahgunaan Aset,Inspektorat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+960,Kelurahan Indah,Manipulasi Data,Media Massa,Penyidikan,KEJAKSAAN NEGERI MALANG
+961,Desa Asri,Suap Perizinan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+962,Kelurahan Permai,Penggelapan Dana BLT,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI JEMBER
+963,Desa Subur,Korupsi Dana Desa,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+964,Kelurahan Tenteram,Penyalahgunaan Wewenang,Audit BPK,Penyidikan,KEJAKSAAN NEGERI GRESIK
+965,Desa Damai,Pungli Pelayanan,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+966,Kelurahan Maju,Mark Up Proyek,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+967,Desa Makmur,Pengadaan Fiktif,Audit Internal,Inkracht,KEJAKSAAN NEGERI MALANG
+968,Kelurahan Sejahtera,Korupsi ADD,Inspektorat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+969,Desa Sentosa,Penyimpangan Anggaran,Media Massa,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+970,Kelurahan Bahagia,Gratifikasi,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+971,Desa Jaya,Korupsi Bansos,Laporan LSM,Inkracht,KEJAKSAAN NEGERI GRESIK
+972,Kelurahan Sari,Penyalahgunaan Aset,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+973,Desa Mulya,Manipulasi Data,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+974,Kelurahan Indah,Suap Perizinan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MALANG
+975,Desa Asri,Penggelapan Dana BLT,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+976,Kelurahan Permai,Korupsi Dana Desa,Audit Internal,Penyidikan,KEJAKSAAN NEGERI JEMBER
+977,Desa Subur,Penyalahgunaan Wewenang,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+978,Kelurahan Tenteram,Pungli Pelayanan,Media Massa,Penuntutan,KEJAKSAAN NEGERI GRESIK
+979,Desa Damai,Mark Up Proyek,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+980,Kelurahan Maju,Pengadaan Fiktif,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+981,Desa Makmur,Korupsi ADD,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MALANG
+982,Kelurahan Sejahtera,Penyimpangan Anggaran,Audit BPK,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+983,Desa Sentosa,Gratifikasi,Whistleblower,Inkracht,KEJAKSAAN NEGERI JEMBER
+984,Kelurahan Bahagia,Korupsi Bansos,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+985,Desa Jaya,Penyalahgunaan Aset,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+986,Kelurahan Sari,Manipulasi Data,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+987,Desa Mulya,Suap Perizinan,Media Massa,Inkracht,KEJAKSAAN NEGERI SURABAYA
+988,Kelurahan Indah,Penggelapan Dana BLT,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MALANG
+989,Desa Asri,Korupsi Dana Desa,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+990,Kelurahan Permai,Penyalahgunaan Wewenang,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI JEMBER
+991,Desa Subur,Pungli Pelayanan,Audit BPK,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+992,Kelurahan Tenteram,Mark Up Proyek,Whistleblower,Penyidikan,KEJAKSAAN NEGERI GRESIK
+993,Desa Damai,Pengadaan Fiktif,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+994,Kelurahan Maju,Korupsi ADD,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+995,Desa Makmur,Penyimpangan Anggaran,Inspektorat,Inkracht,KEJAKSAAN NEGERI MALANG
+996,Kelurahan Sejahtera,Gratifikasi,Media Massa,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+997,Desa Sentosa,Korupsi Bansos,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+998,Kelurahan Bahagia,Penyalahgunaan Aset,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+999,Desa Jaya,Manipulasi Data,Laporan Warga,Inkracht,KEJAKSAAN NEGERI GRESIK
+1000,Kelurahan Sari,Suap Perizinan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1001,Desa Mulya,Penggelapan Dana BLT,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1002,Kelurahan Indah,Korupsi Dana Desa,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI MALANG
+1003,Desa Asri,Penyalahgunaan Wewenang,Audit Internal,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1004,Kelurahan Permai,Pungli Pelayanan,Inspektorat,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1005,Desa Subur,Mark Up Proyek,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1006,Kelurahan Tenteram,Pengadaan Fiktif,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1007,Desa Damai,Korupsi ADD,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1008,Kelurahan Maju,Penyimpangan Anggaran,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1009,Desa Makmur,Gratifikasi,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1010,Kelurahan Sejahtera,Korupsi Bansos,Whistleblower,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1011,Desa Sentosa,Penyalahgunaan Aset,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI JEMBER
+1012,Kelurahan Bahagia,Manipulasi Data,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1013,Desa Jaya,Suap Perizinan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1014,Kelurahan Sari,Penggelapan Dana BLT,Media Massa,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1015,Desa Mulya,Korupsi Dana Desa,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1016,Kelurahan Indah,Penyalahgunaan Wewenang,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI MALANG
+1017,Desa Asri,Pungli Pelayanan,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1018,Kelurahan Permai,Mark Up Proyek,Audit BPK,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1019,Desa Subur,Pengadaan Fiktif,Whistleblower,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1020,Kelurahan Tenteram,Korupsi ADD,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1021,Desa Damai,Penyimpangan Anggaran,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1022,Kelurahan Maju,Gratifikasi,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1023,Desa Makmur,Korupsi Bansos,Media Massa,Inkracht,KEJAKSAAN NEGERI MALANG
+1024,Kelurahan Sejahtera,Penyalahgunaan Aset,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1025,Desa Sentosa,Manipulasi Data,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1026,Kelurahan Bahagia,Suap Perizinan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1027,Desa Jaya,Penggelapan Dana BLT,Audit BPK,Inkracht,KEJAKSAAN NEGERI GRESIK
+1028,Kelurahan Sari,Korupsi Dana Desa,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1029,Desa Mulya,Penyalahgunaan Wewenang,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1030,Kelurahan Indah,Pungli Pelayanan,Audit Internal,Penuntutan,KEJAKSAAN NEGERI MALANG
+1031,Desa Asri,Mark Up Proyek,Inspektorat,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1032,Kelurahan Permai,Pengadaan Fiktif,Media Massa,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1033,Desa Subur,Korupsi ADD,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1034,Kelurahan Tenteram,Penyimpangan Anggaran,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1035,Desa Damai,Gratifikasi,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1036,Kelurahan Maju,Korupsi Bansos,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1037,Desa Makmur,Penyalahgunaan Aset,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1038,Kelurahan Sejahtera,Manipulasi Data,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1039,Desa Sentosa,Suap Perizinan,Audit Internal,Inkracht,KEJAKSAAN NEGERI JEMBER
+1040,Kelurahan Bahagia,Penggelapan Dana BLT,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1041,Desa Jaya,Korupsi Dana Desa,Media Massa,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1042,Kelurahan Sari,Penyalahgunaan Wewenang,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1043,Desa Mulya,Pungli Pelayanan,Laporan LSM,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1044,Kelurahan Indah,Mark Up Proyek,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI MALANG
+1045,Desa Asri,Pengadaan Fiktif,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1046,Kelurahan Permai,Korupsi ADD,Whistleblower,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1047,Desa Subur,Penyimpangan Anggaran,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1048,Kelurahan Tenteram,Gratifikasi,Audit Internal,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1049,Desa Damai,Korupsi Bansos,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1050,Kelurahan Maju,Penyalahgunaan Aset,Media Massa,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1051,Desa Makmur,Manipulasi Data,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI MALANG
+1052,Kelurahan Sejahtera,Suap Perizinan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1053,Desa Sentosa,Penggelapan Dana BLT,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1054,Kelurahan Bahagia,Korupsi Dana Desa,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1055,Desa Jaya,Penyalahgunaan Wewenang,Whistleblower,Inkracht,KEJAKSAAN NEGERI GRESIK
+1056,Kelurahan Sari,Pungli Pelayanan,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1057,Desa Mulya,Mark Up Proyek,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1058,Kelurahan Indah,Pengadaan Fiktif,Inspektorat,Penuntutan,KEJAKSAAN NEGERI MALANG
+1059,Desa Asri,Korupsi ADD,Media Massa,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1060,Kelurahan Permai,Penyimpangan Anggaran,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1061,Desa Subur,Gratifikasi,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1062,Kelurahan Tenteram,Korupsi Bansos,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1063,Desa Damai,Penyalahgunaan Aset,Audit BPK,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1064,Kelurahan Maju,Manipulasi Data,Whistleblower,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1065,Desa Makmur,Suap Perizinan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1066,Kelurahan Sejahtera,Penggelapan Dana BLT,Audit Internal,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1067,Desa Sentosa,Korupsi Dana Desa,Inspektorat,Inkracht,KEJAKSAAN NEGERI JEMBER
+1068,Kelurahan Bahagia,Penyalahgunaan Wewenang,Media Massa,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1069,Desa Jaya,Pungli Pelayanan,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1070,Kelurahan Sari,Mark Up Proyek,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1071,Desa Mulya,Pengadaan Fiktif,Laporan Warga,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1072,Kelurahan Indah,Korupsi ADD,Audit BPK,Penyidikan,KEJAKSAAN NEGERI MALANG
+1073,Desa Asri,Penyimpangan Anggaran,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1074,Kelurahan Permai,Gratifikasi,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1075,Desa Subur,Korupsi Bansos,Audit Internal,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1076,Kelurahan Tenteram,Penyalahgunaan Aset,Inspektorat,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1077,Desa Damai,Manipulasi Data,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1078,Kelurahan Maju,Suap Perizinan,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1079,Desa Makmur,Penggelapan Dana BLT,Laporan LSM,Inkracht,KEJAKSAAN NEGERI MALANG
+1080,Kelurahan Sejahtera,Korupsi Dana Desa,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1081,Desa Sentosa,Penyalahgunaan Wewenang,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1082,Kelurahan Bahagia,Pungli Pelayanan,Whistleblower,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1083,Desa Jaya,Mark Up Proyek,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI GRESIK
+1084,Kelurahan Sari,Pengadaan Fiktif,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1085,Desa Mulya,Korupsi ADD,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1086,Kelurahan Indah,Penyimpangan Anggaran,Media Massa,Penuntutan,KEJAKSAAN NEGERI MALANG
+1087,Desa Asri,Gratifikasi,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1088,Kelurahan Permai,Korupsi Bansos,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1089,Desa Subur,Penyalahgunaan Aset,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1090,Kelurahan Tenteram,Manipulasi Data,Audit BPK,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1091,Desa Damai,Suap Perizinan,Whistleblower,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1092,Kelurahan Maju,Penggelapan Dana BLT,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1093,Desa Makmur,Korupsi Dana Desa,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1094,Kelurahan Sejahtera,Penyalahgunaan Wewenang,Inspektorat,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1095,Desa Sentosa,Pungli Pelayanan,Media Massa,Inkracht,KEJAKSAAN NEGERI JEMBER
+1096,Kelurahan Bahagia,Mark Up Proyek,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1097,Desa Jaya,Pengadaan Fiktif,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1098,Kelurahan Sari,Korupsi ADD,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1099,Desa Mulya,Penyimpangan Anggaran,Audit BPK,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1100,Kelurahan Indah,Gratifikasi,Whistleblower,Penyidikan,KEJAKSAAN NEGERI MALANG
+1101,Desa Asri,Korupsi Bansos,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1102,Kelurahan Permai,Penyalahgunaan Aset,Audit Internal,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1103,Desa Subur,Manipulasi Data,Inspektorat,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1104,Kelurahan Tenteram,Suap Perizinan,Media Massa,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1105,Desa Damai,Penggelapan Dana BLT,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1106,Kelurahan Maju,Korupsi Dana Desa,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1107,Desa Makmur,Penyalahgunaan Wewenang,Laporan Warga,Inkracht,KEJAKSAAN NEGERI MALANG
+1108,Kelurahan Sejahtera,Pungli Pelayanan,Audit BPK,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1109,Desa Sentosa,Mark Up Proyek,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1110,Kelurahan Bahagia,Pengadaan Fiktif,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1111,Desa Jaya,Korupsi ADD,Audit Internal,Inkracht,KEJAKSAAN NEGERI GRESIK
+1112,Kelurahan Sari,Penyimpangan Anggaran,Inspektorat,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1113,Desa Mulya,Gratifikasi,Media Massa,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1114,Kelurahan Indah,Korupsi Bansos,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI MALANG
+1115,Desa Asri,Penyalahgunaan Aset,Laporan LSM,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1116,Kelurahan Permai,Manipulasi Data,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1117,Desa Subur,Suap Perizinan,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1118,Kelurahan Tenteram,Penggelapan Dana BLT,Whistleblower,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1119,Desa Damai,Korupsi Dana Desa,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1120,Kelurahan Maju,Penyalahgunaan Wewenang,Audit Internal,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1121,Desa Makmur,Pungli Pelayanan,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1122,Kelurahan Sejahtera,Mark Up Proyek,Media Massa,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1123,Desa Sentosa,Pengadaan Fiktif,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI JEMBER
+1124,Kelurahan Bahagia,Korupsi ADD,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1125,Desa Jaya,Penyimpangan Anggaran,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1126,Kelurahan Sari,Gratifikasi,Audit BPK,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1127,Desa Mulya,Korupsi Bansos,Whistleblower,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1128,Kelurahan Indah,Penyalahgunaan Aset,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI MALANG
+1129,Desa Asri,Manipulasi Data,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1130,Kelurahan Permai,Suap Perizinan,Inspektorat,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1131,Desa Subur,Penggelapan Dana BLT,Media Massa,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1132,Kelurahan Tenteram,Korupsi Dana Desa,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1133,Desa Damai,Penyalahgunaan Wewenang,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1134,Kelurahan Maju,Pungli Pelayanan,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1135,Desa Makmur,Mark Up Proyek,Audit BPK,Inkracht,KEJAKSAAN NEGERI MALANG
+1136,Kelurahan Sejahtera,Pengadaan Fiktif,Whistleblower,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1137,Desa Sentosa,Korupsi ADD,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1138,Kelurahan Bahagia,Penyimpangan Anggaran,Audit Internal,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1139,Desa Jaya,Gratifikasi,Inspektorat,Inkracht,KEJAKSAAN NEGERI GRESIK
+1140,Kelurahan Sari,Korupsi Bansos,Media Massa,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1141,Desa Mulya,Penyalahgunaan Aset,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1142,Kelurahan Indah,Manipulasi Data,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI MALANG
+1143,Desa Asri,Suap Perizinan,Laporan Warga,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1144,Kelurahan Permai,Penggelapan Dana BLT,Audit BPK,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1145,Desa Subur,Korupsi Dana Desa,Whistleblower,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1146,Kelurahan Tenteram,Penyalahgunaan Wewenang,Laporan Masyarakat,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1147,Desa Damai,Pungli Pelayanan,Audit Internal,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1148,Kelurahan Maju,Mark Up Proyek,Inspektorat,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1149,Desa Makmur,Pengadaan Fiktif,Media Massa,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1150,Kelurahan Sejahtera,Korupsi ADD,Pengaduan Online,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1151,Desa Sentosa,Penyimpangan Anggaran,Laporan LSM,Inkracht,KEJAKSAAN NEGERI JEMBER
+1152,Kelurahan Bahagia,Gratifikasi,Laporan Warga,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
+1153,Desa Jaya,Korupsi Bansos,Audit BPK,Penyelidikan,KEJAKSAAN NEGERI GRESIK
+1154,Kelurahan Sari,Penyalahgunaan Aset,Whistleblower,Penuntutan,KEJAKSAAN NEGERI MOJOKERTO
+1155,Desa Mulya,Manipulasi Data,Laporan Masyarakat,Inkracht,KEJAKSAAN NEGERI SURABAYA
+1156,Kelurahan Indah,Suap Perizinan,Audit Internal,Penyidikan,KEJAKSAAN NEGERI MALANG
+1157,Desa Asri,Penggelapan Dana BLT,Inspektorat,Penyelidikan,KEJAKSAAN NEGERI BANYUWANGI
+1158,Kelurahan Permai,Korupsi Dana Desa,Media Massa,Penuntutan,KEJAKSAAN NEGERI JEMBER
+1159,Desa Subur,Penyalahgunaan Wewenang,Pengaduan Online,Inkracht,KEJAKSAAN NEGERI SIDOARJO
+1160,Kelurahan Tenteram,Pungli Pelayanan,Laporan LSM,Penyidikan,KEJAKSAAN NEGERI GRESIK
+1161,Desa Damai,Mark Up Proyek,Laporan Warga,Penyelidikan,KEJAKSAAN NEGERI MOJOKERTO
+1162,Kelurahan Maju,Pengadaan Fiktif,Audit BPK,Penuntutan,KEJAKSAAN NEGERI SURABAYA
+1163,Desa Makmur,Korupsi ADD,Whistleblower,Inkracht,KEJAKSAAN NEGERI MALANG
+1164,Kelurahan Sejahtera,Penyimpangan Anggaran,Laporan Masyarakat,Penyidikan,KEJAKSAAN NEGERI BANYUWANGI
+1165,Desa Sentosa,Gratifikasi,Audit Internal,Penyelidikan,KEJAKSAAN NEGERI JEMBER
+1166,Kelurahan Bahagia,Korupsi Bansos,Inspektorat,Penuntutan,KEJAKSAAN NEGERI SIDOARJO
+1167,Desa Jaya,Penyalahgunaan Aset,Media Massa,Inkracht,KEJAKSAAN NEGERI GRESIK
+1168,Kelurahan Sari,Manipulasi Data,Pengaduan Online,Penyidikan,KEJAKSAAN NEGERI MOJOKERTO
+1169,Desa Mulya,Suap Perizinan,Laporan LSM,Penyelidikan,KEJAKSAAN NEGERI SURABAYA
+1170,Kelurahan Indah,Penggelapan Dana BLT,Laporan Warga,Penuntutan,KEJAKSAAN NEGERI MALANG
+1171,Desa Asri,Korupsi Dana Desa,Audit BPK,Inkracht,KEJAKSAAN NEGERI BANYUWANGI
+1172,Kelurahan Permai,Penyalahgunaan Wewenang,Whistleblower,Penyidikan,KEJAKSAAN NEGERI JEMBER
+1173,Desa Subur,Pungli Pelayanan,Laporan Masyarakat,Penyelidikan,KEJAKSAAN NEGERI SIDOARJO
+1174,Kelurahan Tenteram,Mark Up Proyek,Audit Internal,Penuntutan,KEJAKSAAN NEGERI GRESIK
+1175,Desa Damai,Pengadaan Fiktif,Inspektorat,Inkracht,KEJAKSAAN NEGERI MOJOKERTO
+1176,Kelurahan Maju,Korupsi ADD,Media Massa,Penyidikan,KEJAKSAAN NEGERI SURABAYA
+1177,Desa Makmur,Penyimpangan Anggaran,Pengaduan Online,Penyelidikan,KEJAKSAAN NEGERI MALANG
+1178,Kelurahan Sejahtera,Gratifikasi,Laporan LSM,Penuntutan,KEJAKSAAN NEGERI BANYUWANGI
+1179,Desa Sentosa,Korupsi Bansos,Laporan Warga,Inkracht,KEJAKSAAN NEGERI JEMBER
+1180,Kelurahan Bahagia,Penyalahgunaan Aset,Audit BPK,Penyidikan,KEJAKSAAN NEGERI SIDOARJO
