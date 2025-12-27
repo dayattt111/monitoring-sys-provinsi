@@ -1,11 +1,2101 @@
 No,Desa / Kelurahan,Alat,Status Alat,Nilai Perolehan (Rp),Deskripsi,Nama Satker
-1,Kelurahan Gubeng,Ambulance Desa,Baik,250000000,Kendaraan operasional kesehatan,KEJAKSAAN NEGERI SURABAYA
-2,Desa Glagah,Traktor,Rusak Ringan,150000000,Untuk pengolahan tanah pertanian,KEJAKSAAN NEGERI BANYUWANGI
-3,Kelurahan Mojolangu,Komputer,Baik,45000000,10 unit untuk kantor desa,KEJAKSAAN NEGERI KOTA MALANG
-4,Kelurahan Sumbersari,Generator,Baik,75000000,Cadangan listrik desa,KEJAKSAAN NEGERI JEMBER
-5,Kelurahan Taman,Sound System,Baik,25000000,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
-6,Kelurahan Kebomas,Mesin Pompa Air,Rusak Berat,50000000,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
-7,Kelurahan Prajurit Kulon,Motor Sampah,Baik,35000000,Angkutan sampah desa,KEJAKSAAN NEGERI KABUPATEN MOJOKERTO
-8,Kelurahan Bugul Kidul,Proyektor,Baik,15000000,Untuk pelatihan warga,KEJAKSAAN NEGERI KABUPATEN PASURUAN
-9,Kelurahan Kanigaran,Kursi Rapat,Baik,30000000,100 unit untuk balai desa,KEJAKSAAN NEGERI KABUPATEN PROBOLINGGO
-10,Desa Tawangargo,Kamera CCTV,Baik,40000000,8 unit untuk keamanan,KEJAKSAAN NEGERI KOTA MALANG
+1,Desa Makmur,Traktor,Rusak Ringan,10123456,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2,Kelurahan Sejahtera,Komputer,Rusak Berat,10246912,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+3,Desa Sentosa,Generator,Baik,10370368,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+4,Kelurahan Bahagia,Sound System,Rusak Ringan,10493824,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+5,Desa Jaya,Mesin Pompa Air,Rusak Berat,10617280,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+6,Kelurahan Sari,Motor Sampah,Baik,10740736,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+7,Desa Mulya,Proyektor,Rusak Ringan,10864192,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+8,Kelurahan Indah,Kursi Rapat,Rusak Berat,10987648,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+9,Desa Asri,Kamera CCTV,Baik,11111104,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+10,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,11234560,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+11,Desa Makmur,Laptop,Rusak Berat,11358016,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+12,Kelurahan Sejahtera,Printer,Baik,11481472,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+13,Desa Sentosa,AC,Rusak Ringan,11604928,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+14,Kelurahan Bahagia,Kulkas,Rusak Berat,11728384,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+15,Desa Jaya,Meja Kantor,Baik,11851840,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+16,Kelurahan Sari,Lemari Arsip,Rusak Ringan,11975296,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+17,Desa Mulya,Kipas Angin,Rusak Berat,12098752,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+18,Kelurahan Indah,Ambulance Desa,Baik,12222208,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+19,Desa Asri,Traktor,Rusak Ringan,12345664,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+20,Kelurahan Maju,Komputer,Rusak Berat,12469120,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+21,Desa Makmur,Generator,Baik,12592576,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+22,Kelurahan Sejahtera,Sound System,Rusak Ringan,12716032,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+23,Desa Sentosa,Mesin Pompa Air,Rusak Berat,12839488,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+24,Kelurahan Bahagia,Motor Sampah,Baik,12962944,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+25,Desa Jaya,Proyektor,Rusak Ringan,13086400,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+26,Kelurahan Sari,Kursi Rapat,Rusak Berat,13209856,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+27,Desa Mulya,Kamera CCTV,Baik,13333312,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+28,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,13456768,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+29,Desa Asri,Laptop,Rusak Berat,13580224,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+30,Kelurahan Maju,Printer,Baik,13703680,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+31,Desa Makmur,AC,Rusak Ringan,13827136,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+32,Kelurahan Sejahtera,Kulkas,Rusak Berat,13950592,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+33,Desa Sentosa,Meja Kantor,Baik,14074048,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+34,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,14197504,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+35,Desa Jaya,Kipas Angin,Rusak Berat,14320960,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+36,Kelurahan Sari,Ambulance Desa,Baik,14444416,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+37,Desa Mulya,Traktor,Rusak Ringan,14567872,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+38,Kelurahan Indah,Komputer,Rusak Berat,14691328,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+39,Desa Asri,Generator,Baik,14814784,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+40,Kelurahan Maju,Sound System,Rusak Ringan,14938240,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+41,Desa Makmur,Mesin Pompa Air,Rusak Berat,15061696,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+42,Kelurahan Sejahtera,Motor Sampah,Baik,15185152,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+43,Desa Sentosa,Proyektor,Rusak Ringan,15308608,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+44,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,15432064,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+45,Desa Jaya,Kamera CCTV,Baik,15555520,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+46,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,15678976,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+47,Desa Mulya,Laptop,Rusak Berat,15802432,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+48,Kelurahan Indah,Printer,Baik,15925888,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+49,Desa Asri,AC,Rusak Ringan,16049344,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+50,Kelurahan Maju,Kulkas,Rusak Berat,16172800,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+51,Desa Makmur,Meja Kantor,Baik,16296256,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+52,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,16419712,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+53,Desa Sentosa,Kipas Angin,Rusak Berat,16543168,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+54,Kelurahan Bahagia,Ambulance Desa,Baik,16666624,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+55,Desa Jaya,Traktor,Rusak Ringan,16790080,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+56,Kelurahan Sari,Komputer,Rusak Berat,16913536,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+57,Desa Mulya,Generator,Baik,17036992,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+58,Kelurahan Indah,Sound System,Rusak Ringan,17160448,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+59,Desa Asri,Mesin Pompa Air,Rusak Berat,17283904,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+60,Kelurahan Maju,Motor Sampah,Baik,17407360,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+61,Desa Makmur,Proyektor,Rusak Ringan,17530816,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+62,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,17654272,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+63,Desa Sentosa,Kamera CCTV,Baik,17777728,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+64,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,17901184,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+65,Desa Jaya,Laptop,Rusak Berat,18024640,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+66,Kelurahan Sari,Printer,Baik,18148096,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+67,Desa Mulya,AC,Rusak Ringan,18271552,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+68,Kelurahan Indah,Kulkas,Rusak Berat,18395008,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+69,Desa Asri,Meja Kantor,Baik,18518464,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+70,Kelurahan Maju,Lemari Arsip,Rusak Ringan,18641920,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+71,Desa Makmur,Kipas Angin,Rusak Berat,18765376,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+72,Kelurahan Sejahtera,Ambulance Desa,Baik,18888832,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+73,Desa Sentosa,Traktor,Rusak Ringan,19012288,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+74,Kelurahan Bahagia,Komputer,Rusak Berat,19135744,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+75,Desa Jaya,Generator,Baik,19259200,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+76,Kelurahan Sari,Sound System,Rusak Ringan,19382656,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+77,Desa Mulya,Mesin Pompa Air,Rusak Berat,19506112,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+78,Kelurahan Indah,Motor Sampah,Baik,19629568,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+79,Desa Asri,Proyektor,Rusak Ringan,19753024,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+80,Kelurahan Maju,Kursi Rapat,Rusak Berat,19876480,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+81,Desa Makmur,Kamera CCTV,Baik,19999936,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+82,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,20123392,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+83,Desa Sentosa,Laptop,Rusak Berat,20246848,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+84,Kelurahan Bahagia,Printer,Baik,20370304,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+85,Desa Jaya,AC,Rusak Ringan,20493760,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+86,Kelurahan Sari,Kulkas,Rusak Berat,20617216,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+87,Desa Mulya,Meja Kantor,Baik,20740672,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+88,Kelurahan Indah,Lemari Arsip,Rusak Ringan,20864128,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+89,Desa Asri,Kipas Angin,Rusak Berat,20987584,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+90,Kelurahan Maju,Ambulance Desa,Baik,21111040,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+91,Desa Makmur,Traktor,Rusak Ringan,21234496,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+92,Kelurahan Sejahtera,Komputer,Rusak Berat,21357952,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+93,Desa Sentosa,Generator,Baik,21481408,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+94,Kelurahan Bahagia,Sound System,Rusak Ringan,21604864,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+95,Desa Jaya,Mesin Pompa Air,Rusak Berat,21728320,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+96,Kelurahan Sari,Motor Sampah,Baik,21851776,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+97,Desa Mulya,Proyektor,Rusak Ringan,21975232,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+98,Kelurahan Indah,Kursi Rapat,Rusak Berat,22098688,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+99,Desa Asri,Kamera CCTV,Baik,22222144,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+100,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,22345600,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+101,Desa Makmur,Laptop,Rusak Berat,22469056,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+102,Kelurahan Sejahtera,Printer,Baik,22592512,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+103,Desa Sentosa,AC,Rusak Ringan,22715968,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+104,Kelurahan Bahagia,Kulkas,Rusak Berat,22839424,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+105,Desa Jaya,Meja Kantor,Baik,22962880,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+106,Kelurahan Sari,Lemari Arsip,Rusak Ringan,23086336,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+107,Desa Mulya,Kipas Angin,Rusak Berat,23209792,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+108,Kelurahan Indah,Ambulance Desa,Baik,23333248,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+109,Desa Asri,Traktor,Rusak Ringan,23456704,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+110,Kelurahan Maju,Komputer,Rusak Berat,23580160,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+111,Desa Makmur,Generator,Baik,23703616,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+112,Kelurahan Sejahtera,Sound System,Rusak Ringan,23827072,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+113,Desa Sentosa,Mesin Pompa Air,Rusak Berat,23950528,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+114,Kelurahan Bahagia,Motor Sampah,Baik,24073984,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+115,Desa Jaya,Proyektor,Rusak Ringan,24197440,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+116,Kelurahan Sari,Kursi Rapat,Rusak Berat,24320896,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+117,Desa Mulya,Kamera CCTV,Baik,24444352,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+118,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,24567808,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+119,Desa Asri,Laptop,Rusak Berat,24691264,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+120,Kelurahan Maju,Printer,Baik,24814720,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+121,Desa Makmur,AC,Rusak Ringan,24938176,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+122,Kelurahan Sejahtera,Kulkas,Rusak Berat,25061632,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+123,Desa Sentosa,Meja Kantor,Baik,25185088,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+124,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,25308544,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+125,Desa Jaya,Kipas Angin,Rusak Berat,25432000,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+126,Kelurahan Sari,Ambulance Desa,Baik,25555456,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+127,Desa Mulya,Traktor,Rusak Ringan,25678912,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+128,Kelurahan Indah,Komputer,Rusak Berat,25802368,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+129,Desa Asri,Generator,Baik,25925824,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+130,Kelurahan Maju,Sound System,Rusak Ringan,26049280,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+131,Desa Makmur,Mesin Pompa Air,Rusak Berat,26172736,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+132,Kelurahan Sejahtera,Motor Sampah,Baik,26296192,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+133,Desa Sentosa,Proyektor,Rusak Ringan,26419648,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+134,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,26543104,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+135,Desa Jaya,Kamera CCTV,Baik,26666560,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+136,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,26790016,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+137,Desa Mulya,Laptop,Rusak Berat,26913472,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+138,Kelurahan Indah,Printer,Baik,27036928,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+139,Desa Asri,AC,Rusak Ringan,27160384,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+140,Kelurahan Maju,Kulkas,Rusak Berat,27283840,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+141,Desa Makmur,Meja Kantor,Baik,27407296,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+142,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,27530752,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+143,Desa Sentosa,Kipas Angin,Rusak Berat,27654208,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+144,Kelurahan Bahagia,Ambulance Desa,Baik,27777664,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+145,Desa Jaya,Traktor,Rusak Ringan,27901120,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+146,Kelurahan Sari,Komputer,Rusak Berat,28024576,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+147,Desa Mulya,Generator,Baik,28148032,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+148,Kelurahan Indah,Sound System,Rusak Ringan,28271488,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+149,Desa Asri,Mesin Pompa Air,Rusak Berat,28394944,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+150,Kelurahan Maju,Motor Sampah,Baik,28518400,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+151,Desa Makmur,Proyektor,Rusak Ringan,28641856,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+152,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,28765312,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+153,Desa Sentosa,Kamera CCTV,Baik,28888768,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+154,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,29012224,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+155,Desa Jaya,Laptop,Rusak Berat,29135680,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+156,Kelurahan Sari,Printer,Baik,29259136,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+157,Desa Mulya,AC,Rusak Ringan,29382592,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+158,Kelurahan Indah,Kulkas,Rusak Berat,29506048,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+159,Desa Asri,Meja Kantor,Baik,29629504,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+160,Kelurahan Maju,Lemari Arsip,Rusak Ringan,29752960,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+161,Desa Makmur,Kipas Angin,Rusak Berat,29876416,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+162,Kelurahan Sejahtera,Ambulance Desa,Baik,29999872,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+163,Desa Sentosa,Traktor,Rusak Ringan,30123328,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+164,Kelurahan Bahagia,Komputer,Rusak Berat,30246784,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+165,Desa Jaya,Generator,Baik,30370240,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+166,Kelurahan Sari,Sound System,Rusak Ringan,30493696,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+167,Desa Mulya,Mesin Pompa Air,Rusak Berat,30617152,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+168,Kelurahan Indah,Motor Sampah,Baik,30740608,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+169,Desa Asri,Proyektor,Rusak Ringan,30864064,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+170,Kelurahan Maju,Kursi Rapat,Rusak Berat,30987520,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+171,Desa Makmur,Kamera CCTV,Baik,31110976,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+172,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,31234432,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+173,Desa Sentosa,Laptop,Rusak Berat,31357888,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+174,Kelurahan Bahagia,Printer,Baik,31481344,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+175,Desa Jaya,AC,Rusak Ringan,31604800,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+176,Kelurahan Sari,Kulkas,Rusak Berat,31728256,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+177,Desa Mulya,Meja Kantor,Baik,31851712,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+178,Kelurahan Indah,Lemari Arsip,Rusak Ringan,31975168,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+179,Desa Asri,Kipas Angin,Rusak Berat,32098624,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+180,Kelurahan Maju,Ambulance Desa,Baik,32222080,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+181,Desa Makmur,Traktor,Rusak Ringan,32345536,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+182,Kelurahan Sejahtera,Komputer,Rusak Berat,32468992,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+183,Desa Sentosa,Generator,Baik,32592448,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+184,Kelurahan Bahagia,Sound System,Rusak Ringan,32715904,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+185,Desa Jaya,Mesin Pompa Air,Rusak Berat,32839360,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+186,Kelurahan Sari,Motor Sampah,Baik,32962816,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+187,Desa Mulya,Proyektor,Rusak Ringan,33086272,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+188,Kelurahan Indah,Kursi Rapat,Rusak Berat,33209728,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+189,Desa Asri,Kamera CCTV,Baik,33333184,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+190,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,33456640,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+191,Desa Makmur,Laptop,Rusak Berat,33580096,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+192,Kelurahan Sejahtera,Printer,Baik,33703552,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+193,Desa Sentosa,AC,Rusak Ringan,33827008,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+194,Kelurahan Bahagia,Kulkas,Rusak Berat,33950464,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+195,Desa Jaya,Meja Kantor,Baik,34073920,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+196,Kelurahan Sari,Lemari Arsip,Rusak Ringan,34197376,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+197,Desa Mulya,Kipas Angin,Rusak Berat,34320832,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+198,Kelurahan Indah,Ambulance Desa,Baik,34444288,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+199,Desa Asri,Traktor,Rusak Ringan,34567744,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+200,Kelurahan Maju,Komputer,Rusak Berat,34691200,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+201,Desa Makmur,Generator,Baik,34814656,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+202,Kelurahan Sejahtera,Sound System,Rusak Ringan,34938112,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+203,Desa Sentosa,Mesin Pompa Air,Rusak Berat,35061568,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+204,Kelurahan Bahagia,Motor Sampah,Baik,35185024,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+205,Desa Jaya,Proyektor,Rusak Ringan,35308480,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+206,Kelurahan Sari,Kursi Rapat,Rusak Berat,35431936,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+207,Desa Mulya,Kamera CCTV,Baik,35555392,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+208,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,35678848,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+209,Desa Asri,Laptop,Rusak Berat,35802304,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+210,Kelurahan Maju,Printer,Baik,35925760,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+211,Desa Makmur,AC,Rusak Ringan,36049216,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+212,Kelurahan Sejahtera,Kulkas,Rusak Berat,36172672,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+213,Desa Sentosa,Meja Kantor,Baik,36296128,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+214,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,36419584,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+215,Desa Jaya,Kipas Angin,Rusak Berat,36543040,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+216,Kelurahan Sari,Ambulance Desa,Baik,36666496,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+217,Desa Mulya,Traktor,Rusak Ringan,36789952,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+218,Kelurahan Indah,Komputer,Rusak Berat,36913408,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+219,Desa Asri,Generator,Baik,37036864,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+220,Kelurahan Maju,Sound System,Rusak Ringan,37160320,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+221,Desa Makmur,Mesin Pompa Air,Rusak Berat,37283776,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+222,Kelurahan Sejahtera,Motor Sampah,Baik,37407232,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+223,Desa Sentosa,Proyektor,Rusak Ringan,37530688,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+224,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,37654144,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+225,Desa Jaya,Kamera CCTV,Baik,37777600,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+226,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,37901056,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+227,Desa Mulya,Laptop,Rusak Berat,38024512,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+228,Kelurahan Indah,Printer,Baik,38147968,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+229,Desa Asri,AC,Rusak Ringan,38271424,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+230,Kelurahan Maju,Kulkas,Rusak Berat,38394880,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+231,Desa Makmur,Meja Kantor,Baik,38518336,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+232,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,38641792,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+233,Desa Sentosa,Kipas Angin,Rusak Berat,38765248,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+234,Kelurahan Bahagia,Ambulance Desa,Baik,38888704,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+235,Desa Jaya,Traktor,Rusak Ringan,39012160,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+236,Kelurahan Sari,Komputer,Rusak Berat,39135616,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+237,Desa Mulya,Generator,Baik,39259072,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+238,Kelurahan Indah,Sound System,Rusak Ringan,39382528,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+239,Desa Asri,Mesin Pompa Air,Rusak Berat,39505984,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+240,Kelurahan Maju,Motor Sampah,Baik,39629440,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+241,Desa Makmur,Proyektor,Rusak Ringan,39752896,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+242,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,39876352,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+243,Desa Sentosa,Kamera CCTV,Baik,39999808,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+244,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,40123264,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+245,Desa Jaya,Laptop,Rusak Berat,40246720,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+246,Kelurahan Sari,Printer,Baik,40370176,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+247,Desa Mulya,AC,Rusak Ringan,40493632,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+248,Kelurahan Indah,Kulkas,Rusak Berat,40617088,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+249,Desa Asri,Meja Kantor,Baik,40740544,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+250,Kelurahan Maju,Lemari Arsip,Rusak Ringan,40864000,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+251,Desa Makmur,Kipas Angin,Rusak Berat,40987456,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+252,Kelurahan Sejahtera,Ambulance Desa,Baik,41110912,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+253,Desa Sentosa,Traktor,Rusak Ringan,41234368,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+254,Kelurahan Bahagia,Komputer,Rusak Berat,41357824,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+255,Desa Jaya,Generator,Baik,41481280,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+256,Kelurahan Sari,Sound System,Rusak Ringan,41604736,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+257,Desa Mulya,Mesin Pompa Air,Rusak Berat,41728192,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+258,Kelurahan Indah,Motor Sampah,Baik,41851648,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+259,Desa Asri,Proyektor,Rusak Ringan,41975104,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+260,Kelurahan Maju,Kursi Rapat,Rusak Berat,42098560,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+261,Desa Makmur,Kamera CCTV,Baik,42222016,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+262,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,42345472,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+263,Desa Sentosa,Laptop,Rusak Berat,42468928,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+264,Kelurahan Bahagia,Printer,Baik,42592384,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+265,Desa Jaya,AC,Rusak Ringan,42715840,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+266,Kelurahan Sari,Kulkas,Rusak Berat,42839296,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+267,Desa Mulya,Meja Kantor,Baik,42962752,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+268,Kelurahan Indah,Lemari Arsip,Rusak Ringan,43086208,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+269,Desa Asri,Kipas Angin,Rusak Berat,43209664,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+270,Kelurahan Maju,Ambulance Desa,Baik,43333120,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+271,Desa Makmur,Traktor,Rusak Ringan,43456576,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+272,Kelurahan Sejahtera,Komputer,Rusak Berat,43580032,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+273,Desa Sentosa,Generator,Baik,43703488,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+274,Kelurahan Bahagia,Sound System,Rusak Ringan,43826944,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+275,Desa Jaya,Mesin Pompa Air,Rusak Berat,43950400,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+276,Kelurahan Sari,Motor Sampah,Baik,44073856,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+277,Desa Mulya,Proyektor,Rusak Ringan,44197312,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+278,Kelurahan Indah,Kursi Rapat,Rusak Berat,44320768,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+279,Desa Asri,Kamera CCTV,Baik,44444224,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+280,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,44567680,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+281,Desa Makmur,Laptop,Rusak Berat,44691136,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+282,Kelurahan Sejahtera,Printer,Baik,44814592,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+283,Desa Sentosa,AC,Rusak Ringan,44938048,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+284,Kelurahan Bahagia,Kulkas,Rusak Berat,45061504,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+285,Desa Jaya,Meja Kantor,Baik,45184960,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+286,Kelurahan Sari,Lemari Arsip,Rusak Ringan,45308416,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+287,Desa Mulya,Kipas Angin,Rusak Berat,45431872,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+288,Kelurahan Indah,Ambulance Desa,Baik,45555328,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+289,Desa Asri,Traktor,Rusak Ringan,45678784,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+290,Kelurahan Maju,Komputer,Rusak Berat,45802240,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+291,Desa Makmur,Generator,Baik,45925696,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+292,Kelurahan Sejahtera,Sound System,Rusak Ringan,46049152,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+293,Desa Sentosa,Mesin Pompa Air,Rusak Berat,46172608,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+294,Kelurahan Bahagia,Motor Sampah,Baik,46296064,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+295,Desa Jaya,Proyektor,Rusak Ringan,46419520,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+296,Kelurahan Sari,Kursi Rapat,Rusak Berat,46542976,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+297,Desa Mulya,Kamera CCTV,Baik,46666432,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+298,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,46789888,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+299,Desa Asri,Laptop,Rusak Berat,46913344,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+300,Kelurahan Maju,Printer,Baik,47036800,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+301,Desa Makmur,AC,Rusak Ringan,47160256,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+302,Kelurahan Sejahtera,Kulkas,Rusak Berat,47283712,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+303,Desa Sentosa,Meja Kantor,Baik,47407168,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+304,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,47530624,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+305,Desa Jaya,Kipas Angin,Rusak Berat,47654080,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+306,Kelurahan Sari,Ambulance Desa,Baik,47777536,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+307,Desa Mulya,Traktor,Rusak Ringan,47900992,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+308,Kelurahan Indah,Komputer,Rusak Berat,48024448,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+309,Desa Asri,Generator,Baik,48147904,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+310,Kelurahan Maju,Sound System,Rusak Ringan,48271360,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+311,Desa Makmur,Mesin Pompa Air,Rusak Berat,48394816,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+312,Kelurahan Sejahtera,Motor Sampah,Baik,48518272,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+313,Desa Sentosa,Proyektor,Rusak Ringan,48641728,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+314,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,48765184,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+315,Desa Jaya,Kamera CCTV,Baik,48888640,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+316,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,49012096,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+317,Desa Mulya,Laptop,Rusak Berat,49135552,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+318,Kelurahan Indah,Printer,Baik,49259008,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+319,Desa Asri,AC,Rusak Ringan,49382464,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+320,Kelurahan Maju,Kulkas,Rusak Berat,49505920,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+321,Desa Makmur,Meja Kantor,Baik,49629376,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+322,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,49752832,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+323,Desa Sentosa,Kipas Angin,Rusak Berat,49876288,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+324,Kelurahan Bahagia,Ambulance Desa,Baik,49999744,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+325,Desa Jaya,Traktor,Rusak Ringan,50123200,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+326,Kelurahan Sari,Komputer,Rusak Berat,50246656,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+327,Desa Mulya,Generator,Baik,50370112,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+328,Kelurahan Indah,Sound System,Rusak Ringan,50493568,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+329,Desa Asri,Mesin Pompa Air,Rusak Berat,50617024,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+330,Kelurahan Maju,Motor Sampah,Baik,50740480,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+331,Desa Makmur,Proyektor,Rusak Ringan,50863936,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+332,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,50987392,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+333,Desa Sentosa,Kamera CCTV,Baik,51110848,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+334,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,51234304,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+335,Desa Jaya,Laptop,Rusak Berat,51357760,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+336,Kelurahan Sari,Printer,Baik,51481216,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+337,Desa Mulya,AC,Rusak Ringan,51604672,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+338,Kelurahan Indah,Kulkas,Rusak Berat,51728128,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+339,Desa Asri,Meja Kantor,Baik,51851584,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+340,Kelurahan Maju,Lemari Arsip,Rusak Ringan,51975040,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+341,Desa Makmur,Kipas Angin,Rusak Berat,52098496,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+342,Kelurahan Sejahtera,Ambulance Desa,Baik,52221952,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+343,Desa Sentosa,Traktor,Rusak Ringan,52345408,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+344,Kelurahan Bahagia,Komputer,Rusak Berat,52468864,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+345,Desa Jaya,Generator,Baik,52592320,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+346,Kelurahan Sari,Sound System,Rusak Ringan,52715776,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+347,Desa Mulya,Mesin Pompa Air,Rusak Berat,52839232,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+348,Kelurahan Indah,Motor Sampah,Baik,52962688,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+349,Desa Asri,Proyektor,Rusak Ringan,53086144,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+350,Kelurahan Maju,Kursi Rapat,Rusak Berat,53209600,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+351,Desa Makmur,Kamera CCTV,Baik,53333056,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+352,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,53456512,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+353,Desa Sentosa,Laptop,Rusak Berat,53579968,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+354,Kelurahan Bahagia,Printer,Baik,53703424,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+355,Desa Jaya,AC,Rusak Ringan,53826880,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+356,Kelurahan Sari,Kulkas,Rusak Berat,53950336,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+357,Desa Mulya,Meja Kantor,Baik,54073792,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+358,Kelurahan Indah,Lemari Arsip,Rusak Ringan,54197248,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+359,Desa Asri,Kipas Angin,Rusak Berat,54320704,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+360,Kelurahan Maju,Ambulance Desa,Baik,54444160,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+361,Desa Makmur,Traktor,Rusak Ringan,54567616,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+362,Kelurahan Sejahtera,Komputer,Rusak Berat,54691072,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+363,Desa Sentosa,Generator,Baik,54814528,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+364,Kelurahan Bahagia,Sound System,Rusak Ringan,54937984,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+365,Desa Jaya,Mesin Pompa Air,Rusak Berat,55061440,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+366,Kelurahan Sari,Motor Sampah,Baik,55184896,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+367,Desa Mulya,Proyektor,Rusak Ringan,55308352,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+368,Kelurahan Indah,Kursi Rapat,Rusak Berat,55431808,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+369,Desa Asri,Kamera CCTV,Baik,55555264,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+370,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,55678720,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+371,Desa Makmur,Laptop,Rusak Berat,55802176,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+372,Kelurahan Sejahtera,Printer,Baik,55925632,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+373,Desa Sentosa,AC,Rusak Ringan,56049088,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+374,Kelurahan Bahagia,Kulkas,Rusak Berat,56172544,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+375,Desa Jaya,Meja Kantor,Baik,56296000,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+376,Kelurahan Sari,Lemari Arsip,Rusak Ringan,56419456,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+377,Desa Mulya,Kipas Angin,Rusak Berat,56542912,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+378,Kelurahan Indah,Ambulance Desa,Baik,56666368,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+379,Desa Asri,Traktor,Rusak Ringan,56789824,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+380,Kelurahan Maju,Komputer,Rusak Berat,56913280,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+381,Desa Makmur,Generator,Baik,57036736,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+382,Kelurahan Sejahtera,Sound System,Rusak Ringan,57160192,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+383,Desa Sentosa,Mesin Pompa Air,Rusak Berat,57283648,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+384,Kelurahan Bahagia,Motor Sampah,Baik,57407104,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+385,Desa Jaya,Proyektor,Rusak Ringan,57530560,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+386,Kelurahan Sari,Kursi Rapat,Rusak Berat,57654016,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+387,Desa Mulya,Kamera CCTV,Baik,57777472,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+388,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,57900928,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+389,Desa Asri,Laptop,Rusak Berat,58024384,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+390,Kelurahan Maju,Printer,Baik,58147840,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+391,Desa Makmur,AC,Rusak Ringan,58271296,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+392,Kelurahan Sejahtera,Kulkas,Rusak Berat,58394752,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+393,Desa Sentosa,Meja Kantor,Baik,58518208,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+394,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,58641664,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+395,Desa Jaya,Kipas Angin,Rusak Berat,58765120,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+396,Kelurahan Sari,Ambulance Desa,Baik,58888576,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+397,Desa Mulya,Traktor,Rusak Ringan,59012032,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+398,Kelurahan Indah,Komputer,Rusak Berat,59135488,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+399,Desa Asri,Generator,Baik,59258944,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+400,Kelurahan Maju,Sound System,Rusak Ringan,59382400,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+401,Desa Makmur,Mesin Pompa Air,Rusak Berat,59505856,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+402,Kelurahan Sejahtera,Motor Sampah,Baik,59629312,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+403,Desa Sentosa,Proyektor,Rusak Ringan,59752768,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+404,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,59876224,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+405,Desa Jaya,Kamera CCTV,Baik,59999680,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+406,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,60123136,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+407,Desa Mulya,Laptop,Rusak Berat,60246592,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+408,Kelurahan Indah,Printer,Baik,60370048,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+409,Desa Asri,AC,Rusak Ringan,60493504,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+410,Kelurahan Maju,Kulkas,Rusak Berat,60616960,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+411,Desa Makmur,Meja Kantor,Baik,60740416,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+412,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,60863872,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+413,Desa Sentosa,Kipas Angin,Rusak Berat,60987328,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+414,Kelurahan Bahagia,Ambulance Desa,Baik,61110784,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+415,Desa Jaya,Traktor,Rusak Ringan,61234240,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+416,Kelurahan Sari,Komputer,Rusak Berat,61357696,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+417,Desa Mulya,Generator,Baik,61481152,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+418,Kelurahan Indah,Sound System,Rusak Ringan,61604608,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+419,Desa Asri,Mesin Pompa Air,Rusak Berat,61728064,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+420,Kelurahan Maju,Motor Sampah,Baik,61851520,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+421,Desa Makmur,Proyektor,Rusak Ringan,61974976,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+422,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,62098432,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+423,Desa Sentosa,Kamera CCTV,Baik,62221888,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+424,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,62345344,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+425,Desa Jaya,Laptop,Rusak Berat,62468800,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+426,Kelurahan Sari,Printer,Baik,62592256,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+427,Desa Mulya,AC,Rusak Ringan,62715712,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+428,Kelurahan Indah,Kulkas,Rusak Berat,62839168,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+429,Desa Asri,Meja Kantor,Baik,62962624,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+430,Kelurahan Maju,Lemari Arsip,Rusak Ringan,63086080,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+431,Desa Makmur,Kipas Angin,Rusak Berat,63209536,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+432,Kelurahan Sejahtera,Ambulance Desa,Baik,63332992,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+433,Desa Sentosa,Traktor,Rusak Ringan,63456448,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+434,Kelurahan Bahagia,Komputer,Rusak Berat,63579904,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+435,Desa Jaya,Generator,Baik,63703360,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+436,Kelurahan Sari,Sound System,Rusak Ringan,63826816,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+437,Desa Mulya,Mesin Pompa Air,Rusak Berat,63950272,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+438,Kelurahan Indah,Motor Sampah,Baik,64073728,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+439,Desa Asri,Proyektor,Rusak Ringan,64197184,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+440,Kelurahan Maju,Kursi Rapat,Rusak Berat,64320640,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+441,Desa Makmur,Kamera CCTV,Baik,64444096,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+442,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,64567552,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+443,Desa Sentosa,Laptop,Rusak Berat,64691008,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+444,Kelurahan Bahagia,Printer,Baik,64814464,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+445,Desa Jaya,AC,Rusak Ringan,64937920,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+446,Kelurahan Sari,Kulkas,Rusak Berat,65061376,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+447,Desa Mulya,Meja Kantor,Baik,65184832,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+448,Kelurahan Indah,Lemari Arsip,Rusak Ringan,65308288,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+449,Desa Asri,Kipas Angin,Rusak Berat,65431744,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+450,Kelurahan Maju,Ambulance Desa,Baik,65555200,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+451,Desa Makmur,Traktor,Rusak Ringan,65678656,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+452,Kelurahan Sejahtera,Komputer,Rusak Berat,65802112,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+453,Desa Sentosa,Generator,Baik,65925568,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+454,Kelurahan Bahagia,Sound System,Rusak Ringan,66049024,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+455,Desa Jaya,Mesin Pompa Air,Rusak Berat,66172480,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+456,Kelurahan Sari,Motor Sampah,Baik,66295936,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+457,Desa Mulya,Proyektor,Rusak Ringan,66419392,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+458,Kelurahan Indah,Kursi Rapat,Rusak Berat,66542848,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+459,Desa Asri,Kamera CCTV,Baik,66666304,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+460,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,66789760,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+461,Desa Makmur,Laptop,Rusak Berat,66913216,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+462,Kelurahan Sejahtera,Printer,Baik,67036672,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+463,Desa Sentosa,AC,Rusak Ringan,67160128,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+464,Kelurahan Bahagia,Kulkas,Rusak Berat,67283584,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+465,Desa Jaya,Meja Kantor,Baik,67407040,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+466,Kelurahan Sari,Lemari Arsip,Rusak Ringan,67530496,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+467,Desa Mulya,Kipas Angin,Rusak Berat,67653952,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+468,Kelurahan Indah,Ambulance Desa,Baik,67777408,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+469,Desa Asri,Traktor,Rusak Ringan,67900864,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+470,Kelurahan Maju,Komputer,Rusak Berat,68024320,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+471,Desa Makmur,Generator,Baik,68147776,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+472,Kelurahan Sejahtera,Sound System,Rusak Ringan,68271232,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+473,Desa Sentosa,Mesin Pompa Air,Rusak Berat,68394688,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+474,Kelurahan Bahagia,Motor Sampah,Baik,68518144,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+475,Desa Jaya,Proyektor,Rusak Ringan,68641600,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+476,Kelurahan Sari,Kursi Rapat,Rusak Berat,68765056,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+477,Desa Mulya,Kamera CCTV,Baik,68888512,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+478,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,69011968,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+479,Desa Asri,Laptop,Rusak Berat,69135424,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+480,Kelurahan Maju,Printer,Baik,69258880,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+481,Desa Makmur,AC,Rusak Ringan,69382336,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+482,Kelurahan Sejahtera,Kulkas,Rusak Berat,69505792,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+483,Desa Sentosa,Meja Kantor,Baik,69629248,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+484,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,69752704,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+485,Desa Jaya,Kipas Angin,Rusak Berat,69876160,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+486,Kelurahan Sari,Ambulance Desa,Baik,69999616,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+487,Desa Mulya,Traktor,Rusak Ringan,70123072,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+488,Kelurahan Indah,Komputer,Rusak Berat,70246528,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+489,Desa Asri,Generator,Baik,70369984,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+490,Kelurahan Maju,Sound System,Rusak Ringan,70493440,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+491,Desa Makmur,Mesin Pompa Air,Rusak Berat,70616896,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+492,Kelurahan Sejahtera,Motor Sampah,Baik,70740352,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+493,Desa Sentosa,Proyektor,Rusak Ringan,70863808,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+494,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,70987264,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+495,Desa Jaya,Kamera CCTV,Baik,71110720,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+496,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,71234176,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+497,Desa Mulya,Laptop,Rusak Berat,71357632,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+498,Kelurahan Indah,Printer,Baik,71481088,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+499,Desa Asri,AC,Rusak Ringan,71604544,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+500,Kelurahan Maju,Kulkas,Rusak Berat,71728000,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+501,Desa Makmur,Meja Kantor,Baik,71851456,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+502,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,71974912,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+503,Desa Sentosa,Kipas Angin,Rusak Berat,72098368,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+504,Kelurahan Bahagia,Ambulance Desa,Baik,72221824,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+505,Desa Jaya,Traktor,Rusak Ringan,72345280,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+506,Kelurahan Sari,Komputer,Rusak Berat,72468736,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+507,Desa Mulya,Generator,Baik,72592192,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+508,Kelurahan Indah,Sound System,Rusak Ringan,72715648,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+509,Desa Asri,Mesin Pompa Air,Rusak Berat,72839104,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+510,Kelurahan Maju,Motor Sampah,Baik,72962560,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+511,Desa Makmur,Proyektor,Rusak Ringan,73086016,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+512,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,73209472,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+513,Desa Sentosa,Kamera CCTV,Baik,73332928,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+514,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,73456384,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+515,Desa Jaya,Laptop,Rusak Berat,73579840,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+516,Kelurahan Sari,Printer,Baik,73703296,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+517,Desa Mulya,AC,Rusak Ringan,73826752,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+518,Kelurahan Indah,Kulkas,Rusak Berat,73950208,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+519,Desa Asri,Meja Kantor,Baik,74073664,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+520,Kelurahan Maju,Lemari Arsip,Rusak Ringan,74197120,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+521,Desa Makmur,Kipas Angin,Rusak Berat,74320576,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+522,Kelurahan Sejahtera,Ambulance Desa,Baik,74444032,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+523,Desa Sentosa,Traktor,Rusak Ringan,74567488,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+524,Kelurahan Bahagia,Komputer,Rusak Berat,74690944,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+525,Desa Jaya,Generator,Baik,74814400,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+526,Kelurahan Sari,Sound System,Rusak Ringan,74937856,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+527,Desa Mulya,Mesin Pompa Air,Rusak Berat,75061312,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+528,Kelurahan Indah,Motor Sampah,Baik,75184768,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+529,Desa Asri,Proyektor,Rusak Ringan,75308224,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+530,Kelurahan Maju,Kursi Rapat,Rusak Berat,75431680,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+531,Desa Makmur,Kamera CCTV,Baik,75555136,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+532,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,75678592,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+533,Desa Sentosa,Laptop,Rusak Berat,75802048,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+534,Kelurahan Bahagia,Printer,Baik,75925504,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+535,Desa Jaya,AC,Rusak Ringan,76048960,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+536,Kelurahan Sari,Kulkas,Rusak Berat,76172416,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+537,Desa Mulya,Meja Kantor,Baik,76295872,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+538,Kelurahan Indah,Lemari Arsip,Rusak Ringan,76419328,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+539,Desa Asri,Kipas Angin,Rusak Berat,76542784,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+540,Kelurahan Maju,Ambulance Desa,Baik,76666240,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+541,Desa Makmur,Traktor,Rusak Ringan,76789696,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+542,Kelurahan Sejahtera,Komputer,Rusak Berat,76913152,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+543,Desa Sentosa,Generator,Baik,77036608,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+544,Kelurahan Bahagia,Sound System,Rusak Ringan,77160064,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+545,Desa Jaya,Mesin Pompa Air,Rusak Berat,77283520,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+546,Kelurahan Sari,Motor Sampah,Baik,77406976,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+547,Desa Mulya,Proyektor,Rusak Ringan,77530432,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+548,Kelurahan Indah,Kursi Rapat,Rusak Berat,77653888,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+549,Desa Asri,Kamera CCTV,Baik,77777344,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+550,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,77900800,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+551,Desa Makmur,Laptop,Rusak Berat,78024256,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+552,Kelurahan Sejahtera,Printer,Baik,78147712,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+553,Desa Sentosa,AC,Rusak Ringan,78271168,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+554,Kelurahan Bahagia,Kulkas,Rusak Berat,78394624,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+555,Desa Jaya,Meja Kantor,Baik,78518080,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+556,Kelurahan Sari,Lemari Arsip,Rusak Ringan,78641536,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+557,Desa Mulya,Kipas Angin,Rusak Berat,78764992,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+558,Kelurahan Indah,Ambulance Desa,Baik,78888448,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+559,Desa Asri,Traktor,Rusak Ringan,79011904,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+560,Kelurahan Maju,Komputer,Rusak Berat,79135360,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+561,Desa Makmur,Generator,Baik,79258816,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+562,Kelurahan Sejahtera,Sound System,Rusak Ringan,79382272,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+563,Desa Sentosa,Mesin Pompa Air,Rusak Berat,79505728,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+564,Kelurahan Bahagia,Motor Sampah,Baik,79629184,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+565,Desa Jaya,Proyektor,Rusak Ringan,79752640,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+566,Kelurahan Sari,Kursi Rapat,Rusak Berat,79876096,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+567,Desa Mulya,Kamera CCTV,Baik,79999552,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+568,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,80123008,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+569,Desa Asri,Laptop,Rusak Berat,80246464,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+570,Kelurahan Maju,Printer,Baik,80369920,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+571,Desa Makmur,AC,Rusak Ringan,80493376,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+572,Kelurahan Sejahtera,Kulkas,Rusak Berat,80616832,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+573,Desa Sentosa,Meja Kantor,Baik,80740288,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+574,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,80863744,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+575,Desa Jaya,Kipas Angin,Rusak Berat,80987200,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+576,Kelurahan Sari,Ambulance Desa,Baik,81110656,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+577,Desa Mulya,Traktor,Rusak Ringan,81234112,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+578,Kelurahan Indah,Komputer,Rusak Berat,81357568,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+579,Desa Asri,Generator,Baik,81481024,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+580,Kelurahan Maju,Sound System,Rusak Ringan,81604480,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+581,Desa Makmur,Mesin Pompa Air,Rusak Berat,81727936,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+582,Kelurahan Sejahtera,Motor Sampah,Baik,81851392,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+583,Desa Sentosa,Proyektor,Rusak Ringan,81974848,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+584,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,82098304,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+585,Desa Jaya,Kamera CCTV,Baik,82221760,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+586,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,82345216,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+587,Desa Mulya,Laptop,Rusak Berat,82468672,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+588,Kelurahan Indah,Printer,Baik,82592128,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+589,Desa Asri,AC,Rusak Ringan,82715584,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+590,Kelurahan Maju,Kulkas,Rusak Berat,82839040,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+591,Desa Makmur,Meja Kantor,Baik,82962496,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+592,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,83085952,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+593,Desa Sentosa,Kipas Angin,Rusak Berat,83209408,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+594,Kelurahan Bahagia,Ambulance Desa,Baik,83332864,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+595,Desa Jaya,Traktor,Rusak Ringan,83456320,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+596,Kelurahan Sari,Komputer,Rusak Berat,83579776,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+597,Desa Mulya,Generator,Baik,83703232,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+598,Kelurahan Indah,Sound System,Rusak Ringan,83826688,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+599,Desa Asri,Mesin Pompa Air,Rusak Berat,83950144,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+600,Kelurahan Maju,Motor Sampah,Baik,84073600,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+601,Desa Makmur,Proyektor,Rusak Ringan,84197056,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+602,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,84320512,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+603,Desa Sentosa,Kamera CCTV,Baik,84443968,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+604,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,84567424,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+605,Desa Jaya,Laptop,Rusak Berat,84690880,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+606,Kelurahan Sari,Printer,Baik,84814336,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+607,Desa Mulya,AC,Rusak Ringan,84937792,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+608,Kelurahan Indah,Kulkas,Rusak Berat,85061248,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+609,Desa Asri,Meja Kantor,Baik,85184704,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+610,Kelurahan Maju,Lemari Arsip,Rusak Ringan,85308160,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+611,Desa Makmur,Kipas Angin,Rusak Berat,85431616,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+612,Kelurahan Sejahtera,Ambulance Desa,Baik,85555072,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+613,Desa Sentosa,Traktor,Rusak Ringan,85678528,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+614,Kelurahan Bahagia,Komputer,Rusak Berat,85801984,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+615,Desa Jaya,Generator,Baik,85925440,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+616,Kelurahan Sari,Sound System,Rusak Ringan,86048896,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+617,Desa Mulya,Mesin Pompa Air,Rusak Berat,86172352,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+618,Kelurahan Indah,Motor Sampah,Baik,86295808,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+619,Desa Asri,Proyektor,Rusak Ringan,86419264,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+620,Kelurahan Maju,Kursi Rapat,Rusak Berat,86542720,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+621,Desa Makmur,Kamera CCTV,Baik,86666176,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+622,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,86789632,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+623,Desa Sentosa,Laptop,Rusak Berat,86913088,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+624,Kelurahan Bahagia,Printer,Baik,87036544,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+625,Desa Jaya,AC,Rusak Ringan,87160000,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+626,Kelurahan Sari,Kulkas,Rusak Berat,87283456,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+627,Desa Mulya,Meja Kantor,Baik,87406912,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+628,Kelurahan Indah,Lemari Arsip,Rusak Ringan,87530368,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+629,Desa Asri,Kipas Angin,Rusak Berat,87653824,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+630,Kelurahan Maju,Ambulance Desa,Baik,87777280,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+631,Desa Makmur,Traktor,Rusak Ringan,87900736,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+632,Kelurahan Sejahtera,Komputer,Rusak Berat,88024192,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+633,Desa Sentosa,Generator,Baik,88147648,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+634,Kelurahan Bahagia,Sound System,Rusak Ringan,88271104,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+635,Desa Jaya,Mesin Pompa Air,Rusak Berat,88394560,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+636,Kelurahan Sari,Motor Sampah,Baik,88518016,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+637,Desa Mulya,Proyektor,Rusak Ringan,88641472,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+638,Kelurahan Indah,Kursi Rapat,Rusak Berat,88764928,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+639,Desa Asri,Kamera CCTV,Baik,88888384,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+640,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,89011840,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+641,Desa Makmur,Laptop,Rusak Berat,89135296,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+642,Kelurahan Sejahtera,Printer,Baik,89258752,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+643,Desa Sentosa,AC,Rusak Ringan,89382208,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+644,Kelurahan Bahagia,Kulkas,Rusak Berat,89505664,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+645,Desa Jaya,Meja Kantor,Baik,89629120,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+646,Kelurahan Sari,Lemari Arsip,Rusak Ringan,89752576,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+647,Desa Mulya,Kipas Angin,Rusak Berat,89876032,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+648,Kelurahan Indah,Ambulance Desa,Baik,89999488,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+649,Desa Asri,Traktor,Rusak Ringan,90122944,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+650,Kelurahan Maju,Komputer,Rusak Berat,90246400,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+651,Desa Makmur,Generator,Baik,90369856,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+652,Kelurahan Sejahtera,Sound System,Rusak Ringan,90493312,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+653,Desa Sentosa,Mesin Pompa Air,Rusak Berat,90616768,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+654,Kelurahan Bahagia,Motor Sampah,Baik,90740224,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+655,Desa Jaya,Proyektor,Rusak Ringan,90863680,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+656,Kelurahan Sari,Kursi Rapat,Rusak Berat,90987136,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+657,Desa Mulya,Kamera CCTV,Baik,91110592,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+658,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,91234048,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+659,Desa Asri,Laptop,Rusak Berat,91357504,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+660,Kelurahan Maju,Printer,Baik,91480960,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+661,Desa Makmur,AC,Rusak Ringan,91604416,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+662,Kelurahan Sejahtera,Kulkas,Rusak Berat,91727872,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+663,Desa Sentosa,Meja Kantor,Baik,91851328,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+664,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,91974784,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+665,Desa Jaya,Kipas Angin,Rusak Berat,92098240,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+666,Kelurahan Sari,Ambulance Desa,Baik,92221696,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+667,Desa Mulya,Traktor,Rusak Ringan,92345152,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+668,Kelurahan Indah,Komputer,Rusak Berat,92468608,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+669,Desa Asri,Generator,Baik,92592064,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+670,Kelurahan Maju,Sound System,Rusak Ringan,92715520,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+671,Desa Makmur,Mesin Pompa Air,Rusak Berat,92838976,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+672,Kelurahan Sejahtera,Motor Sampah,Baik,92962432,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+673,Desa Sentosa,Proyektor,Rusak Ringan,93085888,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+674,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,93209344,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+675,Desa Jaya,Kamera CCTV,Baik,93332800,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+676,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,93456256,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+677,Desa Mulya,Laptop,Rusak Berat,93579712,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+678,Kelurahan Indah,Printer,Baik,93703168,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+679,Desa Asri,AC,Rusak Ringan,93826624,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+680,Kelurahan Maju,Kulkas,Rusak Berat,93950080,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+681,Desa Makmur,Meja Kantor,Baik,94073536,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+682,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,94196992,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+683,Desa Sentosa,Kipas Angin,Rusak Berat,94320448,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+684,Kelurahan Bahagia,Ambulance Desa,Baik,94443904,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+685,Desa Jaya,Traktor,Rusak Ringan,94567360,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+686,Kelurahan Sari,Komputer,Rusak Berat,94690816,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+687,Desa Mulya,Generator,Baik,94814272,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+688,Kelurahan Indah,Sound System,Rusak Ringan,94937728,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+689,Desa Asri,Mesin Pompa Air,Rusak Berat,95061184,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+690,Kelurahan Maju,Motor Sampah,Baik,95184640,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+691,Desa Makmur,Proyektor,Rusak Ringan,95308096,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+692,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,95431552,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+693,Desa Sentosa,Kamera CCTV,Baik,95555008,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+694,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,95678464,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+695,Desa Jaya,Laptop,Rusak Berat,95801920,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+696,Kelurahan Sari,Printer,Baik,95925376,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+697,Desa Mulya,AC,Rusak Ringan,96048832,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+698,Kelurahan Indah,Kulkas,Rusak Berat,96172288,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+699,Desa Asri,Meja Kantor,Baik,96295744,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+700,Kelurahan Maju,Lemari Arsip,Rusak Ringan,96419200,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+701,Desa Makmur,Kipas Angin,Rusak Berat,96542656,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+702,Kelurahan Sejahtera,Ambulance Desa,Baik,96666112,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+703,Desa Sentosa,Traktor,Rusak Ringan,96789568,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+704,Kelurahan Bahagia,Komputer,Rusak Berat,96913024,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+705,Desa Jaya,Generator,Baik,97036480,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+706,Kelurahan Sari,Sound System,Rusak Ringan,97159936,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+707,Desa Mulya,Mesin Pompa Air,Rusak Berat,97283392,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+708,Kelurahan Indah,Motor Sampah,Baik,97406848,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+709,Desa Asri,Proyektor,Rusak Ringan,97530304,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+710,Kelurahan Maju,Kursi Rapat,Rusak Berat,97653760,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+711,Desa Makmur,Kamera CCTV,Baik,97777216,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+712,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,97900672,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+713,Desa Sentosa,Laptop,Rusak Berat,98024128,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+714,Kelurahan Bahagia,Printer,Baik,98147584,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+715,Desa Jaya,AC,Rusak Ringan,98271040,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+716,Kelurahan Sari,Kulkas,Rusak Berat,98394496,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+717,Desa Mulya,Meja Kantor,Baik,98517952,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+718,Kelurahan Indah,Lemari Arsip,Rusak Ringan,98641408,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+719,Desa Asri,Kipas Angin,Rusak Berat,98764864,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+720,Kelurahan Maju,Ambulance Desa,Baik,98888320,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+721,Desa Makmur,Traktor,Rusak Ringan,99011776,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+722,Kelurahan Sejahtera,Komputer,Rusak Berat,99135232,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+723,Desa Sentosa,Generator,Baik,99258688,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+724,Kelurahan Bahagia,Sound System,Rusak Ringan,99382144,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+725,Desa Jaya,Mesin Pompa Air,Rusak Berat,99505600,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+726,Kelurahan Sari,Motor Sampah,Baik,99629056,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+727,Desa Mulya,Proyektor,Rusak Ringan,99752512,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+728,Kelurahan Indah,Kursi Rapat,Rusak Berat,99875968,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+729,Desa Asri,Kamera CCTV,Baik,99999424,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+730,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,100122880,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+731,Desa Makmur,Laptop,Rusak Berat,100246336,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+732,Kelurahan Sejahtera,Printer,Baik,100369792,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+733,Desa Sentosa,AC,Rusak Ringan,100493248,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+734,Kelurahan Bahagia,Kulkas,Rusak Berat,100616704,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+735,Desa Jaya,Meja Kantor,Baik,100740160,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+736,Kelurahan Sari,Lemari Arsip,Rusak Ringan,100863616,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+737,Desa Mulya,Kipas Angin,Rusak Berat,100987072,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+738,Kelurahan Indah,Ambulance Desa,Baik,101110528,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+739,Desa Asri,Traktor,Rusak Ringan,101233984,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+740,Kelurahan Maju,Komputer,Rusak Berat,101357440,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+741,Desa Makmur,Generator,Baik,101480896,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+742,Kelurahan Sejahtera,Sound System,Rusak Ringan,101604352,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+743,Desa Sentosa,Mesin Pompa Air,Rusak Berat,101727808,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+744,Kelurahan Bahagia,Motor Sampah,Baik,101851264,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+745,Desa Jaya,Proyektor,Rusak Ringan,101974720,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+746,Kelurahan Sari,Kursi Rapat,Rusak Berat,102098176,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+747,Desa Mulya,Kamera CCTV,Baik,102221632,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+748,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,102345088,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+749,Desa Asri,Laptop,Rusak Berat,102468544,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+750,Kelurahan Maju,Printer,Baik,102592000,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+751,Desa Makmur,AC,Rusak Ringan,102715456,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+752,Kelurahan Sejahtera,Kulkas,Rusak Berat,102838912,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+753,Desa Sentosa,Meja Kantor,Baik,102962368,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+754,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,103085824,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+755,Desa Jaya,Kipas Angin,Rusak Berat,103209280,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+756,Kelurahan Sari,Ambulance Desa,Baik,103332736,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+757,Desa Mulya,Traktor,Rusak Ringan,103456192,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+758,Kelurahan Indah,Komputer,Rusak Berat,103579648,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+759,Desa Asri,Generator,Baik,103703104,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+760,Kelurahan Maju,Sound System,Rusak Ringan,103826560,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+761,Desa Makmur,Mesin Pompa Air,Rusak Berat,103950016,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+762,Kelurahan Sejahtera,Motor Sampah,Baik,104073472,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+763,Desa Sentosa,Proyektor,Rusak Ringan,104196928,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+764,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,104320384,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+765,Desa Jaya,Kamera CCTV,Baik,104443840,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+766,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,104567296,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+767,Desa Mulya,Laptop,Rusak Berat,104690752,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+768,Kelurahan Indah,Printer,Baik,104814208,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+769,Desa Asri,AC,Rusak Ringan,104937664,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+770,Kelurahan Maju,Kulkas,Rusak Berat,105061120,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+771,Desa Makmur,Meja Kantor,Baik,105184576,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+772,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,105308032,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+773,Desa Sentosa,Kipas Angin,Rusak Berat,105431488,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+774,Kelurahan Bahagia,Ambulance Desa,Baik,105554944,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+775,Desa Jaya,Traktor,Rusak Ringan,105678400,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+776,Kelurahan Sari,Komputer,Rusak Berat,105801856,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+777,Desa Mulya,Generator,Baik,105925312,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+778,Kelurahan Indah,Sound System,Rusak Ringan,106048768,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+779,Desa Asri,Mesin Pompa Air,Rusak Berat,106172224,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+780,Kelurahan Maju,Motor Sampah,Baik,106295680,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+781,Desa Makmur,Proyektor,Rusak Ringan,106419136,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+782,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,106542592,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+783,Desa Sentosa,Kamera CCTV,Baik,106666048,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+784,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,106789504,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+785,Desa Jaya,Laptop,Rusak Berat,106912960,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+786,Kelurahan Sari,Printer,Baik,107036416,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+787,Desa Mulya,AC,Rusak Ringan,107159872,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+788,Kelurahan Indah,Kulkas,Rusak Berat,107283328,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+789,Desa Asri,Meja Kantor,Baik,107406784,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+790,Kelurahan Maju,Lemari Arsip,Rusak Ringan,107530240,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+791,Desa Makmur,Kipas Angin,Rusak Berat,107653696,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+792,Kelurahan Sejahtera,Ambulance Desa,Baik,107777152,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+793,Desa Sentosa,Traktor,Rusak Ringan,107900608,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+794,Kelurahan Bahagia,Komputer,Rusak Berat,108024064,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+795,Desa Jaya,Generator,Baik,108147520,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+796,Kelurahan Sari,Sound System,Rusak Ringan,108270976,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+797,Desa Mulya,Mesin Pompa Air,Rusak Berat,108394432,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+798,Kelurahan Indah,Motor Sampah,Baik,108517888,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+799,Desa Asri,Proyektor,Rusak Ringan,108641344,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+800,Kelurahan Maju,Kursi Rapat,Rusak Berat,108764800,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+801,Desa Makmur,Kamera CCTV,Baik,108888256,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+802,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,109011712,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+803,Desa Sentosa,Laptop,Rusak Berat,109135168,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+804,Kelurahan Bahagia,Printer,Baik,109258624,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+805,Desa Jaya,AC,Rusak Ringan,109382080,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+806,Kelurahan Sari,Kulkas,Rusak Berat,109505536,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+807,Desa Mulya,Meja Kantor,Baik,109628992,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+808,Kelurahan Indah,Lemari Arsip,Rusak Ringan,109752448,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+809,Desa Asri,Kipas Angin,Rusak Berat,109875904,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+810,Kelurahan Maju,Ambulance Desa,Baik,109999360,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+811,Desa Makmur,Traktor,Rusak Ringan,110122816,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+812,Kelurahan Sejahtera,Komputer,Rusak Berat,110246272,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+813,Desa Sentosa,Generator,Baik,110369728,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+814,Kelurahan Bahagia,Sound System,Rusak Ringan,110493184,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+815,Desa Jaya,Mesin Pompa Air,Rusak Berat,110616640,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+816,Kelurahan Sari,Motor Sampah,Baik,110740096,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+817,Desa Mulya,Proyektor,Rusak Ringan,110863552,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+818,Kelurahan Indah,Kursi Rapat,Rusak Berat,110987008,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+819,Desa Asri,Kamera CCTV,Baik,111110464,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+820,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,111233920,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+821,Desa Makmur,Laptop,Rusak Berat,111357376,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+822,Kelurahan Sejahtera,Printer,Baik,111480832,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+823,Desa Sentosa,AC,Rusak Ringan,111604288,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+824,Kelurahan Bahagia,Kulkas,Rusak Berat,111727744,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+825,Desa Jaya,Meja Kantor,Baik,111851200,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+826,Kelurahan Sari,Lemari Arsip,Rusak Ringan,111974656,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+827,Desa Mulya,Kipas Angin,Rusak Berat,112098112,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+828,Kelurahan Indah,Ambulance Desa,Baik,112221568,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+829,Desa Asri,Traktor,Rusak Ringan,112345024,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+830,Kelurahan Maju,Komputer,Rusak Berat,112468480,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+831,Desa Makmur,Generator,Baik,112591936,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+832,Kelurahan Sejahtera,Sound System,Rusak Ringan,112715392,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+833,Desa Sentosa,Mesin Pompa Air,Rusak Berat,112838848,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+834,Kelurahan Bahagia,Motor Sampah,Baik,112962304,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+835,Desa Jaya,Proyektor,Rusak Ringan,113085760,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+836,Kelurahan Sari,Kursi Rapat,Rusak Berat,113209216,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+837,Desa Mulya,Kamera CCTV,Baik,113332672,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+838,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,113456128,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+839,Desa Asri,Laptop,Rusak Berat,113579584,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+840,Kelurahan Maju,Printer,Baik,113703040,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+841,Desa Makmur,AC,Rusak Ringan,113826496,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+842,Kelurahan Sejahtera,Kulkas,Rusak Berat,113949952,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+843,Desa Sentosa,Meja Kantor,Baik,114073408,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+844,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,114196864,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+845,Desa Jaya,Kipas Angin,Rusak Berat,114320320,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+846,Kelurahan Sari,Ambulance Desa,Baik,114443776,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+847,Desa Mulya,Traktor,Rusak Ringan,114567232,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+848,Kelurahan Indah,Komputer,Rusak Berat,114690688,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+849,Desa Asri,Generator,Baik,114814144,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+850,Kelurahan Maju,Sound System,Rusak Ringan,114937600,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+851,Desa Makmur,Mesin Pompa Air,Rusak Berat,115061056,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+852,Kelurahan Sejahtera,Motor Sampah,Baik,115184512,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+853,Desa Sentosa,Proyektor,Rusak Ringan,115307968,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+854,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,115431424,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+855,Desa Jaya,Kamera CCTV,Baik,115554880,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+856,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,115678336,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+857,Desa Mulya,Laptop,Rusak Berat,115801792,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+858,Kelurahan Indah,Printer,Baik,115925248,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+859,Desa Asri,AC,Rusak Ringan,116048704,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+860,Kelurahan Maju,Kulkas,Rusak Berat,116172160,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+861,Desa Makmur,Meja Kantor,Baik,116295616,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+862,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,116419072,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+863,Desa Sentosa,Kipas Angin,Rusak Berat,116542528,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+864,Kelurahan Bahagia,Ambulance Desa,Baik,116665984,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+865,Desa Jaya,Traktor,Rusak Ringan,116789440,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+866,Kelurahan Sari,Komputer,Rusak Berat,116912896,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+867,Desa Mulya,Generator,Baik,117036352,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+868,Kelurahan Indah,Sound System,Rusak Ringan,117159808,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+869,Desa Asri,Mesin Pompa Air,Rusak Berat,117283264,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+870,Kelurahan Maju,Motor Sampah,Baik,117406720,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+871,Desa Makmur,Proyektor,Rusak Ringan,117530176,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+872,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,117653632,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+873,Desa Sentosa,Kamera CCTV,Baik,117777088,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+874,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,117900544,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+875,Desa Jaya,Laptop,Rusak Berat,118024000,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+876,Kelurahan Sari,Printer,Baik,118147456,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+877,Desa Mulya,AC,Rusak Ringan,118270912,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+878,Kelurahan Indah,Kulkas,Rusak Berat,118394368,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+879,Desa Asri,Meja Kantor,Baik,118517824,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+880,Kelurahan Maju,Lemari Arsip,Rusak Ringan,118641280,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+881,Desa Makmur,Kipas Angin,Rusak Berat,118764736,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+882,Kelurahan Sejahtera,Ambulance Desa,Baik,118888192,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+883,Desa Sentosa,Traktor,Rusak Ringan,119011648,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+884,Kelurahan Bahagia,Komputer,Rusak Berat,119135104,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+885,Desa Jaya,Generator,Baik,119258560,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+886,Kelurahan Sari,Sound System,Rusak Ringan,119382016,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+887,Desa Mulya,Mesin Pompa Air,Rusak Berat,119505472,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+888,Kelurahan Indah,Motor Sampah,Baik,119628928,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+889,Desa Asri,Proyektor,Rusak Ringan,119752384,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+890,Kelurahan Maju,Kursi Rapat,Rusak Berat,119875840,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+891,Desa Makmur,Kamera CCTV,Baik,119999296,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+892,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,120122752,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+893,Desa Sentosa,Laptop,Rusak Berat,120246208,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+894,Kelurahan Bahagia,Printer,Baik,120369664,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+895,Desa Jaya,AC,Rusak Ringan,120493120,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+896,Kelurahan Sari,Kulkas,Rusak Berat,120616576,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+897,Desa Mulya,Meja Kantor,Baik,120740032,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+898,Kelurahan Indah,Lemari Arsip,Rusak Ringan,120863488,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+899,Desa Asri,Kipas Angin,Rusak Berat,120986944,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+900,Kelurahan Maju,Ambulance Desa,Baik,121110400,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+901,Desa Makmur,Traktor,Rusak Ringan,121233856,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+902,Kelurahan Sejahtera,Komputer,Rusak Berat,121357312,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+903,Desa Sentosa,Generator,Baik,121480768,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+904,Kelurahan Bahagia,Sound System,Rusak Ringan,121604224,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+905,Desa Jaya,Mesin Pompa Air,Rusak Berat,121727680,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+906,Kelurahan Sari,Motor Sampah,Baik,121851136,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+907,Desa Mulya,Proyektor,Rusak Ringan,121974592,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+908,Kelurahan Indah,Kursi Rapat,Rusak Berat,122098048,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+909,Desa Asri,Kamera CCTV,Baik,122221504,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+910,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,122344960,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+911,Desa Makmur,Laptop,Rusak Berat,122468416,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+912,Kelurahan Sejahtera,Printer,Baik,122591872,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+913,Desa Sentosa,AC,Rusak Ringan,122715328,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+914,Kelurahan Bahagia,Kulkas,Rusak Berat,122838784,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+915,Desa Jaya,Meja Kantor,Baik,122962240,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+916,Kelurahan Sari,Lemari Arsip,Rusak Ringan,123085696,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+917,Desa Mulya,Kipas Angin,Rusak Berat,123209152,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+918,Kelurahan Indah,Ambulance Desa,Baik,123332608,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+919,Desa Asri,Traktor,Rusak Ringan,123456064,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+920,Kelurahan Maju,Komputer,Rusak Berat,123579520,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+921,Desa Makmur,Generator,Baik,123702976,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+922,Kelurahan Sejahtera,Sound System,Rusak Ringan,123826432,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+923,Desa Sentosa,Mesin Pompa Air,Rusak Berat,123949888,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+924,Kelurahan Bahagia,Motor Sampah,Baik,124073344,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+925,Desa Jaya,Proyektor,Rusak Ringan,124196800,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+926,Kelurahan Sari,Kursi Rapat,Rusak Berat,124320256,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+927,Desa Mulya,Kamera CCTV,Baik,124443712,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+928,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,124567168,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+929,Desa Asri,Laptop,Rusak Berat,124690624,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+930,Kelurahan Maju,Printer,Baik,124814080,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+931,Desa Makmur,AC,Rusak Ringan,124937536,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+932,Kelurahan Sejahtera,Kulkas,Rusak Berat,125060992,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+933,Desa Sentosa,Meja Kantor,Baik,125184448,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+934,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,125307904,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+935,Desa Jaya,Kipas Angin,Rusak Berat,125431360,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+936,Kelurahan Sari,Ambulance Desa,Baik,125554816,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+937,Desa Mulya,Traktor,Rusak Ringan,125678272,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+938,Kelurahan Indah,Komputer,Rusak Berat,125801728,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+939,Desa Asri,Generator,Baik,125925184,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+940,Kelurahan Maju,Sound System,Rusak Ringan,126048640,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+941,Desa Makmur,Mesin Pompa Air,Rusak Berat,126172096,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+942,Kelurahan Sejahtera,Motor Sampah,Baik,126295552,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+943,Desa Sentosa,Proyektor,Rusak Ringan,126419008,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+944,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,126542464,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+945,Desa Jaya,Kamera CCTV,Baik,126665920,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+946,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,126789376,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+947,Desa Mulya,Laptop,Rusak Berat,126912832,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+948,Kelurahan Indah,Printer,Baik,127036288,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+949,Desa Asri,AC,Rusak Ringan,127159744,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+950,Kelurahan Maju,Kulkas,Rusak Berat,127283200,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+951,Desa Makmur,Meja Kantor,Baik,127406656,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+952,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,127530112,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+953,Desa Sentosa,Kipas Angin,Rusak Berat,127653568,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+954,Kelurahan Bahagia,Ambulance Desa,Baik,127777024,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+955,Desa Jaya,Traktor,Rusak Ringan,127900480,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+956,Kelurahan Sari,Komputer,Rusak Berat,128023936,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+957,Desa Mulya,Generator,Baik,128147392,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+958,Kelurahan Indah,Sound System,Rusak Ringan,128270848,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+959,Desa Asri,Mesin Pompa Air,Rusak Berat,128394304,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+960,Kelurahan Maju,Motor Sampah,Baik,128517760,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+961,Desa Makmur,Proyektor,Rusak Ringan,128641216,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+962,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,128764672,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+963,Desa Sentosa,Kamera CCTV,Baik,128888128,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+964,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,129011584,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+965,Desa Jaya,Laptop,Rusak Berat,129135040,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+966,Kelurahan Sari,Printer,Baik,129258496,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+967,Desa Mulya,AC,Rusak Ringan,129381952,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+968,Kelurahan Indah,Kulkas,Rusak Berat,129505408,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+969,Desa Asri,Meja Kantor,Baik,129628864,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+970,Kelurahan Maju,Lemari Arsip,Rusak Ringan,129752320,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+971,Desa Makmur,Kipas Angin,Rusak Berat,129875776,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+972,Kelurahan Sejahtera,Ambulance Desa,Baik,129999232,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+973,Desa Sentosa,Traktor,Rusak Ringan,130122688,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+974,Kelurahan Bahagia,Komputer,Rusak Berat,130246144,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+975,Desa Jaya,Generator,Baik,130369600,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+976,Kelurahan Sari,Sound System,Rusak Ringan,130493056,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+977,Desa Mulya,Mesin Pompa Air,Rusak Berat,130616512,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+978,Kelurahan Indah,Motor Sampah,Baik,130739968,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+979,Desa Asri,Proyektor,Rusak Ringan,130863424,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+980,Kelurahan Maju,Kursi Rapat,Rusak Berat,130986880,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+981,Desa Makmur,Kamera CCTV,Baik,131110336,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+982,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,131233792,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+983,Desa Sentosa,Laptop,Rusak Berat,131357248,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+984,Kelurahan Bahagia,Printer,Baik,131480704,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+985,Desa Jaya,AC,Rusak Ringan,131604160,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+986,Kelurahan Sari,Kulkas,Rusak Berat,131727616,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+987,Desa Mulya,Meja Kantor,Baik,131851072,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+988,Kelurahan Indah,Lemari Arsip,Rusak Ringan,131974528,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+989,Desa Asri,Kipas Angin,Rusak Berat,132097984,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+990,Kelurahan Maju,Ambulance Desa,Baik,132221440,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+991,Desa Makmur,Traktor,Rusak Ringan,132344896,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+992,Kelurahan Sejahtera,Komputer,Rusak Berat,132468352,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+993,Desa Sentosa,Generator,Baik,132591808,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+994,Kelurahan Bahagia,Sound System,Rusak Ringan,132715264,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+995,Desa Jaya,Mesin Pompa Air,Rusak Berat,132838720,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+996,Kelurahan Sari,Motor Sampah,Baik,132962176,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+997,Desa Mulya,Proyektor,Rusak Ringan,133085632,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+998,Kelurahan Indah,Kursi Rapat,Rusak Berat,133209088,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+999,Desa Asri,Kamera CCTV,Baik,133332544,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1000,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,133456000,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1001,Desa Makmur,Laptop,Rusak Berat,133579456,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1002,Kelurahan Sejahtera,Printer,Baik,133702912,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1003,Desa Sentosa,AC,Rusak Ringan,133826368,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1004,Kelurahan Bahagia,Kulkas,Rusak Berat,133949824,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1005,Desa Jaya,Meja Kantor,Baik,134073280,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1006,Kelurahan Sari,Lemari Arsip,Rusak Ringan,134196736,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1007,Desa Mulya,Kipas Angin,Rusak Berat,134320192,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1008,Kelurahan Indah,Ambulance Desa,Baik,134443648,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1009,Desa Asri,Traktor,Rusak Ringan,134567104,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1010,Kelurahan Maju,Komputer,Rusak Berat,134690560,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1011,Desa Makmur,Generator,Baik,134814016,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1012,Kelurahan Sejahtera,Sound System,Rusak Ringan,134937472,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1013,Desa Sentosa,Mesin Pompa Air,Rusak Berat,135060928,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1014,Kelurahan Bahagia,Motor Sampah,Baik,135184384,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1015,Desa Jaya,Proyektor,Rusak Ringan,135307840,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1016,Kelurahan Sari,Kursi Rapat,Rusak Berat,135431296,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1017,Desa Mulya,Kamera CCTV,Baik,135554752,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1018,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,135678208,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1019,Desa Asri,Laptop,Rusak Berat,135801664,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1020,Kelurahan Maju,Printer,Baik,135925120,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1021,Desa Makmur,AC,Rusak Ringan,136048576,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1022,Kelurahan Sejahtera,Kulkas,Rusak Berat,136172032,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1023,Desa Sentosa,Meja Kantor,Baik,136295488,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1024,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,136418944,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1025,Desa Jaya,Kipas Angin,Rusak Berat,136542400,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1026,Kelurahan Sari,Ambulance Desa,Baik,136665856,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1027,Desa Mulya,Traktor,Rusak Ringan,136789312,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1028,Kelurahan Indah,Komputer,Rusak Berat,136912768,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1029,Desa Asri,Generator,Baik,137036224,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1030,Kelurahan Maju,Sound System,Rusak Ringan,137159680,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1031,Desa Makmur,Mesin Pompa Air,Rusak Berat,137283136,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1032,Kelurahan Sejahtera,Motor Sampah,Baik,137406592,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1033,Desa Sentosa,Proyektor,Rusak Ringan,137530048,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1034,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,137653504,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1035,Desa Jaya,Kamera CCTV,Baik,137776960,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1036,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,137900416,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1037,Desa Mulya,Laptop,Rusak Berat,138023872,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1038,Kelurahan Indah,Printer,Baik,138147328,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1039,Desa Asri,AC,Rusak Ringan,138270784,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1040,Kelurahan Maju,Kulkas,Rusak Berat,138394240,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1041,Desa Makmur,Meja Kantor,Baik,138517696,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1042,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,138641152,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1043,Desa Sentosa,Kipas Angin,Rusak Berat,138764608,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1044,Kelurahan Bahagia,Ambulance Desa,Baik,138888064,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1045,Desa Jaya,Traktor,Rusak Ringan,139011520,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1046,Kelurahan Sari,Komputer,Rusak Berat,139134976,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1047,Desa Mulya,Generator,Baik,139258432,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1048,Kelurahan Indah,Sound System,Rusak Ringan,139381888,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1049,Desa Asri,Mesin Pompa Air,Rusak Berat,139505344,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1050,Kelurahan Maju,Motor Sampah,Baik,139628800,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1051,Desa Makmur,Proyektor,Rusak Ringan,139752256,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1052,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,139875712,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1053,Desa Sentosa,Kamera CCTV,Baik,139999168,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1054,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,140122624,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1055,Desa Jaya,Laptop,Rusak Berat,140246080,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1056,Kelurahan Sari,Printer,Baik,140369536,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1057,Desa Mulya,AC,Rusak Ringan,140492992,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1058,Kelurahan Indah,Kulkas,Rusak Berat,140616448,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1059,Desa Asri,Meja Kantor,Baik,140739904,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1060,Kelurahan Maju,Lemari Arsip,Rusak Ringan,140863360,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1061,Desa Makmur,Kipas Angin,Rusak Berat,140986816,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1062,Kelurahan Sejahtera,Ambulance Desa,Baik,141110272,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1063,Desa Sentosa,Traktor,Rusak Ringan,141233728,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1064,Kelurahan Bahagia,Komputer,Rusak Berat,141357184,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1065,Desa Jaya,Generator,Baik,141480640,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1066,Kelurahan Sari,Sound System,Rusak Ringan,141604096,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1067,Desa Mulya,Mesin Pompa Air,Rusak Berat,141727552,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1068,Kelurahan Indah,Motor Sampah,Baik,141851008,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1069,Desa Asri,Proyektor,Rusak Ringan,141974464,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1070,Kelurahan Maju,Kursi Rapat,Rusak Berat,142097920,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1071,Desa Makmur,Kamera CCTV,Baik,142221376,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1072,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,142344832,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1073,Desa Sentosa,Laptop,Rusak Berat,142468288,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1074,Kelurahan Bahagia,Printer,Baik,142591744,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1075,Desa Jaya,AC,Rusak Ringan,142715200,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1076,Kelurahan Sari,Kulkas,Rusak Berat,142838656,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1077,Desa Mulya,Meja Kantor,Baik,142962112,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1078,Kelurahan Indah,Lemari Arsip,Rusak Ringan,143085568,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1079,Desa Asri,Kipas Angin,Rusak Berat,143209024,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1080,Kelurahan Maju,Ambulance Desa,Baik,143332480,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1081,Desa Makmur,Traktor,Rusak Ringan,143455936,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1082,Kelurahan Sejahtera,Komputer,Rusak Berat,143579392,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1083,Desa Sentosa,Generator,Baik,143702848,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1084,Kelurahan Bahagia,Sound System,Rusak Ringan,143826304,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1085,Desa Jaya,Mesin Pompa Air,Rusak Berat,143949760,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1086,Kelurahan Sari,Motor Sampah,Baik,144073216,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1087,Desa Mulya,Proyektor,Rusak Ringan,144196672,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1088,Kelurahan Indah,Kursi Rapat,Rusak Berat,144320128,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1089,Desa Asri,Kamera CCTV,Baik,144443584,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1090,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,144567040,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1091,Desa Makmur,Laptop,Rusak Berat,144690496,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1092,Kelurahan Sejahtera,Printer,Baik,144813952,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1093,Desa Sentosa,AC,Rusak Ringan,144937408,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1094,Kelurahan Bahagia,Kulkas,Rusak Berat,145060864,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1095,Desa Jaya,Meja Kantor,Baik,145184320,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1096,Kelurahan Sari,Lemari Arsip,Rusak Ringan,145307776,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1097,Desa Mulya,Kipas Angin,Rusak Berat,145431232,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1098,Kelurahan Indah,Ambulance Desa,Baik,145554688,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1099,Desa Asri,Traktor,Rusak Ringan,145678144,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1100,Kelurahan Maju,Komputer,Rusak Berat,145801600,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1101,Desa Makmur,Generator,Baik,145925056,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1102,Kelurahan Sejahtera,Sound System,Rusak Ringan,146048512,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1103,Desa Sentosa,Mesin Pompa Air,Rusak Berat,146171968,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1104,Kelurahan Bahagia,Motor Sampah,Baik,146295424,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1105,Desa Jaya,Proyektor,Rusak Ringan,146418880,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1106,Kelurahan Sari,Kursi Rapat,Rusak Berat,146542336,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1107,Desa Mulya,Kamera CCTV,Baik,146665792,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1108,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,146789248,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1109,Desa Asri,Laptop,Rusak Berat,146912704,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1110,Kelurahan Maju,Printer,Baik,147036160,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1111,Desa Makmur,AC,Rusak Ringan,147159616,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1112,Kelurahan Sejahtera,Kulkas,Rusak Berat,147283072,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1113,Desa Sentosa,Meja Kantor,Baik,147406528,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1114,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,147529984,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1115,Desa Jaya,Kipas Angin,Rusak Berat,147653440,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1116,Kelurahan Sari,Ambulance Desa,Baik,147776896,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1117,Desa Mulya,Traktor,Rusak Ringan,147900352,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1118,Kelurahan Indah,Komputer,Rusak Berat,148023808,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1119,Desa Asri,Generator,Baik,148147264,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1120,Kelurahan Maju,Sound System,Rusak Ringan,148270720,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1121,Desa Makmur,Mesin Pompa Air,Rusak Berat,148394176,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1122,Kelurahan Sejahtera,Motor Sampah,Baik,148517632,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1123,Desa Sentosa,Proyektor,Rusak Ringan,148641088,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1124,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,148764544,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1125,Desa Jaya,Kamera CCTV,Baik,148888000,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1126,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,149011456,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1127,Desa Mulya,Laptop,Rusak Berat,149134912,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1128,Kelurahan Indah,Printer,Baik,149258368,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1129,Desa Asri,AC,Rusak Ringan,149381824,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1130,Kelurahan Maju,Kulkas,Rusak Berat,149505280,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1131,Desa Makmur,Meja Kantor,Baik,149628736,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1132,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,149752192,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1133,Desa Sentosa,Kipas Angin,Rusak Berat,149875648,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1134,Kelurahan Bahagia,Ambulance Desa,Baik,149999104,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1135,Desa Jaya,Traktor,Rusak Ringan,150122560,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1136,Kelurahan Sari,Komputer,Rusak Berat,150246016,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1137,Desa Mulya,Generator,Baik,150369472,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1138,Kelurahan Indah,Sound System,Rusak Ringan,150492928,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1139,Desa Asri,Mesin Pompa Air,Rusak Berat,150616384,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1140,Kelurahan Maju,Motor Sampah,Baik,150739840,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1141,Desa Makmur,Proyektor,Rusak Ringan,150863296,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1142,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,150986752,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1143,Desa Sentosa,Kamera CCTV,Baik,151110208,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1144,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,151233664,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1145,Desa Jaya,Laptop,Rusak Berat,151357120,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1146,Kelurahan Sari,Printer,Baik,151480576,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1147,Desa Mulya,AC,Rusak Ringan,151604032,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1148,Kelurahan Indah,Kulkas,Rusak Berat,151727488,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1149,Desa Asri,Meja Kantor,Baik,151850944,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1150,Kelurahan Maju,Lemari Arsip,Rusak Ringan,151974400,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1151,Desa Makmur,Kipas Angin,Rusak Berat,152097856,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1152,Kelurahan Sejahtera,Ambulance Desa,Baik,152221312,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1153,Desa Sentosa,Traktor,Rusak Ringan,152344768,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1154,Kelurahan Bahagia,Komputer,Rusak Berat,152468224,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1155,Desa Jaya,Generator,Baik,152591680,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1156,Kelurahan Sari,Sound System,Rusak Ringan,152715136,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1157,Desa Mulya,Mesin Pompa Air,Rusak Berat,152838592,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1158,Kelurahan Indah,Motor Sampah,Baik,152962048,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1159,Desa Asri,Proyektor,Rusak Ringan,153085504,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1160,Kelurahan Maju,Kursi Rapat,Rusak Berat,153208960,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1161,Desa Makmur,Kamera CCTV,Baik,153332416,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1162,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,153455872,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1163,Desa Sentosa,Laptop,Rusak Berat,153579328,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1164,Kelurahan Bahagia,Printer,Baik,153702784,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1165,Desa Jaya,AC,Rusak Ringan,153826240,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1166,Kelurahan Sari,Kulkas,Rusak Berat,153949696,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1167,Desa Mulya,Meja Kantor,Baik,154073152,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1168,Kelurahan Indah,Lemari Arsip,Rusak Ringan,154196608,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1169,Desa Asri,Kipas Angin,Rusak Berat,154320064,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1170,Kelurahan Maju,Ambulance Desa,Baik,154443520,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1171,Desa Makmur,Traktor,Rusak Ringan,154566976,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1172,Kelurahan Sejahtera,Komputer,Rusak Berat,154690432,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1173,Desa Sentosa,Generator,Baik,154813888,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1174,Kelurahan Bahagia,Sound System,Rusak Ringan,154937344,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1175,Desa Jaya,Mesin Pompa Air,Rusak Berat,155060800,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1176,Kelurahan Sari,Motor Sampah,Baik,155184256,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1177,Desa Mulya,Proyektor,Rusak Ringan,155307712,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1178,Kelurahan Indah,Kursi Rapat,Rusak Berat,155431168,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1179,Desa Asri,Kamera CCTV,Baik,155554624,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1180,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,155678080,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1181,Desa Makmur,Laptop,Rusak Berat,155801536,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1182,Kelurahan Sejahtera,Printer,Baik,155924992,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1183,Desa Sentosa,AC,Rusak Ringan,156048448,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1184,Kelurahan Bahagia,Kulkas,Rusak Berat,156171904,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1185,Desa Jaya,Meja Kantor,Baik,156295360,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1186,Kelurahan Sari,Lemari Arsip,Rusak Ringan,156418816,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1187,Desa Mulya,Kipas Angin,Rusak Berat,156542272,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1188,Kelurahan Indah,Ambulance Desa,Baik,156665728,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1189,Desa Asri,Traktor,Rusak Ringan,156789184,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1190,Kelurahan Maju,Komputer,Rusak Berat,156912640,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1191,Desa Makmur,Generator,Baik,157036096,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1192,Kelurahan Sejahtera,Sound System,Rusak Ringan,157159552,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1193,Desa Sentosa,Mesin Pompa Air,Rusak Berat,157283008,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1194,Kelurahan Bahagia,Motor Sampah,Baik,157406464,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1195,Desa Jaya,Proyektor,Rusak Ringan,157529920,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1196,Kelurahan Sari,Kursi Rapat,Rusak Berat,157653376,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1197,Desa Mulya,Kamera CCTV,Baik,157776832,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1198,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,157900288,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1199,Desa Asri,Laptop,Rusak Berat,158023744,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1200,Kelurahan Maju,Printer,Baik,158147200,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1201,Desa Makmur,AC,Rusak Ringan,158270656,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1202,Kelurahan Sejahtera,Kulkas,Rusak Berat,158394112,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1203,Desa Sentosa,Meja Kantor,Baik,158517568,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1204,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,158641024,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1205,Desa Jaya,Kipas Angin,Rusak Berat,158764480,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1206,Kelurahan Sari,Ambulance Desa,Baik,158887936,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1207,Desa Mulya,Traktor,Rusak Ringan,159011392,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1208,Kelurahan Indah,Komputer,Rusak Berat,159134848,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1209,Desa Asri,Generator,Baik,159258304,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1210,Kelurahan Maju,Sound System,Rusak Ringan,159381760,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1211,Desa Makmur,Mesin Pompa Air,Rusak Berat,159505216,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1212,Kelurahan Sejahtera,Motor Sampah,Baik,159628672,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1213,Desa Sentosa,Proyektor,Rusak Ringan,159752128,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1214,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,159875584,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1215,Desa Jaya,Kamera CCTV,Baik,159999040,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1216,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,160122496,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1217,Desa Mulya,Laptop,Rusak Berat,160245952,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1218,Kelurahan Indah,Printer,Baik,160369408,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1219,Desa Asri,AC,Rusak Ringan,160492864,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1220,Kelurahan Maju,Kulkas,Rusak Berat,160616320,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1221,Desa Makmur,Meja Kantor,Baik,160739776,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1222,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,160863232,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1223,Desa Sentosa,Kipas Angin,Rusak Berat,160986688,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1224,Kelurahan Bahagia,Ambulance Desa,Baik,161110144,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1225,Desa Jaya,Traktor,Rusak Ringan,161233600,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1226,Kelurahan Sari,Komputer,Rusak Berat,161357056,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1227,Desa Mulya,Generator,Baik,161480512,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1228,Kelurahan Indah,Sound System,Rusak Ringan,161603968,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1229,Desa Asri,Mesin Pompa Air,Rusak Berat,161727424,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1230,Kelurahan Maju,Motor Sampah,Baik,161850880,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1231,Desa Makmur,Proyektor,Rusak Ringan,161974336,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1232,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,162097792,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1233,Desa Sentosa,Kamera CCTV,Baik,162221248,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1234,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,162344704,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1235,Desa Jaya,Laptop,Rusak Berat,162468160,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1236,Kelurahan Sari,Printer,Baik,162591616,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1237,Desa Mulya,AC,Rusak Ringan,162715072,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1238,Kelurahan Indah,Kulkas,Rusak Berat,162838528,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1239,Desa Asri,Meja Kantor,Baik,162961984,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1240,Kelurahan Maju,Lemari Arsip,Rusak Ringan,163085440,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1241,Desa Makmur,Kipas Angin,Rusak Berat,163208896,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1242,Kelurahan Sejahtera,Ambulance Desa,Baik,163332352,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1243,Desa Sentosa,Traktor,Rusak Ringan,163455808,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1244,Kelurahan Bahagia,Komputer,Rusak Berat,163579264,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1245,Desa Jaya,Generator,Baik,163702720,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1246,Kelurahan Sari,Sound System,Rusak Ringan,163826176,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1247,Desa Mulya,Mesin Pompa Air,Rusak Berat,163949632,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1248,Kelurahan Indah,Motor Sampah,Baik,164073088,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1249,Desa Asri,Proyektor,Rusak Ringan,164196544,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1250,Kelurahan Maju,Kursi Rapat,Rusak Berat,164320000,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1251,Desa Makmur,Kamera CCTV,Baik,164443456,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1252,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,164566912,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1253,Desa Sentosa,Laptop,Rusak Berat,164690368,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1254,Kelurahan Bahagia,Printer,Baik,164813824,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1255,Desa Jaya,AC,Rusak Ringan,164937280,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1256,Kelurahan Sari,Kulkas,Rusak Berat,165060736,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1257,Desa Mulya,Meja Kantor,Baik,165184192,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1258,Kelurahan Indah,Lemari Arsip,Rusak Ringan,165307648,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1259,Desa Asri,Kipas Angin,Rusak Berat,165431104,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1260,Kelurahan Maju,Ambulance Desa,Baik,165554560,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1261,Desa Makmur,Traktor,Rusak Ringan,165678016,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1262,Kelurahan Sejahtera,Komputer,Rusak Berat,165801472,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1263,Desa Sentosa,Generator,Baik,165924928,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1264,Kelurahan Bahagia,Sound System,Rusak Ringan,166048384,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1265,Desa Jaya,Mesin Pompa Air,Rusak Berat,166171840,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1266,Kelurahan Sari,Motor Sampah,Baik,166295296,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1267,Desa Mulya,Proyektor,Rusak Ringan,166418752,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1268,Kelurahan Indah,Kursi Rapat,Rusak Berat,166542208,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1269,Desa Asri,Kamera CCTV,Baik,166665664,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1270,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,166789120,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1271,Desa Makmur,Laptop,Rusak Berat,166912576,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1272,Kelurahan Sejahtera,Printer,Baik,167036032,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1273,Desa Sentosa,AC,Rusak Ringan,167159488,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1274,Kelurahan Bahagia,Kulkas,Rusak Berat,167282944,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1275,Desa Jaya,Meja Kantor,Baik,167406400,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1276,Kelurahan Sari,Lemari Arsip,Rusak Ringan,167529856,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1277,Desa Mulya,Kipas Angin,Rusak Berat,167653312,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1278,Kelurahan Indah,Ambulance Desa,Baik,167776768,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1279,Desa Asri,Traktor,Rusak Ringan,167900224,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1280,Kelurahan Maju,Komputer,Rusak Berat,168023680,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1281,Desa Makmur,Generator,Baik,168147136,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1282,Kelurahan Sejahtera,Sound System,Rusak Ringan,168270592,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1283,Desa Sentosa,Mesin Pompa Air,Rusak Berat,168394048,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1284,Kelurahan Bahagia,Motor Sampah,Baik,168517504,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1285,Desa Jaya,Proyektor,Rusak Ringan,168640960,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1286,Kelurahan Sari,Kursi Rapat,Rusak Berat,168764416,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1287,Desa Mulya,Kamera CCTV,Baik,168887872,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1288,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,169011328,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1289,Desa Asri,Laptop,Rusak Berat,169134784,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1290,Kelurahan Maju,Printer,Baik,169258240,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1291,Desa Makmur,AC,Rusak Ringan,169381696,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1292,Kelurahan Sejahtera,Kulkas,Rusak Berat,169505152,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1293,Desa Sentosa,Meja Kantor,Baik,169628608,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1294,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,169752064,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1295,Desa Jaya,Kipas Angin,Rusak Berat,169875520,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1296,Kelurahan Sari,Ambulance Desa,Baik,169998976,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1297,Desa Mulya,Traktor,Rusak Ringan,170122432,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1298,Kelurahan Indah,Komputer,Rusak Berat,170245888,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1299,Desa Asri,Generator,Baik,170369344,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1300,Kelurahan Maju,Sound System,Rusak Ringan,170492800,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1301,Desa Makmur,Mesin Pompa Air,Rusak Berat,170616256,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1302,Kelurahan Sejahtera,Motor Sampah,Baik,170739712,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1303,Desa Sentosa,Proyektor,Rusak Ringan,170863168,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1304,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,170986624,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1305,Desa Jaya,Kamera CCTV,Baik,171110080,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1306,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,171233536,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1307,Desa Mulya,Laptop,Rusak Berat,171356992,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1308,Kelurahan Indah,Printer,Baik,171480448,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1309,Desa Asri,AC,Rusak Ringan,171603904,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1310,Kelurahan Maju,Kulkas,Rusak Berat,171727360,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1311,Desa Makmur,Meja Kantor,Baik,171850816,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1312,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,171974272,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1313,Desa Sentosa,Kipas Angin,Rusak Berat,172097728,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1314,Kelurahan Bahagia,Ambulance Desa,Baik,172221184,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1315,Desa Jaya,Traktor,Rusak Ringan,172344640,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1316,Kelurahan Sari,Komputer,Rusak Berat,172468096,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1317,Desa Mulya,Generator,Baik,172591552,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1318,Kelurahan Indah,Sound System,Rusak Ringan,172715008,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1319,Desa Asri,Mesin Pompa Air,Rusak Berat,172838464,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1320,Kelurahan Maju,Motor Sampah,Baik,172961920,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1321,Desa Makmur,Proyektor,Rusak Ringan,173085376,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1322,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,173208832,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1323,Desa Sentosa,Kamera CCTV,Baik,173332288,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1324,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,173455744,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1325,Desa Jaya,Laptop,Rusak Berat,173579200,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1326,Kelurahan Sari,Printer,Baik,173702656,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1327,Desa Mulya,AC,Rusak Ringan,173826112,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1328,Kelurahan Indah,Kulkas,Rusak Berat,173949568,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1329,Desa Asri,Meja Kantor,Baik,174073024,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1330,Kelurahan Maju,Lemari Arsip,Rusak Ringan,174196480,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1331,Desa Makmur,Kipas Angin,Rusak Berat,174319936,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1332,Kelurahan Sejahtera,Ambulance Desa,Baik,174443392,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1333,Desa Sentosa,Traktor,Rusak Ringan,174566848,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1334,Kelurahan Bahagia,Komputer,Rusak Berat,174690304,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1335,Desa Jaya,Generator,Baik,174813760,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1336,Kelurahan Sari,Sound System,Rusak Ringan,174937216,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1337,Desa Mulya,Mesin Pompa Air,Rusak Berat,175060672,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1338,Kelurahan Indah,Motor Sampah,Baik,175184128,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1339,Desa Asri,Proyektor,Rusak Ringan,175307584,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1340,Kelurahan Maju,Kursi Rapat,Rusak Berat,175431040,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1341,Desa Makmur,Kamera CCTV,Baik,175554496,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1342,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,175677952,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1343,Desa Sentosa,Laptop,Rusak Berat,175801408,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1344,Kelurahan Bahagia,Printer,Baik,175924864,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1345,Desa Jaya,AC,Rusak Ringan,176048320,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1346,Kelurahan Sari,Kulkas,Rusak Berat,176171776,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1347,Desa Mulya,Meja Kantor,Baik,176295232,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1348,Kelurahan Indah,Lemari Arsip,Rusak Ringan,176418688,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1349,Desa Asri,Kipas Angin,Rusak Berat,176542144,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1350,Kelurahan Maju,Ambulance Desa,Baik,176665600,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1351,Desa Makmur,Traktor,Rusak Ringan,176789056,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1352,Kelurahan Sejahtera,Komputer,Rusak Berat,176912512,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1353,Desa Sentosa,Generator,Baik,177035968,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1354,Kelurahan Bahagia,Sound System,Rusak Ringan,177159424,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1355,Desa Jaya,Mesin Pompa Air,Rusak Berat,177282880,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1356,Kelurahan Sari,Motor Sampah,Baik,177406336,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1357,Desa Mulya,Proyektor,Rusak Ringan,177529792,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1358,Kelurahan Indah,Kursi Rapat,Rusak Berat,177653248,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1359,Desa Asri,Kamera CCTV,Baik,177776704,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1360,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,177900160,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1361,Desa Makmur,Laptop,Rusak Berat,178023616,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1362,Kelurahan Sejahtera,Printer,Baik,178147072,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1363,Desa Sentosa,AC,Rusak Ringan,178270528,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1364,Kelurahan Bahagia,Kulkas,Rusak Berat,178393984,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1365,Desa Jaya,Meja Kantor,Baik,178517440,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1366,Kelurahan Sari,Lemari Arsip,Rusak Ringan,178640896,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1367,Desa Mulya,Kipas Angin,Rusak Berat,178764352,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1368,Kelurahan Indah,Ambulance Desa,Baik,178887808,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1369,Desa Asri,Traktor,Rusak Ringan,179011264,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1370,Kelurahan Maju,Komputer,Rusak Berat,179134720,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1371,Desa Makmur,Generator,Baik,179258176,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1372,Kelurahan Sejahtera,Sound System,Rusak Ringan,179381632,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1373,Desa Sentosa,Mesin Pompa Air,Rusak Berat,179505088,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1374,Kelurahan Bahagia,Motor Sampah,Baik,179628544,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1375,Desa Jaya,Proyektor,Rusak Ringan,179752000,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1376,Kelurahan Sari,Kursi Rapat,Rusak Berat,179875456,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1377,Desa Mulya,Kamera CCTV,Baik,179998912,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1378,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,180122368,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1379,Desa Asri,Laptop,Rusak Berat,180245824,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1380,Kelurahan Maju,Printer,Baik,180369280,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1381,Desa Makmur,AC,Rusak Ringan,180492736,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1382,Kelurahan Sejahtera,Kulkas,Rusak Berat,180616192,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1383,Desa Sentosa,Meja Kantor,Baik,180739648,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1384,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,180863104,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1385,Desa Jaya,Kipas Angin,Rusak Berat,180986560,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1386,Kelurahan Sari,Ambulance Desa,Baik,181110016,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1387,Desa Mulya,Traktor,Rusak Ringan,181233472,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1388,Kelurahan Indah,Komputer,Rusak Berat,181356928,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1389,Desa Asri,Generator,Baik,181480384,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1390,Kelurahan Maju,Sound System,Rusak Ringan,181603840,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1391,Desa Makmur,Mesin Pompa Air,Rusak Berat,181727296,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1392,Kelurahan Sejahtera,Motor Sampah,Baik,181850752,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1393,Desa Sentosa,Proyektor,Rusak Ringan,181974208,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1394,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,182097664,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1395,Desa Jaya,Kamera CCTV,Baik,182221120,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1396,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,182344576,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1397,Desa Mulya,Laptop,Rusak Berat,182468032,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1398,Kelurahan Indah,Printer,Baik,182591488,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1399,Desa Asri,AC,Rusak Ringan,182714944,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1400,Kelurahan Maju,Kulkas,Rusak Berat,182838400,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1401,Desa Makmur,Meja Kantor,Baik,182961856,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1402,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,183085312,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1403,Desa Sentosa,Kipas Angin,Rusak Berat,183208768,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1404,Kelurahan Bahagia,Ambulance Desa,Baik,183332224,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1405,Desa Jaya,Traktor,Rusak Ringan,183455680,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1406,Kelurahan Sari,Komputer,Rusak Berat,183579136,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1407,Desa Mulya,Generator,Baik,183702592,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1408,Kelurahan Indah,Sound System,Rusak Ringan,183826048,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1409,Desa Asri,Mesin Pompa Air,Rusak Berat,183949504,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1410,Kelurahan Maju,Motor Sampah,Baik,184072960,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1411,Desa Makmur,Proyektor,Rusak Ringan,184196416,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1412,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,184319872,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1413,Desa Sentosa,Kamera CCTV,Baik,184443328,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1414,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,184566784,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1415,Desa Jaya,Laptop,Rusak Berat,184690240,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1416,Kelurahan Sari,Printer,Baik,184813696,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1417,Desa Mulya,AC,Rusak Ringan,184937152,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1418,Kelurahan Indah,Kulkas,Rusak Berat,185060608,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1419,Desa Asri,Meja Kantor,Baik,185184064,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1420,Kelurahan Maju,Lemari Arsip,Rusak Ringan,185307520,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1421,Desa Makmur,Kipas Angin,Rusak Berat,185430976,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1422,Kelurahan Sejahtera,Ambulance Desa,Baik,185554432,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1423,Desa Sentosa,Traktor,Rusak Ringan,185677888,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1424,Kelurahan Bahagia,Komputer,Rusak Berat,185801344,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1425,Desa Jaya,Generator,Baik,185924800,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1426,Kelurahan Sari,Sound System,Rusak Ringan,186048256,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1427,Desa Mulya,Mesin Pompa Air,Rusak Berat,186171712,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1428,Kelurahan Indah,Motor Sampah,Baik,186295168,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1429,Desa Asri,Proyektor,Rusak Ringan,186418624,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1430,Kelurahan Maju,Kursi Rapat,Rusak Berat,186542080,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1431,Desa Makmur,Kamera CCTV,Baik,186665536,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1432,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,186788992,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1433,Desa Sentosa,Laptop,Rusak Berat,186912448,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1434,Kelurahan Bahagia,Printer,Baik,187035904,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1435,Desa Jaya,AC,Rusak Ringan,187159360,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1436,Kelurahan Sari,Kulkas,Rusak Berat,187282816,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1437,Desa Mulya,Meja Kantor,Baik,187406272,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1438,Kelurahan Indah,Lemari Arsip,Rusak Ringan,187529728,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1439,Desa Asri,Kipas Angin,Rusak Berat,187653184,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1440,Kelurahan Maju,Ambulance Desa,Baik,187776640,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1441,Desa Makmur,Traktor,Rusak Ringan,187900096,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1442,Kelurahan Sejahtera,Komputer,Rusak Berat,188023552,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1443,Desa Sentosa,Generator,Baik,188147008,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1444,Kelurahan Bahagia,Sound System,Rusak Ringan,188270464,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1445,Desa Jaya,Mesin Pompa Air,Rusak Berat,188393920,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1446,Kelurahan Sari,Motor Sampah,Baik,188517376,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1447,Desa Mulya,Proyektor,Rusak Ringan,188640832,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1448,Kelurahan Indah,Kursi Rapat,Rusak Berat,188764288,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1449,Desa Asri,Kamera CCTV,Baik,188887744,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1450,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,189011200,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1451,Desa Makmur,Laptop,Rusak Berat,189134656,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1452,Kelurahan Sejahtera,Printer,Baik,189258112,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1453,Desa Sentosa,AC,Rusak Ringan,189381568,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1454,Kelurahan Bahagia,Kulkas,Rusak Berat,189505024,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1455,Desa Jaya,Meja Kantor,Baik,189628480,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1456,Kelurahan Sari,Lemari Arsip,Rusak Ringan,189751936,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1457,Desa Mulya,Kipas Angin,Rusak Berat,189875392,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1458,Kelurahan Indah,Ambulance Desa,Baik,189998848,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1459,Desa Asri,Traktor,Rusak Ringan,190122304,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1460,Kelurahan Maju,Komputer,Rusak Berat,190245760,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1461,Desa Makmur,Generator,Baik,190369216,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1462,Kelurahan Sejahtera,Sound System,Rusak Ringan,190492672,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1463,Desa Sentosa,Mesin Pompa Air,Rusak Berat,190616128,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1464,Kelurahan Bahagia,Motor Sampah,Baik,190739584,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1465,Desa Jaya,Proyektor,Rusak Ringan,190863040,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1466,Kelurahan Sari,Kursi Rapat,Rusak Berat,190986496,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1467,Desa Mulya,Kamera CCTV,Baik,191109952,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1468,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,191233408,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1469,Desa Asri,Laptop,Rusak Berat,191356864,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1470,Kelurahan Maju,Printer,Baik,191480320,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1471,Desa Makmur,AC,Rusak Ringan,191603776,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1472,Kelurahan Sejahtera,Kulkas,Rusak Berat,191727232,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1473,Desa Sentosa,Meja Kantor,Baik,191850688,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1474,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,191974144,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1475,Desa Jaya,Kipas Angin,Rusak Berat,192097600,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1476,Kelurahan Sari,Ambulance Desa,Baik,192221056,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1477,Desa Mulya,Traktor,Rusak Ringan,192344512,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1478,Kelurahan Indah,Komputer,Rusak Berat,192467968,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1479,Desa Asri,Generator,Baik,192591424,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1480,Kelurahan Maju,Sound System,Rusak Ringan,192714880,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1481,Desa Makmur,Mesin Pompa Air,Rusak Berat,192838336,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1482,Kelurahan Sejahtera,Motor Sampah,Baik,192961792,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1483,Desa Sentosa,Proyektor,Rusak Ringan,193085248,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1484,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,193208704,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1485,Desa Jaya,Kamera CCTV,Baik,193332160,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1486,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,193455616,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1487,Desa Mulya,Laptop,Rusak Berat,193579072,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1488,Kelurahan Indah,Printer,Baik,193702528,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1489,Desa Asri,AC,Rusak Ringan,193825984,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1490,Kelurahan Maju,Kulkas,Rusak Berat,193949440,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1491,Desa Makmur,Meja Kantor,Baik,194072896,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1492,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,194196352,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1493,Desa Sentosa,Kipas Angin,Rusak Berat,194319808,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1494,Kelurahan Bahagia,Ambulance Desa,Baik,194443264,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1495,Desa Jaya,Traktor,Rusak Ringan,194566720,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1496,Kelurahan Sari,Komputer,Rusak Berat,194690176,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1497,Desa Mulya,Generator,Baik,194813632,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1498,Kelurahan Indah,Sound System,Rusak Ringan,194937088,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1499,Desa Asri,Mesin Pompa Air,Rusak Berat,195060544,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1500,Kelurahan Maju,Motor Sampah,Baik,195184000,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1501,Desa Makmur,Proyektor,Rusak Ringan,195307456,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1502,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,195430912,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1503,Desa Sentosa,Kamera CCTV,Baik,195554368,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1504,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,195677824,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1505,Desa Jaya,Laptop,Rusak Berat,195801280,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1506,Kelurahan Sari,Printer,Baik,195924736,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1507,Desa Mulya,AC,Rusak Ringan,196048192,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1508,Kelurahan Indah,Kulkas,Rusak Berat,196171648,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1509,Desa Asri,Meja Kantor,Baik,196295104,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1510,Kelurahan Maju,Lemari Arsip,Rusak Ringan,196418560,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1511,Desa Makmur,Kipas Angin,Rusak Berat,196542016,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1512,Kelurahan Sejahtera,Ambulance Desa,Baik,196665472,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1513,Desa Sentosa,Traktor,Rusak Ringan,196788928,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1514,Kelurahan Bahagia,Komputer,Rusak Berat,196912384,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1515,Desa Jaya,Generator,Baik,197035840,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1516,Kelurahan Sari,Sound System,Rusak Ringan,197159296,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1517,Desa Mulya,Mesin Pompa Air,Rusak Berat,197282752,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1518,Kelurahan Indah,Motor Sampah,Baik,197406208,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1519,Desa Asri,Proyektor,Rusak Ringan,197529664,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1520,Kelurahan Maju,Kursi Rapat,Rusak Berat,197653120,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1521,Desa Makmur,Kamera CCTV,Baik,197776576,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1522,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,197900032,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1523,Desa Sentosa,Laptop,Rusak Berat,198023488,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1524,Kelurahan Bahagia,Printer,Baik,198146944,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1525,Desa Jaya,AC,Rusak Ringan,198270400,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1526,Kelurahan Sari,Kulkas,Rusak Berat,198393856,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1527,Desa Mulya,Meja Kantor,Baik,198517312,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1528,Kelurahan Indah,Lemari Arsip,Rusak Ringan,198640768,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1529,Desa Asri,Kipas Angin,Rusak Berat,198764224,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1530,Kelurahan Maju,Ambulance Desa,Baik,198887680,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1531,Desa Makmur,Traktor,Rusak Ringan,199011136,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1532,Kelurahan Sejahtera,Komputer,Rusak Berat,199134592,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1533,Desa Sentosa,Generator,Baik,199258048,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1534,Kelurahan Bahagia,Sound System,Rusak Ringan,199381504,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1535,Desa Jaya,Mesin Pompa Air,Rusak Berat,199504960,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1536,Kelurahan Sari,Motor Sampah,Baik,199628416,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1537,Desa Mulya,Proyektor,Rusak Ringan,199751872,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1538,Kelurahan Indah,Kursi Rapat,Rusak Berat,199875328,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1539,Desa Asri,Kamera CCTV,Baik,199998784,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1540,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,200122240,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1541,Desa Makmur,Laptop,Rusak Berat,200245696,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1542,Kelurahan Sejahtera,Printer,Baik,200369152,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1543,Desa Sentosa,AC,Rusak Ringan,200492608,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1544,Kelurahan Bahagia,Kulkas,Rusak Berat,200616064,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1545,Desa Jaya,Meja Kantor,Baik,200739520,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1546,Kelurahan Sari,Lemari Arsip,Rusak Ringan,200862976,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1547,Desa Mulya,Kipas Angin,Rusak Berat,200986432,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1548,Kelurahan Indah,Ambulance Desa,Baik,201109888,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1549,Desa Asri,Traktor,Rusak Ringan,201233344,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1550,Kelurahan Maju,Komputer,Rusak Berat,201356800,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1551,Desa Makmur,Generator,Baik,201480256,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1552,Kelurahan Sejahtera,Sound System,Rusak Ringan,201603712,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1553,Desa Sentosa,Mesin Pompa Air,Rusak Berat,201727168,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1554,Kelurahan Bahagia,Motor Sampah,Baik,201850624,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1555,Desa Jaya,Proyektor,Rusak Ringan,201974080,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1556,Kelurahan Sari,Kursi Rapat,Rusak Berat,202097536,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1557,Desa Mulya,Kamera CCTV,Baik,202220992,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1558,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,202344448,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1559,Desa Asri,Laptop,Rusak Berat,202467904,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1560,Kelurahan Maju,Printer,Baik,202591360,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1561,Desa Makmur,AC,Rusak Ringan,202714816,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1562,Kelurahan Sejahtera,Kulkas,Rusak Berat,202838272,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1563,Desa Sentosa,Meja Kantor,Baik,202961728,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1564,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,203085184,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1565,Desa Jaya,Kipas Angin,Rusak Berat,203208640,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1566,Kelurahan Sari,Ambulance Desa,Baik,203332096,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1567,Desa Mulya,Traktor,Rusak Ringan,203455552,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1568,Kelurahan Indah,Komputer,Rusak Berat,203579008,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1569,Desa Asri,Generator,Baik,203702464,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1570,Kelurahan Maju,Sound System,Rusak Ringan,203825920,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1571,Desa Makmur,Mesin Pompa Air,Rusak Berat,203949376,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1572,Kelurahan Sejahtera,Motor Sampah,Baik,204072832,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1573,Desa Sentosa,Proyektor,Rusak Ringan,204196288,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1574,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,204319744,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1575,Desa Jaya,Kamera CCTV,Baik,204443200,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1576,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,204566656,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1577,Desa Mulya,Laptop,Rusak Berat,204690112,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1578,Kelurahan Indah,Printer,Baik,204813568,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1579,Desa Asri,AC,Rusak Ringan,204937024,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1580,Kelurahan Maju,Kulkas,Rusak Berat,205060480,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1581,Desa Makmur,Meja Kantor,Baik,205183936,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1582,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,205307392,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1583,Desa Sentosa,Kipas Angin,Rusak Berat,205430848,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1584,Kelurahan Bahagia,Ambulance Desa,Baik,205554304,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1585,Desa Jaya,Traktor,Rusak Ringan,205677760,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1586,Kelurahan Sari,Komputer,Rusak Berat,205801216,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1587,Desa Mulya,Generator,Baik,205924672,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1588,Kelurahan Indah,Sound System,Rusak Ringan,206048128,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1589,Desa Asri,Mesin Pompa Air,Rusak Berat,206171584,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1590,Kelurahan Maju,Motor Sampah,Baik,206295040,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1591,Desa Makmur,Proyektor,Rusak Ringan,206418496,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1592,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,206541952,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1593,Desa Sentosa,Kamera CCTV,Baik,206665408,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1594,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,206788864,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1595,Desa Jaya,Laptop,Rusak Berat,206912320,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1596,Kelurahan Sari,Printer,Baik,207035776,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1597,Desa Mulya,AC,Rusak Ringan,207159232,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1598,Kelurahan Indah,Kulkas,Rusak Berat,207282688,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1599,Desa Asri,Meja Kantor,Baik,207406144,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1600,Kelurahan Maju,Lemari Arsip,Rusak Ringan,207529600,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1601,Desa Makmur,Kipas Angin,Rusak Berat,207653056,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1602,Kelurahan Sejahtera,Ambulance Desa,Baik,207776512,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1603,Desa Sentosa,Traktor,Rusak Ringan,207899968,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1604,Kelurahan Bahagia,Komputer,Rusak Berat,208023424,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1605,Desa Jaya,Generator,Baik,208146880,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1606,Kelurahan Sari,Sound System,Rusak Ringan,208270336,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1607,Desa Mulya,Mesin Pompa Air,Rusak Berat,208393792,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1608,Kelurahan Indah,Motor Sampah,Baik,208517248,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1609,Desa Asri,Proyektor,Rusak Ringan,208640704,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1610,Kelurahan Maju,Kursi Rapat,Rusak Berat,208764160,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1611,Desa Makmur,Kamera CCTV,Baik,208887616,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1612,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,209011072,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1613,Desa Sentosa,Laptop,Rusak Berat,209134528,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1614,Kelurahan Bahagia,Printer,Baik,209257984,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1615,Desa Jaya,AC,Rusak Ringan,209381440,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1616,Kelurahan Sari,Kulkas,Rusak Berat,209504896,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1617,Desa Mulya,Meja Kantor,Baik,209628352,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1618,Kelurahan Indah,Lemari Arsip,Rusak Ringan,209751808,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1619,Desa Asri,Kipas Angin,Rusak Berat,209875264,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1620,Kelurahan Maju,Ambulance Desa,Baik,209998720,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1621,Desa Makmur,Traktor,Rusak Ringan,210122176,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1622,Kelurahan Sejahtera,Komputer,Rusak Berat,210245632,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1623,Desa Sentosa,Generator,Baik,210369088,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1624,Kelurahan Bahagia,Sound System,Rusak Ringan,210492544,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1625,Desa Jaya,Mesin Pompa Air,Rusak Berat,210616000,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1626,Kelurahan Sari,Motor Sampah,Baik,210739456,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1627,Desa Mulya,Proyektor,Rusak Ringan,210862912,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1628,Kelurahan Indah,Kursi Rapat,Rusak Berat,210986368,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1629,Desa Asri,Kamera CCTV,Baik,211109824,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1630,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,211233280,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1631,Desa Makmur,Laptop,Rusak Berat,211356736,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1632,Kelurahan Sejahtera,Printer,Baik,211480192,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1633,Desa Sentosa,AC,Rusak Ringan,211603648,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1634,Kelurahan Bahagia,Kulkas,Rusak Berat,211727104,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1635,Desa Jaya,Meja Kantor,Baik,211850560,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1636,Kelurahan Sari,Lemari Arsip,Rusak Ringan,211974016,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1637,Desa Mulya,Kipas Angin,Rusak Berat,212097472,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1638,Kelurahan Indah,Ambulance Desa,Baik,212220928,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1639,Desa Asri,Traktor,Rusak Ringan,212344384,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1640,Kelurahan Maju,Komputer,Rusak Berat,212467840,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1641,Desa Makmur,Generator,Baik,212591296,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1642,Kelurahan Sejahtera,Sound System,Rusak Ringan,212714752,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1643,Desa Sentosa,Mesin Pompa Air,Rusak Berat,212838208,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1644,Kelurahan Bahagia,Motor Sampah,Baik,212961664,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1645,Desa Jaya,Proyektor,Rusak Ringan,213085120,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1646,Kelurahan Sari,Kursi Rapat,Rusak Berat,213208576,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1647,Desa Mulya,Kamera CCTV,Baik,213332032,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1648,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,213455488,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1649,Desa Asri,Laptop,Rusak Berat,213578944,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1650,Kelurahan Maju,Printer,Baik,213702400,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1651,Desa Makmur,AC,Rusak Ringan,213825856,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1652,Kelurahan Sejahtera,Kulkas,Rusak Berat,213949312,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1653,Desa Sentosa,Meja Kantor,Baik,214072768,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1654,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,214196224,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1655,Desa Jaya,Kipas Angin,Rusak Berat,214319680,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1656,Kelurahan Sari,Ambulance Desa,Baik,214443136,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1657,Desa Mulya,Traktor,Rusak Ringan,214566592,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1658,Kelurahan Indah,Komputer,Rusak Berat,214690048,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1659,Desa Asri,Generator,Baik,214813504,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1660,Kelurahan Maju,Sound System,Rusak Ringan,214936960,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1661,Desa Makmur,Mesin Pompa Air,Rusak Berat,215060416,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1662,Kelurahan Sejahtera,Motor Sampah,Baik,215183872,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1663,Desa Sentosa,Proyektor,Rusak Ringan,215307328,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1664,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,215430784,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1665,Desa Jaya,Kamera CCTV,Baik,215554240,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1666,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,215677696,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1667,Desa Mulya,Laptop,Rusak Berat,215801152,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1668,Kelurahan Indah,Printer,Baik,215924608,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1669,Desa Asri,AC,Rusak Ringan,216048064,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1670,Kelurahan Maju,Kulkas,Rusak Berat,216171520,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1671,Desa Makmur,Meja Kantor,Baik,216294976,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1672,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,216418432,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1673,Desa Sentosa,Kipas Angin,Rusak Berat,216541888,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1674,Kelurahan Bahagia,Ambulance Desa,Baik,216665344,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1675,Desa Jaya,Traktor,Rusak Ringan,216788800,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1676,Kelurahan Sari,Komputer,Rusak Berat,216912256,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1677,Desa Mulya,Generator,Baik,217035712,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1678,Kelurahan Indah,Sound System,Rusak Ringan,217159168,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1679,Desa Asri,Mesin Pompa Air,Rusak Berat,217282624,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1680,Kelurahan Maju,Motor Sampah,Baik,217406080,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1681,Desa Makmur,Proyektor,Rusak Ringan,217529536,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1682,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,217652992,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1683,Desa Sentosa,Kamera CCTV,Baik,217776448,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1684,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,217899904,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1685,Desa Jaya,Laptop,Rusak Berat,218023360,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1686,Kelurahan Sari,Printer,Baik,218146816,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1687,Desa Mulya,AC,Rusak Ringan,218270272,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1688,Kelurahan Indah,Kulkas,Rusak Berat,218393728,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1689,Desa Asri,Meja Kantor,Baik,218517184,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1690,Kelurahan Maju,Lemari Arsip,Rusak Ringan,218640640,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1691,Desa Makmur,Kipas Angin,Rusak Berat,218764096,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1692,Kelurahan Sejahtera,Ambulance Desa,Baik,218887552,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1693,Desa Sentosa,Traktor,Rusak Ringan,219011008,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1694,Kelurahan Bahagia,Komputer,Rusak Berat,219134464,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1695,Desa Jaya,Generator,Baik,219257920,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1696,Kelurahan Sari,Sound System,Rusak Ringan,219381376,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1697,Desa Mulya,Mesin Pompa Air,Rusak Berat,219504832,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1698,Kelurahan Indah,Motor Sampah,Baik,219628288,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1699,Desa Asri,Proyektor,Rusak Ringan,219751744,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1700,Kelurahan Maju,Kursi Rapat,Rusak Berat,219875200,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1701,Desa Makmur,Kamera CCTV,Baik,219998656,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1702,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,220122112,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1703,Desa Sentosa,Laptop,Rusak Berat,220245568,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1704,Kelurahan Bahagia,Printer,Baik,220369024,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1705,Desa Jaya,AC,Rusak Ringan,220492480,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1706,Kelurahan Sari,Kulkas,Rusak Berat,220615936,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1707,Desa Mulya,Meja Kantor,Baik,220739392,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1708,Kelurahan Indah,Lemari Arsip,Rusak Ringan,220862848,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1709,Desa Asri,Kipas Angin,Rusak Berat,220986304,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1710,Kelurahan Maju,Ambulance Desa,Baik,221109760,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1711,Desa Makmur,Traktor,Rusak Ringan,221233216,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1712,Kelurahan Sejahtera,Komputer,Rusak Berat,221356672,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1713,Desa Sentosa,Generator,Baik,221480128,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1714,Kelurahan Bahagia,Sound System,Rusak Ringan,221603584,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1715,Desa Jaya,Mesin Pompa Air,Rusak Berat,221727040,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1716,Kelurahan Sari,Motor Sampah,Baik,221850496,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1717,Desa Mulya,Proyektor,Rusak Ringan,221973952,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1718,Kelurahan Indah,Kursi Rapat,Rusak Berat,222097408,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1719,Desa Asri,Kamera CCTV,Baik,222220864,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1720,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,222344320,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1721,Desa Makmur,Laptop,Rusak Berat,222467776,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1722,Kelurahan Sejahtera,Printer,Baik,222591232,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1723,Desa Sentosa,AC,Rusak Ringan,222714688,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1724,Kelurahan Bahagia,Kulkas,Rusak Berat,222838144,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1725,Desa Jaya,Meja Kantor,Baik,222961600,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1726,Kelurahan Sari,Lemari Arsip,Rusak Ringan,223085056,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1727,Desa Mulya,Kipas Angin,Rusak Berat,223208512,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1728,Kelurahan Indah,Ambulance Desa,Baik,223331968,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1729,Desa Asri,Traktor,Rusak Ringan,223455424,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1730,Kelurahan Maju,Komputer,Rusak Berat,223578880,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1731,Desa Makmur,Generator,Baik,223702336,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1732,Kelurahan Sejahtera,Sound System,Rusak Ringan,223825792,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1733,Desa Sentosa,Mesin Pompa Air,Rusak Berat,223949248,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1734,Kelurahan Bahagia,Motor Sampah,Baik,224072704,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1735,Desa Jaya,Proyektor,Rusak Ringan,224196160,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1736,Kelurahan Sari,Kursi Rapat,Rusak Berat,224319616,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1737,Desa Mulya,Kamera CCTV,Baik,224443072,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1738,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,224566528,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1739,Desa Asri,Laptop,Rusak Berat,224689984,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1740,Kelurahan Maju,Printer,Baik,224813440,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1741,Desa Makmur,AC,Rusak Ringan,224936896,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1742,Kelurahan Sejahtera,Kulkas,Rusak Berat,225060352,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1743,Desa Sentosa,Meja Kantor,Baik,225183808,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1744,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,225307264,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1745,Desa Jaya,Kipas Angin,Rusak Berat,225430720,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1746,Kelurahan Sari,Ambulance Desa,Baik,225554176,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1747,Desa Mulya,Traktor,Rusak Ringan,225677632,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1748,Kelurahan Indah,Komputer,Rusak Berat,225801088,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1749,Desa Asri,Generator,Baik,225924544,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1750,Kelurahan Maju,Sound System,Rusak Ringan,226048000,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1751,Desa Makmur,Mesin Pompa Air,Rusak Berat,226171456,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1752,Kelurahan Sejahtera,Motor Sampah,Baik,226294912,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1753,Desa Sentosa,Proyektor,Rusak Ringan,226418368,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1754,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,226541824,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1755,Desa Jaya,Kamera CCTV,Baik,226665280,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1756,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,226788736,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1757,Desa Mulya,Laptop,Rusak Berat,226912192,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1758,Kelurahan Indah,Printer,Baik,227035648,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1759,Desa Asri,AC,Rusak Ringan,227159104,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1760,Kelurahan Maju,Kulkas,Rusak Berat,227282560,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1761,Desa Makmur,Meja Kantor,Baik,227406016,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1762,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,227529472,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1763,Desa Sentosa,Kipas Angin,Rusak Berat,227652928,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1764,Kelurahan Bahagia,Ambulance Desa,Baik,227776384,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1765,Desa Jaya,Traktor,Rusak Ringan,227899840,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1766,Kelurahan Sari,Komputer,Rusak Berat,228023296,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1767,Desa Mulya,Generator,Baik,228146752,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1768,Kelurahan Indah,Sound System,Rusak Ringan,228270208,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1769,Desa Asri,Mesin Pompa Air,Rusak Berat,228393664,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1770,Kelurahan Maju,Motor Sampah,Baik,228517120,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1771,Desa Makmur,Proyektor,Rusak Ringan,228640576,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1772,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,228764032,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1773,Desa Sentosa,Kamera CCTV,Baik,228887488,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1774,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,229010944,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1775,Desa Jaya,Laptop,Rusak Berat,229134400,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1776,Kelurahan Sari,Printer,Baik,229257856,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1777,Desa Mulya,AC,Rusak Ringan,229381312,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1778,Kelurahan Indah,Kulkas,Rusak Berat,229504768,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1779,Desa Asri,Meja Kantor,Baik,229628224,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1780,Kelurahan Maju,Lemari Arsip,Rusak Ringan,229751680,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1781,Desa Makmur,Kipas Angin,Rusak Berat,229875136,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1782,Kelurahan Sejahtera,Ambulance Desa,Baik,229998592,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1783,Desa Sentosa,Traktor,Rusak Ringan,230122048,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1784,Kelurahan Bahagia,Komputer,Rusak Berat,230245504,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1785,Desa Jaya,Generator,Baik,230368960,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1786,Kelurahan Sari,Sound System,Rusak Ringan,230492416,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1787,Desa Mulya,Mesin Pompa Air,Rusak Berat,230615872,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1788,Kelurahan Indah,Motor Sampah,Baik,230739328,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1789,Desa Asri,Proyektor,Rusak Ringan,230862784,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1790,Kelurahan Maju,Kursi Rapat,Rusak Berat,230986240,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1791,Desa Makmur,Kamera CCTV,Baik,231109696,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1792,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,231233152,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1793,Desa Sentosa,Laptop,Rusak Berat,231356608,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1794,Kelurahan Bahagia,Printer,Baik,231480064,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1795,Desa Jaya,AC,Rusak Ringan,231603520,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1796,Kelurahan Sari,Kulkas,Rusak Berat,231726976,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1797,Desa Mulya,Meja Kantor,Baik,231850432,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1798,Kelurahan Indah,Lemari Arsip,Rusak Ringan,231973888,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1799,Desa Asri,Kipas Angin,Rusak Berat,232097344,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1800,Kelurahan Maju,Ambulance Desa,Baik,232220800,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1801,Desa Makmur,Traktor,Rusak Ringan,232344256,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1802,Kelurahan Sejahtera,Komputer,Rusak Berat,232467712,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1803,Desa Sentosa,Generator,Baik,232591168,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1804,Kelurahan Bahagia,Sound System,Rusak Ringan,232714624,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1805,Desa Jaya,Mesin Pompa Air,Rusak Berat,232838080,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1806,Kelurahan Sari,Motor Sampah,Baik,232961536,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1807,Desa Mulya,Proyektor,Rusak Ringan,233084992,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1808,Kelurahan Indah,Kursi Rapat,Rusak Berat,233208448,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1809,Desa Asri,Kamera CCTV,Baik,233331904,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1810,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,233455360,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1811,Desa Makmur,Laptop,Rusak Berat,233578816,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1812,Kelurahan Sejahtera,Printer,Baik,233702272,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1813,Desa Sentosa,AC,Rusak Ringan,233825728,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1814,Kelurahan Bahagia,Kulkas,Rusak Berat,233949184,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1815,Desa Jaya,Meja Kantor,Baik,234072640,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1816,Kelurahan Sari,Lemari Arsip,Rusak Ringan,234196096,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1817,Desa Mulya,Kipas Angin,Rusak Berat,234319552,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1818,Kelurahan Indah,Ambulance Desa,Baik,234443008,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1819,Desa Asri,Traktor,Rusak Ringan,234566464,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1820,Kelurahan Maju,Komputer,Rusak Berat,234689920,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1821,Desa Makmur,Generator,Baik,234813376,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1822,Kelurahan Sejahtera,Sound System,Rusak Ringan,234936832,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1823,Desa Sentosa,Mesin Pompa Air,Rusak Berat,235060288,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1824,Kelurahan Bahagia,Motor Sampah,Baik,235183744,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1825,Desa Jaya,Proyektor,Rusak Ringan,235307200,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1826,Kelurahan Sari,Kursi Rapat,Rusak Berat,235430656,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1827,Desa Mulya,Kamera CCTV,Baik,235554112,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1828,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,235677568,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1829,Desa Asri,Laptop,Rusak Berat,235801024,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1830,Kelurahan Maju,Printer,Baik,235924480,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1831,Desa Makmur,AC,Rusak Ringan,236047936,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1832,Kelurahan Sejahtera,Kulkas,Rusak Berat,236171392,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1833,Desa Sentosa,Meja Kantor,Baik,236294848,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1834,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,236418304,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1835,Desa Jaya,Kipas Angin,Rusak Berat,236541760,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1836,Kelurahan Sari,Ambulance Desa,Baik,236665216,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1837,Desa Mulya,Traktor,Rusak Ringan,236788672,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1838,Kelurahan Indah,Komputer,Rusak Berat,236912128,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1839,Desa Asri,Generator,Baik,237035584,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1840,Kelurahan Maju,Sound System,Rusak Ringan,237159040,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1841,Desa Makmur,Mesin Pompa Air,Rusak Berat,237282496,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1842,Kelurahan Sejahtera,Motor Sampah,Baik,237405952,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1843,Desa Sentosa,Proyektor,Rusak Ringan,237529408,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1844,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,237652864,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1845,Desa Jaya,Kamera CCTV,Baik,237776320,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1846,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,237899776,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1847,Desa Mulya,Laptop,Rusak Berat,238023232,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1848,Kelurahan Indah,Printer,Baik,238146688,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1849,Desa Asri,AC,Rusak Ringan,238270144,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1850,Kelurahan Maju,Kulkas,Rusak Berat,238393600,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1851,Desa Makmur,Meja Kantor,Baik,238517056,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1852,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,238640512,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1853,Desa Sentosa,Kipas Angin,Rusak Berat,238763968,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1854,Kelurahan Bahagia,Ambulance Desa,Baik,238887424,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1855,Desa Jaya,Traktor,Rusak Ringan,239010880,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1856,Kelurahan Sari,Komputer,Rusak Berat,239134336,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1857,Desa Mulya,Generator,Baik,239257792,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1858,Kelurahan Indah,Sound System,Rusak Ringan,239381248,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1859,Desa Asri,Mesin Pompa Air,Rusak Berat,239504704,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1860,Kelurahan Maju,Motor Sampah,Baik,239628160,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1861,Desa Makmur,Proyektor,Rusak Ringan,239751616,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1862,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,239875072,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1863,Desa Sentosa,Kamera CCTV,Baik,239998528,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1864,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,240121984,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1865,Desa Jaya,Laptop,Rusak Berat,240245440,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1866,Kelurahan Sari,Printer,Baik,240368896,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1867,Desa Mulya,AC,Rusak Ringan,240492352,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1868,Kelurahan Indah,Kulkas,Rusak Berat,240615808,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1869,Desa Asri,Meja Kantor,Baik,240739264,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1870,Kelurahan Maju,Lemari Arsip,Rusak Ringan,240862720,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1871,Desa Makmur,Kipas Angin,Rusak Berat,240986176,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1872,Kelurahan Sejahtera,Ambulance Desa,Baik,241109632,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1873,Desa Sentosa,Traktor,Rusak Ringan,241233088,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1874,Kelurahan Bahagia,Komputer,Rusak Berat,241356544,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1875,Desa Jaya,Generator,Baik,241480000,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1876,Kelurahan Sari,Sound System,Rusak Ringan,241603456,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1877,Desa Mulya,Mesin Pompa Air,Rusak Berat,241726912,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1878,Kelurahan Indah,Motor Sampah,Baik,241850368,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1879,Desa Asri,Proyektor,Rusak Ringan,241973824,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1880,Kelurahan Maju,Kursi Rapat,Rusak Berat,242097280,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1881,Desa Makmur,Kamera CCTV,Baik,242220736,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1882,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,242344192,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1883,Desa Sentosa,Laptop,Rusak Berat,242467648,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1884,Kelurahan Bahagia,Printer,Baik,242591104,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1885,Desa Jaya,AC,Rusak Ringan,242714560,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1886,Kelurahan Sari,Kulkas,Rusak Berat,242838016,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1887,Desa Mulya,Meja Kantor,Baik,242961472,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1888,Kelurahan Indah,Lemari Arsip,Rusak Ringan,243084928,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1889,Desa Asri,Kipas Angin,Rusak Berat,243208384,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1890,Kelurahan Maju,Ambulance Desa,Baik,243331840,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1891,Desa Makmur,Traktor,Rusak Ringan,243455296,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1892,Kelurahan Sejahtera,Komputer,Rusak Berat,243578752,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1893,Desa Sentosa,Generator,Baik,243702208,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1894,Kelurahan Bahagia,Sound System,Rusak Ringan,243825664,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1895,Desa Jaya,Mesin Pompa Air,Rusak Berat,243949120,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1896,Kelurahan Sari,Motor Sampah,Baik,244072576,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1897,Desa Mulya,Proyektor,Rusak Ringan,244196032,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1898,Kelurahan Indah,Kursi Rapat,Rusak Berat,244319488,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1899,Desa Asri,Kamera CCTV,Baik,244442944,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1900,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,244566400,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1901,Desa Makmur,Laptop,Rusak Berat,244689856,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1902,Kelurahan Sejahtera,Printer,Baik,244813312,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1903,Desa Sentosa,AC,Rusak Ringan,244936768,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1904,Kelurahan Bahagia,Kulkas,Rusak Berat,245060224,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1905,Desa Jaya,Meja Kantor,Baik,245183680,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1906,Kelurahan Sari,Lemari Arsip,Rusak Ringan,245307136,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1907,Desa Mulya,Kipas Angin,Rusak Berat,245430592,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1908,Kelurahan Indah,Ambulance Desa,Baik,245554048,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1909,Desa Asri,Traktor,Rusak Ringan,245677504,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1910,Kelurahan Maju,Komputer,Rusak Berat,245800960,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1911,Desa Makmur,Generator,Baik,245924416,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1912,Kelurahan Sejahtera,Sound System,Rusak Ringan,246047872,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1913,Desa Sentosa,Mesin Pompa Air,Rusak Berat,246171328,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1914,Kelurahan Bahagia,Motor Sampah,Baik,246294784,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1915,Desa Jaya,Proyektor,Rusak Ringan,246418240,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1916,Kelurahan Sari,Kursi Rapat,Rusak Berat,246541696,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1917,Desa Mulya,Kamera CCTV,Baik,246665152,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1918,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,246788608,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1919,Desa Asri,Laptop,Rusak Berat,246912064,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1920,Kelurahan Maju,Printer,Baik,247035520,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1921,Desa Makmur,AC,Rusak Ringan,247158976,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1922,Kelurahan Sejahtera,Kulkas,Rusak Berat,247282432,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1923,Desa Sentosa,Meja Kantor,Baik,247405888,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1924,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,247529344,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1925,Desa Jaya,Kipas Angin,Rusak Berat,247652800,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1926,Kelurahan Sari,Ambulance Desa,Baik,247776256,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1927,Desa Mulya,Traktor,Rusak Ringan,247899712,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1928,Kelurahan Indah,Komputer,Rusak Berat,248023168,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1929,Desa Asri,Generator,Baik,248146624,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1930,Kelurahan Maju,Sound System,Rusak Ringan,248270080,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1931,Desa Makmur,Mesin Pompa Air,Rusak Berat,248393536,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1932,Kelurahan Sejahtera,Motor Sampah,Baik,248516992,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1933,Desa Sentosa,Proyektor,Rusak Ringan,248640448,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1934,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,248763904,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1935,Desa Jaya,Kamera CCTV,Baik,248887360,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1936,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,249010816,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1937,Desa Mulya,Laptop,Rusak Berat,249134272,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1938,Kelurahan Indah,Printer,Baik,249257728,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1939,Desa Asri,AC,Rusak Ringan,249381184,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1940,Kelurahan Maju,Kulkas,Rusak Berat,249504640,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1941,Desa Makmur,Meja Kantor,Baik,249628096,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1942,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,249751552,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1943,Desa Sentosa,Kipas Angin,Rusak Berat,249875008,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1944,Kelurahan Bahagia,Ambulance Desa,Baik,249998464,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1945,Desa Jaya,Traktor,Rusak Ringan,250121920,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1946,Kelurahan Sari,Komputer,Rusak Berat,250245376,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1947,Desa Mulya,Generator,Baik,250368832,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1948,Kelurahan Indah,Sound System,Rusak Ringan,250492288,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1949,Desa Asri,Mesin Pompa Air,Rusak Berat,250615744,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1950,Kelurahan Maju,Motor Sampah,Baik,250739200,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1951,Desa Makmur,Proyektor,Rusak Ringan,250862656,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1952,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,250986112,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1953,Desa Sentosa,Kamera CCTV,Baik,251109568,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1954,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,251233024,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1955,Desa Jaya,Laptop,Rusak Berat,251356480,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1956,Kelurahan Sari,Printer,Baik,251479936,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1957,Desa Mulya,AC,Rusak Ringan,251603392,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1958,Kelurahan Indah,Kulkas,Rusak Berat,251726848,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1959,Desa Asri,Meja Kantor,Baik,251850304,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1960,Kelurahan Maju,Lemari Arsip,Rusak Ringan,251973760,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1961,Desa Makmur,Kipas Angin,Rusak Berat,252097216,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1962,Kelurahan Sejahtera,Ambulance Desa,Baik,252220672,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1963,Desa Sentosa,Traktor,Rusak Ringan,252344128,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1964,Kelurahan Bahagia,Komputer,Rusak Berat,252467584,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1965,Desa Jaya,Generator,Baik,252591040,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1966,Kelurahan Sari,Sound System,Rusak Ringan,252714496,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1967,Desa Mulya,Mesin Pompa Air,Rusak Berat,252837952,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1968,Kelurahan Indah,Motor Sampah,Baik,252961408,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1969,Desa Asri,Proyektor,Rusak Ringan,253084864,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1970,Kelurahan Maju,Kursi Rapat,Rusak Berat,253208320,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1971,Desa Makmur,Kamera CCTV,Baik,253331776,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1972,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,253455232,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1973,Desa Sentosa,Laptop,Rusak Berat,253578688,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1974,Kelurahan Bahagia,Printer,Baik,253702144,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1975,Desa Jaya,AC,Rusak Ringan,253825600,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1976,Kelurahan Sari,Kulkas,Rusak Berat,253949056,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1977,Desa Mulya,Meja Kantor,Baik,254072512,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1978,Kelurahan Indah,Lemari Arsip,Rusak Ringan,254195968,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1979,Desa Asri,Kipas Angin,Rusak Berat,254319424,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1980,Kelurahan Maju,Ambulance Desa,Baik,254442880,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1981,Desa Makmur,Traktor,Rusak Ringan,254566336,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+1982,Kelurahan Sejahtera,Komputer,Rusak Berat,254689792,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+1983,Desa Sentosa,Generator,Baik,254813248,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+1984,Kelurahan Bahagia,Sound System,Rusak Ringan,254936704,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+1985,Desa Jaya,Mesin Pompa Air,Rusak Berat,255060160,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+1986,Kelurahan Sari,Motor Sampah,Baik,255183616,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+1987,Desa Mulya,Proyektor,Rusak Ringan,255307072,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+1988,Kelurahan Indah,Kursi Rapat,Rusak Berat,255430528,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+1989,Desa Asri,Kamera CCTV,Baik,255553984,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+1990,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,255677440,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+1991,Desa Makmur,Laptop,Rusak Berat,255800896,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+1992,Kelurahan Sejahtera,Printer,Baik,255924352,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+1993,Desa Sentosa,AC,Rusak Ringan,256047808,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+1994,Kelurahan Bahagia,Kulkas,Rusak Berat,256171264,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+1995,Desa Jaya,Meja Kantor,Baik,256294720,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+1996,Kelurahan Sari,Lemari Arsip,Rusak Ringan,256418176,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+1997,Desa Mulya,Kipas Angin,Rusak Berat,256541632,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+1998,Kelurahan Indah,Ambulance Desa,Baik,256665088,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+1999,Desa Asri,Traktor,Rusak Ringan,256788544,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2000,Kelurahan Maju,Komputer,Rusak Berat,256912000,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2001,Desa Makmur,Generator,Baik,257035456,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2002,Kelurahan Sejahtera,Sound System,Rusak Ringan,257158912,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2003,Desa Sentosa,Mesin Pompa Air,Rusak Berat,257282368,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2004,Kelurahan Bahagia,Motor Sampah,Baik,257405824,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2005,Desa Jaya,Proyektor,Rusak Ringan,257529280,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2006,Kelurahan Sari,Kursi Rapat,Rusak Berat,257652736,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2007,Desa Mulya,Kamera CCTV,Baik,257776192,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2008,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,257899648,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2009,Desa Asri,Laptop,Rusak Berat,258023104,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2010,Kelurahan Maju,Printer,Baik,258146560,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+2011,Desa Makmur,AC,Rusak Ringan,258270016,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+2012,Kelurahan Sejahtera,Kulkas,Rusak Berat,258393472,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+2013,Desa Sentosa,Meja Kantor,Baik,258516928,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+2014,Kelurahan Bahagia,Lemari Arsip,Rusak Ringan,258640384,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+2015,Desa Jaya,Kipas Angin,Rusak Berat,258763840,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+2016,Kelurahan Sari,Ambulance Desa,Baik,258887296,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+2017,Desa Mulya,Traktor,Rusak Ringan,259010752,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2018,Kelurahan Indah,Komputer,Rusak Berat,259134208,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2019,Desa Asri,Generator,Baik,259257664,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2020,Kelurahan Maju,Sound System,Rusak Ringan,259381120,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2021,Desa Makmur,Mesin Pompa Air,Rusak Berat,259504576,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2022,Kelurahan Sejahtera,Motor Sampah,Baik,259628032,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2023,Desa Sentosa,Proyektor,Rusak Ringan,259751488,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2024,Kelurahan Bahagia,Kursi Rapat,Rusak Berat,259874944,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2025,Desa Jaya,Kamera CCTV,Baik,259998400,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2026,Kelurahan Sari,Mesin Potong Rumput,Rusak Ringan,260121856,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2027,Desa Mulya,Laptop,Rusak Berat,260245312,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2028,Kelurahan Indah,Printer,Baik,260368768,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+2029,Desa Asri,AC,Rusak Ringan,260492224,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+2030,Kelurahan Maju,Kulkas,Rusak Berat,260615680,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+2031,Desa Makmur,Meja Kantor,Baik,260739136,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+2032,Kelurahan Sejahtera,Lemari Arsip,Rusak Ringan,260862592,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+2033,Desa Sentosa,Kipas Angin,Rusak Berat,260986048,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+2034,Kelurahan Bahagia,Ambulance Desa,Baik,261109504,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+2035,Desa Jaya,Traktor,Rusak Ringan,261232960,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2036,Kelurahan Sari,Komputer,Rusak Berat,261356416,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2037,Desa Mulya,Generator,Baik,261479872,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2038,Kelurahan Indah,Sound System,Rusak Ringan,261603328,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2039,Desa Asri,Mesin Pompa Air,Rusak Berat,261726784,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2040,Kelurahan Maju,Motor Sampah,Baik,261850240,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2041,Desa Makmur,Proyektor,Rusak Ringan,261973696,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2042,Kelurahan Sejahtera,Kursi Rapat,Rusak Berat,262097152,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2043,Desa Sentosa,Kamera CCTV,Baik,262220608,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2044,Kelurahan Bahagia,Mesin Potong Rumput,Rusak Ringan,262344064,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2045,Desa Jaya,Laptop,Rusak Berat,262467520,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2046,Kelurahan Sari,Printer,Baik,262590976,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+2047,Desa Mulya,AC,Rusak Ringan,262714432,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+2048,Kelurahan Indah,Kulkas,Rusak Berat,262837888,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+2049,Desa Asri,Meja Kantor,Baik,262961344,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+2050,Kelurahan Maju,Lemari Arsip,Rusak Ringan,263084800,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+2051,Desa Makmur,Kipas Angin,Rusak Berat,263208256,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+2052,Kelurahan Sejahtera,Ambulance Desa,Baik,263331712,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+2053,Desa Sentosa,Traktor,Rusak Ringan,263455168,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2054,Kelurahan Bahagia,Komputer,Rusak Berat,263578624,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2055,Desa Jaya,Generator,Baik,263702080,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2056,Kelurahan Sari,Sound System,Rusak Ringan,263825536,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2057,Desa Mulya,Mesin Pompa Air,Rusak Berat,263948992,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2058,Kelurahan Indah,Motor Sampah,Baik,264072448,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2059,Desa Asri,Proyektor,Rusak Ringan,264195904,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2060,Kelurahan Maju,Kursi Rapat,Rusak Berat,264319360,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2061,Desa Makmur,Kamera CCTV,Baik,264442816,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2062,Kelurahan Sejahtera,Mesin Potong Rumput,Rusak Ringan,264566272,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2063,Desa Sentosa,Laptop,Rusak Berat,264689728,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2064,Kelurahan Bahagia,Printer,Baik,264813184,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+2065,Desa Jaya,AC,Rusak Ringan,264936640,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+2066,Kelurahan Sari,Kulkas,Rusak Berat,265060096,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+2067,Desa Mulya,Meja Kantor,Baik,265183552,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+2068,Kelurahan Indah,Lemari Arsip,Rusak Ringan,265307008,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+2069,Desa Asri,Kipas Angin,Rusak Berat,265430464,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+2070,Kelurahan Maju,Ambulance Desa,Baik,265553920,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+2071,Desa Makmur,Traktor,Rusak Ringan,265677376,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2072,Kelurahan Sejahtera,Komputer,Rusak Berat,265800832,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2073,Desa Sentosa,Generator,Baik,265924288,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2074,Kelurahan Bahagia,Sound System,Rusak Ringan,266047744,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2075,Desa Jaya,Mesin Pompa Air,Rusak Berat,266171200,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2076,Kelurahan Sari,Motor Sampah,Baik,266294656,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2077,Desa Mulya,Proyektor,Rusak Ringan,266418112,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2078,Kelurahan Indah,Kursi Rapat,Rusak Berat,266541568,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2079,Desa Asri,Kamera CCTV,Baik,266665024,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2080,Kelurahan Maju,Mesin Potong Rumput,Rusak Ringan,266788480,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2081,Desa Makmur,Laptop,Rusak Berat,266911936,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2082,Kelurahan Sejahtera,Printer,Baik,267035392,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
+2083,Desa Sentosa,AC,Rusak Ringan,267158848,Pendingin ruangan,KEJAKSAAN NEGERI MALANG
+2084,Kelurahan Bahagia,Kulkas,Rusak Berat,267282304,Penyimpanan kebutuhan,KEJAKSAAN NEGERI BANYUWANGI
+2085,Desa Jaya,Meja Kantor,Baik,267405760,Perlengkapan kantor,KEJAKSAAN NEGERI JEMBER
+2086,Kelurahan Sari,Lemari Arsip,Rusak Ringan,267529216,Penyimpanan dokumen,KEJAKSAAN NEGERI SIDOARJO
+2087,Desa Mulya,Kipas Angin,Rusak Berat,267652672,Sirkulasi udara,KEJAKSAAN NEGERI GRESIK
+2088,Kelurahan Indah,Ambulance Desa,Baik,267776128,Kendaraan operasional,KEJAKSAAN NEGERI SURABAYA
+2089,Desa Asri,Traktor,Rusak Ringan,267899584,Untuk pengolahan tanah,KEJAKSAAN NEGERI MALANG
+2090,Kelurahan Maju,Komputer,Rusak Berat,268023040,Peralatan kantor,KEJAKSAAN NEGERI BANYUWANGI
+2091,Desa Makmur,Generator,Baik,268146496,Cadangan listrik,KEJAKSAAN NEGERI JEMBER
+2092,Kelurahan Sejahtera,Sound System,Rusak Ringan,268269952,Untuk acara desa,KEJAKSAAN NEGERI SIDOARJO
+2093,Desa Sentosa,Mesin Pompa Air,Rusak Berat,268393408,Irigasi sawah,KEJAKSAAN NEGERI GRESIK
+2094,Kelurahan Bahagia,Motor Sampah,Baik,268516864,Angkutan sampah,KEJAKSAAN NEGERI SURABAYA
+2095,Desa Jaya,Proyektor,Rusak Ringan,268640320,Pelatihan warga,KEJAKSAAN NEGERI MALANG
+2096,Kelurahan Sari,Kursi Rapat,Rusak Berat,268763776,Fasilitas balai desa,KEJAKSAAN NEGERI BANYUWANGI
+2097,Desa Mulya,Kamera CCTV,Baik,268887232,Keamanan desa,KEJAKSAAN NEGERI JEMBER
+2098,Kelurahan Indah,Mesin Potong Rumput,Rusak Ringan,269010688,Pemeliharaan taman,KEJAKSAAN NEGERI SIDOARJO
+2099,Desa Asri,Laptop,Rusak Berat,269134144,Administrasi desa,KEJAKSAAN NEGERI GRESIK
+2100,Kelurahan Maju,Printer,Baik,269257600,Dokumentasi kegiatan,KEJAKSAAN NEGERI SURABAYA
