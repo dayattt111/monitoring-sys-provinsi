@@ -756,8 +756,35 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
     // Data per menu: { menuId: [ {name, target, actual, ...}, ... ] }
     const MENU_DATA = {};
+    
+    // Setiap menu punya jumlah data yang berbeda
+    const menuDataCounts = {
+        'jaksa_garda': 32,           // semua satker
+        'jaga_budaya': 87,           // lebih banyak
+        'pengawasan_ormas': 156,     // paling banyak
+        'pemantauan_lingkungan': 45, 
+        'pemantauan_orang_asing': 23,
+        'aset_desa': 234,            
+        'kasus_penyelewengan': 12    
+    };
+
     MAIN_MENUS.forEach(menu => {
-        MENU_DATA[menu.id] = generateMockDataForMenu(SATUAN_KERJA_NAMES);
+        const count = menuDataCounts[menu.id] || 32;
+        const names = [];
+        
+        // Generate nama-nama unik untuk setiap menu
+        for (let i = 0; i < count; i++) {
+            if (i < SATUAN_KERJA_NAMES.length) {
+                names.push(SATUAN_KERJA_NAMES[i]);
+            } else {
+                // Buat nama tambahan untuk data yang lebih banyak
+                const baseIndex = i % SATUAN_KERJA_NAMES.length;
+                const suffix = Math.floor(i / SATUAN_KERJA_NAMES.length) + 1;
+                names.push(`${SATUAN_KERJA_NAMES[baseIndex]} - Data ${suffix}`);
+            }
+        }
+        
+        MENU_DATA[menu.id] = generateMockDataForMenu(names);
     });
 
     /* ===================== STATE GLOBAL ===================== */
