@@ -294,6 +294,93 @@
             </div>
         </div>
 
+        <!-- DISPARITAS & MAP SECTION -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <!-- DISPARITAS TUNTUTAN DAN PUTUSAN -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                        <i data-lucide="bar-chart-3" class="w-5 h-5 text-amber-300"></i>
+                        <span>Disparitas Kasus</span>
+                    </h5>
+                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('disparitas-section')">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                
+                <div id="disparitas-section" class="space-y-3">
+                    <div class="text-center mb-3">
+                        <div class="text-lg font-bold text-cyan-300" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
+                        <div class="text-xs text-gray-400">Satuan Kerja dengan Kasus Terbanyak</div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 text-xs mb-3">
+                        <div class="bg-black/40 border border-emerald-500/30 rounded-xl p-3">
+                            <div class="text-emerald-300 font-semibold mb-1">Kasus Tertinggi</div>
+                            <div class="text-white text-lg font-bold" id="kasusTertinggi">156 Kasus</div>
+                        </div>
+                        <div class="bg-black/40 border border-amber-500/30 rounded-xl p-3">
+                            <div class="text-amber-300 font-semibold mb-1">Kasus Terendah</div>
+                            <div class="text-white text-lg font-bold" id="kasusTerendah">23 Kasus</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/30 border border-white/10 rounded-2xl p-4" style="height: 280px;">
+                        <canvas id="disparitasChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TREN PERKARA PER DAERAH (MAP) -->
+            <div class="glass-card p-5 rounded-3xl border border-white/15">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-green-300"></i>
+                        <span>Tren Per Daerah</span>
+                    </h5>
+                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('map-section')">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div id="map-section" class="space-y-3">
+                    <div class="bg-black/30 border border-white/10 rounded-2xl overflow-hidden" style="height: 280px;">
+                        <div id="mapLeaflet" style="height: 100%; width: 100%;"></div>
+                    </div>
+
+                    <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
+                        <h6 class="font-bold text-cyan-300 mb-3" id="regionName">KEJAKSAAN NEGERI SURABAYA</h6>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Jaga Budaya:</span>
+                                <span class="font-bold text-white" id="statJagaBudaya">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pengawasan Ormas:</span>
+                                <span class="font-bold text-white" id="statPengawasanOrmas">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Pemantauan Lingkungan:</span>
+                                <span class="font-bold text-white" id="statPemantauanLingkungan">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Orang Asing:</span>
+                                <span class="font-bold text-white" id="statOrangAsing">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Aset Desa:</span>
+                                <span class="font-bold text-white" id="statAsetDesa">-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Penyelewengan:</span>
+                                <span class="font-bold text-white" id="statPenyelewengan">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FILTER -->
         <div class="glass-card p-6 md:p-7 rounded-3xl mb-8 no-print border border-white/15">
             <div class="flex items-center gap-2 mb-4">
@@ -392,93 +479,6 @@
             <div id="main-menu-container"
                  class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <!-- tombol menu diisi lewat JS -->
-            </div>
-        </div>
-
-        <!-- DISPARITAS & MAP SECTION -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            <!-- DISPARITAS TUNTUTAN DAN PUTUSAN -->
-            <div class="glass-card p-5 rounded-3xl border border-white/15">
-                <div class="flex items-center justify-between mb-4">
-                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                        <i data-lucide="bar-chart-3" class="w-5 h-5 text-amber-300"></i>
-                        <span>Disparitas Kasus</span>
-                    </h5>
-                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('disparitas-section')">
-                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
-                    </button>
-                </div>
-                
-                <div id="disparitas-section" class="space-y-3">
-                    <div class="text-center mb-3">
-                        <div class="text-lg font-bold text-cyan-300" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
-                        <div class="text-xs text-gray-400">Satuan Kerja dengan Kasus Terbanyak</div>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-3 text-xs mb-3">
-                        <div class="bg-black/40 border border-emerald-500/30 rounded-xl p-3">
-                            <div class="text-emerald-300 font-semibold mb-1">Kasus Tertinggi</div>
-                            <div class="text-white text-lg font-bold" id="kasusTertinggi">156 Kasus</div>
-                        </div>
-                        <div class="bg-black/40 border border-amber-500/30 rounded-xl p-3">
-                            <div class="text-amber-300 font-semibold mb-1">Kasus Terendah</div>
-                            <div class="text-white text-lg font-bold" id="kasusTerendah">23 Kasus</div>
-                        </div>
-                    </div>
-
-                    <div class="bg-black/30 border border-white/10 rounded-2xl p-4" style="height: 280px;">
-                        <canvas id="disparitasChart"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TREN PERKARA PER DAERAH (MAP) -->
-            <div class="glass-card p-5 rounded-3xl border border-white/15">
-                <div class="flex items-center justify-between mb-4">
-                    <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-green-300"></i>
-                        <span>Tren Per Daerah</span>
-                    </h5>
-                    <button class="text-gray-400 hover:text-white transition no-print" onclick="toggleFullScreen('map-section')">
-                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
-                    </button>
-                </div>
-
-                <div id="map-section" class="space-y-3">
-                    <div class="bg-black/30 border border-white/10 rounded-2xl overflow-hidden" style="height: 280px;">
-                        <div id="mapLeaflet" style="height: 100%; width: 100%;"></div>
-                    </div>
-
-                    <div class="bg-black/40 border border-white/10 rounded-2xl p-4">
-                        <h6 class="font-bold text-cyan-300 mb-3" id="regionName">KEJAKSAAN NEGERI SURABAYA</h6>
-                        <div class="grid grid-cols-2 gap-2 text-sm">
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Jaga Budaya:</span>
-                                <span class="font-bold text-white" id="statJagaBudaya">-</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Pengawasan Ormas:</span>
-                                <span class="font-bold text-white" id="statPengawasanOrmas">-</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Pemantauan Lingkungan:</span>
-                                <span class="font-bold text-white" id="statPemantauanLingkungan">-</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Orang Asing:</span>
-                                <span class="font-bold text-white" id="statOrangAsing">-</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Aset Desa:</span>
-                                <span class="font-bold text-white" id="statAsetDesa">-</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Penyelewengan:</span>
-                                <span class="font-bold text-white" id="statPenyelewengan">-</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
