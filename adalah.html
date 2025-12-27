@@ -192,6 +192,105 @@
             </p>
         </header>
 
+        <!-- TOP STATS CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-cyan-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-cyan-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                            Jaga Budaya
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalJagaBudaya">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownJagaBudaya">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartJagaBudaya"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-purple-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-purple-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="users" class="w-5 h-5"></i>
+                            Pengawasan Ormas
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPengawasanOrmas">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownPengawasanOrmas">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartPengawasanOrmas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-green-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-green-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="truck" class="w-5 h-5"></i>
+                            Pemantauan Lingkungan
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPemantauanLingkungan">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownPemantauanLingkungan">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartPemantauanLingkungan"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-yellow-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-yellow-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            Pemantauan Orang Asing
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalPemantauanOrangAsing">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownPemantauanOrangAsing">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartPemantauanOrangAsing"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-blue-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-blue-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="plus-square" class="w-5 h-5"></i>
+                            Aset Desa/Kelurahan
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalAsetDesa">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownAsetDesa">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartAsetDesa"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-red-400/50 transition-all">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-red-300 mb-2 flex items-center gap-2">
+                            <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                            Kasus Penyelewengan
+                        </h3>
+                        <div class="text-4xl font-extrabold text-white mb-2" id="totalKasusPenyelewengan">0</div>
+                        <div class="text-xs text-gray-300" id="breakdownKasusPenyelewengan">Loading...</div>
+                    </div>
+                    <div class="w-20 h-20">
+                        <canvas id="chartKasusPenyelewengan"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FILTER -->
         <div class="glass-card p-6 md:p-7 rounded-3xl mb-8 no-print border border-white/15">
             <div class="flex items-center gap-2 mb-4">
@@ -1196,6 +1295,64 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         modal.classList.remove("flex");
     }
 
+    /* ===================== TOP STATS CARDS ===================== */
+
+    function renderTopStatsCards() {
+        const menuConfig = [
+            { id: 'jaga_budaya', label: 'Jaga Budaya', chartId: 'chartJagaBudaya', totalId: 'totalJagaBudaya', breakdownId: 'breakdownJagaBudaya', color: 'rgba(103, 232, 249, 1)' },
+            { id: 'pengawasan_ormas', label: 'Pengawasan Ormas', chartId: 'chartPengawasanOrmas', totalId: 'totalPengawasanOrmas', breakdownId: 'breakdownPengawasanOrmas', color: 'rgba(192, 132, 252, 1)' },
+            { id: 'pemantauan_lingkungan', label: 'Pemantauan Lingkungan', chartId: 'chartPemantauanLingkungan', totalId: 'totalPemantauanLingkungan', breakdownId: 'breakdownPemantauanLingkungan', color: 'rgba(52, 211, 153, 1)' },
+            { id: 'pemantauan_orang_asing', label: 'Pemantauan Orang Asing', chartId: 'chartPemantauanOrangAsing', totalId: 'totalPemantauanOrangAsing', breakdownId: 'breakdownPemantauanOrangAsing', color: 'rgba(250, 204, 21, 1)' },
+            { id: 'aset_desa', label: 'Aset Desa/Kelurahan', chartId: 'chartAsetDesa', totalId: 'totalAsetDesa', breakdownId: 'breakdownAsetDesa', color: 'rgba(96, 165, 250, 1)' },
+            { id: 'kasus_penyelewengan', label: 'Kasus Penyelewengan', chartId: 'chartKasusPenyelewengan', totalId: 'totalKasusPenyelewengan', breakdownId: 'breakdownKasusPenyelewengan', color: 'rgba(248, 113, 113, 1)' }
+        ];
+
+        menuConfig.forEach(menu => {
+            const menuData = MENU_DATA[menu.id] || [];
+            const total = menuData.length;
+            const compliant = menuData.filter(u => u.actual >= u.target).length;
+            const pending = total - compliant;
+
+            // Update total
+            const totalEl = document.getElementById(menu.totalId);
+            if (totalEl) totalEl.textContent = total;
+
+            // Update breakdown
+            const breakdownEl = document.getElementById(menu.breakdownId);
+            if (breakdownEl) {
+                breakdownEl.innerHTML = `
+                    <span class="text-emerald-400">✓ ${compliant} Selesai</span> · 
+                    <span class="text-amber-400">⏳ ${pending} Pending</span>
+                `;
+            }
+
+            // Create mini donut chart
+            const canvas = document.getElementById(menu.chartId);
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        datasets: [{
+                            data: [compliant, pending],
+                            backgroundColor: [menu.color, 'rgba(255, 255, 255, 0.15)'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        cutout: '70%',
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: { enabled: false }
+                        }
+                    }
+                });
+            }
+        });
+    }
+
     /* ===================== INIT ===================== */
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -1215,6 +1372,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         renderSummary();
         renderTable(currentData);
         initPerformanceBarChart(currentData);
+        renderTopStatsCards();
 
         // tombol filter
         document.getElementById('apply-filter-btn').addEventListener('click', applyFilter);
