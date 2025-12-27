@@ -1160,6 +1160,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
                 resetFilter();
                 renderMainMenu();
+                // Update disparitas dan map
+                updateDisparitasChart();
+                updateMap();
             });
 
             container.appendChild(btn);
@@ -1588,44 +1591,46 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let disparitasChartInstance = null;
 
     async function initDisparitasChart() {
-        // Hitung jumlah kasus per satker dari semua menu
-        const satkerCounts = {};
+        // Tunggu sampai CSV_DATA siap
+        await new Promise(resolve => setTimeout(resolve, 100));
+        updateDisparitasChart();
+    }
+
+    function updateDisparitasChart() {
+        // Hitung jumlah data per kabupaten untuk menu yang aktif
+        const kabupatenCounts = {};
         
-        for (const menuId in CSV_DATA) {
-            const data = CSV_DATA[menuId];
-            data.forEach(row => {
-                const satker = row['Nama Satker'] || 'UNKNOWN';
-                if (!satkerCounts[satker]) {
-                    satkerCounts[satker] = 0;
-                }
-                satkerCounts[satker]++;
-            });
-        }
+        // Ambil data dari menu yang sedang aktif
+        const menuData = CSV_DATA[currentMenuId] || [];
+        
+        menuData.forEach(row => {
+            const kabupaten = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || 'UNKNOWN';
+            if (!kabupatenCounts[kabupaten]) {
+                kabupatenCounts[kabupaten] = 0;
+            }
+            kabupatenCounts[kabupaten]++;
+        });
 
         // Sort by count
-        const sortedSatkers = Object.entries(satkerCounts)
+        const sortedKabupaten = Object.entries(kabupatenCounts)
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10); // Top 10
 
-        const labels = sortedSatkers.map(([satker]) => {
-            // Singkat nama satker
-            const parts = satker.split(' ');
-            if (parts.length > 2 && parts[0] === 'KEJAKSAAN' && parts[1] === 'NEGERI') {
-                return `KN ${parts.slice(2).join(' ')}`;
-            }
-            return satker.substring(0, 20);
+        const labels = sortedKabupaten.map(([kab]) => {
+            // Singkat nama kabupaten
+            return kab.length > 15 ? kab.substring(0, 15) + '...' : kab;
         });
 
-        const counts = sortedSatkers.map(([, count]) => count);
+        const counts = sortedKabupaten.map(([, count]) => count);
 
         // Update info
-        if (sortedSatkers.length > 0) {
-            const [topSatker, topCount] = sortedSatkers[0];
-            const [lowSatker, lowCount] = sortedSatkers[sortedSatkers.length - 1];
+        if (sortedKabupaten.length > 0) {
+            const [topKab, topCount] = sortedKabupaten[0];
+            const [lowKab, lowCount] = sortedKabupaten[sortedKabupaten.length - 1];
             
-            document.getElementById('currentSatker').textContent = topSatker;
-            document.getElementById('kasusTertinggi').textContent = `${topCount} Kasus`;
-            document.getElementById('kasusTerendah').textContent = `${lowCount} Kasus`;
+            document.getElementById('currentSatker').textContent = topKab;
+            document.getElementById('kasusTertinggi').textContent = `${topCount.toLocaleString('id-ID')} Data`;
+            document.getElementById('kasusTerendah').textContent = `${lowCount.toLocaleString('id-ID')} Data`;
         }
 
         // Create chart
@@ -1686,8 +1691,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let markersLayer = null;
 
     async function initMap() {
-        // Inisialisasi Leaflet Map
-        mapInstance = L.map('mapLeaflet').setView([-7.5, 112.7], 8);
+        // Inisialisasi Leaflet Map - fokus ke Jawa Timur
+        mapInstance = L.map('mapLeaflet').setView([-7.5, 112.5], 8);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
@@ -1696,74 +1701,101 @@ KEJAKSAAN NEGERI TRENGGALEK`;
 
         markersLayer = L.layerGroup().addTo(mapInstance);
 
-        // Data koordinat Kejaksaan Negeri di Jawa Timur (contoh)
-        const satkerLocations = {
-            'KEJAKSAAN NEGERI SURABAYA': { lat: -7.2575, lng: 112.7521 },
-            'KEJAKSAAN NEGERI MALANG': { lat: -7.9666, lng: 112.6326 },
-            'KEJAKSAAN NEGERI BANYUWANGI': { lat: -8.2192, lng: 114.3691 },
-            'KEJAKSAAN NEGERI JEMBER': { lat: -8.1665, lng: 113.7009 },
-            'KEJAKSAAN NEGERI SIDOARJO': { lat: -7.4470, lng: 112.7183 },
-            'KEJAKSAAN NEGERI GRESIK': { lat: -7.1554, lng: 112.6560 },
-            'KEJAKSAAN NEGERI MOJOKERTO': { lat: -7.4664, lng: 112.4338 },
-            'KEJAKSAAN NEGERI KEDIRI': { lat: -7.8167, lng: 112.0167 },
-            'KEJAKSAAN NEGERI BLITAR': { lat: -8.0983, lng: 112.1681 },
-            'KEJAKSAAN NEGERI PROBOLINGGO': { lat: -7.7543, lng: 113.2159 }
+        // Tunggu data CSV siap
+        await new Promise(resolve => setTimeout(resolve, 100));
+        updateMap();
+    }
+
+    function updateMap() {
+        if (!markersLayer) return;
+        
+        // Hapus markers lama
+        markersLayer.clearLayers();
+
+        // Data koordinat kabupaten/kota di Jawa Timur
+        const kabupatenLocations = {
+            'Surabaya': { lat: -7.2575, lng: 112.7521 },
+            'Malang': { lat: -7.9666, lng: 112.6326 },
+            'Banyuwangi': { lat: -8.2192, lng: 114.3691 },
+            'Jember': { lat: -8.1665, lng: 113.7009 },
+            'Sidoarjo': { lat: -7.4470, lng: 112.7183 },
+            'Gresik': { lat: -7.1554, lng: 112.6560 },
+            'Mojokerto': { lat: -7.4664, lng: 112.4338 },
+            'Kediri': { lat: -7.8167, lng: 112.0167 },
+            'Blitar': { lat: -8.0983, lng: 112.1681 },
+            'Probolinggo': { lat: -7.7543, lng: 113.2159 },
+            'Pasuruan': { lat: -7.6453, lng: 112.9075 },
+            'Tulungagung': { lat: -8.0658, lng: 111.9028 },
+            'Madiun': { lat: -7.6298, lng: 111.5239 },
+            'Ponorogo': { lat: -7.8698, lng: 111.4618 },
+            'Ngawi': { lat: -7.4038, lng: 111.4462 },
+            'Bojonegoro': { lat: -7.1502, lng: 111.8817 },
+            'Tuban': { lat: -6.8978, lng: 111.9628 },
+            'Lamongan': { lat: -7.1165, lng: 112.4169 },
+            'Pacitan': { lat: -8.1988, lng: 111.0918 },
+            'Trenggalek': { lat: -8.0502, lng: 111.7088 },
+            'Nganjuk': { lat: -7.6051, lng: 111.9037 },
+            'Jombang': { lat: -7.5446, lng: 112.2331 },
+            'Bondowoso': { lat: -7.9136, lng: 113.8207 },
+            'Situbondo': { lat: -7.7063, lng: 114.0095 },
+            'Lumajang': { lat: -8.1335, lng: 113.2248 },
+            'Pamekasan': { lat: -7.1568, lng: 113.4746 },
+            'Sampang': { lat: -7.1847, lng: 113.2391 },
+            'Sumenep': { lat: -7.0176, lng: 113.8549 },
+            'Bangkalan': { lat: -7.0455, lng: 112.7519 },
+            'Batu': { lat: -7.8705, lng: 112.5281 },
+            'Magetan': { lat: -7.6417, lng: 111.3403 }
         };
 
-        // Hitung data per satker
-        const satkerStats = {};
+        // Hitung data per kabupaten untuk menu aktif
+        const kabupatenStats = {};
+        const menuData = CSV_DATA[currentMenuId] || [];
         
-        for (const menuId in CSV_DATA) {
-            const data = CSV_DATA[menuId];
-            data.forEach(row => {
-                const satker = row['Nama Satker'] || 'UNKNOWN';
-                if (!satkerStats[satker]) {
-                    satkerStats[satker] = {
-                        jaga_budaya: 0,
-                        pengawasan_ormas: 0,
-                        pemantauan_lingkungan: 0,
-                        pemantauan_orang_asing: 0,
-                        aset_desa: 0,
-                        kasus_penyelewengan: 0,
-                        total: 0
-                    };
-                }
-                satkerStats[satker][menuId]++;
-                satkerStats[satker].total++;
-            });
-        }
+        menuData.forEach(row => {
+            const kabupaten = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || 'UNKNOWN';
+            if (!kabupatenStats[kabupaten]) {
+                kabupatenStats[kabupaten] = 0;
+            }
+            kabupatenStats[kabupaten]++;
+        });
 
-        // Tambahkan markers
-        for (const [satker, location] of Object.entries(satkerLocations)) {
-            const stats = satkerStats[satker] || { total: 0 };
+        // Tambahkan markers untuk kabupaten yang ada datanya
+        for (const [kabupaten, location] of Object.entries(kabupatenLocations)) {
+            const count = kabupatenStats[kabupaten] || 0;
             
-            const marker = L.circleMarker([location.lat, location.lng], {
-                radius: Math.min(stats.total / 20, 15) + 5,
-                fillColor: '#22d3ee',
-                color: '#fff',
-                weight: 2,
-                opacity: 1,
-                fillOpacity: 0.6
-            });
+            if (count > 0) {
+                const marker = L.circleMarker([location.lat, location.lng], {
+                    radius: Math.min(count / 10, 20) + 5,
+                    fillColor: '#22d3ee',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.7
+                });
 
-            marker.bindPopup(`
-                <div style="color: #000; min-width: 150px;">
-                    <b>${satker}</b><br>
-                    Total Kasus: ${stats.total}
-                </div>
-            `);
+                const menuLabel = getMenuLabel(currentMenuId);
+                marker.bindPopup(`
+                    <div style="color: #000; min-width: 150px;">
+                        <b>${kabupaten}</b><br>
+                        ${menuLabel}: <b>${count.toLocaleString('id-ID')}</b> data
+                    </div>
+                `);
 
-            marker.on('click', () => {
-                updateRegionStats(satker, stats);
-            });
+                marker.on('click', () => {
+                    updateRegionStatsSimple(kabupaten, count);
+                });
 
-            marker.addTo(markersLayer);
+                marker.addTo(markersLayer);
+            }
         }
 
-        // Set default region
-        if (Object.keys(satkerStats).length > 0) {
-            const firstSatker = Object.keys(satkerStats)[0];
-            updateRegionStats(firstSatker, satkerStats[firstSatker]);
+        // Set default region (kabupaten dengan data terbanyak)
+        const sortedKab = Object.entries(kabupatenStats)
+            .sort((a, b) => b[1] - a[1]);
+        
+        if (sortedKab.length > 0) {
+            const [topKab, topCount] = sortedKab[0];
+            updateRegionStatsSimple(topKab, topCount);
         }
     }
 
@@ -1775,6 +1807,36 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         document.getElementById('statOrangAsing').textContent = stats.pemantauan_orang_asing || 0;
         document.getElementById('statAsetDesa').textContent = stats.aset_desa || 0;
         document.getElementById('statPenyelewengan').textContent = stats.kasus_penyelewengan || 0;
+    }
+
+    function updateRegionStatsSimple(kabupatenName, count) {
+        document.getElementById('regionName').textContent = kabupatenName;
+        
+        // Reset semua stats
+        const statsIds = ['statJagaBudaya', 'statPengawasanOrmas', 'statPemantauanLingkungan', 
+                          'statOrangAsing', 'statAsetDesa', 'statPenyelewengan'];
+        statsIds.forEach(id => {
+            document.getElementById(id).textContent = '-';
+        });
+        
+        // Hitung data per menu untuk kabupaten ini
+        const menuStats = {};
+        for (const menuId in CSV_DATA) {
+            const data = CSV_DATA[menuId] || [];
+            const kabData = data.filter(row => {
+                const kab = row['Kabupaten/Kota'] || row['Desa / Kelurahan'] || '';
+                return kab === kabupatenName;
+            });
+            menuStats[menuId] = kabData.length;
+        }
+        
+        // Update stats display
+        document.getElementById('statJagaBudaya').textContent = menuStats.jaga_budaya || 0;
+        document.getElementById('statPengawasanOrmas').textContent = menuStats.pengawasan_ormas || 0;
+        document.getElementById('statPemantauanLingkungan').textContent = menuStats.pemantauan_lingkungan || 0;
+        document.getElementById('statOrangAsing').textContent = menuStats.pemantauan_orang_asing || 0;
+        document.getElementById('statAsetDesa').textContent = menuStats.aset_desa || 0;
+        document.getElementById('statPenyelewengan').textContent = menuStats.kasus_penyelewengan || 0;
     }
 
     /* ===================== FULL SCREEN TOGGLE ===================== */
