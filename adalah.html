@@ -149,6 +149,16 @@
                 0 0 25px rgba(0,0,0,0.9);
         }
 
+        /* Animation for chart transitions */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .chart-transition {
+            animation: fadeIn 0.5s ease-out;
+        }
+
         @media print {
             .no-print { display: none !important; }
             body {
@@ -311,7 +321,13 @@
                 <div id="disparitas-section" class="space-y-3">
                     <div class="text-center mb-3">
                         <div class="text-lg font-bold text-cyan-300" id="currentSatker">KEJAKSAAN NEGERI SURABAYA</div>
-                        <div class="text-xs text-gray-400">Satuan Kerja dengan Kasus Terbanyak</div>
+                        <div class="text-xs text-gray-400">Kabupaten dengan Data Terbanyak</div>
+                        <!-- Auto-rotation indicator -->
+                        <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-cyan-500/20 border border-cyan-400/30 rounded-full text-xs">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                            <span class="text-cyan-300 font-semibold">Auto-Rotation Active</span>
+                            <span class="text-gray-400" id="rotationTimer">5s</span>
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-2 gap-3 text-xs mb-3">
@@ -885,6 +901,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     let currentStatusFilter = 'all'; // 'all' | 'compliant' | 'pending'
     let performanceBarChartInstance = null;
     let satkerHistoryChartInstance = null;
+    let autoRotateInterval = null;  // For auto-rotation timer
 
     /* ===================== UTIL ===================== */
 
@@ -1623,7 +1640,82 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         // Init Disparitas Chart dan Map
         initDisparitasChart();
         initMap();
+        
+        // Start auto-rotation after everything is loaded
+        setTimeout(() => {
+            startAutoRotation();
+        }, 3000);  // Start after 3 seconds
     });
+
+    /* ===================== AUTO ROTATION ===================== */
+    
+    function startAutoRotation() {
+        console.log('\n🔄 Starting auto-rotation every 5 seconds...');
+        
+        // Daftar menu yang punya CSV data (skip jaksa_garda)
+        const menuWithData = ['jaga_budaya', 'pengawasan_ormas', 'pemantauan_lingkungan', 
+                              'pemantauan_orang_asing', 'aset_desa', 'kasus_penyelewengan'];
+        
+        let currentIndex = menuWithData.indexOf(currentMenuId);
+        if (currentIndex === -1) currentIndex = 0;
+        
+        let countdown = 5;
+        
+        // Update countdown timer setiap detik
+        const countdownInterval = setInterval(() => {
+            countdown--;
+            const timerEl = document.getElementById('rotationTimer');
+            if (timerEl) {
+                timerEl.textContent = countdown + 's';
+            }
+            if (countdown <= 0) {
+                countdown = 5;
+            }
+        }, 1000);
+        
+        autoRotateInterval = setInterval(() => {
+            // Move to next menu
+            currentIndex = (currentIndex + 1) % menuWithData.length;
+            const nextMenuId = menuWithData[currentIndex];
+            
+            console.log(`\n⏩ Auto-rotating to: ${nextMenuId}`);
+            
+            // Update current menu
+            currentMenuId = nextMenuId;
+            currentStatusFilter = 'all';
+            
+            // Update label
+            const labelEl = document.getElementById('active-menu-label');
+            if (labelEl) {
+                labelEl.textContent = getMenuLabel(currentMenuId);
+            }
+            
+            // Refresh main menu UI
+            renderMainMenu();
+            
+            // Update chart and map with smooth transition
+            updateDisparitasChart();
+            updateMap();
+            
+            // Reset countdown
+            countdown = 5;
+            
+        }, 5000);  // Every 5 seconds
+        
+        // Store countdown interval reference
+        autoRotateInterval.countdown = countdownInterval;
+    }
+    
+    function stopAutoRotation() {
+        if (autoRotateInterval) {
+            clearInterval(autoRotateInterval);
+            if (autoRotateInterval.countdown) {
+                clearInterval(autoRotateInterval.countdown);
+            }
+            autoRotateInterval = null;
+            console.log('Auto-rotation stopped');
+        }
+    }
 
     /* ===================== DISPARITAS CHART ===================== */
     
@@ -1649,6 +1741,14 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     function updateDisparitasChart() {
         console.log('=== UPDATE CHART ===');
         console.log('Menu aktif:', currentMenuId);
+        
+        // Add transition animation
+        const section = document.getElementById('disparitas-section');
+        if (section) {
+            section.classList.remove('chart-transition');
+            void section.offsetWidth; // Trigger reflow
+            section.classList.add('chart-transition');
+        }
         
         // Hitung jumlah data per kabupaten untuk menu yang aktif
         const kabupatenCounts = {};
