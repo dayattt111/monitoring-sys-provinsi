@@ -16,171 +16,7 @@
 
     <!-- Leaflet CSS for Map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-        :root {
-            --primary-yellow: #ffc800;
-            --primary-cyan: #00c0ff;
-            --primary-red: #ff4b5c;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            min-height: 100vh;
-            background: linear-gradient(135deg,
-                #f0f4f8 0%,
-                #e2e8f0 50%,
-                #cbd5e1 100%
-            );
-            margin: 0;
-            padding: 0;
-            color: #1e293b;
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        /* watermark logo */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-image: url("kejag.png");
-            background-repeat: no-repeat;
-            background-position: center 40%;
-            background-size: 70vh auto;
-            opacity: 0.03;
-            filter: blur(0.5px);
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .bg-overlay {
-            background: transparent;
-            min-height: 100vh;
-            padding: 1.5rem 0 3rem;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid rgba(148, 163, 184, 0.2);
-            box-shadow:
-                0 4px 6px rgba(0, 0, 0, 0.07),
-                0 10px 20px rgba(0, 0, 0, 0.05);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
-
-        .summary-card {
-            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
-            border-radius: 24px;
-            border: 1px solid rgba(148, 163, 184, 0.2);
-            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,0.9));
-        }
-
-        .summary-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        .text-dark-contrast { color: #1e293b; }
-        .text-muted-contrast { color: #475569; }
-
-        .btn-yellow {
-            background: var(--primary-yellow);
-            color: #000;
-            font-weight: 700;
-            border-radius: 999px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
-        }
-        .btn-yellow:hover { filter: brightness(1.05); }
-
-        .btn-outline-dark {
-            background: transparent;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.6);
-            color: #F9FAFB;
-            font-weight: 600;
-        }
-        .btn-outline-dark:hover {
-            background: rgba(255,255,255,0.08);
-        }
-
-        .btn-cyan {
-            background: var(--primary-cyan);
-            color: #000;
-            font-weight: 700;
-            border-radius: 999px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
-        }
-        .btn-cyan:hover { filter: brightness(1.05); }
-
-        .input-dark,
-        .select-dark {
-            background: rgba(255,255,255,0.95);
-            border-radius: 0.75rem;
-            border: 1px solid rgba(148, 163, 184, 0.3);
-            color: #1e293b;
-        }
-        .input-dark:focus,
-        .select-dark:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-
-        .badge-emerald {
-            background: rgba(16, 185, 129, 0.15);
-            color: #059669;
-            font-weight: 600;
-        }
-        .badge-amber {
-            background: rgba(251, 191, 36, 0.2);
-            color: #d97706;
-            font-weight: 600;
-        }
-
-        .title-shadow {
-            text-shadow:
-                0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        /* Animation for chart transitions */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .chart-transition {
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @media print {
-            .no-print { display: none !important; }
-            body {
-                background: white !important;
-                margin: 0;
-                padding: 0;
-                color: #000;
-            }
-            .bg-overlay { background: white !important; }
-            .glass-card {
-                border: none;
-                box-shadow: none;
-                backdrop-filter: none;
-                background: white;
-            }
-            header {
-                border-bottom: 2px solid #E2E8F0;
-                padding-bottom: 1rem;
-                margin-bottom: 1rem;
-            }
-            .print-full-width { width: 100%; display: block; }
-            canvas { max-height: 250px !important; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -204,11 +40,11 @@
         </header>
 
         <!-- TOP STATS CARDS -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-cyan-400/50 transition-all">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8" id="topStatsContainer">
+            <div data-menu-id="jaga_budaya" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-cyan-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-cyan-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-cyan-600 mb-2 flex items-center gap-2">
                             <i data-lucide="book-open" class="w-5 h-5"></i>
                             Jaga Budaya
                         </h3>
@@ -221,10 +57,10 @@
                 </div>
             </div>
 
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-purple-400/50 transition-all">
+            <div data-menu-id="pengawasan_ormas" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-purple-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-purple-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-purple-600 mb-2 flex items-center gap-2">
                             <i data-lucide="users" class="w-5 h-5"></i>
                             Pengawasan Ormas
                         </h3>
@@ -237,10 +73,10 @@
                 </div>
             </div>
 
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-green-400/50 transition-all">
+            <div data-menu-id="pemantauan_lingkungan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-green-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-green-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-green-600 mb-2 flex items-center gap-2">
                             <i data-lucide="truck" class="w-5 h-5"></i>
                             Pemantauan Lingkungan
                         </h3>
@@ -253,10 +89,10 @@
                 </div>
             </div>
 
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-yellow-400/50 transition-all">
+            <div data-menu-id="pemantauan_orang_asing" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-yellow-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-yellow-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-yellow-600 mb-2 flex items-center gap-2">
                             <i data-lucide="map-pin" class="w-5 h-5"></i>
                             Pemantauan Orang Asing
                         </h3>
@@ -269,10 +105,10 @@
                 </div>
             </div>
 
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-blue-400/50 transition-all">
+            <div data-menu-id="aset_desa" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-blue-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-blue-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-blue-600 mb-2 flex items-center gap-2">
                             <i data-lucide="plus-square" class="w-5 h-5"></i>
                             Aset Desa/Kelurahan
                         </h3>
@@ -285,10 +121,10 @@
                 </div>
             </div>
 
-            <div class="glass-card p-5 rounded-3xl border border-white/15 hover:border-red-400/50 transition-all">
+            <div data-menu-id="kasus_penyelewengan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-red-400/50 transition-all top-stat-card">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-red-300 mb-2 flex items-center gap-2">
+                        <h3 class="text-lg font-bold text-red-600 mb-2 flex items-center gap-2">
                             <i data-lucide="alert-triangle" class="w-5 h-5"></i>
                             Kasus Penyelewengan
                         </h3>
@@ -432,8 +268,8 @@
                         <span>Reset Filter</span>
                     </button>
                     <button id="print-btn"
-                            class="btn-cyan flex-1 px-4 py-2.5 text-sm inline-flex items-center justify-center gap-2">
-                        <i data-lucide="printer" class="w-4 h-4"></i>
+                            class="btn-cyan flex-1 px-5 py-2.5 text-sm inline-flex items-center justify-center gap-2">
+                        <i data-lucide="printer" class="w-5 h-5"></i>
                         <span>Cetak Laporan</span>
                     </button>
                 </div>
@@ -1485,6 +1321,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
                 resetFilter();
                 renderMainMenu();
+                // Update top stats visibility
+                updateTopStatsVisibility();
                 // Update disparitas dan map
                 updateDisparitasChart();
                 updateMap();
@@ -1877,11 +1715,52 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         
         setTimeout(() => {
             console.log('🔄 NOW triggering chart and map updates...\n');
+            updateTopStatsVisibility();  // Update visibility of top stats cards
             updateDisparitasChart();
             updateMap();
             initPerformanceBarChart();  // Init line chart setelah CSV loaded
             renderStatistikPerkara();  // Render statistik perkara
         }, 500);
+    }
+
+    /* ===================== UPDATE TOP STATS VISIBILITY ===================== */
+    
+    function updateTopStatsVisibility() {
+        console.log(`\n🎯 Updating top stats visibility for menu: ${currentMenuId}`);
+        
+        const allCards = document.querySelectorAll('.top-stat-card');
+        const container = document.getElementById('topStatsContainer');
+        
+        // Skip jaksa_garda as it has no CSV data
+        if (currentMenuId === 'jaksa_garda') {
+            console.log('  ⚠️  Jaksa Garda menu - hiding all stats cards');
+            allCards.forEach(card => card.classList.add('hidden'));
+            return;
+        }
+        
+        // Hide all cards first
+        allCards.forEach(card => {
+            card.classList.add('hidden');
+        });
+        
+        // Show only the card for current menu
+        const activeCard = document.querySelector(`[data-menu-id="${currentMenuId}"]`);
+        if (activeCard) {
+            activeCard.classList.remove('hidden');
+            console.log(`  ✅ Showing card for: ${currentMenuId}`);
+        } else {
+            console.log(`  ⚠️  No card found for menu: ${currentMenuId}`);
+        }
+        
+        // Adjust grid layout based on visible cards
+        const visibleCount = document.querySelectorAll('.top-stat-card:not(.hidden)').length;
+        if (visibleCount === 1) {
+            container.className = 'grid grid-cols-1 gap-5 mb-8';
+        } else if (visibleCount <= 3) {
+            container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8';
+        } else {
+            container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8';
+        }
     }
 
     /* ===================== INIT ===================== */
@@ -2002,6 +1881,10 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             
             // Refresh main menu UI
             renderMainMenu();
+            
+            // Update top stats visibility
+            console.log(`  🎯 Updating top stats for ${currentMenuId}...`);
+            updateTopStatsVisibility();
             
             // Update chart and map with smooth transition
             console.log(`  📊 Updating chart for ${currentMenuId}...`);
