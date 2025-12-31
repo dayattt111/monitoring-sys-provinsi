@@ -160,7 +160,7 @@
                         <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-cyan-50 border border-cyan-300 rounded-full text-xs">
                             <div class="w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
                             <span class="text-cyan-700 font-semibold">Auto-Rotation Active</span>
-                            <span class="text-gray-600" id="rotationTimer">5s</span>
+                            <span class="text-gray-600" id="rotationTimer">3s</span>
                         </div>
                     </div>
 
@@ -1871,7 +1871,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         let currentIndex = menuWithData.indexOf(currentMenuId);
         if (currentIndex === -1) currentIndex = 0;
         
-        let countdown = 5;
+        let countdown = 3; //timeseconds
         
         // Update countdown timer setiap detik
         const countdownInterval = setInterval(() => {
@@ -1918,9 +1918,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             initPerformanceBarChart();
             
             // Reset countdown
-            countdown = 5;
+            countdown = 3;
             
-        }, 5000);  // Every 5 seconds
+        }, 3000);  // Every 3 seconds
         
         // Store countdown interval reference
         autoRotateInterval.countdown = countdownInterval;
