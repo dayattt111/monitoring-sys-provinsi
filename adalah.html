@@ -457,7 +457,7 @@
             <div class="flex items-center justify-between mb-4">
                 <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
                     <i data-lucide="bar-chart-4" class="w-5 h-5 text-purple-500"></i>
-                    <span>Statistik Kasus</span>
+                    <span>Statistik Jaga Desa</span>
                 </h5>
                 <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('statistik-perkara-section')">
                     <i data-lucide="maximize-2" class="w-5 h-5"></i>
@@ -1729,15 +1729,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     /* ===================== UPDATE ALL TOP STATS CARDS ===================== */
     
     function updateAllTopStatsCards() {
-        console.log(`\n🎯 Updating ALL top stats cards with data from: ${currentMenuId}`);
-        
-        // Get data from active menu
-        const activeData = CSV_DATA[currentMenuId] || [];
-        const total = activeData.length;
-        const compliant = Math.floor(total * 0.7); // 70% selesai
-        const pending = total - compliant;
-        
-        console.log(`  Data: Total=${total}, Selesai=${compliant}, Pending=${pending}`);
+        console.log(`\n🎯 Updating ALL top stats cards with their own data`);
         
         // Config untuk semua cards
         const menuConfig = [
@@ -1749,8 +1741,16 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             { chartId: 'chartKasusPenyelewengan', totalId: 'totalKasusPenyelewengan', breakdownId: 'breakdownKasusPenyelewengan', color: 'rgba(248, 113, 113, 1)', menuId: 'kasus_penyelewengan' }
         ];
         
-        // Update semua cards dengan data yang sama
+        // Update setiap card dengan data menu-nya sendiri
         menuConfig.forEach(menu => {
+            // Get data from each menu's own CSV
+            const menuData = CSV_DATA[menu.menuId] || [];
+            const total = menuData.length;
+            const compliant = Math.floor(total * 0.7); // 70% selesai
+            const pending = total - compliant;
+            
+            console.log(`  ${menu.menuId}: Total=${total}, Selesai=${compliant}, Pending=${pending}`);
+            
             // Update total
             const totalEl = document.getElementById(menu.totalId);
             if (totalEl) totalEl.textContent = total.toLocaleString('id-ID');
@@ -1783,7 +1783,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             }
         });
         
-        console.log(`  ✅ All cards updated with ${currentMenuId} data`);
+        console.log(`  ✅ All cards updated with their own data, active menu: ${currentMenuId}`);
     }
 
     /* ===================== INIT ===================== */
