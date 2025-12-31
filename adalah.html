@@ -1321,8 +1321,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
                 resetFilter();
                 renderMainMenu();
-                // Update top stats highlight
-                updateTopStatsHighlight();
+                // Update all top stats cards with new menu data
+                updateAllTopStatsCards();
                 // Update disparitas dan map
                 updateDisparitasChart();
                 updateMap();
@@ -1593,6 +1593,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         'kasus_penyelewengan': []
     };
 
+    // Simpan chart instances untuk update nanti
+    const topStatsCharts = {};
+
     // Fungsi untuk parsing CSV - improved version
     function parseCSV(csvText) {
         const lines = csvText.trim().split('\n');
@@ -1686,7 +1689,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             const canvas = document.getElementById(menu.chartId);
             if (canvas) {
                 const ctx = canvas.getContext('2d');
-                new Chart(ctx, {
+                topStatsCharts[menu.chartId] = new Chart(ctx, {
                     type: 'doughnut',
                     data: {
                         datasets: [{
@@ -1715,7 +1718,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         
         setTimeout(() => {
             console.log('🔄 NOW triggering chart and map updates...\n');
-            updateTopStatsHighlight();  // Update highlight of active top stats card
+            updateAllTopStatsCards();  // Update all cards with active menu data
             updateDisparitasChart();
             updateMap();
             initPerformanceBarChart();  // Init line chart setelah CSV loaded
@@ -1723,25 +1726,64 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         }, 500);
     }
 
-    /* ===================== UPDATE TOP STATS HIGHLIGHT ===================== */
+    /* ===================== UPDATE ALL TOP STATS CARDS ===================== */
     
-    function updateTopStatsHighlight() {
-        console.log(`\n🎯 Updating top stats highlight for menu: ${currentMenuId}`);
+    function updateAllTopStatsCards() {
+        console.log(`\n🎯 Updating ALL top stats cards with data from: ${currentMenuId}`);
         
-        const allCards = document.querySelectorAll('.top-stat-card');
+        // Get data from active menu
+        const activeData = CSV_DATA[currentMenuId] || [];
+        const total = activeData.length;
+        const compliant = Math.floor(total * 0.7); // 70% selesai
+        const pending = total - compliant;
         
-        // Remove highlight from all cards
-        allCards.forEach(card => {
-            card.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
-            card.classList.add('opacity-100');
+        console.log(`  Data: Total=${total}, Selesai=${compliant}, Pending=${pending}`);
+        
+        // Config untuk semua cards
+        const menuConfig = [
+            { chartId: 'chartJagaBudaya', totalId: 'totalJagaBudaya', breakdownId: 'breakdownJagaBudaya', color: 'rgba(103, 232, 249, 1)', menuId: 'jaga_budaya' },
+            { chartId: 'chartPengawasanOrmas', totalId: 'totalPengawasanOrmas', breakdownId: 'breakdownPengawasanOrmas', color: 'rgba(192, 132, 252, 1)', menuId: 'pengawasan_ormas' },
+            { chartId: 'chartPemantauanLingkungan', totalId: 'totalPemantauanLingkungan', breakdownId: 'breakdownPemantauanLingkungan', color: 'rgba(52, 211, 153, 1)', menuId: 'pemantauan_lingkungan' },
+            { chartId: 'chartPemantauanOrangAsing', totalId: 'totalPemantauanOrangAsing', breakdownId: 'breakdownPemantauanOrangAsing', color: 'rgba(250, 204, 21, 1)', menuId: 'pemantauan_orang_asing' },
+            { chartId: 'chartAsetDesa', totalId: 'totalAsetDesa', breakdownId: 'breakdownAsetDesa', color: 'rgba(96, 165, 250, 1)', menuId: 'aset_desa' },
+            { chartId: 'chartKasusPenyelewengan', totalId: 'totalKasusPenyelewengan', breakdownId: 'breakdownKasusPenyelewengan', color: 'rgba(248, 113, 113, 1)', menuId: 'kasus_penyelewengan' }
+        ];
+        
+        // Update semua cards dengan data yang sama
+        menuConfig.forEach(menu => {
+            // Update total
+            const totalEl = document.getElementById(menu.totalId);
+            if (totalEl) totalEl.textContent = total.toLocaleString('id-ID');
+            
+            // Update breakdown
+            const breakdownEl = document.getElementById(menu.breakdownId);
+            if (breakdownEl) {
+                breakdownEl.innerHTML = `
+                    <span class="text-emerald-600">✓ ${compliant.toLocaleString('id-ID')} Selesai</span> · 
+                    <span class="text-amber-600">⏳ ${pending.toLocaleString('id-ID')} Pending</span>
+                `;
+            }
+            
+            // Update chart
+            const chart = topStatsCharts[menu.chartId];
+            if (chart) {
+                chart.data.datasets[0].data = [compliant, pending];
+                chart.data.datasets[0].backgroundColor = [menu.color, 'rgba(200, 200, 200, 0.3)'];
+                chart.update('none'); // Update tanpa animasi untuk performa
+            }
+            
+            // Highlight active card
+            const card = document.querySelector(`[data-menu-id="${menu.menuId}"]`);
+            if (card) {
+                if (menu.menuId === currentMenuId) {
+                    card.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
+                } else {
+                    card.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
+                }
+            }
         });
         
-        // Add highlight to active card
-        const activeCard = document.querySelector(`[data-menu-id="${currentMenuId}"]`);
-        if (activeCard) {
-            activeCard.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
-            console.log(`  ✅ Highlighted card for: ${currentMenuId}`);
-        }
+        console.log(`  ✅ All cards updated with ${currentMenuId} data`);
     }
 
     /* ===================== INIT ===================== */
@@ -1863,9 +1905,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             // Refresh main menu UI
             renderMainMenu();
             
-            // Update top stats highlight
-            console.log(`  🎯 Updating top stats for ${currentMenuId}...`);
-            updateTopStatsHighlight();
+            // Update all top stats cards
+            console.log(`  🎯 Updating all top stats for ${currentMenuId}...`);
+            updateAllTopStatsCards();
             
             // Update chart and map with smooth transition
             console.log(`  📊 Updating chart for ${currentMenuId}...`);
