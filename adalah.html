@@ -41,7 +41,7 @@
 
         <!-- TOP STATS CARDS -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8" id="topStatsContainer">
-            <div data-menu-id="jaga_budaya" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-cyan-400/50 transition-all top-stat-card">
+            <div data-menu-id="jaga_budaya" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-cyan-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-cyan-600 mb-2 flex items-center gap-2">
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div data-menu-id="pengawasan_ormas" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-purple-400/50 transition-all top-stat-card">
+            <div data-menu-id="pengawasan_ormas" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-purple-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-purple-600 mb-2 flex items-center gap-2">
@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div data-menu-id="pemantauan_lingkungan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-green-400/50 transition-all top-stat-card">
+            <div data-menu-id="pemantauan_lingkungan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-green-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-green-600 mb-2 flex items-center gap-2">
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div data-menu-id="pemantauan_orang_asing" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-yellow-400/50 transition-all top-stat-card">
+            <div data-menu-id="pemantauan_orang_asing" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-yellow-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-yellow-600 mb-2 flex items-center gap-2">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div data-menu-id="aset_desa" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-blue-400/50 transition-all top-stat-card">
+            <div data-menu-id="aset_desa" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-blue-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-blue-600 mb-2 flex items-center gap-2">
@@ -121,7 +121,7 @@
                 </div>
             </div>
 
-            <div data-menu-id="kasus_penyelewengan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-red-400/50 transition-all top-stat-card">
+            <div data-menu-id="kasus_penyelewengan" class="glass-card p-5 rounded-3xl border border-white/15 hover:border-red-400/50 transition-all duration-500 top-stat-card" style="transition: all 0.5s ease;">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     <div class="flex-1">
                         <h3 class="text-lg font-bold text-red-600 mb-2 flex items-center gap-2">
@@ -145,7 +145,7 @@
                 <div class="flex items-center justify-between mb-4">
                     <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
                         <i data-lucide="bar-chart-3" class="w-5 h-5 text-amber-300"></i>
-                        <span>Disparitas Kasus</span>
+                        <span>Satuan kerja Jaga Desa</span>
                     </h5>
                     <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('disparitas-section')">
                         <i data-lucide="maximize-2" class="w-5 h-5"></i>
@@ -457,7 +457,7 @@
             <div class="flex items-center justify-between mb-4">
                 <h5 class="text-dark-contrast text-xl font-bold flex items-center gap-2">
                     <i data-lucide="bar-chart-4" class="w-5 h-5 text-purple-500"></i>
-                    <span>Statistik Perkara</span>
+                    <span>Statistik Kasus</span>
                 </h5>
                 <button class="text-gray-500 hover:text-gray-800 transition no-print" onclick="toggleFullScreen('statistik-perkara-section')">
                     <i data-lucide="maximize-2" class="w-5 h-5"></i>
@@ -962,7 +962,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
     /* ===================== STATISTIK PERKARA ===================== */
 
     function renderStatistikPerkara() {
-        console.log('\n📊 Rendering Statistik Perkara...');
+        console.log('\n📊 Rendering Statistik Kasus...');
         
         const tbody = document.getElementById('statistikPerkaraBody');
         if (!tbody) return;
@@ -1033,7 +1033,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             tbody.appendChild(row);
         });
 
-        console.log('✅ Statistik Perkara rendered');
+        console.log('✅ Statistik Kasus rendered');
     }
 
         if (hasLucide) lucide.createIcons();
@@ -1321,8 +1321,8 @@ KEJAKSAAN NEGERI TRENGGALEK`;
                 document.getElementById('active-menu-label').textContent = getMenuLabel(currentMenuId);
                 resetFilter();
                 renderMainMenu();
-                // Update top stats visibility
-                updateTopStatsVisibility();
+                // Update top stats highlight
+                updateTopStatsHighlight();
                 // Update disparitas dan map
                 updateDisparitasChart();
                 updateMap();
@@ -1715,7 +1715,7 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         
         setTimeout(() => {
             console.log('🔄 NOW triggering chart and map updates...\n');
-            updateTopStatsVisibility();  // Update visibility of top stats cards
+            updateTopStatsHighlight();  // Update highlight of active top stats card
             updateDisparitasChart();
             updateMap();
             initPerformanceBarChart();  // Init line chart setelah CSV loaded
@@ -1723,43 +1723,24 @@ KEJAKSAAN NEGERI TRENGGALEK`;
         }, 500);
     }
 
-    /* ===================== UPDATE TOP STATS VISIBILITY ===================== */
+    /* ===================== UPDATE TOP STATS HIGHLIGHT ===================== */
     
-    function updateTopStatsVisibility() {
-        console.log(`\n🎯 Updating top stats visibility for menu: ${currentMenuId}`);
+    function updateTopStatsHighlight() {
+        console.log(`\n🎯 Updating top stats highlight for menu: ${currentMenuId}`);
         
         const allCards = document.querySelectorAll('.top-stat-card');
-        const container = document.getElementById('topStatsContainer');
         
-        // Skip jaksa_garda as it has no CSV data
-        if (currentMenuId === 'jaksa_garda') {
-            console.log('  ⚠️  Jaksa Garda menu - hiding all stats cards');
-            allCards.forEach(card => card.classList.add('hidden'));
-            return;
-        }
-        
-        // Hide all cards first
+        // Remove highlight from all cards
         allCards.forEach(card => {
-            card.classList.add('hidden');
+            card.classList.remove('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
+            card.classList.add('opacity-100');
         });
         
-        // Show only the card for current menu
+        // Add highlight to active card
         const activeCard = document.querySelector(`[data-menu-id="${currentMenuId}"]`);
         if (activeCard) {
-            activeCard.classList.remove('hidden');
-            console.log(`  ✅ Showing card for: ${currentMenuId}`);
-        } else {
-            console.log(`  ⚠️  No card found for menu: ${currentMenuId}`);
-        }
-        
-        // Adjust grid layout based on visible cards
-        const visibleCount = document.querySelectorAll('.top-stat-card:not(.hidden)').length;
-        if (visibleCount === 1) {
-            container.className = 'grid grid-cols-1 gap-5 mb-8';
-        } else if (visibleCount <= 3) {
-            container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8';
-        } else {
-            container.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8';
+            activeCard.classList.add('ring-4', 'ring-cyan-400', 'ring-offset-2', 'scale-105');
+            console.log(`  ✅ Highlighted card for: ${currentMenuId}`);
         }
     }
 
@@ -1882,9 +1863,9 @@ KEJAKSAAN NEGERI TRENGGALEK`;
             // Refresh main menu UI
             renderMainMenu();
             
-            // Update top stats visibility
+            // Update top stats highlight
             console.log(`  🎯 Updating top stats for ${currentMenuId}...`);
-            updateTopStatsVisibility();
+            updateTopStatsHighlight();
             
             // Update chart and map with smooth transition
             console.log(`  📊 Updating chart for ${currentMenuId}...`);
